@@ -49,8 +49,8 @@ export const moneyPlan: MoneyPhase[] = [
       },
     ],
     rules: [
-      'Opprett bankkonto i «Buck Me» og sett inn pengene når du er i nærheten.',
-      'Før Tourist Trap: sett gjerne inn opptil $5 000 i Family Savings. Det er bare Family Savings som blir med til kapittel 2, så uten det blir økonomien trangere en stund.',
+      'Opprett bankkonto i «Buck Me» og sett inn pengene når du er i nærheten. Nå sparemålet på $5 000 før Tourist Trap. Det gir $15 000 på brukskontoen, som du trenger før Checking Out.',
+      'Family Savings: pengene blir låst og kan ikke brukes, men sparemålene hever grensen på brukskontoen. $5 000 gir $15 000, $10 000 gir $100 000, $100 000 gir $500 000 og $500 000 gir $2 000 000.',
       'Før Checking Out: minst $15 000 i banken, og lagre manuelt.',
       'Ikke farm penger i kapittel 1. Flere guider melder at kontanter ikke blir med videre.',
       'Arrestasjon eller død = du mister kontantene du har på deg. Fra kapittel 2 er banken trygg.',

@@ -28,7 +28,7 @@ const add = (missionId: string, r: Reminder) => byMission.set(missionId, [...(by
 // Forberedelser som ikke er samleobjekter.
 const prep: Record<string, string[]> = {
   'tourist-trap': [
-    'Anbefalt: sett inn opptil $5 000 i Family Savings. Ellers starter du kapittel 2 med lite penger.',
+    'Anbefalt: nå sparemålet på $5 000 i Family Savings. Det hever grensen på brukskontoen til $15 000.',
     'Utforsk Key Lento og ta tilfeldige hendelser der.',
     'Lagre manuelt i en egen lagringsplass.',
   ],

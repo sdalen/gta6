@@ -39,7 +39,7 @@ export const tips: Tip[] = [
   {
     category: 'Penger',
     title: 'Før Tourist Trap (kap. 1)',
-    body: 'Sett gjerne inn opptil $5 000 i Family Savings. Det er det eneste av pengene som blir med til kapittel 2. Uten det blir økonomien bare litt trangere i starten.',
+    body: 'Sett gjerne inn $5 000 i Family Savings. Det er det første sparemålet og hever grensen på brukskontoen til $15 000. Pengene blir låst, så ikke sett inn mer enn du trenger for målet.',
   },
   {
     category: 'Penger',

@@ -184,7 +184,7 @@ export const chapters: Chapter[] = [
           'Flykt med båt.',
         ],
         warning:
-          'Lagre manuelt før du starter. Du mister huset til Jason. Sett gjerne inn opptil $5 000 i Family Savings først, for det er bare de pengene som blir med videre.',
+          'Lagre manuelt før du starter. Du mister huset til Jason, og kontanter du har på deg forsvinner. Nå gjerne sparemålet på $5 000 i Family Savings først.',
       },
       {
         id: 'home-sweet-home',
