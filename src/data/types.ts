@@ -28,6 +28,12 @@ export interface OptionalMission {
   character?: Character
   note: string
   missable?: boolean
+  /** Oppdrag (id) som gjør det for sent. */
+  before?: string
+  /** Hovedoppdrag (id) som låser opp dette. */
+  appearsAfter?: string
+  /** Timeglass-ikon i spillet: forsvinner hvis du venter for lenge. */
+  hourglass?: boolean
 }
 
 export interface Questline {

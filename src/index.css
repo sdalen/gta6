@@ -1,20 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sunset-50: #fff4ed;
-  --color-sunset-400: #ff8a5c;
-  --color-sunset-500: #ff6b3d;
-  --color-vice-400: #f472b6;
-  --color-vice-500: #ec4899;
-  --color-ocean-400: #22d3ee;
-  --font-display: "Bebas Neue", "Impact", system-ui, sans-serif;
+  --color-paper: #09090b;
+  --color-surface: #18181b;
+  --color-header: #09090b;
+  --color-line: #27272acc;
+  --color-frame: #3f3f46;
+  --color-ink: #fafafa;
+  --color-ink-soft: #d4d4d8;
+  --color-muted: #a1a1aa;
+  --color-faint: #52525b;
+  --color-accent: #ff8a5c;
+  --color-accent-dark: #ff9f7a;
+  --color-accent-dim: #ff8a5c1a;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  @apply bg-zinc-950 text-zinc-100 antialiased;
+  @apply bg-paper font-sans text-ink antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  filter: invert(0.6);
 }

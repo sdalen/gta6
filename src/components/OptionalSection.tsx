@@ -1,65 +1,56 @@
 import { optionalMissions, questlines, questlineTrophies } from '../data/extras'
+import { href } from '../hooks/useRoute'
+import { Icon } from './Icon'
+import { PageHeader, SectionLabel } from './ui'
 
 export function OptionalSection() {
   return (
-    <section id="valgfritt" className="scroll-mt-24">
-      <h2 className="mb-1 font-display text-4xl tracking-wide sm:text-5xl">Valgfrie oppdrag</h2>
-      <p className="mb-5 text-sm text-zinc-400">
-        Oppdrag som ikke er en del av hovedhistorien. De merket «Kan gå tapt» må gjøres i riktig kapittel.
-      </p>
+    <div>
+      <PageHeader back={{ href: href('oppdrag'), label: 'Hovedoppdrag' }} eyebrow="Utenfor historien" title="Valgfrie oppdrag">
+        Sideoppdrag som ikke er en del av hovedhistorien. De merket «kan gå tapt» må gjøres i tide. Timeglass betyr at oppdraget forsvinner hvis du venter for lenge, så ta det med en gang.
+      </PageHeader>
 
-      <div className="overflow-x-auto rounded-xl border border-white/10">
-        <table className="w-full text-left text-sm">
-          <thead className="bg-white/5 text-xs uppercase tracking-wider text-zinc-400">
-            <tr>
-              <th className="px-4 py-2">Oppdrag</th>
-              <th className="px-4 py-2">Kap.</th>
-              <th className="px-4 py-2">Merknad</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-white/5">
-            {optionalMissions.map((o) => (
-              <tr key={o.name}>
-                <td className="px-4 py-2 font-medium">
-                  {o.name}
-                  {o.missable && (
-                    <span className="ml-2 whitespace-nowrap rounded-full bg-red-500/15 px-2 py-0.5 text-xs text-red-300 ring-1 ring-red-500/30">
-                      Kan gå tapt
+      <section className="mb-14">
+        <SectionLabel>Oppdrag</SectionLabel>
+        <ul className="divide-y divide-line border-y border-line">
+          {optionalMissions.map((o) => (
+            <li key={o.name} className="flex items-start gap-5 py-4">
+              <span className="w-10 shrink-0 text-xs uppercase tracking-wider text-faint">Kap. {o.chapter}</span>
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-baseline gap-x-3">
+                  <span className="text-[15px] font-medium text-ink">{o.name}</span>
+                  {o.hourglass && (
+                    <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-300" title="Timeglass: forsvinner hvis du venter">
+                      <Icon name="hourglass" className="size-3.5" /> Timeglass
                     </span>
                   )}
-                </td>
-                <td className="px-4 py-2 text-zinc-400">{o.chapter}</td>
-                <td className="px-4 py-2 text-zinc-400">
-                  {o.character && <span className="text-zinc-300">{o.character}: </span>}
+                  {o.missable && <span className="text-xs font-medium text-red-400">kan gå tapt</span>}
+                </div>
+                <p className="mt-1 text-sm text-muted">
+                  {o.character && <span className="text-ink-soft">{o.character}. </span>}
                   {o.note}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-2">
-        <div>
-          <h3 className="mb-2 font-display text-2xl tracking-wide">Strangers &amp; Freaks</h3>
-          <p className="mb-3 text-sm text-zinc-400">
-            Troféet krever 8 historier. Dette er hvem som teller ifølge tidlige guider.
-          </p>
-          <ul className="grid grid-cols-2 gap-2 text-sm">
+      <div className="grid gap-14 lg:grid-cols-2 lg:gap-10">
+        <section>
+          <SectionLabel>Strangers &amp; Freaks</SectionLabel>
+          <p className="mb-4 text-sm text-muted">Troféet krever 8 historier. Disse teller ifølge tidlige guider:</p>
+          <ul className="divide-y divide-line border-y border-line text-sm">
             {questlines.map((q) => (
-              <li
-                key={q.giver}
-                className="flex items-center justify-between gap-2 rounded-lg border border-white/10 px-3 py-2"
-                title={q.note}
-              >
-                <span>{q.giver}</span>
+              <li key={q.giver} className="flex items-center justify-between py-2.5" title={q.note}>
+                <span className="text-ink">{q.giver}</span>
                 <span
                   className={
                     q.countsForTrophy === true
                       ? 'text-emerald-400'
                       : q.countsForTrophy === false
-                        ? 'text-zinc-600'
-                        : 'text-yellow-300'
+                        ? 'text-faint'
+                        : 'text-amber-300'
                   }
                 >
                   {q.countsForTrophy === true ? 'Teller' : q.countsForTrophy === false ? 'Teller ikke' : 'Usikkert'}
@@ -67,23 +58,23 @@ export function OptionalSection() {
               </li>
             ))}
           </ul>
-        </div>
+        </section>
 
-        <div>
-          <h3 className="mb-2 font-display text-2xl tracking-wide">Trofeer fra oppdragsserier</h3>
-          <ul className="space-y-2 text-sm">
+        <section>
+          <SectionLabel>Trofeer fra oppdragsserier</SectionLabel>
+          <ul className="divide-y divide-line border-y border-line text-sm">
             {questlineTrophies.map((t) => (
-              <li
-                key={t.trophy}
-                className="flex items-center justify-between gap-3 rounded-lg border border-white/10 px-3 py-2"
-              >
-                <span>{t.questline}</span>
-                <span className="text-yellow-300">🏆 {t.trophy}</span>
+              <li key={t.trophy} className="flex items-center justify-between gap-4 py-2.5">
+                <span className="text-ink">{t.questline}</span>
+                <span className="inline-flex items-center gap-1.5 text-muted">
+                  <Icon name="trophy" className="size-4 text-amber-300" />
+                  {t.trophy}
+                </span>
               </li>
             ))}
           </ul>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
   )
 }

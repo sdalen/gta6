@@ -1,139 +1,139 @@
-import { useState } from 'react'
-import { chapters } from './data/chapters'
+import { useEffect, useState } from 'react'
 import { useProgress } from './hooks/useProgress'
-import { ChapterSection } from './components/ChapterSection'
+import { href, useRoute } from './hooks/useRoute'
+import { Icon, type IconName } from './components/Icon'
+import { HomePage } from './pages/HomePage'
+import { MissionsPage } from './pages/MissionsPage'
+import { ChapterPage } from './pages/ChapterPage'
+import { CollectiblesPage } from './pages/CollectiblesPage'
+import { CollectibleCategoryPage } from './pages/CollectibleCategoryPage'
+import { CollectibleItemPage } from './pages/CollectibleItemPage'
+import { NotFound } from './pages/NotFound'
 import { TipsSection } from './components/TipsSection'
 import { OptionalSection } from './components/OptionalSection'
 import { MoneySection } from './components/MoneySection'
-import { InstallButton } from './components/InstallButton'
 
-const totalMissions = chapters.reduce((n, c) => n + c.missions.length, 0)
-const startIndexes = chapters.map((_, i) =>
-  chapters.slice(0, i).reduce((n, c) => n + c.missions.length, 1),
-)
+const tabs: { section: string; label: string; icon: IconName; match: string[] }[] = [
+  { section: '', label: 'Hjem', icon: 'home', match: [''] },
+  { section: 'oppdrag', label: 'Oppdrag', icon: 'book', match: ['oppdrag', 'kapittel', 'valgfritt'] },
+  { section: 'samle', label: 'Samle', icon: 'compass', match: ['samle'] },
+  { section: 'penger', label: 'Penger', icon: 'coins', match: ['penger'] },
+  { section: 'tips', label: 'Tips', icon: 'bulb', match: ['tips'] },
+]
 
 export default function App() {
   const { done, toggle, reset } = useProgress()
   const [spoilers, setSpoilers] = useState(true)
-  const [query, setQuery] = useState('')
+  const [section = '', a, b] = useRoute()
 
-  const completed = chapters.reduce((n, c) => n + c.missions.filter((m) => done.has(m.id)).length, 0)
-  const pct = Math.round((completed / totalMissions) * 100)
+  useEffect(() => {
+    if (!(section === 'kapittel' && b)) window.scrollTo(0, 0)
+  }, [section, a, b])
 
-  const nextMission = chapters.flatMap((c) => c.missions).find((m) => !done.has(m.id))
+  let page
+  switch (section) {
+    case '':
+      page = <HomePage done={done} onToggle={toggle} />
+      break
+    case 'oppdrag':
+      page = <MissionsPage done={done} spoilers={spoilers} onToggle={toggle} />
+      break
+    case 'kapittel':
+      page = <ChapterPage number={a} missionId={b} done={done} spoilers={spoilers} onToggle={toggle} />
+      break
+    case 'samle':
+      page =
+        a && b ? (
+          <CollectibleItemPage catId={a} idx={Number(b)} done={done} onToggle={toggle} />
+        ) : a ? (
+          <CollectibleCategoryPage id={a} done={done} onToggle={toggle} />
+        ) : (
+          <CollectiblesPage done={done} />
+        )
+      break
+    case 'valgfritt':
+      page = <OptionalSection />
+      break
+    case 'penger':
+      page = <MoneySection />
+      break
+    case 'tips':
+      page = <TipsSection />
+      break
+    default:
+      page = <NotFound />
+  }
+
+  const showSpoilerToggle = section === 'oppdrag' || section === 'kapittel'
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,rgba(236,72,153,0.15),transparent_60%)]">
-      <header className="px-4 pb-8 pt-12 text-center sm:pt-16">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-sunset-400">Leonida · Vice City</p>
-        <h1 className="mt-2 bg-gradient-to-r from-vice-400 via-sunset-400 to-yellow-300 bg-clip-text font-display text-6xl tracking-wide text-transparent sm:text-8xl">
-          GTA VI Gjennomgang
-        </h1>
-        <p className="mx-auto mt-3 max-w-xl text-sm text-zinc-400">
-          Alle hovedoppdrag i historien, kapittel for kapittel, med tips til hva du bør gjøre underveis. Huk av
-          oppdragene etter hvert. Fremdriften lagres i nettleseren.
-        </p>
-        <InstallButton />
-      </header>
-
-      <nav className="sticky top-0 z-20 border-y border-white/10 bg-zinc-950/85 backdrop-blur">
-        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-3">
-          <div className="flex items-center gap-3">
-            <div className="h-2 flex-1 overflow-hidden rounded-full bg-white/10">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-vice-500 to-sunset-400 transition-all"
-                style={{ width: `${pct}%` }}
-              />
-            </div>
-            <span className="whitespace-nowrap font-mono text-xs text-zinc-300">
-              {completed}/{totalMissions} · {pct}%
-            </span>
-          </div>
-          <div className="flex flex-wrap items-center gap-2 text-sm">
-            <a href="#tips" className="rounded-md px-2 py-1 text-zinc-300 hover:bg-white/10">
-              Tips
-            </a>
-            {chapters.map((c) => (
-              <a key={c.id} href={`#${c.id}`} className="rounded-md px-2 py-1 text-zinc-300 hover:bg-white/10">
-                Kap. {c.number}
+    <div className="min-h-screen pb-28 sm:pb-0">
+      <header className="sticky top-0 z-20 border-b border-line bg-header/80 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
+        <div className="mx-auto flex h-14 max-w-3xl items-center gap-8 px-5">
+          <a href={href()} className="text-[15px] font-semibold tracking-tight text-ink">
+            GTA VI <span className="font-normal text-muted">Guide</span>
+          </a>
+          <nav className="hidden gap-6 text-sm sm:flex">
+            {tabs.slice(1).map((t) => (
+              <a
+                key={t.section}
+                href={href(t.section)}
+                className={`transition ${t.match.includes(section) ? 'text-ink' : 'text-muted hover:text-ink'}`}
+              >
+                {t.label}
               </a>
             ))}
-            <a href="#valgfritt" className="rounded-md px-2 py-1 text-zinc-300 hover:bg-white/10">
-              Valgfritt
-            </a>
-            <a href="#penger" className="rounded-md px-2 py-1 text-zinc-300 hover:bg-white/10">
-              Penger
-            </a>
-            <div className="ml-auto flex w-full items-center gap-2 sm:w-auto">
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Søk etter oppdrag…"
-                className="min-w-0 flex-1 rounded-md border border-white/10 bg-white/5 px-3 py-1 text-sm placeholder:text-zinc-600 focus:border-sunset-400 focus:outline-none sm:w-48"
-              />
-              <label className="flex cursor-pointer items-center gap-1.5 whitespace-nowrap text-xs text-zinc-400">
-                <input
-                  type="checkbox"
-                  checked={!spoilers}
-                  onChange={(e) => setSpoilers(!e.target.checked)}
-                  className="accent-sunset-500"
-                />
-                Spoilerfri
-              </label>
-            </div>
-          </div>
+          </nav>
+          {showSpoilerToggle && (
+            <button
+              type="button"
+              onClick={() => setSpoilers((s) => !s)}
+              className={`ml-auto rounded-full px-3 py-1 text-xs ring-1 transition ${
+                spoilers ? 'text-muted ring-zinc-800 hover:ring-frame' : 'bg-accent-dim text-accent ring-accent/40'
+              }`}
+            >
+              {spoilers ? 'Skjul spoilere' : 'Spoilere skjult'}
+            </button>
+          )}
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-3xl px-5 py-8 sm:py-14">{page}</main>
+
+      {section === '' && (
+        <footer className="mx-auto max-w-3xl px-5 pb-12 pt-4 text-xs leading-relaxed text-faint">
+          <p>Uoffisiell fanguide basert på engelske gjennomganger (IGN m.fl.). Ikke tilknyttet Rockstar Games.</p>
+          <button
+            type="button"
+            onClick={() => {
+              if (confirm('Nullstille all fremdrift (oppdrag og samleobjekter)?')) reset()
+            }}
+            className="mt-3 text-muted underline-offset-4 hover:text-red-400 hover:underline"
+          >
+            Nullstill fremdrift
+          </button>
+        </footer>
+      )}
+
+      <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-header/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl sm:hidden">
+        <div className="grid grid-cols-5">
+          {tabs.map((t) => {
+            const active = t.match.includes(section)
+            return (
+              <a
+                key={t.section}
+                href={href(t.section)}
+                className={`flex flex-col items-center gap-1 pb-2 pt-2.5 text-[10px] font-medium tracking-wide transition ${
+                  active ? 'text-ink' : 'text-muted'
+                }`}
+              >
+                <Icon name={t.icon} className={`size-[22px] ${active ? 'text-accent' : ''}`} />
+                {t.label}
+              </a>
+            )
+          })}
         </div>
       </nav>
-
-      <main className="mx-auto max-w-5xl space-y-16 px-4 py-10">
-        {nextMission && !query && (
-          <a
-            href={`#${nextMission.id}`}
-            className="block rounded-xl border border-sunset-500/30 bg-sunset-500/10 px-4 py-3 text-sm hover:border-sunset-400"
-          >
-            <span className="text-sunset-400">Neste oppdrag:</span>{' '}
-            <strong className="font-semibold">{nextMission.name}</strong> →
-          </a>
-        )}
-
-        {!query && <TipsSection />}
-
-        {chapters.map((c, i) => (
-          <ChapterSection
-            key={c.id}
-            chapter={c}
-            query={query}
-            done={done}
-            spoilers={spoilers}
-            onToggle={toggle}
-            startIndex={startIndexes[i]}
-          />
-        ))}
-
-        {!query && (
-          <>
-            <OptionalSection />
-            <MoneySection />
-          </>
-        )}
-      </main>
-
-      <footer className="border-t border-white/10 px-4 py-8 text-center text-xs text-zinc-500">
-        <p>
-          Uoffisiell fanguide oversatt og tilpasset fra engelske gjennomganger (IGN m.fl.). Ikke tilknyttet
-          Rockstar Games.
-        </p>
-        <button
-          type="button"
-          onClick={() => {
-            if (confirm('Nullstille all fremdrift?')) reset()
-          }}
-          className="mt-3 rounded-md border border-white/10 px-3 py-1 text-zinc-400 hover:border-red-500/50 hover:text-red-300"
-        >
-          Nullstill fremdrift
-        </button>
-      </footer>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Icon } from './Icon'
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>
@@ -44,16 +45,16 @@ export function InstallButton() {
   }
 
   return (
-    <div className="mx-auto mt-5 max-w-sm">
+    <div className="mt-8 max-w-sm">
       <button
         type="button"
         onClick={onClick}
-        className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-vice-500 to-sunset-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-vice-500/20 transition hover:brightness-110"
+        className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-zinc-950 transition hover:bg-zinc-200"
       >
-        <span aria-hidden>📲</span> Installer app
+        <Icon name="download" className="size-4" /> Installer app
       </button>
       {showHelp && (
-        <div className="mt-3 rounded-xl border border-white/10 bg-white/5 p-4 text-left text-sm text-zinc-300">
+        <div className="mt-4 rounded-xl bg-surface p-4 text-left text-sm leading-relaxed text-ink-soft ring-1 ring-zinc-800">
           {isIos() ? (
             <ol className="list-decimal space-y-1 pl-5">
               <li>Åpne siden i Safari.</li>

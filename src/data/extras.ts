@@ -67,14 +67,26 @@ export const optionalMissions: OptionalMission[] = [
   {
     name: "Get Shirley's Rum",
     chapter: '1',
-    note: 'Kan bare tas i kapittel 1.',
+    character: 'Jason',
+    note: 'For naboen Shirley. Borte for godt når Tourist Trap starter.',
     missable: true,
+    before: 'tourist-trap',
   },
   {
     name: 'Steal the Scooter',
     chapter: '1',
-    note: 'Kan bare tas i kapittel 1.',
+    character: 'Jason',
+    note: 'For naboen Shirley. Borte for godt når Tourist Trap starter.',
     missable: true,
+    before: 'tourist-trap',
+  },
+  {
+    name: 'Clock Out',
+    chapter: '1',
+    character: 'Jason',
+    note: 'Lucia ringer dagen etter Day Release. Du må være på stedet før kl. 16.00, ellers er det borte.',
+    missable: true,
+    appearsAfter: 'day-release',
   },
   {
     name: 'Thrillbillies',
@@ -89,8 +101,10 @@ export const optionalMissions: OptionalMission[] = [
   {
     name: 'Race Against Yago',
     chapter: '3',
-    note: 'Tidsbegrenset. Ta det med en gang det dukker opp.',
+    character: 'Jason',
+    note: 'Dukker opp etter Bumper to Bumper. Forsvinner hvis du venter for lenge. Kan stenge resten av oppdragene til Yago.',
     missable: true,
+    hourglass: true,
   },
   {
     name: "Yasmani's Jewelry Jobs",
@@ -98,11 +112,27 @@ export const optionalMissions: OptionalMission[] = [
     note: 'Smykkejobber for Yasmani.',
   },
   {
+    name: 'Dubious Provenance',
+    chapter: '3',
+    note: 'Gi statuen til Halifax før kapittel 3 er over, ellers mister du del 3 og byttet.',
+    missable: true,
+    before: 'the-cartel-heist',
+  },
+  {
+    name: 'Bad Driver!',
+    chapter: '4',
+    note: 'Dukker opp etter Party Hard. Borte for godt når Power Play starter. Spar Felipe for å få bilen hans.',
+    missable: true,
+    before: 'power-play',
+    appearsAfter: 'party-hard',
+  },
+  {
     name: 'This Is a Free Call From...',
     chapter: '4',
     character: 'Lucia',
-    note: 'Tidsbegrenset: hent Shayna. Svar på anropet med en gang.',
+    note: 'Hent Shayna. Bytt til Lucia og ta oppdraget med en gang timeglasset dukker opp.',
     missable: true,
+    hourglass: true,
   },
 ]
 
