@@ -9,6 +9,7 @@ import { CollectiblesPage } from './pages/CollectiblesPage'
 import { CollectibleCategoryPage } from './pages/CollectibleCategoryPage'
 import { CollectibleItemPage } from './pages/CollectibleItemPage'
 import { NotFound } from './pages/NotFound'
+import { ChallengeCategoryPage, ChallengesPage, RaceChallengesPage } from './pages/ChallengesPage'
 import { TipsSection } from './components/TipsSection'
 import { OptionalSection } from './components/OptionalSection'
 import { MoneySection } from './components/MoneySection'
@@ -16,7 +17,7 @@ import { MoneySection } from './components/MoneySection'
 const tabs: { section: string; label: string; icon: IconName; match: string[] }[] = [
   { section: '', label: 'Hjem', icon: 'home', match: [''] },
   { section: 'oppdrag', label: 'Oppdrag', icon: 'book', match: ['oppdrag', 'kapittel', 'valgfritt'] },
-  { section: 'samle', label: 'Samle', icon: 'compass', match: ['samle'] },
+  { section: 'samle', label: 'Samle', icon: 'compass', match: ['samle', 'utfordringer'] },
   { section: 'penger', label: 'Penger', icon: 'coins', match: ['penger'] },
   { section: 'tips', label: 'Tips', icon: 'bulb', match: ['tips'] },
 ]
@@ -49,6 +50,16 @@ export default function App() {
           <CollectibleCategoryPage id={a} done={done} onToggle={toggle} />
         ) : (
           <CollectiblesPage done={done} />
+        )
+      break
+    case 'utfordringer':
+      page =
+        a === 'lop' ? (
+          <RaceChallengesPage done={done} onToggle={toggle} />
+        ) : a ? (
+          <ChallengeCategoryPage id={a} done={done} onToggle={toggle} />
+        ) : (
+          <ChallengesPage done={done} />
         )
       break
     case 'valgfritt':

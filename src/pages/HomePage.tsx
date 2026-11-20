@@ -20,6 +20,7 @@ export function HomePage({ done, onToggle }: { done: Set<string>; onToggle: (id:
   const links: { to: string; icon: IconName; title: string; sub: string }[] = [
     { to: href('oppdrag'), icon: 'book', title: 'Hovedoppdrag', sub: `${completed} av ${totalMissions} fullført` },
     { to: href('samle'), icon: 'compass', title: 'Samleobjekter', sub: `${collected} av ${totalItems} funnet` },
+    { to: href('utfordringer'), icon: 'trophy', title: 'Challenges', sub: '80 utfordringer og 13 løp' },
     { to: href('valgfritt'), icon: 'star', title: 'Valgfrie oppdrag', sub: 'Sideoppdrag og Strangers & Freaks' },
     { to: href('penger'), icon: 'coins', title: 'Pengestrategi', sub: 'Hvordan tjene mest, kapittel for kapittel' },
     { to: href('tips'), icon: 'bulb', title: 'Før du begynner', sub: 'Ting du ikke kan gjøre om senere' },
