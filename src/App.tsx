@@ -5,6 +5,7 @@ import { ChapterSection } from './components/ChapterSection'
 import { TipsSection } from './components/TipsSection'
 import { OptionalSection } from './components/OptionalSection'
 import { MoneySection } from './components/MoneySection'
+import { InstallButton } from './components/InstallButton'
 
 const totalMissions = chapters.reduce((n, c) => n + c.missions.length, 0)
 const startIndexes = chapters.map((_, i) =>
@@ -32,6 +33,7 @@ export default function App() {
           Alle hovedoppdrag i historien, kapittel for kapittel, med tips til hva du bør gjøre underveis. Huk av
           oppdragene etter hvert. Fremdriften lagres i nettleseren.
         </p>
+        <InstallButton />
       </header>
 
       <nav className="sticky top-0 z-20 border-y border-white/10 bg-zinc-950/85 backdrop-blur">
