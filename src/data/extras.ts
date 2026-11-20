@@ -39,7 +39,7 @@ export const tips: Tip[] = [
   {
     category: 'Penger',
     title: 'Før Tourist Trap (kap. 1)',
-    body: 'Sett inn minst $5 000 i Family Savings. Huset til Jason og kontantene du har på deg forsvinner.',
+    body: 'Sett gjerne inn opptil $5 000 i Family Savings. Det er det eneste av pengene som blir med til kapittel 2. Uten det blir økonomien bare litt trangere i starten.',
   },
   {
     category: 'Penger',
