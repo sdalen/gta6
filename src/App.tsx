@@ -12,6 +12,7 @@ import { NotFound } from './pages/NotFound'
 import { ChallengeCategoryPage, ChallengesPage, RaceChallengesPage } from './pages/ChallengesPage'
 import { TipsSection } from './components/TipsSection'
 import { OptionalSection } from './components/OptionalSection'
+import { DataSection } from './components/DataSection'
 import { MoneySection } from './components/MoneySection'
 
 const tabs: { section: string; label: string; icon: IconName; match: string[] }[] = [
@@ -22,19 +23,41 @@ const tabs: { section: string; label: string; icon: IconName; match: string[] }[
   { section: 'tips', label: 'Tips', icon: 'bulb', match: ['tips'] },
 ]
 
+const iconBtn =
+  'grid size-9 place-items-center rounded-lg text-muted transition hover:bg-surface hover:text-ink disabled:pointer-events-none disabled:opacity-30'
+
 export default function App() {
-  const { done, toggle, reset } = useProgress()
+  const { done, toggle, reset, replace, merge, undo, redo, canUndo, canRedo } = useProgress()
+  const [panelOpen, setPanelOpen] = useState(false)
   const [spoilers, setSpoilers] = useState(true)
   const [section = '', a, b] = useRoute()
 
   useEffect(() => {
     if (!(section === 'kapittel' && b)) window.scrollTo(0, 0)
+    setPanelOpen(false)
   }, [section, a, b])
+
+  // ⌘Z / Ctrl+Z angrer, ⇧⌘Z / Ctrl+Y gjør om. Ikke mens man skriver i et felt.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setPanelOpen(false)
+      const t = e.target as HTMLElement
+      if (t.closest('input, textarea, [contenteditable="true"]')) return
+      if (!(e.metaKey || e.ctrlKey)) return
+      const k = e.key.toLowerCase()
+      if (k === 'z' && !e.shiftKey) undo()
+      else if ((k === 'z' && e.shiftKey) || k === 'y') redo()
+      else return
+      e.preventDefault()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [undo, redo])
 
   let page
   switch (section) {
     case '':
-      page = <HomePage done={done} onToggle={toggle} />
+      page = <HomePage done={done} spoilers={spoilers} onToggle={toggle} />
       break
     case 'oppdrag':
       page = <MissionsPage done={done} spoilers={spoilers} onToggle={toggle} />
@@ -63,7 +86,7 @@ export default function App() {
         )
       break
     case 'valgfritt':
-      page = <OptionalSection />
+      page = <OptionalSection done={done} onToggle={toggle} />
       break
     case 'penger':
       page = <MoneySection />
@@ -80,8 +103,8 @@ export default function App() {
   return (
     <div className="min-h-screen pb-28 sm:pb-0">
       <header className="sticky top-0 z-20 border-b border-line bg-header/80 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
-        <div className="mx-auto flex h-14 max-w-3xl items-center gap-8 px-5">
-          <a href={href()} className="text-[15px] font-semibold tracking-tight text-ink">
+        <div className="mx-auto flex h-14 max-w-3xl items-center gap-4 px-5 sm:gap-8">
+          <a href={href()} className="shrink-0 text-[15px] font-semibold tracking-tight text-ink">
             GTA VI <span className="font-normal text-muted">Guide</span>
           </a>
           <nav className="hidden gap-6 text-sm sm:flex">
@@ -95,18 +118,49 @@ export default function App() {
               </a>
             ))}
           </nav>
-          {showSpoilerToggle && (
+          <div className="ml-auto flex items-center gap-1">
+            {showSpoilerToggle && (
+              <button
+                type="button"
+                onClick={() => setSpoilers((s) => !s)}
+                className={`mr-1 rounded-full px-3 py-1 text-xs ring-1 transition ${
+                  spoilers ? 'text-muted ring-zinc-800 hover:ring-frame' : 'bg-accent-dim text-accent ring-accent/40'
+                }`}
+              >
+                {spoilers ? 'Skjul spoilere' : 'Spoilere skjult'}
+              </button>
+            )}
+            <button type="button" onClick={undo} disabled={!canUndo} title="Angre (⌘Z)" aria-label="Angre" className={iconBtn}>
+              <Icon name="undo" className="size-[18px]" />
+            </button>
+            <button type="button" onClick={redo} disabled={!canRedo} title="Gjør om (⇧⌘Z)" aria-label="Gjør om" className={iconBtn}>
+              <Icon name="redo" className="size-[18px]" />
+            </button>
             <button
               type="button"
-              onClick={() => setSpoilers((s) => !s)}
-              className={`ml-auto rounded-full px-3 py-1 text-xs ring-1 transition ${
-                spoilers ? 'text-muted ring-zinc-800 hover:ring-frame' : 'bg-accent-dim text-accent ring-accent/40'
-              }`}
+              onClick={() => setPanelOpen((o) => !o)}
+              aria-expanded={panelOpen}
+              title="Lagring"
+              aria-label="Lagring"
+              className={`${iconBtn} ${panelOpen ? 'bg-accent-dim text-accent' : ''}`}
             >
-              {spoilers ? 'Skjul spoilere' : 'Spoilere skjult'}
+              <Icon name="save" className="size-[18px]" />
             </button>
-          )}
+          </div>
         </div>
+        {panelOpen && (
+          <div className="border-t border-line">
+            <div className="mx-auto max-h-[calc(100dvh-7rem)] max-w-3xl overflow-y-auto px-5 py-5">
+              <div className="mb-3 flex items-center justify-between">
+                <h2 className="text-xs font-medium uppercase tracking-[0.18em] text-muted">Lagring</h2>
+                <button type="button" onClick={() => setPanelOpen(false)} aria-label="Lukk" className={iconBtn}>
+                  <Icon name="close" className="size-[18px]" />
+                </button>
+              </div>
+              <DataSection done={done} onReplace={replace} onMerge={merge} onReset={reset} />
+            </div>
+          </div>
+        )}
       </header>
 
       <main className="mx-auto max-w-3xl px-5 py-8 sm:py-14">{page}</main>
@@ -114,15 +168,6 @@ export default function App() {
       {section === '' && (
         <footer className="mx-auto max-w-3xl px-5 pb-12 pt-4 text-xs leading-relaxed text-faint">
           <p>Uoffisiell fanguide basert på engelske gjennomganger (IGN m.fl.). Ikke tilknyttet Rockstar Games.</p>
-          <button
-            type="button"
-            onClick={() => {
-              if (confirm('Nullstille all fremdrift (oppdrag og samleobjekter)?')) reset()
-            }}
-            className="mt-3 text-muted underline-offset-4 hover:text-red-400 hover:underline"
-          >
-            Nullstill fremdrift
-          </button>
         </footer>
       )}
 

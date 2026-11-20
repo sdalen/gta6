@@ -1,4 +1,5 @@
 import type { Chapter } from '../data/types'
+import { missionMatches } from '../data/missionIndex'
 import { MissionCard } from './MissionCard'
 import { PageHeader, ProgressBar } from './ui'
 
@@ -12,22 +13,11 @@ interface Props {
   back?: { href: string; label: string }
 }
 
-function matches(text: string | undefined, q: string) {
-  return !!text && text.toLowerCase().includes(q)
-}
-
 export function ChapterSection({ chapter, query, done, spoilers, onToggle, startIndex, back }: Props) {
   const q = query.trim().toLowerCase()
   const indexed = chapter.missions.map((m, i) => ({ m, n: startIndex + i }))
   const visible = q
-    ? indexed.filter(
-        ({ m }) =>
-          matches(m.name, q) ||
-          matches(m.task, q) ||
-          matches(m.character, q) ||
-          (spoilers && (matches(m.summary, q) || m.steps?.some((s) => matches(s, q)))) ||
-          matches(m.tip, q),
-      )
+    ? indexed.filter(({ m }) => missionMatches(m, q, spoilers))
     : indexed
 
   if (q && visible.length === 0) return null

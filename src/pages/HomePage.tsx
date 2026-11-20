@@ -1,21 +1,51 @@
+import { useState } from 'react'
 import { chapters } from '../data/chapters'
+import { searchAll, searchGroups } from '../data/search'
 import { collectibles, itemId } from '../data/collectibles'
 import { href } from '../hooks/useRoute'
 import { Icon, type IconName } from '../components/Icon'
 import { InstallButton } from '../components/InstallButton'
-import { Checkbox, ProgressBar } from '../components/ui'
+import { Checkbox, ProgressBar, SearchInput } from '../components/ui'
 import { nextDeadline } from '../data/reminders'
+
+const OPEN_KEY = 'gta6-gjennomgang-frist-apen'
 
 const totalMissions = chapters.reduce((n, c) => n + c.missions.length, 0)
 const totalItems = collectibles.reduce((n, c) => n + c.items.length, 0)
 
-export function HomePage({ done, onToggle }: { done: Set<string>; onToggle: (id: string) => void }) {
+interface Props {
+  done: Set<string>
+  spoilers: boolean
+  onToggle: (id: string) => void
+}
+
+export function HomePage({ done, spoilers, onToggle }: Props) {
+  const [query, setQuery] = useState('')
+  const q = query.trim()
   const completed = chapters.reduce((n, c) => n + c.missions.filter((m) => done.has(m.id)).length, 0)
   const collected = collectibles.reduce((n, c) => n + c.items.filter((_, i) => done.has(itemId(c.id, i))).length, 0)
   const nextChapter = chapters.find((c) => c.missions.some((m) => !done.has(m.id)))
   const nextMission = nextChapter?.missions.find((m) => !done.has(m.id))
   const pct = Math.round((completed / totalMissions) * 100)
   const deadline = nextDeadline(done)
+  /** Påminnelse når fristen nærmer seg og noe fortsatt gjenstår. */
+  const soon = !!deadline && deadline.open.length > 0 && deadline.missionsBefore < 5
+  const [deadlineOpen, setDeadlineOpen] = useState(() => {
+    try {
+      return localStorage.getItem(OPEN_KEY) === '1'
+    } catch {
+      return false
+    }
+  })
+  const toggleDeadline = () => {
+    const next = !deadlineOpen
+    setDeadlineOpen(next)
+    try {
+      localStorage.setItem(OPEN_KEY, next ? '1' : '0')
+    } catch {
+      /* valgfritt */
+    }
+  }
 
   const links: { to: string; icon: IconName; title: string; sub: string }[] = [
     { to: href('oppdrag'), icon: 'book', title: 'Hovedoppdrag', sub: `${completed} av ${totalMissions} fullført` },
@@ -36,6 +66,15 @@ export function HomePage({ done, onToggle }: { done: Set<string>; onToggle: (id:
         </p>
         <InstallButton />
       </header>
+
+      <div className="mb-12 flex">
+        <SearchInput value={query} onChange={setQuery} placeholder="Søk i alt: oppdrag, steder, samleobjekter, challenges …" />
+      </div>
+
+      {q ? (
+        <SearchResults query={query} done={done} spoilers={spoilers} onToggle={onToggle} />
+      ) : (
+      <>
 
       <section className="mb-12">
         <div className="mb-3 flex items-baseline justify-between">
@@ -60,36 +99,60 @@ export function HomePage({ done, onToggle }: { done: Set<string>; onToggle: (id:
       </section>
 
       {deadline && (
-        <section className="mb-12 rounded-xl border border-red-400/30 bg-red-400/[0.06] p-5">
-          <p className="text-xs font-medium uppercase tracking-[0.18em] text-red-400">Gjør dette først</p>
-          <h2 className="mt-1 text-lg font-semibold text-ink">
-            Før du starter {deadline.mission.name}
-            <span className="font-normal text-muted"> · Kapittel {deadline.chapter}</span>
-          </h2>
-          <div className="mt-4 grid grid-cols-2 gap-3">
-            <div className="rounded-lg bg-zinc-950/40 px-3 py-2.5 ring-1 ring-white/5">
-              <div className="text-2xl font-semibold tabular-nums text-ink">{deadline.missionsBefore}</div>
-              <div className="text-xs text-muted">oppdrag igjen før du er der</div>
-            </div>
-            <div className="rounded-lg bg-zinc-950/40 px-3 py-2.5 ring-1 ring-white/5">
-              <div className="text-2xl font-semibold tabular-nums text-ink">
-                {deadline.open.length}
-                <span className="text-base font-normal text-muted"> av {deadline.total}</span>
-              </div>
-              <div className="text-xs text-muted">gjenstår av ting som forsvinner etter</div>
-            </div>
-          </div>
-          <p className="mt-4 text-sm text-muted">Etter {deadline.mission.name} kan dette være borte for godt:</p>
+        <section className={`mb-12 rounded-xl border bg-red-400/[0.06] ${soon ? 'border-red-400/60' : 'border-red-400/30'}`}>
+          <button
+            type="button"
+            onClick={toggleDeadline}
+            aria-expanded={deadlineOpen}
+            className="group flex w-full items-center gap-4 p-4 text-left sm:p-5"
+          >
+            <Icon name="alert" className="size-5 shrink-0 text-red-400" />
+            <span className="min-w-0 flex-1">
+              <span className="block text-xs font-medium uppercase tracking-[0.18em] text-red-400">Gjør dette først</span>
+              <span className="mt-0.5 block truncate text-[15px] font-semibold text-ink">
+                Før {deadline.mission.name}
+                <span className="font-normal text-muted"> · Kap. {deadline.chapter}</span>
+              </span>
+              {soon && (
+                <span className="mt-2 inline-flex items-center gap-2 rounded-full bg-red-400/15 px-2.5 py-1 text-xs font-medium text-red-300 ring-1 ring-red-400/30">
+                  <span className="relative flex size-2">
+                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-400 opacity-60" />
+                    <span className="relative inline-flex size-2 rounded-full bg-red-400" />
+                  </span>
+                  {deadline.missionsBefore === 0
+                    ? `${deadline.mission.name} er neste oppdrag. Gjør resten nå!`
+                    : `Snart! Bare ${deadline.missionsBefore} $oppdrag igjen før ${deadline.mission.name}.`}
+                </span>
+              )}
+              <span className="mt-2 flex items-center gap-3">
+                <ProgressBar value={deadline.total - deadline.open.length} total={deadline.total} className="max-w-32 flex-1" />
+                <span className="text-xs tabular-nums text-muted">
+                  <span className="text-ink">{deadline.open.length}</span> av {deadline.total} gjenstår ·{' '}
+                  <span className="text-ink">{deadline.missionsBefore}</span> oppdrag igjen
+                </span>
+              </span>
+            </span>
+            <Icon
+              name="right"
+              className={`size-5 shrink-0 text-muted transition group-hover:text-ink ${deadlineOpen ? 'rotate-90' : ''}`}
+            />
+          </button>
+          {deadlineOpen && (
+          <div className="px-4 pb-4 sm:px-5 sm:pb-5">
+          <p className="text-sm text-muted">Etter {deadline.mission.name} kan dette være borte for godt:</p>
           <ul className="mt-4 divide-y divide-line border-y border-line">
-            {deadline.open.map((r) => (
-              <li key={r.key} className="flex items-center gap-3">
+            {deadline.all.map((r) => {
+              const checked = done.has(r.doneKey)
+              return (
+              <li key={r.key} className={`flex items-center gap-3 ${checked ? 'opacity-60' : ''}`}>
                 <button
                   type="button"
                   onClick={() => onToggle(r.doneKey)}
-                  aria-label={`Merk ${r.label} som gjort`}
+                  aria-label={checked ? `Merk ${r.label} som ikke gjort` : `Merk ${r.label} som gjort`}
+                  aria-pressed={checked}
                   className="group -m-2 p-2"
                 >
-                  <Checkbox checked={false} />
+                  <Checkbox checked={checked} tone="green" />
                 </button>
                 {r.to ? (
                   <a href={r.to} className="group flex flex-1 items-center gap-3 py-3">
@@ -106,8 +169,11 @@ export function HomePage({ done, onToggle }: { done: Set<string>; onToggle: (id:
                   </button>
                 )}
               </li>
-            ))}
+              )
+            })}
           </ul>
+          </div>
+          )}
         </section>
       )}
 
@@ -125,6 +191,74 @@ export function HomePage({ done, onToggle }: { done: Set<string>; onToggle: (id:
           </li>
         ))}
       </ul>
+      </>
+      )}
+    </div>
+  )
+}
+
+const MAX_PER_GROUP = 25
+
+function SearchResults({ query, done, spoilers, onToggle }: Props & { query: string }) {
+  const [expanded, setExpanded] = useState<Set<string>>(new Set())
+  const hits = searchAll(query, spoilers)
+  if (!hits.length) return <p className="text-sm text-muted">Fant ingenting som passer «{query.trim()}».</p>
+
+  return (
+    <div className="space-y-10">
+      <p className="text-sm text-muted">
+        {hits.length} treff
+      </p>
+      {searchGroups.map((group) => {
+        const all = hits.filter((h) => h.group === group)
+        if (!all.length) return null
+        const shown = expanded.has(group) ? all : all.slice(0, MAX_PER_GROUP)
+        return (
+          <section key={group}>
+            <h2 className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-muted">
+              {group} <span className="text-faint">· {all.length}</span>
+            </h2>
+            <ul className="divide-y divide-line border-y border-line">
+              {shown.map((h) => {
+                const checked = !!h.doneKey && done.has(h.doneKey)
+                return (
+                  <li key={h.key} className="flex items-center gap-3">
+                    {h.doneKey ? (
+                      <button
+                        type="button"
+                        onClick={() => onToggle(h.doneKey!)}
+                        aria-label={checked ? `Merk ${h.title} som ikke gjort` : `Merk ${h.title} som gjort`}
+                        aria-pressed={checked}
+                        className="group -m-2 p-2"
+                      >
+                        <Checkbox checked={checked} tone="green" />
+                      </button>
+                    ) : (
+                      <span className="w-5 shrink-0" />
+                    )}
+                    <a href={h.to} className="group flex min-w-0 flex-1 items-center gap-3 py-3">
+                      <span className="min-w-0 flex-1">
+                        <span className={`block text-[15px] ${checked ? 'text-muted' : 'text-ink'}`}>{h.title}</span>
+                        <span className="line-clamp-2 text-xs text-muted">{h.sub}</span>
+                      </span>
+                      <Icon name="right" className="size-4 shrink-0 text-faint transition group-hover:translate-x-0.5 group-hover:text-ink-soft" />
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+            {all.length > shown.length && (
+              <button
+                type="button"
+                onClick={() => setExpanded(new Set(expanded).add(group))}
+                className="mt-3 text-sm text-accent hover:underline"
+              >
+                Vis alle {all.length}
+              </button>
+            )}
+          </section>
+        )
+      })}
     </div>
   )
 }

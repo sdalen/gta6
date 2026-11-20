@@ -1,9 +1,9 @@
 import { optionalMissions, questlines, questlineTrophies } from '../data/extras'
 import { href } from '../hooks/useRoute'
 import { Icon } from './Icon'
-import { PageHeader, SectionLabel } from './ui'
+import { Checkbox, PageHeader, SectionLabel } from './ui'
 
-export function OptionalSection() {
+export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggle: (id: string) => void }) {
   return (
     <div>
       <PageHeader back={{ href: href('oppdrag'), label: 'Hovedoppdrag' }} eyebrow="Utenfor historien" title="Valgfrie oppdrag">
@@ -13,12 +13,24 @@ export function OptionalSection() {
       <section className="mb-14">
         <SectionLabel>Oppdrag</SectionLabel>
         <ul className="divide-y divide-line border-y border-line">
-          {optionalMissions.map((o) => (
-            <li key={o.name} className="flex items-start gap-5 py-4">
-              <span className="w-10 shrink-0 text-xs uppercase tracking-wider text-faint">Kap. {o.chapter}</span>
+          {optionalMissions.map((o) => {
+            const key = `valgfritt:${o.name}`
+            const checked = done.has(key)
+            return (
+            <li key={o.name}>
+              <button
+                type="button"
+                onClick={() => onToggle(key)}
+                aria-pressed={checked}
+                className="group flex w-full items-start gap-4 py-4 text-left"
+              >
+              <span className="mt-0.5">
+                <Checkbox checked={checked} tone="green" />
+              </span>
+              <span className="w-10 shrink-0 pt-0.5 text-xs uppercase tracking-wider text-faint">Kap. {o.chapter}</span>
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-baseline gap-x-3">
-                  <span className="text-[15px] font-medium text-ink">{o.name}</span>
+                  <span className={`text-[15px] font-medium ${checked ? 'text-muted line-through decoration-faint' : 'text-ink'}`}>{o.name}</span>
                   {o.hourglass && (
                     <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-300" title="Timeglass: forsvinner hvis du venter">
                       <Icon name="hourglass" className="size-3.5" /> Timeglass
@@ -31,8 +43,10 @@ export function OptionalSection() {
                   {o.note}
                 </p>
               </div>
+              </button>
             </li>
-          ))}
+            )
+          })}
         </ul>
       </section>
 

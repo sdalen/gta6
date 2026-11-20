@@ -39,11 +39,12 @@ export function ProgressBar({ value, total, className = '' }: { value: number; t
   )
 }
 
-export function Checkbox({ checked }: { checked: boolean }) {
+export function Checkbox({ checked, tone = 'accent' }: { checked: boolean; tone?: 'accent' | 'green' }) {
+  const on = tone === 'green' ? 'border-emerald-400 bg-emerald-400 text-zinc-950' : 'border-accent bg-accent text-zinc-950'
   return (
     <span
       className={`grid size-5 shrink-0 place-items-center rounded-full border transition ${
-        checked ? 'border-accent bg-accent text-zinc-950' : 'border-frame group-hover:border-zinc-400'
+        checked ? on : 'border-frame group-hover:border-zinc-400'
       }`}
     >
       {checked && <Icon name="check" className="size-3" />}

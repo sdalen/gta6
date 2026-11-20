@@ -77,7 +77,7 @@ export function nextDeadline(done: Set<string>) {
     if (!open.length) continue
     // Hovedoppdrag du ikke har fullført før fristoppdraget.
     const missionsBefore = storyOrder.slice(0, info.order).filter((m) => !done.has(m)).length
-    return { mission: info.mission, chapter: info.chapter, open, total: all.length, missionsBefore }
+    return { mission: info.mission, chapter: info.chapter, all, open, total: all.length, missionsBefore }
   }
   return null
 }
