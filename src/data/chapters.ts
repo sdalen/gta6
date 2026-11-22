@@ -225,6 +225,14 @@ export const chapters: Chapter[] = [
         tip: 'Kjør rolig. Politiet legger fort merke til en ambulanse som kjører vilt.',
       },
       {
+        id: 'overnight-charges',
+        name: 'Overnight Charges',
+        character: 'Lucia',
+        summary: 'Linda i resepsjonen på Starlet Motel vil ha betalt for rommet, ca. $900. Lucia har nesten ingenting.',
+        steps: ['Gå ut av rommet og inn i resepsjonen.', 'Snakk med Linda. Hun tar halskjedet til Lucia som pant uansett hva du svarer.'],
+        tip: 'Snakk med Linda før du handler i Just Moved In. Ellers kommer hun til rommet, og leien kan stige til ca. $1 080.',
+      },
+      {
         id: 'just-moved-in',
         name: 'Just Moved In',
         character: 'Lucia',
@@ -252,6 +260,15 @@ export const chapters: Chapter[] = [
         task: 'Steal the Crawler for Moses',
         summary: 'Moses vil ha en bestemt bil.',
         steps: ['Stjel Crawler-en.', 'Lever den uten for mye skade.'],
+      },
+      {
+        id: 'behind-on-payments',
+        name: 'Behind on Payments',
+        task: 'Pay Linda',
+        character: 'Lucia',
+        summary: 'Betal leien til Linda og få halskjedet tilbake.',
+        steps: ['Skaff minst $900 i kontanter.', 'Betal Linda i resepsjonen.'],
+        tip: 'Linda tar bare kontanter. Én bil levert til Moses dekker nesten hele beløpet. Sjekk det nøyaktige beløpet under Kart → Story, det kan være høyere.',
       },
       {
         id: 'slam-dunk',
