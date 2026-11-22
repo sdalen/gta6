@@ -2,7 +2,7 @@
  * Avhukinger for samleobjekter er lagret etter plass i listen (samle:<kategori>:<indeks>).
  * Når en liste endres, flyttes gamle nøkler her så fremdriften havner på riktig ting.
  */
-export const DATA_VERSION = 2
+export const DATA_VERSION = 3
 
 const VERSION_KEY = 'gta6-gjennomgang-dataversjon'
 const STORAGE = {
@@ -25,9 +25,23 @@ function toV2(ids: string[]): string[] {
   return [...out]
 }
 
+/** Versjon 3: stunt jumps utvidet fra 24 til 82 og sortert etter fylke. Gammel indeks -> ny. */
+const stuntsV3 = [1, 2, 3, 4, 5, 9, 16, 18, 35, 40, 67, 70, 26, 59, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81]
+
+function toV3(ids: string[]): string[] {
+  return ids.map((id) => {
+    const m = /^samle:stunts:(\d+)$/.exec(id)
+    const to = m ? stuntsV3[Number(m[1])] : undefined
+    return to === undefined ? id : `samle:stunts:${to}`
+  })
+}
+
 /** Oppgraderer en liste med nøkler fra en eldre versjon. */
 export function migrateIds(ids: string[], from: number): string[] {
-  return from < 2 ? toV2(ids) : ids
+  let out = ids
+  if (from < 2) out = toV2(out)
+  if (from < 3) out = toV3(out)
+  return out
 }
 
 /** Kjøres én gang ved oppstart: oppgraderer fremdrift, angrehistorikk og lagringspunkter i nettleseren. */

@@ -5,7 +5,7 @@ import { Icon, type IconName } from './components/Icon'
 import { HomePage } from './pages/HomePage'
 import { MissionsPage } from './pages/MissionsPage'
 import { ChapterPage } from './pages/ChapterPage'
-import { CollectiblesPage } from './pages/CollectiblesPage'
+import { CollectiblesPage, RobberiesPage } from './pages/CollectiblesPage'
 import { CollectibleCategoryPage } from './pages/CollectibleCategoryPage'
 import { CollectibleItemPage } from './pages/CollectibleItemPage'
 import { NotFound } from './pages/NotFound'
@@ -18,7 +18,7 @@ import { MoneySection } from './components/MoneySection'
 const tabs: { section: string; label: string; icon: IconName; match: string[] }[] = [
   { section: '', label: 'Hjem', icon: 'home', match: [''] },
   { section: 'oppdrag', label: 'Oppdrag', icon: 'book', match: ['oppdrag', 'kapittel', 'valgfritt'] },
-  { section: 'samle', label: 'Samle', icon: 'compass', match: ['samle', 'utfordringer'] },
+  { section: 'samle', label: 'Samle', icon: 'compass', match: ['samle', 'utfordringer', 'ran'] },
   { section: 'penger', label: 'Penger', icon: 'coins', match: ['penger'] },
   { section: 'tips', label: 'Tips', icon: 'bulb', match: ['tips'] },
 ]
@@ -74,6 +74,9 @@ export default function App() {
         ) : (
           <CollectiblesPage done={done} />
         )
+      break
+    case 'ran':
+      page = <RobberiesPage done={done} />
       break
     case 'utfordringer':
       page =

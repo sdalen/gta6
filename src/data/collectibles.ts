@@ -5,16 +5,21 @@
  * Stedsnavn er beholdt på engelsk slik de står på kartet i spillet.
  */
 import type { IconName } from '../components/Icon'
+import { robberyCategories } from './robberies.ts'
 
 export interface CollectibleItem {
   name: string
   where: string
   /** Oppdrag (id) som gjør tingen utilgjengelig. Må tas før dette starter. */
   before?: string
+  /** Kjent posisjon i GTADB-koordinater. Ellers plasseres tingen etter stedsnavn. */
+  at?: [number, number]
 }
 
 export interface CollectibleCategory {
   id: string
+  /** «ran» vises på egen side i stedet for under samleobjekter. */
+  kind?: 'ran'
   name: string
   icon: IconName
   total: string
@@ -29,7 +34,7 @@ export interface CollectibleCategory {
 const i = (name: string, where: string, before?: string): CollectibleItem => ({ name, where, before })
 
 
-export const collectibles: CollectibleCategory[] = [
+const baseCollectibles: CollectibleCategory[] = [
   {
     id: 'stunts',
     name: 'Stunt jumps og stunts',
@@ -48,23 +53,81 @@ export const collectibles: CollectibleCategory[] = [
       'Kart → Exploration (forstørrelsesglass) → Stunt Spots → Stunt Jumps. Funnet = lilla, fullført = hvit.',
       'Fremdrift per område: Progress → Activities → Stunts, trykk R3 på «Stunt Jumps».',
       'Hvert hopp har en liten utfordring, men den trengs ikke for 100 %. Det holder å gjøre hoppet.',
-      'Guidene har foreløpig kartlagt 24 av 130 hopp. Totalt per fylke: Mariana 17, Vice-Dale 55, Leonard 13, Kelly 29 og Lummox 16.',
+      'Listen har 82 av 130 hopp (PowerPyx, 22. nov.): alle i Mariana (17) og Vice-Dale (55), men bare noen i Leonard (3 av 13), Kelly (6 av 29) og Lummox (1 av 16). Resten er ikke kartlagt av guidene ennå.',
     ],
     items: [
+      i('Mile Zero Air Station South', 'Mariana County'),
       i('Mile Zero Air Station Southeast', 'Mariana County'),
       i('Saltrock Bridge West', 'Mariana County'),
       i('Saltrock Bridge East', 'Mariana County'),
       i('Key Lento Bridge West', 'Mariana County. Den nedre broen mellom Abismo Key og Key Lento.'),
       i('Key Lento Bridge East', 'Mariana County'),
+      i('Schlott Construction Key Lento', 'Mariana County'),
+      i('Ocean Sound Road', 'Mariana County'),
+      i('Southpoint Airfield', 'Mariana County'),
       i('Longneck Trail', 'Mariana County'),
+      i('US Route 82 Construction', 'Mariana County'),
+      i('Goliath Global Quarry Railroad', 'Mariana County'),
+      i('Goliath Global Quarry Storage', 'Mariana County'),
+      i('Goliath Global Quarry Heap', 'Mariana County'),
+      i('Goliath Global Quarry Lakeside', 'Mariana County'),
+      i('Goliath Global Quarry Conveyor', 'Mariana County'),
       i('Nehrling River', 'Mariana County'),
+      i('Peregrine Bay Coastal', 'Vice-Dale County'),
       i('Hamlet Backyard', 'Vice-Dale County'),
-      i('VCIA Storage Facility', 'Vice-Dale County'),
-      i('SW 4th Avenue Construction', 'Vice-Dale County'),
-      i('Blackwell Sandrock', 'Vice-Dale County'),
-      i('Apollo Aggregates South', 'Vice-Dale County'),
+      i('Anderson Murphy Construction', 'Vice-Dale County'),
+      i('Apollo Aggregates Quarry', 'Vice-Dale County'),
+      i('Gator Plaza Parking', 'Vice-Dale County'),
+      i('Peacock Estate', 'Vice-Dale County'),
+      i('Skorpen Brothers Recycling', 'Vice-Dale County'),
+      i('Cargo Road Construction', 'Vice-Dale County'),
+      i('Go Postal', 'Vice-Dale County'),
       i('West Vice-Dale County Broken Bridge', 'Vice-Dale County'),
+      i('Schlott Construction West Vice-Dale County', 'Vice-Dale County'),
+      i('Interstate 404', 'Vice-Dale County'),
+      i('West Vice-Dale County Landfill', 'Vice-Dale County'),
+      i('VCIA North Central Gate', 'Vice-Dale County'),
+      i('VCIA Gator Parking', 'Vice-Dale County'),
+      i('VCIA Concourse', 'Vice-Dale County'),
+      i('Banner Hotel & Spa Parking', 'Vice-Dale County'),
+      i('DTH Depot Parking', 'Vice-Dale County'),
+      i('VCIA Storage Facility', 'Vice-Dale County'),
+      i('Vice City Parking Department Salton', 'Vice-Dale County'),
+      i('Vice City Parking Department Tequesta', 'Vice-Dale County'),
+      i('Tequesta MVP Park', 'Vice-Dale County'),
+      i('Tequesta Park In', 'Vice-Dale County'),
+      i('SW 4th Avenue Construction', 'Vice-Dale County'),
+      i('Vice City Parking Department Downtown', 'Vice-Dale County'),
+      i('Valdemar on the River Parking North', 'Vice-Dale County'),
+      i('Valdemar on the River Parking South', 'Vice-Dale County'),
+      i('Downtown MVP Park', 'Vice-Dale County'),
+      i('Shoreline Park Amphitheater', 'Vice-Dale County'),
+      i('Mariner\'s Highway', 'Vice-Dale County'),
+      i('Port Vice City Plus Parking', 'Vice-Dale County'),
+      i('Dalton Island Sculpture Park', 'Vice-Dale County'),
+      i('Ocean Beach Marina', 'Vice-Dale County'),
+      i('Harrison Harbor Parking', 'Vice-Dale County'),
+      i('Vice Beach Police Headquarters', 'Vice-Dale County'),
+      i('Cruda Y Asi', 'Vice-Dale County'),
+      i('Sixth & Harper Parking', 'Vice-Dale County'),
+      i('Ocean Beach Plus Parking', 'Vice-Dale County'),
+      i('Ocean Beach MVP Park South', 'Vice-Dale County'),
+      i('Vice City Parking Department Ocean Beach', 'Vice-Dale County'),
+      i('Vice Beach Park In', 'Vice-Dale County'),
+      i('7777 Ocean Beach Parking', 'Vice-Dale County'),
       i('Nolan Center Parking', 'Vice-Dale County'),
+      i('Ocean Beach MVP Park North', 'Vice-Dale County'),
+      i('Hoopla Construction', 'Vice-Dale County'),
+      i('Dolly and Darrel Zimmermann Parking', 'Vice-Dale County'),
+      i('Opulence Construction', 'Vice-Dale County'),
+      i('Interstate 97 West', 'Vice-Dale County'),
+      i('Interstate 97 East', 'Vice-Dale County'),
+      i('Mastodon U.S.A', 'Vice-Dale County'),
+      i('Blackwell Sandrock', 'Vice-Dale County'),
+      i('La Perle Parking Lot', 'Vice-Dale County'),
+      i('Vice-Dale Police Parking', 'Vice-Dale County'),
+      i('Apollo Aggregates South', 'Vice-Dale County'),
+      i('Leone Street', 'Vice-Dale County'),
       i('Lake Bonner Construction East', 'Leonard County'),
       i('Lake Leonida Lock South', 'Leonard County'),
       i('Richard Barebone Overpass South', 'Leonard County. Langs motorveien i Richard Barebone State Park.'),
@@ -519,11 +582,24 @@ export const collectibles: CollectibleCategory[] = [
   },
 ]
 
+/** Alle kategorier med avhuking. Ranstedene ligger etter samleobjektene, så indeksene til de gamle ikke endres. */
+export const collectibles: CollectibleCategory[] = [...baseCollectibles, ...robberyCategories]
+
 export const collectibleSources = [
   { name: 'The Big Lead', url: 'https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/' },
   { name: 'meowdb', url: 'https://meowdb.com/gta6/collectibles' },
   { name: 'PowerPyx (stunt jumps)', url: 'https://www.powerpyx.com/gta-6-all-stunt-jump-locations/' },
   { name: 'Leonida Verse', url: 'https://leonidaverse.com/en/codex/gta-6-collectibles' },
+]
+
+export const robberySources = [
+  { name: 'GTABase', url: 'https://www.gtabase.com/gta-6/map/' },
+  { name: 'Leonida Verse', url: 'https://leonidaverse.com/en/gta-6-map/category/heists' },
+  { name: 'PowerPyx', url: 'https://www.powerpyx.com/gta-6-100-completion-checklist-guide/' },
+  { name: 'game-checklists', url: 'https://game-checklists.com/gta6/stick-ups-checklist/' },
+  { name: 'finalboss.io', url: 'https://finalboss.io/gta-6-smash-n-grab-locations' },
+  { name: 'sixthstar', url: 'https://sixthstar.net/guides/gta-6-robberies/' },
+  { name: 'meowdb', url: 'https://meowdb.com/gta6/safe-codes' },
 ]
 
 export const itemId = (catId: string, idx: number) => `samle:${catId}:${idx}`

@@ -73,7 +73,7 @@ for (const t of questlineTrophies)
 for (const cat of collectibles) {
   entries.push({
     key: `samlekategori:${cat.id}`,
-    group: 'Samleobjekter',
+    group: cat.kind === 'ran' ? 'Ran' : 'Samleobjekter',
     title: cat.name,
     sub: join(cat.total, cat.reward && `· ${cat.reward}`),
     to: href('samle', cat.id),
@@ -82,7 +82,7 @@ for (const cat of collectibles) {
   cat.items.forEach((item, idx) =>
     entries.push({
       key: itemId(cat.id, idx),
-      group: 'Samleobjekter',
+      group: cat.kind === 'ran' ? 'Ran' : 'Samleobjekter',
       title: item.name,
       sub: `${cat.name} · ${item.where}`,
       to: href('samle', cat.id, String(idx)),
@@ -166,4 +166,4 @@ export function searchAll(query: string, spoilers: boolean): SearchEntry[] {
   return hits.sort((a, b) => rank(a) - rank(b))
 }
 
-export const searchGroups = ['Hovedoppdrag', 'Valgfrie oppdrag', 'Strangers & Freaks', 'Samleobjekter', 'Challenges', 'Penger', 'Tips']
+export const searchGroups = ['Hovedoppdrag', 'Valgfrie oppdrag', 'Strangers & Freaks', 'Samleobjekter', 'Ran', 'Challenges', 'Penger', 'Tips']

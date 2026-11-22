@@ -28,7 +28,7 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
 
   return (
     <div>
-      <PageHeader back={{ href: href('samle'), label: 'Samleobjekter' }} eyebrow={cat.total || undefined} title={cat.name}>
+      <PageHeader back={cat.kind === 'ran' ? { href: href('ran'), label: 'Ran' } : { href: href('samle'), label: 'Samleobjekter' }} eyebrow={cat.total || undefined} title={cat.name}>
         {cat.about}
       </PageHeader>
 

@@ -11,7 +11,10 @@ import { nextDeadline } from '../data/reminders'
 const OPEN_KEY = 'gta6-gjennomgang-frist-apen'
 
 const totalMissions = chapters.reduce((n, c) => n + c.missions.length, 0)
-const totalItems = collectibles.reduce((n, c) => n + c.items.length, 0)
+const realCollectibles = collectibles.filter((c) => c.kind !== 'ran')
+const robberies = collectibles.filter((c) => c.kind === 'ran')
+const totalItems = realCollectibles.reduce((n, c) => n + c.items.length, 0)
+const totalRobberies = robberies.reduce((n, c) => n + c.items.length, 0)
 
 interface Props {
   done: Set<string>
@@ -23,7 +26,8 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
   const [query, setQuery] = useState('')
   const q = query.trim()
   const completed = chapters.reduce((n, c) => n + c.missions.filter((m) => done.has(m.id)).length, 0)
-  const collected = collectibles.reduce((n, c) => n + c.items.filter((_, i) => done.has(itemId(c.id, i))).length, 0)
+  const collected = realCollectibles.reduce((n, c) => n + c.items.filter((_, i) => done.has(itemId(c.id, i))).length, 0)
+  const robbed = robberies.reduce((n, c) => n + c.items.filter((_, i) => done.has(itemId(c.id, i))).length, 0)
   const nextChapter = chapters.find((c) => c.missions.some((m) => !done.has(m.id)))
   const nextMission = nextChapter?.missions.find((m) => !done.has(m.id))
   const pct = Math.round((completed / totalMissions) * 100)
@@ -52,6 +56,7 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
     { to: href('samle'), icon: 'compass', title: 'Samleobjekter', sub: `${collected} av ${totalItems} funnet` },
     { to: href('utfordringer'), icon: 'trophy', title: 'Challenges', sub: '80 utfordringer og 13 løp' },
     { to: href('valgfritt'), icon: 'star', title: 'Valgfrie oppdrag', sub: 'Sideoppdrag og Strangers & Freaks' },
+    { to: href('ran'), icon: 'lock', title: 'Ran', sub: `${robbed} av ${totalRobberies} ranet · butikker, banker, gjenger` },
     { to: href('penger'), icon: 'coins', title: 'Pengestrategi', sub: 'Hvordan tjene mest, kapittel for kapittel' },
     { to: href('tips'), icon: 'bulb', title: 'Før du begynner', sub: 'Ting du ikke kan gjøre om senere' },
   ]

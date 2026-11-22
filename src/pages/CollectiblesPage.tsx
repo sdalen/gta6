@@ -1,4 +1,4 @@
-import { collectibles, collectibleSources, itemId } from '../data/collectibles'
+import { collectibles, collectibleSources, itemId, robberySources, type CollectibleCategory } from '../data/collectibles'
 import { href } from '../hooks/useRoute'
 import { Icon } from '../components/Icon'
 import { PageHeader, ProgressBar } from '../components/ui'
@@ -22,8 +22,40 @@ export function CollectiblesPage({ done }: { done: Set<string> }) {
         <Icon name="right" className="size-5 text-accent transition group-hover:translate-x-0.5" />
       </a>
 
-      <ul className="divide-y divide-line border-y border-line">
-        {collectibles.map((c) => {
+      <CategoryList categories={collectibles.filter((c) => c.kind !== 'ran')} done={done} />
+
+      <p className="mt-8 text-xs leading-relaxed text-faint">
+        Kilder:{' '}
+        {collectibleSources.map((s) => s.name).join(' · ')}
+      </p>
+    </div>
+  )
+}
+
+export function RobberiesPage({ done }: { done: Set<string> }) {
+  const cats = collectibles.filter((c) => c.kind === 'ran')
+  return (
+    <div>
+      <PageHeader eyebrow="Penger" title="Ran">
+        Alle steder du kan rane: butikker, smykkebutikker og pantelånere, lånebutikker, banker og hvelv, gjengoperasjoner
+        og minibanker. Ingenting forsvinner, så du kan ta det når det passer. Se også{' '}
+        <a href={href('penger')} className="text-accent hover:underline">
+          pengestrategien
+        </a>
+        .
+      </PageHeader>
+      <CategoryList categories={cats} done={done} />
+      <p className="mt-8 text-xs leading-relaxed text-faint">
+        Kilder: {robberySources.map((s) => s.name).join(' · ')}. Kartpunktene er omtrentlige.
+      </p>
+    </div>
+  )
+}
+
+function CategoryList({ categories, done }: { categories: CollectibleCategory[]; done: Set<string> }) {
+  return (
+    <ul className="divide-y divide-line border-y border-line">
+        {categories.map((c) => {
           const found = c.items.filter((_, i) => done.has(itemId(c.id, i))).length
           return (
             <li key={c.id}>
@@ -46,11 +78,5 @@ export function CollectiblesPage({ done }: { done: Set<string> }) {
           )
         })}
       </ul>
-
-      <p className="mt-8 text-xs leading-relaxed text-faint">
-        Kilder:{' '}
-        {collectibleSources.map((s) => s.name).join(' · ')}
-      </p>
-    </div>
   )
 }

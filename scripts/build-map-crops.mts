@@ -91,12 +91,15 @@ const misses: string[] = []
 for (const cat of collectibles) {
   cat.items.forEach((item, idx) => {
     // I disse kategoriene er navnet et sted. Ellers (kort, blader osv.) er navnet bare et produktnavn.
+    // Ransteder uten koordinater: navnet er et butikknavn, så bare stedsbeskrivelsen brukes.
     const nameIsPlace = ['stunts', 'meteoritter', 'meditasjon', 'waink', 'flamingoer', 'basket', 'skytebane'].includes(cat.id)
     let text = (nameIsPlace ? `${item.name} ${item.where}` : item.where).toLowerCase()
     // Norske omskrivinger av stedsnavn som finnes i landemerkedataene.
     for (const [no, en] of aliases) text = text.replaceAll(no, en)
-    let best: { name: string; x: number; y: number; spread: number } | null = null
-    for (const [key, p] of places) {
+    let best: { name: string; x: number; y: number; spread: number } | null = item.at
+      ? { name: item.name, x: item.at[0], y: item.at[1], spread: 0 }
+      : null
+    for (const [key, p] of item.at ? [] : places) {
       if (!text.includes(key)) continue
       // Hele ord, ikke deler av ord.
       if (!new RegExp(`(^|[^a-zæøå])${key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-zæøå])`).test(text)) continue
