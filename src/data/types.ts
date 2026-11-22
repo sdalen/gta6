@@ -1,3 +1,5 @@
+import type { MapLocation } from './mapLocations'
+
 export type Character = 'Lucia' | 'Jason' | 'Begge'
 
 export interface Mission {
@@ -34,6 +36,10 @@ export interface OptionalMission {
   appearsAfter?: string
   /** Timeglass-ikon i spillet: forsvinner hvis du venter for lenge. */
   hourglass?: boolean
+  /** Slik gjør du det, steg for steg. */
+  steps?: string[]
+  /** Hvor oppdraget foregår, vist som kart. */
+  location?: MapLocation
 }
 
 export interface Questline {

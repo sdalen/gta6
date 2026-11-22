@@ -7,6 +7,8 @@ export interface MapLocation {
   z: number
   precision: 'landemerke' | 'område' | 'region'
   place: string
+  /** Egen forklaring under kartet i stedet for standardteksten om presisjon. */
+  note?: string
 }
 
 export function getLocation(key: string): MapLocation | undefined {

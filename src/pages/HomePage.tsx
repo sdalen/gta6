@@ -121,7 +121,7 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
                   </span>
                   {deadline.missionsBefore === 0
                     ? `${deadline.mission.name} er neste oppdrag. Gjør resten nå!`
-                    : `Snart! Bare ${deadline.missionsBefore} $oppdrag igjen før ${deadline.mission.name}.`}
+                    : `Snart! Bare ${deadline.missionsBefore} oppdrag igjen før ${deadline.mission.name}.`}
                 </span>
               )}
               <span className="mt-2 flex items-center gap-3">
@@ -139,39 +139,52 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
           </button>
           {deadlineOpen && (
           <div className="px-4 pb-4 sm:px-5 sm:pb-5">
-          <p className="text-sm text-muted">Etter {deadline.mission.name} kan dette være borte for godt:</p>
-          <ul className="mt-4 divide-y divide-line border-y border-line">
-            {deadline.all.map((r) => {
-              const checked = done.has(r.doneKey)
-              return (
-              <li key={r.key} className={`flex items-center gap-3 ${checked ? 'opacity-60' : ''}`}>
-                <button
-                  type="button"
-                  onClick={() => onToggle(r.doneKey)}
-                  aria-label={checked ? `Merk ${r.label} som ikke gjort` : `Merk ${r.label} som gjort`}
-                  aria-pressed={checked}
-                  className="group -m-2 p-2"
-                >
-                  <Checkbox checked={checked} tone="green" />
-                </button>
-                {r.to ? (
-                  <a href={r.to} className="group flex flex-1 items-center gap-3 py-3">
-                    <span className="flex-1">
-                      <span className="block text-[15px] text-ink">{r.label}</span>
-                      <span className="text-xs text-muted">{r.kind}</span>
-                    </span>
-                    <Icon name="right" className="size-4 text-faint transition group-hover:translate-x-0.5 group-hover:text-ink-soft" />
-                  </a>
-                ) : (
-                  <button type="button" onClick={() => onToggle(r.doneKey)} className="flex-1 py-3 text-left">
-                    <span className="block text-[15px] text-ink">{r.label}</span>
-                    <span className="text-xs text-muted">{r.kind}</span>
-                  </button>
-                )}
-              </li>
-              )
-            })}
-          </ul>
+          <p className="text-sm text-muted">Når du starter {deadline.mission.name}, kan dette være borte for godt. Huk av etter hvert som du gjør det.</p>
+          {kindsOf(deadline.all).map((kind) => (
+            <div key={kind} className="mt-5">
+              <h3 className="text-xs font-medium uppercase tracking-[0.18em] text-muted">
+                {kind === 'Forberedelse' ? 'Forberedelser' : kind}
+              </h3>
+              <ul className="mt-2 divide-y divide-line border-y border-line">
+                {deadline.all
+                  .filter((r) => r.kind === kind)
+                  .map((r) => {
+                    const checked = done.has(r.doneKey)
+                    const body = (
+                      <span className="min-w-0 flex-1">
+                        <span className={`block text-[15px] font-medium ${checked ? 'text-muted line-through decoration-faint' : 'text-ink'}`}>
+                          {r.label}
+                        </span>
+                        {r.detail && <span className="mt-0.5 block text-sm leading-snug text-muted">{r.detail}</span>}
+                      </span>
+                    )
+                    return (
+                      <li key={r.key} className={`flex items-start gap-3 ${checked ? 'opacity-70' : ''}`}>
+                        <button
+                          type="button"
+                          onClick={() => onToggle(r.doneKey)}
+                          aria-label={checked ? `Merk ${r.label} som ikke gjort` : `Merk ${r.label} som gjort`}
+                          aria-pressed={checked}
+                          className="group -m-2 mt-1 p-2"
+                        >
+                          <Checkbox checked={checked} tone="green" />
+                        </button>
+                        {r.to ? (
+                          <a href={r.to} className="group flex min-w-0 flex-1 items-center gap-3 py-3">
+                            {body}
+                            <Icon name="right" className="size-4 shrink-0 text-faint transition group-hover:translate-x-0.5 group-hover:text-ink-soft" />
+                          </a>
+                        ) : (
+                          <button type="button" onClick={() => onToggle(r.doneKey)} className="flex min-w-0 flex-1 py-3 text-left">
+                            {body}
+                          </button>
+                        )}
+                      </li>
+                    )
+                  })}
+              </ul>
+            </div>
+          ))}
           </div>
           )}
         </section>
@@ -261,4 +274,9 @@ function SearchResults({ query, done, spoilers, onToggle }: Props & { query: str
       })}
     </div>
   )
+}
+
+/** Gruppene i fristlisten, i den rekkefølgen de først dukker opp. */
+function kindsOf(items: { kind: string }[]) {
+  return [...new Set(items.map((r) => r.kind))]
 }

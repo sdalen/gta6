@@ -9,6 +9,8 @@ export interface Reminder {
   key: string
   label: string
   kind: string
+  /** Forklaring eller sted, vist under navnet. */
+  detail?: string
   to?: string
   /** Nøkkel i fremdriften, så tingen kan hukes av. */
   doneKey: string
@@ -25,35 +27,66 @@ for (const c of chapters)
 const byMission = new Map<string, Reminder[]>()
 const add = (missionId: string, r: Reminder) => byMission.set(missionId, [...(byMission.get(missionId) ?? []), r])
 
-// Forberedelser som ikke er samleobjekter.
-const prep: Record<string, string[]> = {
+// Forberedelser som ikke er samleobjekter: kort tittel og forklaring på hva og hvorfor.
+const prep: Record<string, { label: string; detail: string }[]> = {
   'tourist-trap': [
-    'Anbefalt: nå sparemålet på $5 000 i Family Savings. Det hever grensen på brukskontoen til $15 000.',
-    'Utforsk Key Lento og ta tilfeldige hendelser der.',
-    'Lagre manuelt i en egen lagringsplass.',
+    {
+      label: 'Spar $5 000 i Family Savings',
+      detail:
+        'Anbefalt. Sett inn penger på sparekontoen Family Savings i bankappen til du når målet på $5 000. Da kan du ha opptil $15 000 på brukskontoen.',
+    },
+    {
+      label: 'Kjør rundt på Key Lento',
+      detail:
+        'Kapittel 1 foregår på Key Lento. Ta de tilfeldige hendelsene du kommer over der (personer som trenger hjelp, småjobber). Noen kan være borte etter Tourist Trap.',
+    },
+    {
+      label: 'Lag en ekstra lagring i spillet',
+      detail:
+        'Lagre manuelt i en ny lagringsplass, ikke over autolagringen. Da kan du laste den senere og ta noe du gikk glipp av før Tourist Trap.',
+    },
   ],
   'checking-out': [
-    'Selg stjålne ting til Dunk.',
-    'Ha minst $15 000 i banken og lagre manuelt. Motellet slutter å være hjemmet ditt.',
+    {
+      label: 'Selg stjålne ting til Dunk',
+      detail: 'Dunk kjøper tyvegods. Selg det du har før Checking Out, ellers kan du bli sittende med det.',
+    },
+    {
+      label: 'Ha minst $15 000 i banken og lagre',
+      detail: 'Motellet slutter å være hjemmet ditt etter Checking Out. Sett inn pengene og lagre manuelt i en ny lagringsplass.',
+    },
   ],
-  'the-cartel-heist': ['Selg stjålne ting. Noen kjøpere forsvinner for godt.', 'Sett inn alle kontanter og lagre manuelt.'],
-  'vcia-takedown': ['Fullfør sidejobber med timeglass.', 'Lagre i en ny lagringsplass.'],
-  'the-end-of-the-road': ['Lagre før siste oppdrag. Spillet har flere slutter og ingen omspilling.'],
+  'the-cartel-heist': [
+    { label: 'Selg stjålne ting', detail: 'Noen av kjøperne av tyvegods forsvinner for godt etter dette oppdraget.' },
+    { label: 'Sett inn alle kontanter og lagre', detail: 'Kontanter du har på deg kan du miste. Sett alt i banken og lagre manuelt i en ny lagringsplass.' },
+  ],
+  'vcia-takedown': [
+    { label: 'Fullfør sidejobber med timeglass', detail: 'Jobber med timeglass-ikon på kartet forsvinner hvis du venter. Ta dem før VCIA Takedown.' },
+    { label: 'Lag en ekstra lagring i spillet', detail: 'Lagre manuelt i en ny lagringsplass, så du kan gå tilbake hvis noe går galt.' },
+  ],
+  'the-end-of-the-road': [
+    {
+      label: 'Lagre før siste oppdrag',
+      detail: 'Spillet har flere slutter og ingen omspilling av oppdrag. Lagre i en ny lagringsplass, så kan du se de andre sluttene.',
+    },
+  ],
 }
 for (const [mission, lines] of Object.entries(prep))
-  lines.forEach((label, i) => add(mission, { key: `husk:${mission}:${i}`, label, kind: 'Forberedelse', doneKey: `husk:${mission}:${i}` }))
+  lines.forEach(({ label, detail }, i) =>
+    add(mission, { key: `husk:${mission}:${i}`, label, detail, kind: 'Forberedelse', doneKey: `husk:${mission}:${i}` }),
+  )
 
 for (const cat of collectibles) {
   cat.items.forEach((item, idx) => {
     if (!item.before) return
     const key = itemId(cat.id, idx)
-    add(item.before, { key, label: item.name, kind: cat.name, to: href('samle', cat.id, String(idx)), doneKey: key })
+    add(item.before, { key, label: item.name, detail: item.where, kind: cat.name, to: href('samle', cat.id, String(idx)), doneKey: key })
   })
 }
 for (const o of optionalMissions) {
   if (!o.before) continue
   const key = `valgfritt:${o.name}`
-  add(o.before, { key, label: o.name, kind: 'Valgfritt oppdrag', to: href('valgfritt'), doneKey: key })
+  add(o.before, { key, label: o.name, detail: o.note, kind: 'Valgfritt oppdrag', to: href('valgfritt'), doneKey: key })
 }
 
 export function remindersFor(missionId: string): Reminder[] {

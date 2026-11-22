@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { DATA_VERSION, migrateIds } from '../data/migrations'
 
 const KEY = 'gta6-gjennomgang-fremdrift'
 const HISTORY_KEY = 'gta6-gjennomgang-historikk'
@@ -8,16 +9,18 @@ const MAX_HISTORY = 100
 
 /** Lager innholdet i en eksportfil. */
 export function exportProgress(done: Set<string>): string {
-  return JSON.stringify({ app: APP, version: 1, exportedAt: new Date().toISOString(), done: [...done].sort() }, null, 2)
+  return JSON.stringify({ app: APP, version: DATA_VERSION, exportedAt: new Date().toISOString(), done: [...done].sort() }, null, 2)
 }
 
 /** Leser en eksportfil. Godtar også en ren liste med nøkler. Kaster feil hvis formatet er ukjent. */
 export function parseProgress(text: string): string[] {
   const data: unknown = JSON.parse(text)
-  const list = Array.isArray(data) ? data : (data as { app?: unknown; done?: unknown })?.done
+  const obj = data as { version?: unknown; done?: unknown }
+  const list = Array.isArray(data) ? data : obj?.done
   if (!Array.isArray(list) || !list.every((x) => typeof x === 'string'))
     throw new Error('Filen inneholder ikke fremdrift fra denne appen.')
-  return list
+  const version = !Array.isArray(data) && typeof obj.version === 'number' ? obj.version : 1
+  return migrateIds(list, version)
 }
 
 interface State {

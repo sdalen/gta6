@@ -305,16 +305,24 @@ export const collectibles: CollectibleCategory[] = [
     name: 'Meditasjonsplasser',
     icon: 'leaf',
     total: '18',
-    about: 'Teller separat for Jason, Lucia og begge sammen i Collections-menyen.',
+    about:
+      '18 meditasjoner på 10 steder. På de fleste stedene mediterer Jason og Lucia hver for seg, så hvert sted teller to ganger. Unntakene er hjemme hos Jason i kapittel 1 (én gang, Jason og Lucia sammen) og toppen av Mount Kalaga til slutt (begge sammen).',
     howTo: [
       'Dra til stedet.',
       'Gå bort til meditasjonsplassen og trykk når du får valget.',
-      'Plassene teller for Jason og Lucia hver for seg.',
+      'Bytt figur og gjør det samme stedet én gang til, så teller det for både Jason og Lucia.',
     ],
-    tips: ['Balkongmeditasjonen med Lucia hjemme hos Jason kan bare gjøres i kapittel 1, etter Down to Earth.'],
+    tips: [
+      'Den første meditasjonen skjer hjemme hos Jason i kapittel 1, en morgen etter Down to Earth. Lucia sier at hun skal meditere: godta, så viser hun deg hvordan. Guidene er uenige om det er på balkongen eller brygga, men det er én og samme scene.',
+      'Ifølge VGC sender Lucia en melding om å meditere i kapittel 2 (etter Coffee Break) hvis du går glipp av den i kapittel 1. Andre guider sier den er borte for godt, så ta den i kapittel 1.',
+      'Toppen av Mount Kalaga er den siste, og der må Jason og Lucia meditere sammen. Den åpner seg når du har gjort de andre.',
+    ],
     items: [
-      i('Brygga til Jason', 'Bak huset til Jason, Key Lento.', 'tourist-trap'),
-      i('Balkongen (Lucia)', 'Huset til Jason. Bare i kapittel 1, etter Down to Earth.', 'tourist-trap'),
+      i(
+        'Hjemme hos Jason, med Lucia',
+        'Kapittel 1, en morgen etter Down to Earth. Lucia sier hun skal meditere: godta, så mediterer dere sammen (balkongen eller brygga). Teller som én.',
+        'tourist-trap',
+      ),
       i('Jutting Cliff', 'Utstikkende klippe nord for Kalaga Reservoir, ved Animal Crackers.'),
       i('Vinewood Beach', 'Ca. to tredjedeler opp mot nordenden av stranden.'),
       i('Killtelligence-tårnet', 'Ved foten av tårnet sørøst for Killtelligence Provisions, der fjellet stikker ut. Her er det også et basehopp.'),

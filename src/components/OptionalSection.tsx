@@ -1,6 +1,7 @@
 import { optionalMissions, questlines, questlineTrophies } from '../data/extras'
 import { href } from '../hooks/useRoute'
 import { Icon } from './Icon'
+import { MapCrop } from './MapCrop'
 import { Checkbox, PageHeader, SectionLabel } from './ui'
 
 export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggle: (id: string) => void }) {
@@ -44,6 +45,26 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
                 </p>
               </div>
               </button>
+              {(o.steps || o.location) && (
+                <details className="group/d mb-4 sm:pl-[5.75rem]" open={!checked}>
+                  <summary className="cursor-pointer list-none text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <span className="group-open/d:hidden">Vis hvordan og hvor</span>
+                    <span className="hidden group-open/d:inline">Skjul hvordan og hvor</span>
+                  </summary>
+                  {o.steps && (
+                    <ol className="mt-3 list-decimal space-y-1.5 pl-5 text-sm leading-relaxed text-ink-soft marker:text-faint">
+                      {o.steps.map((step) => (
+                        <li key={step}>{step}</li>
+                      ))}
+                    </ol>
+                  )}
+                  {o.location && (
+                    <div className="mt-4">
+                      <MapCrop loc={o.location} />
+                    </div>
+                  )}
+                </details>
+              )}
             </li>
             )
           })}

@@ -48,7 +48,7 @@ for (const o of optionalMissions)
     sub: join(`Kap. ${o.chapter}`, o.character && `· ${o.character}`, `· ${o.note}`),
     to: href('valgfritt'),
     doneKey: `valgfritt:${o.name}`,
-    text: join(o.name, o.character, o.note),
+    text: join(o.name, o.character, o.note, ...(o.steps ?? [])),
   })
 
 for (const q of questlines)

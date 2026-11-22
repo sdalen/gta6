@@ -151,6 +151,22 @@ export function MapCrop({ loc }: { loc: MapLocation }) {
           </>
         )}
 
+        {/* Kartet har alltid nord opp. */}
+        <div
+          className="pointer-events-none absolute left-2 top-2 size-[4.25rem] rounded-full bg-zinc-950/80 text-[10px] font-semibold text-white ring-1 ring-white/10 backdrop-blur"
+          role="img"
+          aria-label="Kompass: nord er opp"
+        >
+          <svg viewBox="0 0 68 68" className="absolute inset-0 size-full">
+            <path d="M34 14 39 34H29Z" className="fill-red-400" />
+            <path d="M34 54 39 34H29Z" className="fill-white/70" />
+          </svg>
+          <span className="absolute left-1/2 top-[3px] -translate-x-1/2 text-red-400">N</span>
+          <span className="absolute bottom-[3px] left-1/2 -translate-x-1/2">S</span>
+          <span className="absolute right-[5px] top-1/2 -translate-y-1/2">Ø</span>
+          <span className="absolute left-[5px] top-1/2 -translate-y-1/2">V</span>
+        </div>
+
         <div className="absolute right-2 top-2 flex flex-col overflow-hidden rounded-lg bg-zinc-950/85 ring-1 ring-white/10 backdrop-blur">
           <button type="button" aria-label="Zoom inn" onPointerDown={stop} onDoubleClick={(e) => e.stopPropagation()} onClick={() => zoomTo(Math.round(view.z) + 1)} className={zoomBtn} disabled={view.z >= MAX_Z}>
             +
@@ -174,7 +190,7 @@ export function MapCrop({ loc }: { loc: MapLocation }) {
       <figcaption className="mt-2 flex flex-wrap justify-between gap-x-4 gap-y-1 text-xs text-muted">
         <span>
           {precisionText[loc.precision]} <span className="text-ink-soft">{loc.place}</span>
-          {loc.precision !== 'landemerke' && ' · nøyaktig sted er ikke kartlagt'}
+          {loc.note ? ` · ${loc.note}` : loc.precision !== 'landemerke' && ' · nøyaktig sted er ikke kartlagt'}
         </span>
         <span className="text-faint">Dra og zoom · Kart: GTA VI Map Tiles (CC BY 4.0), map.gtadb.org</span>
       </figcaption>
