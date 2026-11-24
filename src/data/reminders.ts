@@ -76,12 +76,20 @@ for (const [mission, lines] of Object.entries(prep))
     add(mission, { key: `husk:${mission}:${i}`, label, detail, kind: 'Forberedelse', doneKey: `husk:${mission}:${i}` }),
   )
 
+// Ting du får inne i selve oppdraget. Vises for seg, ikke som noe du må gjøre før du starter.
+const duringByMission = new Map<string, Reminder[]>()
+
 for (const cat of collectibles) {
   cat.items.forEach((item, idx) => {
-    if (!item.before) return
     const key = itemId(cat.id, idx)
-    add(item.before, { key, label: item.name, detail: item.where, kind: cat.name, to: href('samle', cat.id, String(idx)), doneKey: key })
+    const r = { key, label: item.name, detail: item.where, kind: cat.name, to: href('samle', cat.id, String(idx)), doneKey: key }
+    if (item.before) add(item.before, r)
+    if (item.during) duringByMission.set(item.during, [...(duringByMission.get(item.during) ?? []), r])
   })
+}
+
+export function duringFor(missionId: string): Reminder[] {
+  return duringByMission.get(missionId) ?? []
 }
 for (const o of optionalMissions) {
   if (!o.before) continue

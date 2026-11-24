@@ -1,12 +1,35 @@
 import type { Character, Mission } from '../data/types'
 import { Callout, Checkbox } from './ui'
-import { remindersFor, unlockedBy } from '../data/reminders'
+import { duringFor, remindersFor, unlockedBy, type Reminder } from '../data/reminders'
 import { Icon } from './Icon'
 
 const charDot: Record<Character, string> = {
   Lucia: 'bg-pink-400',
   Jason: 'bg-sky-400',
   Begge: 'bg-accent',
+}
+
+function ReminderList({ items, progress }: { items: Reminder[]; progress?: Set<string> }) {
+  return (
+    <ul className="mt-1.5 space-y-1">
+      {items.map((r) => {
+        const ok = !!r.doneKey && !!progress?.has(r.doneKey)
+        return (
+          <li key={r.key} className="flex items-baseline gap-2">
+            <span className={ok ? 'text-ok' : 'text-faint'}>{ok ? '✓' : '○'}</span>
+            {r.to ? (
+              <a href={r.to} className={`hover:text-ink hover:underline ${ok ? 'text-muted line-through' : ''}`}>
+                {r.label}
+              </a>
+            ) : (
+              <span className={ok ? 'text-muted line-through' : ''}>{r.label}</span>
+            )}
+            <span className="text-xs text-faint">{r.kind}</span>
+          </li>
+        )
+      })}
+    </ul>
+  )
 }
 
 interface Props {
@@ -20,6 +43,7 @@ interface Props {
 
 export function MissionCard({ mission, index, done, spoilers, onToggle, progress }: Props) {
   const reminders = remindersFor(mission.id)
+  const during = duringFor(mission.id)
   const unlocks = unlockedBy(mission.id)
   return (
     <li id={mission.id} className="scroll-mt-24 py-6">
@@ -53,24 +77,12 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
           <div className="mt-4 space-y-4">
             {reminders.length > 0 && (
               <Callout tone="warn" title="Husk før du starter:">
-                <ul className="mt-1.5 space-y-1">
-                  {reminders.map((r) => {
-                    const ok = !!r.doneKey && !!progress?.has(r.doneKey)
-                    return (
-                      <li key={r.key} className="flex items-baseline gap-2">
-                        <span className={ok ? 'text-ok' : 'text-faint'}>{ok ? '✓' : '○'}</span>
-                        {r.to ? (
-                          <a href={r.to} className={`hover:text-ink hover:underline ${ok ? 'text-muted line-through' : ''}`}>
-                            {r.label}
-                          </a>
-                        ) : (
-                          <span className={ok ? 'text-muted line-through' : ''}>{r.label}</span>
-                        )}
-                        <span className="text-xs text-faint">{r.kind}</span>
-                      </li>
-                    )
-                  })}
-                </ul>
+                <ReminderList items={reminders} progress={progress} />
+              </Callout>
+            )}
+            {during.length > 0 && (
+              <Callout tone="accent" title="Underveis i oppdraget:">
+                <ReminderList items={during} progress={progress} />
               </Callout>
             )}
             {mission.warning && (

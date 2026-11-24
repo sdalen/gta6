@@ -609,7 +609,7 @@
    {
     "name": "Kode 2008",
     "where": "Safen på bakrommet i Delights-kabareten under Afternoon Delight.",
-    "before": "afternoon-delight"
+    "during": "afternoon-delight"
    },
    {
     "name": "Kode 1680, 6815 og 0104 (Yasmani's Jewelry Jobs)",
@@ -622,7 +622,7 @@
    {
     "name": "Kode 2404#",
     "where": "Lageret til Savannah på Waxman Island under Car Service.",
-    "before": "car-service"
+    "during": "car-service"
    },
    {
     "name": "Avery Pawn (tilfeldig kode)",
@@ -905,7 +905,7 @@
    {
     "name": "Crowex Octane 'Bobby Ambrose' (klokke)",
     "where": "Belønning fra oppdraget Dubious Provenance i kapittel 3.",
-    "before": "dubious-provenance"
+    "during": "dubious-provenance"
    },
    {
     "name": "B&G Ark Royal Ashore (klokke)",

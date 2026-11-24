@@ -14,6 +14,8 @@ export interface CollectibleItem {
   where: string
   /** Oppdrag (id) som gjør tingen utilgjengelig. Må tas før dette starter. */
   before?: string
+  /** Oppdrag (id) der du får tingen underveis. Ingen frist, men du må være obs inne i oppdraget. */
+  during?: string
   /** Kjent posisjon i GTADB-koordinater. Ellers plasseres tingen etter stedsnavn. */
   at?: [number, number]
 }

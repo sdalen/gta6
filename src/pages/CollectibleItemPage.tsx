@@ -42,6 +42,7 @@ export function CollectibleItemPage({ catId, idx, done, onToggle }: Props) {
   const detail = getDetail(key)
   const deadline = item.before ? missionName(item.before) : null
   const tooLate = item.before ? done.has(item.before) : false
+  const inMission = item.during ? missionName(item.during) : null
   const prev = idx > 0 ? idx - 1 : null
   const next = idx < cat.items.length - 1 ? idx + 1 : null
 
@@ -67,6 +68,12 @@ export function CollectibleItemPage({ catId, idx, done, onToggle }: Props) {
               {tooLate
                 ? `Du har startet ${deadline.name}, så denne kan være borte.`
                 : `Må tas før du starter ${deadline.name} (kapittel ${deadline.chapter}).`}
+            </Callout>
+          )}
+
+          {inMission && (
+            <Callout tone="accent" title="Del av oppdraget:">
+              {`Du får denne underveis i ${inMission.name} (kapittel ${inMission.chapter}). Du trenger ikke gjøre noe før du starter, men følg med inne i oppdraget.`}
             </Callout>
           )}
 
