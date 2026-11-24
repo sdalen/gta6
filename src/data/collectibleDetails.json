@@ -6197,8 +6197,9 @@
 ],
 "codeHint": "Tilfeldig. Fås fra en ansatt eller en lapp på bakrommet. Sticky Bomb virker også. Guidene er uenige om alle pantelånere har kodesafe. Buck's Jewelry & Pawn nevnes bare med kassepenger. Koden varierer fra spill til spill.",
 "code": "Tilfeldig",
-"name": "Andre pantelånere og smykkebutikker (Smash 'n' Grab)",
-"loot": "Kontanter og smykker."
+"name": "Alle pantelånere og smykkebutikker (35 steder, hver for seg under Ran)",
+"loot": "Kontanter og smykker.",
+"where": "Hver butikk har egen side med kart under Ran → Smykkebutikker og pantelånere."
 },
 "samle:safer:27": {
 "area": "Hele Leonida",
@@ -9106,5 +9107,180 @@
 "https://gta6gps.com/map/game/stunt-jumps",
 "https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
 ]
+},
+"samle:ran-smykker:0": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:1": {
+"code": "Tilfeldig",
+"loot": "Ca. $9 000–20 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:2": {
+"code": "0104 i oppdrag",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "I Yasmani-oppdraget er koden 0104 og står på oppdragskortet. Ved senere ran er den tilfeldig. Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:3": {
+"code": "Tilfeldig",
+"loot": "Ca. $9 000–20 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:4": {
+"code": "6815 i oppdrag",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "I Yasmani-oppdraget er koden 6815 og står på oppdragskortet. Ved senere ran er den tilfeldig. Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:5": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:6": {
+"code": "Tilfeldig",
+"loot": "Ca. $9 000–20 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:7": {
+"code": "Tilfeldig",
+"loot": "Ca. $9 000–20 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:8": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:9": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:10": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:11": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:12": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:13": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:14": {
+"code": "Tilfeldig",
+"loot": "Ca. $9 000–20 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:15": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:16": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:17": {
+"code": "Tilfeldig",
+"loot": "Ca. $9 000–20 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:18": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:19": {
+"code": "Tilfeldig",
+"loot": "Ca. $14 000–25 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:20": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:21": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:22": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:23": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:24": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:25": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:26": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:27": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:28": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:29": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:30": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:31": {
+"code": "1680 i oppdrag",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "I Yasmani-oppdraget er koden 1680 og står på oppdragskortet. Ved senere ran er den tilfeldig. Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:32": {
+"code": "Tilfeldig",
+"loot": "Ca. $4 500–12 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
+},
+"samle:ran-smykker:33": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene. Her står koden ofte på en grønn lapp over kalenderen ved Office-døra."
+},
+"samle:ran-smykker:34": {
+"code": "Tilfeldig",
+"loot": "Ca. $1 000–10 000 i smykker fra montrene og kontanter i safen.",
+"codeHint": "Koden er tilfeldig. Sikt på ekspeditøren før du knuser noe, til «Safe Code?» dukker opp. Ellers: let etter en lapp, kalender eller oppslagstavle på bakrommet, eller bruk Focus (L3+R3). Uten kode må safen sprenges, og da ødelegges noe av pengene."
 }
 }

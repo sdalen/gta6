@@ -23,6 +23,17 @@ export function CollectiblesPage({ done }: { done: Set<string> }) {
         <Icon name="right" className="size-5 text-accent transition group-hover:translate-x-0.5" />
       </a>
 
+      <a
+        href={href('ran')}
+        className="group mb-8 flex items-center justify-between gap-4 rounded-xl bg-surface p-5 ring-1 ring-line transition hover:ring-frame"
+      >
+        <span>
+          <span className="block text-xs uppercase tracking-[0.18em] text-muted">Butikker, pantelånere, banker, gjenger</span>
+          <span className="mt-1 block text-lg font-medium text-ink">Ran og safer</span>
+        </span>
+        <Icon name="right" className="size-5 text-accent transition group-hover:translate-x-0.5" />
+      </a>
+
       <CategoryList categories={collectibles.filter((c) => c.kind !== 'ran')} done={done} />
 
       <p className="mt-8 text-xs leading-relaxed text-faint">
