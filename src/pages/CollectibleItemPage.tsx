@@ -143,7 +143,7 @@ export function CollectibleItemPage({ catId, idx, done, onToggle }: Props) {
             onClick={() => onToggle(key)}
             aria-pressed={isDone}
             className={`group flex w-full items-center justify-center gap-3 rounded-sm py-3.5 text-[15px] font-semibold transition ${
-              isDone ? 'bg-surface text-ink-soft ring-1 ring-line' : 'bg-accent text-on-accent hover:bg-accent-dark'
+              isDone ? 'bg-ok/10 text-ok ring-1 ring-ok/40' : 'bg-accent text-on-accent hover:bg-accent-dark'
             }`}
           >
             {isDone ? <Checkbox checked /> : <Icon name="check" className="size-5" />}

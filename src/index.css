@@ -20,6 +20,7 @@
   --color-warn: var(--warn);
   --color-gold: var(--gold);
   --color-ok: var(--ok);
+  --color-on-ok: var(--on-ok);
   --color-footer: var(--footer);
   --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
@@ -42,6 +43,7 @@
   --warn: #b42318;
   --gold: #9a6700;
   --ok: #1a7f45;
+  --on-ok: #ffffff;
   --footer: #232b35;
   color-scheme: light;
 }
@@ -63,6 +65,7 @@
   --warn: #f87171;
   --gold: #fcd34d;
   --ok: #4ade80;
+  --on-ok: #0f1115;
   --footer: #0a0c0f;
   color-scheme: dark;
 }

@@ -13,7 +13,7 @@ interface Props {
 
 export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
   const [query, setQuery] = useState('')
-  const [hideFound, setHideFound] = useState(false)
+  const [filter, setFilter] = useState<'alle' | 'igjen' | 'funnet'>('alle')
   const cat = collectibles.find((c) => c.id === id)
   if (!cat) return <NotFound />
 
@@ -21,7 +21,8 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
   const items = cat.items
     .map((item, i) => ({ item, idx: i, key: itemId(cat.id, i) }))
     .filter(({ item, key }) => {
-      if (hideFound && done.has(key)) return false
+      if (filter === 'igjen' && done.has(key)) return false
+      if (filter === 'funnet' && !done.has(key)) return false
       return !q || item.name.toLowerCase().includes(q) || item.where.toLowerCase().includes(q)
     })
   const found = cat.items.filter((_, i) => done.has(itemId(cat.id, i))).length
@@ -58,40 +59,54 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
       </div>
       <ProgressBar value={found} total={cat.items.length} className="mb-5" />
 
-      <div className="mb-4 flex items-center gap-4">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center">
         <SearchInput value={query} onChange={setQuery} placeholder="Søk etter navn eller sted" />
-        <label className="flex cursor-pointer select-none items-center gap-2 whitespace-nowrap text-sm text-muted">
-          <input
-            type="checkbox"
-            checked={hideFound}
-            onChange={(e) => setHideFound(e.target.checked)}
-            className="size-4 accent-[var(--color-accent)]"
-          />
-          Skjul funnet
-        </label>
+        <div role="radiogroup" aria-label="Vis" className="flex shrink-0 rounded-lg bg-surface p-1 text-sm ring-1 ring-line">
+          {(
+            [
+              ['alle', `Alle ${cat.items.length}`],
+              ['igjen', `Ikke funnet ${cat.items.length - found}`],
+              ['funnet', `Funnet ${found}`],
+            ] as const
+          ).map(([v, label]) => (
+            <button
+              key={v}
+              type="button"
+              role="radio"
+              aria-checked={filter === v}
+              onClick={() => setFilter(v)}
+              className={`flex-1 whitespace-nowrap rounded-md px-3 py-1.5 font-medium transition ${
+                filter === v ? (v === 'funnet' ? 'bg-ok text-on-ok' : 'bg-paper text-ink shadow-sm ring-1 ring-line') : 'text-muted hover:text-ink'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <ul className="divide-y divide-line border-y border-line">
         {items.map(({ item, idx, key }) => {
           const isDone = done.has(key)
           return (
-            <li key={key} className="flex items-start gap-4">
+            <li key={key} className={`flex items-start gap-4 ${isDone ? 'bg-ok/[0.06]' : ''}`}>
               <button
                 type="button"
                 onClick={() => onToggle(key)}
                 aria-pressed={isDone}
                 aria-label={isDone ? `Merk ${item.name} som ikke funnet` : `Merk ${item.name} som funnet`}
-                className="group -m-2 mt-2 p-2"
+                className="group ml-1 mt-3.5 p-1"
               >
                 <Checkbox checked={isDone} />
               </button>
               <a href={href('samle', cat.id, String(idx))} className="group flex min-w-0 flex-1 items-center gap-3 py-4">
-                <span className={`min-w-0 flex-1 transition ${isDone ? 'opacity-40' : ''}`}>
+                <span className="min-w-0 flex-1">
                   <span className="flex flex-wrap items-baseline gap-x-2">
-                    <span className="text-[15px] font-medium text-ink">{item.name}</span>
+                    <span className={`text-[15px] font-medium ${isDone ? 'text-muted line-through decoration-ok/60' : 'text-ink'}`}>{item.name}</span>
+                    {isDone && <span className="text-xs font-semibold text-ok">Funnet</span>}
                     {item.before && !isDone && <span className="text-xs font-medium text-warn">Har frist</span>}
                   </span>
-                  <span className="mt-1 flex gap-1.5 text-sm leading-relaxed text-muted">
+                  <span className={`mt-1 flex gap-1.5 text-sm leading-relaxed text-muted ${isDone ? 'opacity-60' : ''}`}>
                     <Icon name="pin" className="mt-0.5 size-4 shrink-0 text-faint" />
                     <span className="line-clamp-2">{item.where}</span>
                   </span>
@@ -101,7 +116,7 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
             </li>
           )
         })}
-        {items.length === 0 && <li className="py-10 text-center text-sm text-muted">Ingen treff</li>}
+        {items.length === 0 && <li className="py-10 text-center text-sm text-muted">{filter === 'funnet' && !q ? 'Ingen funnet ennå' : 'Ingen treff'}</li>}
       </ul>
     </div>
   )

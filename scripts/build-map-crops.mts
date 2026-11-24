@@ -177,6 +177,23 @@ for (const g of glitches as { id: string; name: string; location: { place: strin
 for (const c of cars.cars as { id: string; name: string; location: { place: string; area: string; detail: string } }[])
   place(`bil:${c.id}`, `${c.location.detail} ${c.location.area}`, c.location.place, c.location.area, undefined, c.name)
 
+/** Henter filer fra den blobless klonen. Hopper over det som alt er hentet og prøver igjen ved nettverksfeil. */
+function checkout(paths: string[]) {
+  const todo = paths.filter((p) => !existsSync(join(repo, p)))
+  for (let i = 0; i < todo.length; i += 100) {
+    const batch = todo.slice(i, i + 100)
+    for (let attempt = 1; ; attempt++) {
+      try {
+        execFileSync('git', ['-C', repo, 'checkout', 'HEAD', '--', ...batch], { stdio: 'ignore', timeout: 300_000 })
+        break
+      } catch (e) {
+        if (attempt >= 4) throw e
+      }
+    }
+    console.log(`Hentet ${Math.min(i + 100, todo.length)}/${todo.length}`)
+  }
+}
+
 // Hent flisene fra git (klonen er blobless) og kopier dem inn i appen.
 const existing = new Set(
   execFileSync('git', ['-C', repo, 'ls-tree', '-r', '--name-only', 'HEAD', `maps/tiles/6/${TILESET}`], { encoding: 'utf8', maxBuffer: 1 << 26 })
@@ -189,9 +206,7 @@ for (const p of existing) {
   if (z <= FULL_Z) tiles.add(p.slice(`maps/tiles/6/${TILESET}/`.length))
 }
 const wanted = [...tiles].map((t) => `maps/tiles/6/${TILESET}/${t}`).filter((p) => existing.has(p))
-for (let i = 0; i < wanted.length; i += 200) {
-  execFileSync('git', ['-C', repo, 'checkout', 'HEAD', '--', ...wanted.slice(i, i + 200)])
-}
+checkout(wanted)
 const dest = 'public/kart'
 rmSync(dest, { recursive: true, force: true })
 for (const p of wanted) {
@@ -202,7 +217,7 @@ for (const p of wanted) {
 
 // Spillbilder av landemerkene, skalert ned til 960 px bredde.
 const photoPaths = [...photos].map((id) => `map/photos/6/${id},ig.jpg`)
-for (let i = 0; i < photoPaths.length; i += 200) execFileSync('git', ['-C', repo, 'checkout', 'HEAD', '--', ...photoPaths.slice(i, i + 200)])
+checkout(photoPaths)
 rmSync('public/foto', { recursive: true, force: true })
 mkdirSync('public/foto', { recursive: true })
 for (const id of photos) {

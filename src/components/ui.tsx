@@ -80,15 +80,15 @@ export function ProgressBar({ value, total, className = '' }: { value: number; t
   )
 }
 
-export function Checkbox({ checked, tone = 'accent' }: { checked: boolean; tone?: 'accent' | 'green' }) {
-  const on = tone === 'green' ? 'border-ok bg-ok text-on-accent' : 'border-accent bg-accent text-on-accent'
+/** Avhuking: grønn med hvit hake når den er krysset av, så det er lett å se hva som er gjort. */
+export function Checkbox({ checked }: { checked: boolean; tone?: 'accent' | 'green' }) {
   return (
     <span
-      className={`grid size-5 shrink-0 place-items-center rounded-full border bg-paper transition ${
-        checked ? on : 'border-frame group-hover:border-muted'
+      className={`grid size-6 shrink-0 place-items-center rounded-full border-2 transition ${
+        checked ? 'border-ok bg-ok text-on-ok' : 'border-frame bg-paper group-hover:border-ok'
       }`}
     >
-      {checked && <Icon name="check" className="size-3" />}
+      {checked && <Icon name="check" className="size-3.5 [stroke-width:3]" />}
     </span>
   )
 }
