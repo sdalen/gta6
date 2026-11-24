@@ -312,9 +312,26 @@ export const optionalMissions: OptionalMission[] = [
       'Ta stoppene under i rekkefølge. Trykk på et stopp for å se det på kartet.',
       'Fotografer alle tre skapene før du leter etter likene.',
       'Meld fra om hvert lik (trekant/Y) og vent til samtalen med tipstelefonen er ferdig. Uten melding går ikke oppdraget videre.',
-      'Lagre manuelt før møtet med Alvan West. Valget mellom å gå alene eller sammen kan ikke gjøres om.',
-      'Belønning: ingen dusør. Går du alene, får du tre sjeldne våpen i gruven (Island Poacher FF-50, Mahi Nipper .38 og Mason & Keen Longshot) og brillene hans. Går dere sammen, blir han skutt med en gang, og du går glipp av gruven, våpnene og trolig brillene.',
+      'Lagre manuelt før møtet med Alvan West. Valget mellom å gå alene eller sammen kan ikke gjøres om (se valget under).',
+      'Belønning: ingen dusør. Våpnene og brillene får du bare hvis du går alene.',
       'Kommer ikke invitasjonen tilbake til lageret? Sjekk at alle tre bildene ligger i Gallery → Creepy Photos, at alle tre likene er meldt, og la det gå litt tid i spillet.',
+    ],
+    choices: [
+      {
+        question: 'Etter tredje lik ber Alvan West deg komme tilbake til lageret. Går du alene, eller tar du med partneren?',
+        options: [
+          {
+            label: 'Gå alene',
+            result: 'Han doper deg ned og frakter deg til gruven, og du redder deg som den andre. Du får tre sjeldne våpen (Island Poacher FF-50, Mahi Nipper .38, Mason & Keen Longshot) og brillene hans.',
+            best: true,
+          },
+          {
+            label: 'Ta med partneren',
+            result: 'Partneren skyter ham med en gang i lageret. Ingen gruve, ingen våpen, og som regel heller ingen briller.',
+          },
+        ],
+        tip: 'Gå inn som Lucia, så er det Jason som utforsker gruven. To guider sier at bare Jason kan plukke opp brillene. Ikke ring noen før du går inn, og lagre manuelt først. Valget kan ikke gjøres om.',
+      },
     ],
     stops: [
       {

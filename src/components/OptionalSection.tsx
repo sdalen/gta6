@@ -3,6 +3,7 @@ import { href } from '../hooks/useRoute'
 import { Icon } from './Icon'
 import { MapCrop } from './MapCrop'
 import { StopsGuide } from './StopsGuide'
+import { ChoiceBox } from './ChoiceBox'
 import { Checkbox, PageHeader, SectionLabel } from './ui'
 
 export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggle: (id: string) => void }) {
@@ -46,7 +47,7 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
                 </p>
               </div>
               </button>
-              {(o.steps || o.location || o.stops) && (
+              {(o.steps || o.location || o.stops || o.choices) && (
                 <details className="group/d mb-4 sm:pl-[5.75rem]" open={!checked}>
                   <summary className="cursor-pointer list-none text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
                     <span className="group-open/d:hidden">Vis hvordan og hvor</span>
@@ -58,6 +59,11 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
                         <li key={step}>{step}</li>
                       ))}
                     </ol>
+                  )}
+                  {o.choices && (
+                    <div className="mt-4">
+                      <ChoiceBox choices={o.choices} />
+                    </div>
                   )}
                   {o.stops && <StopsGuide stops={o.stops} />}
                   {o.location && !o.stops && (

@@ -13,6 +13,19 @@ export interface Mission {
   tip?: string
   warning?: string
   tag?: string
+  /** Valg i oppdraget som har konsekvenser. */
+  choices?: Choice[]
+}
+
+/** Et valg spilleren tar, med hva hvert alternativ gir og hva som lønner seg. */
+export interface Choice {
+  /** Hva du blir bedt om å velge. */
+  question: string
+  options: { label: string; result: string; best?: boolean }[]
+  /** Råd, f.eks. hvem du bør spille som eller at du bør lagre først. */
+  tip?: string
+  /** «middels» = bare én kilde. */
+  confidence?: 'høy' | 'middels'
 }
 
 export interface Chapter {
@@ -42,6 +55,8 @@ export interface OptionalMission {
   location?: MapLocation
   /** Flere steder i rekkefølge, vist som nummererte punkter på ett kart med bilde. */
   stops?: Stop[]
+  /** Valg i oppdraget som har konsekvenser. */
+  choices?: Choice[]
 }
 
 export interface Stop {

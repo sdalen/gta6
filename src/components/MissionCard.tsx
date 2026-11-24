@@ -3,6 +3,7 @@ import { Callout, Checkbox } from './ui'
 import { chainFor, chainName } from '../data/chains'
 import { duringFor, remindersFor, unlockedBy, type Reminder } from '../data/reminders'
 import { Icon } from './Icon'
+import { ChoiceBox } from './ChoiceBox'
 
 const charDot: Record<Character, string> = {
   Lucia: 'bg-pink-400',
@@ -129,6 +130,7 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
                 {mission.warning}
               </Callout>
             )}
+            {mission.choices && <ChoiceBox choices={mission.choices} />}
 
             {spoilers ? (
               <>
