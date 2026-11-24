@@ -79,7 +79,7 @@ export function DataSection({ done, onReplace, onMerge, onReset }: Props) {
   }
 
   const btn =
-    'inline-flex items-center gap-2 rounded-lg bg-surface px-3.5 py-2 text-sm font-medium text-ink ring-1 ring-zinc-800 transition hover:ring-frame'
+    'inline-flex items-center gap-2 rounded-lg bg-surface px-3.5 py-2 text-sm font-medium text-ink ring-1 ring-line transition hover:ring-frame'
 
   return (
     <section>
@@ -100,7 +100,7 @@ export function DataSection({ done, onReplace, onMerge, onReset }: Props) {
           onChange={(e) => setName(e.target.value)}
           placeholder="Navn (valgfritt), f.eks. «Før kapittel 3»"
           maxLength={60}
-          className="min-w-0 flex-1 rounded-lg border border-zinc-800 bg-surface/60 px-3 py-2 text-sm text-ink placeholder:text-faint focus:border-frame focus:outline-none"
+          className="min-w-0 flex-1 rounded-lg border border-line bg-surface/60 px-3 py-2 text-sm text-ink placeholder:text-faint focus:border-frame focus:outline-none"
         />
         <button type="submit" className={btn}>
           <Icon name="check" className="size-4 text-accent" />
@@ -130,7 +130,7 @@ export function DataSection({ done, onReplace, onMerge, onReset }: Props) {
                   if (confirm(`Slette lagringen «${snap.name}»?`)) remove(snap.id)
                 }}
                 aria-label={`Slett ${snap.name}`}
-                className="rounded-md px-2 py-1.5 text-sm text-faint hover:text-red-400"
+                className="rounded-md px-2 py-1.5 text-sm text-faint hover:text-warn"
               >
                 Slett
               </button>
@@ -161,7 +161,7 @@ export function DataSection({ done, onReplace, onMerge, onReset }: Props) {
       </div>
 
       {pending && (
-        <div className="mt-4 rounded-xl bg-surface p-4 ring-1 ring-zinc-800">
+        <div className="mt-4 rounded-xl bg-surface p-4 ring-1 ring-line">
           <p className="text-sm text-ink">
             «{pending.file}» har {pending.ids.length} avhukinger. Du har {done.size} her nå.
           </p>
@@ -169,7 +169,7 @@ export function DataSection({ done, onReplace, onMerge, onReset }: Props) {
             <button type="button" onClick={() => apply('merge')} className={btn}>
               Slå sammen
             </button>
-            <button type="button" onClick={() => apply('replace')} className={`${btn} hover:text-red-400`}>
+            <button type="button" onClick={() => apply('replace')} className={`${btn} hover:text-warn`}>
               Erstatt det som er her
             </button>
             <button type="button" onClick={() => setPending(null)} className="px-3 py-2 text-sm text-muted hover:text-ink">
@@ -183,7 +183,7 @@ export function DataSection({ done, onReplace, onMerge, onReset }: Props) {
       )}
 
       {message && (
-        <p role="status" className={`mt-3 text-sm ${message.ok ? 'text-emerald-400' : 'text-red-400'}`}>
+        <p role="status" className={`mt-3 text-sm ${message.ok ? 'text-ok' : 'text-warn'}`}>
           {message.text}
         </p>
       )}
@@ -197,7 +197,7 @@ export function DataSection({ done, onReplace, onMerge, onReset }: Props) {
             setMessage({ ok: true, text: 'Fremdriften er nullstilt.' })
           }
         }}
-        className="mt-6 text-xs text-muted underline-offset-4 hover:text-red-400 hover:underline"
+        className="mt-6 text-xs text-muted underline-offset-4 hover:text-warn hover:underline"
       >
         Nullstill fremdrift
       </button>

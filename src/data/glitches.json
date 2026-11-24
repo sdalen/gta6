@@ -1,0 +1,358 @@
+[
+ {
+  "name": "Apollo Aggregates Save-and-Reload Glitch (Red Barn Glitch / Warehouse Loot Loop)",
+  "status": "virker",
+  "patchNote": "Ikke patchet per 24. november 2026. Første oppdatering, 01.002.002 (PS5) / 1.0.2.2 (Xbox Series X|S), kom 23. november 2026. Patch-notatene nevner ikke glitchen, og flere nettsteder melder at den fortsatt virker etterpå. Rockstar har ikke kommentert den. meowdb skriver at ingen oppdatering er sluppet ennå, men det er utdatert.",
+  "platforms": "PS5 og Xbox Series X|S (spillet finnes bare på disse).",
+  "unlock": "Virker fra kapittel 1, men pengene fra kapittel 1 forsvinner når kapittel 2 starter. Bare Family Savings (maks $5 000) blir med. De fleste guider anbefaler å vente til kapittel 2.",
+  "payout": "Første runde: ca. $11 280 i byttets verdi. Hver ny runde: ca. $8 640 (to fulle stash bags). Kildene sier $7 000–$11 000 per runde. LibertyCity fikk $14 400 hos Donnie for en last Brian vurderte til $12 720.",
+  "perHour": "Kildene er uenige. GameRant: ca. $8 000 hvert femte minutt. LADbible: ca. $60 000 i timen ved 10 min per runde. PC Gamer: ca. $50 000 på 15 minutter. Påstander om $500 000+ i timen er ikke bekreftet.",
+  "requirements": [
+   "Jason (rømmer til Jason's House i Key Lento etter lasting)",
+   "Eget, registrert kjøretøy med bagasjerom (ikke stjålet bil)",
+   "Stash bags (en tom bag fra start, en med marked bills ligger i varebilen i midten)",
+   "En Fence: Brian's Lockup, Donnie's trailer, Dunk eller Tyrone",
+   "Manuell lagring må være mulig (ikke midt i et oppdrag, ingen juksekoder aktive)"
+  ],
+  "location": {
+   "place": "Apollo Aggregates",
+   "area": "South Vice-Dale County",
+   "detail": "Lang rød lagerbygning (ofte kalt «den røde låven») øst for Hamlet og nord for Key Lento. Den ligger sørøst for tre store rektangulære dammer ved motorveien, der adkomstveien svinger. Gå inn den grå døra ved siden av Apollo-traileren. På gårdsplassen står en varebil med teddybjørner, og inne i hallen står en åpen varebil."
+  },
+  "steps": [
+   "Kjør Jasons eget kjøretøy til Apollo Aggregates. Parker nær døra.",
+   "Gå inn den grå døra ved Apollo-traileren. Døra må brytes opp.",
+   "Første besøk: plyndre likene og ta alt i bakre kontor.",
+   "Ta kokainen fra bordene i kontorene.",
+   "Knekk safen på arkivskapet: trykk Triangel (PS5) eller Y (Xbox), og vri høyre stikke til indikatoren fylles. Den gir kontanter, kokain og et Leroy Rook-kort.",
+   "Fyll den første stash bag og legg den i bagasjerommet.",
+   "Gå tilbake til midten av hallen. Ta stash bag med marked bills fra den åpne varebilen.",
+   "Fyll den med kokain fra den åpne varebilen og fra teddybjørn-varebilen bak porten ute.",
+   "Legg også denne bagen i bagasjerommet. Nå har du to bagger (ca. $8 640).",
+   "Åpne pausemenyen. Velg Game > Save Game og lagre manuelt, helst i en egen lagringsplass. Autolagring virker ikke.",
+   "Velg Game > Load Game og last den samme lagringen.",
+   "Du våkner ved Jason's House i Key Lento. Baggene ligger fortsatt i bilen.",
+   "Kjør tilbake til lageret. Sjekk kontorene, safen og varebilene. Kokainen skal være tilbake.",
+   "Fyll nye bagger og gjenta til bilen er full.",
+   "Selg: Kjør til Brian's Lockup sørvest i Key Lento. Tast koden 7700 og legg igjen baggene. Pengene kommer i postkassen ved Jasons hus etter noen dager i spillet.",
+   "Alternativ: Selg hos Donnie's trailer i Key Lento. Gå til den gamle verktøykassen ved traileren og hold Triangel/Y på «Sell Stash Bags». Pengene kommer i postkassen ved Jasons hus etter at han sender melding."
+  ],
+  "risks": [
+   "Bagger du bærer, eller som ligger på bakken, kan bli borte ved lasting. Legg dem alltid i bilen før du lagrer.",
+   "Stjålne biler kan forsvinne ved lasting, med alt innhold.",
+   "Kontanter og BuckMe-saldo fra kapittel 1 slettes når kapittel 2 starter. Bare Family Savings (maks $5 000) blir med, og den kan ikke tas ut igjen.",
+   "Kontanter du bærer, går tapt hvis du dør eller blir arrestert. Sett inn penger i BuckMe eller husets gjemmested.",
+   "Før kapittel 4 har BuckMe en saldogrense. Svært store salg kan bli liggende som ventende eller låses.",
+   "Respawn er ustabil. Noen ganger må du laste flere ganger eller vente et par dager i spillet.",
+   "Mange lagre og lastinger kan av og til gi heng eller krasj (én kilde). Ingen kilde melder om ødelagte lagringsfiler.",
+   "Glitchen kan bli fjernet i en senere oppdatering uten varsel."
+  ],
+  "tips": [
+   "Bruk en egen lagringsplass til glitchen, så du ikke overskriver hovedlagringen.",
+   "Disse dukker bare opp én gang: bagen med marked bills, kokainen i første rom, pengene i tellemaskinen og Leroy Rook-kortet.",
+   "Leroy Rook-kortet kan selges i en pawn shop for ca. $6 000.",
+   "Donnie betaler ofte mer enn Brian, men slutter å kjøpe tyvegods etter oppdraget Swamped. Da er Brian's Lockup neste valg.",
+   "Brian betaler først etter neste oppdrag. Donnie betaler etter ca. en dag. Sov for å spole frem.",
+   "Glitchen slår ikke av lagring eller trofeer. Det er ikke en juksekode.",
+   "En pickup rommer ca. 4 bagger. En varebil rommer 10."
+  ],
+  "sources": [
+   "https://gamerant.com/unlimited-money-glitch-gta-6/",
+   "https://beebom.com/gta-6-unlimited-money-glitch/",
+   "https://www.keengamer.com/articles/guides/gta-6-unlimited-money-glitch-guide/",
+   "https://libertycity.net/guides/gta-6/10581-gta-6-unlimited-money-glitch-warehouse.html",
+   "https://gtamaxing.com/gta-vi/tips/gta-vi-money-glitch-warehouse/",
+   "https://insider-gaming.com/gta-6-infinite-money-glitch/",
+   "https://www.ladbible.com/entertainment/gaming/gta-6-infinite-money-glitch-jason-994211-20261121",
+   "https://www.pcgamer.com/games/grand-theft-auto/gta-6-infinite-money-glitch/",
+   "https://kotaku.com/gta-6-infinite-money-glitch-how-to-rockstar-games-ps5-2000758907",
+   "https://meowdb.com/gta6/glitches",
+   "https://www.notebookcheck.net/New-GTA-6-update-leaves-infinite-money-glitch-untouched.1457986.0.html",
+   "https://comicbook.com/gaming/news/gta-6-money-infinite-glitch-bug-update/",
+   "https://econmaxx.com/gta-6-patch-notes",
+   "https://www.tweaktown.com/news/114814/gta-6-already-has-an-infinite-money-glitch-but-many-players-are-skipping-it/index.html"
+  ],
+  "id": "apollo-aggregates-save-and-reload-glitch"
+ },
+ {
+  "name": "Apollo Aggregates Character Swap Glitch (Jason/Lucia-bytte)",
+  "status": "virker",
+  "patchNote": "Ikke nevnt i oppdatering 01.002.002 (23. november 2026). Ingen kilde melder at den er patchet.",
+  "platforms": "PS5 og Xbox Series X|S.",
+  "unlock": "Kapittel 2 eller senere. Du må kunne bytte mellom Jason og Lucia. For 10-baggers varebil må du ha registrert kjøretøy (hos Moses eller Pay 'n' Spray, låses opp i kapittel 2).",
+  "payout": "Ca. $7 200 per full bag (én kildes tall). Vice skriver at første runde kan gi «rundt $40 000» i bytte. MMOExp anslår ca. $165 600 for 22 bagger, men det er en butikk som selger GTA-penger, så tallet er usikkert.",
+  "perHour": "Ikke bekreftet. Kilder nevner opptil $500 000 i timen, men kaller det selv grove anslag.",
+  "requirements": [
+   "Jason og Lucia må begge være spillbare",
+   "Den andre karakteren må være langt unna lageret",
+   "Registrert varebil (10 plasser) eller annen bil med bagasjerom",
+   "En Fence (Dunk i kapittel 2, Tyrone i kapittel 3 betaler straks)"
+  ],
+  "location": {
+   "place": "Apollo Aggregates",
+   "area": "South Vice-Dale County",
+   "detail": "Samme røde lager øst for Hamlet, nord for Key Lento. Teddybjørn-varebilen står ute på grusplassen, og en annen varebil står inne i hallen."
+  },
+  "steps": [
+   "Stjel varebilen som står like ved lageret.",
+   "Registrer den hos Moses eller i en Pay 'n' Spray, så den blir din.",
+   "Rygg varebilen inn til inngangen på lageret.",
+   "Ta kokain fra teddybjørn-varebilen ute, varebilen inne, kontorbordet og safen.",
+   "Legg alle fulle bagger i varebilen din.",
+   "Gå et stykke bort fra bilen. Bytt til den andre karakteren (som står langt unna), og bytt straks tilbake.",
+   "Sjekk de to varebilene. Kokainen skal være tilbake i løpet av sekunder.",
+   "Gjenta til varebilen er full.",
+   "Kjør til en Fence og selg, eller la den andre karakteren kjøre den fulle varebilen og selge."
+  ],
+  "risks": [
+   "Hvis den andre karakteren står for nær lageret, kommer ikke byttet tilbake.",
+   "Safen fylles ikke på med karakterbytte, bare de to varebilene.",
+   "Kjører du for langt fra de fulle bilene, kan de eller innholdet forsvinne.",
+   "Parkerer du varebilen hjemme, kan varene forsvinne.",
+   "Før kapittel 4: hold hvert salg under $100 000, og ha BuckMe på $0 før store salg. Ellers kan betalingen låses.",
+   "Kildene er uenige om hva som kommer tilbake. Likene og marked bills kommer ikke tilbake."
+  ],
+  "tips": [
+   "Kildene sier karakterbytte går raskere enn å lagre og laste.",
+   "Kapasitet: 10 bagger i egen varebil, 10 i den andre varebilen (dirk opp bakdøra) og 2 båret av karakteren, totalt 22.",
+   "Bruk RideMe for å hente egen bil i nærheten av Fence.",
+   "Test én full runde før du satser på en stor last."
+  ],
+  "sources": [
+   "https://www.vice.com/en/article/gta-6-money-glitch/",
+   "https://www.gamespot.com/articles/gta-6-infinite-cash-money-cheat-exploit/",
+   "https://www.mmoexp.com/News/gta-6-money-glitch-apollo-aggregates-22-bag-method.html",
+   "https://www.mmoexp.com/News/grand-theft-auto-vi-gta-6-money-glitch-chapter-2-van-method.html",
+   "https://successknocks.com/gta-6-money-glitch-warehouse-location/"
+  ],
+  "id": "apollo-aggregates-character-swap-glitch"
+ },
+ {
+  "name": "Apollo Aggregates Drive-Away Reset (Van Method / Bridge Loop)",
+  "status": "virker",
+  "patchNote": "Ikke nevnt i oppdatering 01.002.002 (23. november 2026). Ingen kilde melder at den er patchet. Avstanden som trengs, varierer mellom kildene.",
+  "platforms": "PS5 og Xbox Series X|S.",
+  "unlock": "Virker med både Jason og Lucia. Beste tidspunkt er kapittel 2, når du kan registrere en varebil.",
+  "payout": "Samme bytte som de andre Apollo-metodene. Prodigy Gamers sier ca. $12 000–$15 000 per salg hos Dunk. Første runde gir mer enn senere runder.",
+  "perHour": "GamerHour påstår $500 000 i timen uten kilde. Ikke bekreftet.",
+  "requirements": [
+   "Registrert varebil med 10 plasser (helst to)",
+   "Eventuelt en ekstra bil å kjøre bort med",
+   "En Fence (Donnie, Brian, Dunk eller Tyrone)"
+  ],
+  "location": {
+   "place": "Apollo Aggregates",
+   "area": "South Vice-Dale County",
+   "detail": "Samme røde lager øst for Hamlet. Kjør ut på den rette veien og snu. MMOExp nevner en «bridge loop»: sett waypoint under nærmeste bro, kjør dit og tilbake."
+  },
+  "steps": [
+   "Stjel varebilen ved lageret før du går inn. Registrer den som din.",
+   "Rygg den inn ved siden av varebilen foran porten.",
+   "Første besøk: plyndre likene, ta bagen på bordet, kokain og kasse i kontoret, og safen.",
+   "Fyll baggene med kokain fra de to varebilene og legg dem i din varebil.",
+   "Kjør bort i ca. 30–40 sekunder. Andre kilder sier ca. 0,3–0,5 mile. Snu og kjør tilbake.",
+   "Hvis porten er lukket når du kommer tilbake, er nye varer på plass. Står den åpen, kjørte du ikke langt nok.",
+   "Gjenta til varebilen er full.",
+   "Selg hos Donnie's trailer eller Brian's Lockup. Hold markøren over ikonene på kartet for å sammenligne pris."
+  ],
+  "risks": [
+   "En varebil du lar stå alene, kan bli plyndret av NPC-er.",
+   "Etter første besøk er det bare narkotika som kommer tilbake.",
+   "Kildene er uenige om avstanden. Bridge loop skal også fylle safen, men det er bare én kilde.",
+   "Samme pengeregler som andre metoder: kapittel 1-penger slettes, og BuckMe har grense før kapittel 4."
+  ],
+  "tips": [
+   "Bruk en pin på kartet for å vite hvor langt du har kjørt.",
+   "Med to karakterer kan den ene kjøre full varebil til Fence mens den andre fortsetter."
+  ],
+  "sources": [
+   "https://gamerhour.net/guides/gta-6-infinite-money-glitch-for-any-chapter/",
+   "https://prodigygamers.com/2026/11/21/gta-6-all-infinite-money-glitch-do-it-before-it-gets-patched-no-cheats/",
+   "https://meowdb.com/gta6/glitches",
+   "https://www.vice.com/en/article/gta-6-money-glitch/",
+   "https://www.mmoexp.com/News/grand-theft-auto-vi-gta-6-money-glitch-chapter-2-van-method.html",
+   "https://www.tweaktown.com/news/114814/gta-6-already-has-an-infinite-money-glitch-but-many-players-are-skipping-it/index.html"
+  ],
+  "id": "apollo-aggregates-drive-away-reset"
+ },
+ {
+  "name": "Store Robbery Reset (Restart Mission Glitch)",
+  "status": "usikkert",
+  "patchNote": "Ikke nevnt i noen patch-notater. Blandede rapporter: én spiller fikk det ikke til 20. november 2026.",
+  "platforms": "PS5 og Xbox Series X|S.",
+  "unlock": "Krever et tilgjengelig story-oppdrag som starter med en filmsekvens. Ingen kilde oppgir kapittel.",
+  "payout": "Ikke oppgitt i noen kilde. Du får det som ligger i kassene på nytt.",
+  "perHour": "Ikke oppgitt.",
+  "requirements": [
+   "Jason (butikkene ligger nær huset hans i Key Lento)",
+   "Et story-oppdrag som starter med filmsekvens",
+   "Ingen etterlysning når du starter oppdraget"
+  ],
+  "location": {
+   "place": "Key Lento",
+   "area": "South Vice-Dale County",
+   "detail": "Burgerrestauranten nær Jason's House, bensinstasjonen i nærheten og nærbutikkene langs strandveien. Robbede butikker vises som stengt på kartet."
+  },
+  "steps": [
+   "Ran kassen i burgerrestauranten nær Jasons hus.",
+   "Ran bensinstasjonen og nærbutikkene langs strandveien.",
+   "Bli kvitt etterlysningen.",
+   "Start et story-oppdrag som begynner med en filmsekvens.",
+   "Åpne pausemenyen mens det starter, og velg «Restart Mission».",
+   "Når oppdraget har startet på nytt, åpne menyen og velg «Quit Mission».",
+   "Tilbake i fri roaming skal butikkene være åpne med fulle kasser igjen.",
+   "Ran dem på nytt og gjenta."
+  ],
+  "risks": [
+   "Usikker metode. Én spiller meldte at den ikke virket.",
+   "Kontanter går tapt hvis du dør eller blir arrestert.",
+   "Kan bli fjernet i en oppdatering."
+  ],
+  "tips": [
+   "Å sove eller bytte klær tilbakestiller ikke butikkene, ifølge meowdb.",
+   "Games.gg regner vanlige butikkran som vanlig inntekt, ikke en glitch."
+  ],
+  "sources": [
+   "https://www.keengamer.com/articles/guides/gta-6-unlimited-money-glitch-guide/",
+   "https://meowdb.com/gta6/glitches",
+   "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-money-glitch-what-works-and-what-to-avoid/"
+  ],
+  "id": "store-robbery-reset"
+ },
+ {
+  "name": "Stash Bag Overfill",
+  "status": "usikkert",
+  "patchNote": "Ikke nevnt i noen patch. Bare én rapport fra spillmiljøet.",
+  "platforms": "Ikke oppgitt.",
+  "unlock": "Ikke oppgitt. Brukes mens du fyller bagger ved Apollo Aggregates.",
+  "payout": "Ca. $800 ekstra per bag (bagen sto på $3 200 som maks, men fikk $4 000).",
+  "perHour": "Ikke oppgitt.",
+  "requirements": [
+   "Stash bag",
+   "En safe som ikke er åpnet ennå"
+  ],
+  "location": {
+   "place": "Apollo Aggregates",
+   "area": "South Vice-Dale County",
+   "detail": "Safen på arkivskapet i bakre kontor."
+  },
+  "steps": [
+   "Fyll bagen med kokain til den viser ca. $2 800. Stopp der.",
+   "Knekk safen sist og ta innholdet i samme bag.",
+   "Bagen skal da kunne gå over vanlig maks."
+  ],
+  "risks": [
+   "Bare én rapport. Ikke bekreftet av andre."
+  ],
+  "tips": [
+   "Sjekk bagverdien før og etter, så ser du om det virket."
+  ],
+  "sources": [
+   "https://meowdb.com/gta6/glitches"
+  ],
+  "id": "stash-bag-overfill"
+ },
+ {
+  "name": "Trunk Bag Counter Glitch",
+  "status": "usikkert",
+  "patchNote": "Ikke nevnt i noen patch. Rapportene motsier hverandre.",
+  "platforms": "Ikke oppgitt.",
+  "unlock": "Krever varebil med 10 plasser og Dunk som Fence (kapittel 2).",
+  "payout": "Ukjent. Én spiller sier ekstra bagger kan selges. En annen sier de ekstra baggene bare er pynt og gir $0.",
+  "perHour": "Ukjent.",
+  "requirements": [
+   "Varebil med 10 plasser",
+   "Dunk som Fence"
+  ],
+  "location": {
+   "place": "Dunk's trailer",
+   "area": "Ikke oppgitt i kilden",
+   "detail": "Ikke oppgitt i kilden."
+  },
+  "steps": [
+   "Telleren i varebilens bagasjerom skal kunne bli stående på 5 av 10.",
+   "Du kan da fortsette å ta ut bagger og selge dem hos Dunk."
+  ],
+  "risks": [
+   "Kildene er uenige. De ekstra baggene kan være verdiløse."
+  ],
+  "tips": [
+   "Ikke regn med denne. Bruk Apollo-metodene i stedet."
+  ],
+  "sources": [
+   "https://meowdb.com/gta6/glitches"
+  ],
+  "id": "trunk-bag-counter-glitch"
+ },
+ {
+  "name": "Roof Repair Save Spam",
+  "status": "usikkert",
+  "patchNote": "Ikke nevnt i noen patch. Bare én video.",
+  "platforms": "Ikke oppgitt.",
+  "unlock": "Under takreparasjonen på Jason's House (kapittel 1).",
+  "payout": "Påstått $5 000–$8 000 per manuell lagring.",
+  "perHour": "Ikke oppgitt.",
+  "requirements": [
+   "Jason",
+   "En basketball",
+   "Takreparasjonen på Jason's House må være aktiv"
+  ],
+  "location": {
+   "place": "Jason's House",
+   "area": "Key Lento",
+   "detail": "Trappen i Jasons hus. Taket nås via trappen opp og stigen."
+  },
+  "steps": [
+   "Start takreparasjonen på Jasons hus.",
+   "Sprett en basketball gjennom trappen i huset.",
+   "Lag manuelle lagringer om og om igjen.",
+   "Saldoen skal da øke for hver lagring."
+  ],
+  "risks": [
+   "Bare én video. Ingen andre har bekreftet den.",
+   "Penger fra kapittel 1 slettes uansett når kapittel 2 starter, bortsett fra Family Savings (maks $5 000)."
+  ],
+  "tips": [
+   "Bruk en egen lagringsplass hvis du vil teste."
+  ],
+  "sources": [
+   "https://meowdb.com/gta6/glitches"
+  ],
+  "id": "roof-repair-save-spam"
+ },
+ {
+  "name": "D-Pad \"Money Glitch\" ($250,000 cheat)",
+  "status": "virker",
+  "patchNote": "Ikke en glitch, men en juksekode. Ingen patch er relevant.",
+  "platforms": "PS5 og Xbox Series X|S.",
+  "unlock": "Først etter at historien er fullført.",
+  "payout": "$250 000 per bruk, men pengene blir ikke lagret.",
+  "perHour": "Ingen varig gevinst.",
+  "requirements": [
+   "Fullført historie"
+  ],
+  "location": {
+   "place": "Overalt",
+   "area": "Hele Leonida",
+   "detail": "Tastes inn som juksekode, ikke på et bestemt sted."
+  },
+  "steps": [
+   "Fullfør historien.",
+   "Tast inn juksekoden for penger.",
+   "Du får $250 000, men kan ikke lagre så lenge juksekoden er aktiv."
+  ],
+  "risks": [
+   "Du kan ikke lagre mens juksekoden er aktiv, så pengene forsvinner.",
+   "Manuell lagring er sperret med aktive juksekoder. Det stopper også Apollo-glitchen."
+  ],
+  "tips": [
+   "Videoer som kaller dette en «money glitch», viser bare juksekoden."
+  ],
+  "sources": [
+   "https://meowdb.com/gta6/glitches",
+   "https://alcasthq.com/?p=87542"
+  ],
+  "id": "d-pad-money-glitch",
+  "myth": true
+ }
+]

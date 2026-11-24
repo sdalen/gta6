@@ -49,12 +49,12 @@ export function InstallButton() {
       <button
         type="button"
         onClick={onClick}
-        className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-zinc-950 transition hover:bg-zinc-200"
+        className="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper transition hover:opacity-90"
       >
         <Icon name="download" className="size-4" /> Installer app
       </button>
       {showHelp && (
-        <div className="mt-4 rounded-xl bg-surface p-4 text-left text-sm leading-relaxed text-ink-soft ring-1 ring-zinc-800">
+        <div className="mt-4 rounded-xl bg-surface p-4 text-left text-sm leading-relaxed text-ink-soft ring-1 ring-line">
           {isIos() ? (
             <ol className="list-decimal space-y-1 pl-5">
               <li>Åpne siden i Safari.</li>

@@ -57,6 +57,8 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
     { to: href('utfordringer'), icon: 'trophy', title: 'Challenges', sub: '80 utfordringer og 13 løp' },
     { to: href('valgfritt'), icon: 'star', title: 'Valgfrie oppdrag', sub: 'Sideoppdrag og Strangers & Freaks' },
     { to: href('ran'), icon: 'lock', title: 'Ran', sub: `${robbed} av ${totalRobberies} ranet · butikker, banker, gjenger` },
+    { to: href('glitcher'), icon: 'bug', title: 'Pengeglitcher', sub: 'Kjente glitcher med kart, steg for steg' },
+    { to: href('biler'), icon: 'car', title: 'Eksklusive biler', sub: 'Sjeldne biler og hvordan du beholder dem' },
     { to: href('penger'), icon: 'coins', title: 'Pengestrategi', sub: 'Hvordan tjene mest, kapittel for kapittel' },
     { to: href('tips'), icon: 'bulb', title: 'Før du begynner', sub: 'Ting du ikke kan gjøre om senere' },
   ]
@@ -64,9 +66,9 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
   return (
     <div>
       <header className="pb-12 pt-6 sm:pt-12">
-        <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-accent">Leonida · Vice City</p>
-        <h1 className="text-4xl font-semibold tracking-tight text-ink sm:text-5xl">GTA VI på norsk</h1>
-        <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-muted">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent">Leonida · Vice City</p>
+        <h1 className="font-serif text-5xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl">GTA VI på norsk</h1>
+        <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
           Gjennomgang av hele historien, samleobjekter og tips. Huk av underveis, så husker appen hvor du er.
         </p>
         <InstallButton />
@@ -90,7 +92,7 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
         {nextChapter && nextMission && (
           <a
             href={href('kapittel', nextChapter.number, nextMission.id)}
-            className="group mt-6 flex items-center justify-between gap-4 rounded-xl bg-surface p-5 ring-1 ring-zinc-800 transition hover:ring-frame"
+            className="group mt-6 flex items-center justify-between gap-4 rounded-xl bg-surface p-5 ring-1 ring-line transition hover:ring-frame"
           >
             <span>
               <span className="block text-xs uppercase tracking-[0.18em] text-muted">
@@ -104,25 +106,25 @@ export function HomePage({ done, spoilers, onToggle }: Props) {
       </section>
 
       {deadline && (
-        <section className={`mb-12 rounded-xl border bg-red-400/[0.06] ${soon ? 'border-red-400/60' : 'border-red-400/30'}`}>
+        <section className={`mb-12 rounded-xl border bg-warn/[0.06] ${soon ? 'border-warn/60' : 'border-warn/30'}`}>
           <button
             type="button"
             onClick={toggleDeadline}
             aria-expanded={deadlineOpen}
             className="group flex w-full items-center gap-4 p-4 text-left sm:p-5"
           >
-            <Icon name="alert" className="size-5 shrink-0 text-red-400" />
+            <Icon name="alert" className="size-5 shrink-0 text-warn" />
             <span className="min-w-0 flex-1">
-              <span className="block text-xs font-medium uppercase tracking-[0.18em] text-red-400">Gjør dette først</span>
+              <span className="block text-xs font-medium uppercase tracking-[0.18em] text-warn">Gjør dette først</span>
               <span className="mt-0.5 block truncate text-[15px] font-semibold text-ink">
                 Før {deadline.mission.name}
                 <span className="font-normal text-muted"> · Kap. {deadline.chapter}</span>
               </span>
               {soon && (
-                <span className="mt-2 inline-flex items-center gap-2 rounded-full bg-red-400/15 px-2.5 py-1 text-xs font-medium text-red-300 ring-1 ring-red-400/30">
+                <span className="mt-2 inline-flex items-center gap-2 rounded-full bg-warn/15 px-2.5 py-1 text-xs font-medium text-warn ring-1 ring-warn/30">
                   <span className="relative flex size-2">
-                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-400 opacity-60" />
-                    <span className="relative inline-flex size-2 rounded-full bg-red-400" />
+                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-warn opacity-60" />
+                    <span className="relative inline-flex size-2 rounded-full bg-warn" />
                   </span>
                   {deadline.missionsBefore === 0
                     ? `${deadline.mission.name} er neste oppdrag. Gjør resten nå!`

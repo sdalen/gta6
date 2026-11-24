@@ -1,0 +1,811 @@
+{
+ "garageRules": [
+  {
+   "title": "En stjålet bil er ikke din før den er registrert",
+   "body": "En stjålet bil som ikke er registrert, forsvinner når du forlater den eller vraker den. Alt i bagasjerommet forsvinner også. Du kan parkere den i en garasje eller ved et safehouse, men den er ikke registrert av den grunn. Flere guider advarer om at uregistrerte biler kan være borte når du laster inn et lagret spill."
+  },
+  {
+   "title": "Moses registrerer biler fra kapittel 2",
+   "body": "Moses holder til ved Watkins Auto Parts i Port Gellhorn. Han registrerer bare biler uten tracker. Han lakkerer om bilen og bytter skilt. Den første registreringen er gratis. Senere stiger prisen med bilens verdi. Én spiller betalte 11 250 dollar for en Vapid Riata som bare kunne selges for 1 800 dollar. Dyre biler kan koste over 20 000 dollar."
+  },
+  {
+   "title": "Pay 'n' Spray fra kapittel 3",
+   "body": "Fra tidlig i kapittel 3 kan alle Pay 'n' Spray-verksteder registrere biler med vanlig (gul) tracker. Registreringen slår av trackeren for godt. Du må bli kvitt politiet først, ellers åpner ikke verkstedet. Kjente steder er Key Lento, Hamlet, Salton, Stockyard, Ocean Beach og Washington Beach."
+  },
+  {
+   "title": "Avansert (rød) tracker",
+   "body": "Biler med rød tracker varsler politiet hvis du kjører sakte i omtrent fem sekunder. Moses tar dem ikke, og Pay 'n' Spray tar dem ikke i starten. Guidene er ikke enige om nøyaktig når det låses opp. Den vanligste forklaringen er at Randy gjør deg til «ambassadør» noen timer etter at du har levert Mamba GT i kapittel 4. Etter det kan alle Pay 'n' Spray registrere og selge biler med rød tracker."
+  },
+  {
+   "title": "Du trenger en ledig plass",
+   "body": "Du kan bare registrere en bil hvis du har en ledig garasjeplass. Jason og Lucia har i tillegg én personlig bil hver. Kjøp garasjer før du stjeler dyre biler. Garasjene kjøpes i Vice City Real Estate-appen på Jasons telefon etter oppdraget Daily Driver i kapittel 2."
+  },
+  {
+   "title": "Skann bilen først med WAiNK",
+   "body": "Skann bilen med WAiNK-appen før du stjeler den. Da ser du trackertype, sikkerhetsnivå, salgsverdi og hva det koster å registrere den. Mange dyre biler krever Key Cloner. Den får du av Randy i kapittel 3, i hovedoppdraget First Impressions."
+  },
+  {
+   "title": "Scooter Bros henter bilene dine",
+   "body": "Moses installerer Scooter Bros-appen. Mot betaling henter den en registrert bil fra garasjen til deg. Den kan også hente en registrert bil som er ødelagt. I kapittel 1 ringer du Joey, som reparerer og leverer Jasons personlige bil gratis."
+  },
+  {
+   "title": "Beslag (impound)",
+   "body": "Hvis du blir Wasted eller Busted i en personlig bil, havner den på beslagstomta. Det samme skjer ofte hvis du dumper den for å riste av deg politiet. Du kan hente den med Scooter Bros mot et høyt gebyr, eller stjele den tilbake fra tomta. Lucias bil blir beslaglagt etter Breakfast Run, og du henter den i oppdraget Impounded Vehicle. Hent bilene som står på beslag i Port Gellhorn før oppdraget Checking Out i kapittel 3."
+  },
+  {
+   "title": "Registrering fjerner lakk og dekor",
+   "body": "Registreringen lakkerer bilen om. Ifølge noen guider forsvinner den spesielle lakken eller dekoren. Hos Vice Vinyl skal «Restore Paint Job» kunne gi den tilbake. Dette er ikke bekreftet av alle kilder. Vær forsiktig hos mod-verksteder med unike biler."
+  },
+  {
+   "title": "Kapittel 1 er et point of no return for biler",
+   "body": "Oppdraget Tourist Trap (på kartet: Take Up Mattia's Offer) er point of no return i kapittel 1. Det låses opp etter Recalibration. Da mister Jason de personlige bilene sine, også Ultimate Edition-biler og oppgraderinger. Unike biler som står igjen på Key Lento, forsvinner også. Ifølge IGN er Ultimate-ekstrautstyret Enduro, Kayak og Ganado Retro Build bare tilgjengelig i kapittel 1. Kildene er uenige om Ganado forsvinner. Lag en manuell lagring etter Recalibration."
+  },
+  {
+   "title": "Jasons hus lagrer ikke stjålne biler",
+   "body": "Stjålne biler du parkerer ved Jasons hus på Key Lento blir ikke lagret der. Motellet i kapittel 2 (Starlet Motel) har én plass som holder på bilen."
+  },
+  {
+   "title": "Unike biler respawner ofte",
+   "body": "Standout-biler kjører aldri i trafikken. De står på faste steder og kommer tilbake etter en stund. Randy-biler som parkeres tilfeldig kan du ofte få frem igjen ved å lagre og laste inn på nytt. Det finnes 280 eller 281 standout-biler, avhengig av kilde."
+  },
+  {
+   "title": "Kjør pent og raskt hjem",
+   "body": "Skade senker både salgsprisen og det Randy betaler. Randy betaler dobbelt for en bil uten en skramme. Har bilen tracker, hold farten oppe hele veien. Velg brede veier og motorvei fremfor smale gater."
+  }
+ ],
+ "garages": [
+  {
+   "name": "Key Lento house (Jasons hus)",
+   "character": "Jason",
+   "unlock": "Kapittel 1, fra Brian. Jason flytter ut på slutten av kapittel 1.",
+   "capacity": "Lagrer ikke stjålne biler",
+   "place": "Key Lento",
+   "area": "Leonida Keys"
+  },
+  {
+   "name": "Starlet Motel",
+   "character": "Begge",
+   "unlock": "Kapittel 2, etter Discharge Time",
+   "capacity": "1 plass utenfor døra",
+   "place": "Starlet Motel",
+   "area": "Port Gellhorn"
+  },
+  {
+   "name": "Port Gellhorn Station Garage",
+   "character": "Begge",
+   "unlock": "Gratis gjennom Moses' jobber i kapittel 2",
+   "capacity": "1",
+   "place": "Port Gellhorn",
+   "area": "Port Gellhorn"
+  },
+  {
+   "name": "Mitchel Auto Center",
+   "character": "Begge",
+   "unlock": "Kjøpes etter Daily Driver i kapittel 2. Rundt 4 000–5 000 dollar.",
+   "capacity": "1",
+   "place": "Port Gellhorn",
+   "area": "Port Gellhorn"
+  },
+  {
+   "name": "Persistence Road Garage",
+   "character": "Begge",
+   "unlock": "Kjøpes etter Daily Driver i kapittel 2. Rundt 9 500 dollar.",
+   "capacity": "1",
+   "place": "Belville",
+   "area": "Leonida County"
+  },
+  {
+   "name": "7th Avenue Garage",
+   "character": "Begge",
+   "unlock": "Kjøpes etter Daily Driver i kapittel 2. Rundt 15 000 dollar.",
+   "capacity": "1",
+   "place": "Salton",
+   "area": "Vice City"
+  },
+  {
+   "name": "Wyatt Motors",
+   "character": "Begge",
+   "unlock": "Kjøpes etter Daily Driver i kapittel 2. Rundt 27 000 dollar.",
+   "capacity": "1",
+   "place": "Ambrosia",
+   "area": "Ambrosia"
+  },
+  {
+   "name": "Vela Rota Drive Garage",
+   "character": "Begge",
+   "unlock": "Kjøpes etter Daily Driver i kapittel 2. Rundt 30 000 dollar.",
+   "capacity": "1",
+   "place": "Capri",
+   "area": "Leonida Keys"
+  },
+  {
+   "name": "Bonita Court Garage",
+   "character": "Begge",
+   "unlock": "Kjøpes etter Daily Driver i kapittel 2. Rundt 42 500 dollar.",
+   "capacity": "1",
+   "place": "Washington Beach",
+   "area": "Vice City"
+  },
+  {
+   "name": "Atlantic Court Garage",
+   "character": "Begge",
+   "unlock": "Kjøpes etter Daily Driver i kapittel 2. Rundt 40 000–50 000 dollar.",
+   "capacity": "1",
+   "place": "Ocean Beach",
+   "area": "Vice Beach"
+  },
+  {
+   "name": "Store n' Bolt",
+   "character": "Begge",
+   "unlock": "Kjøpes i kapittel 2. Pris og plassering er ikke bekreftet.",
+   "capacity": "1 (ikke bekreftet)",
+   "place": "Ukjent",
+   "area": "Ukjent"
+  },
+  {
+   "name": "Paradise Garage",
+   "character": "Begge",
+   "unlock": "Bare Ultimate Edition. Gratis. Wyman gir den i kapittel 2, med '67 Vapid Dominator Buggy inni.",
+   "capacity": "1",
+   "place": "Watson Bay",
+   "area": "Grassrivers"
+  },
+  {
+   "name": "Shore Court Garage (Vintage Vice City Pack)",
+   "character": "Begge",
+   "unlock": "Bare med Vintage Vice City Pack. Gratis fra kapittel 3. Inneholder '55 Vapid Stanier.",
+   "capacity": "1",
+   "place": "Shore Drive, Ocean Beach",
+   "area": "Vice Beach"
+  },
+  {
+   "name": "GTA+-garasje",
+   "character": "Begge",
+   "unlock": "Fra kapittel 3 mens du abonnerer på GTA+. Inneholder '90 Annis Venturas BLVD Elegy.",
+   "capacity": "1",
+   "place": "Crosstown",
+   "area": "Vice City"
+  },
+  {
+   "name": "Bayside Apartments 201",
+   "character": "Begge",
+   "unlock": "Kapittel 3, lånt av Boobie",
+   "capacity": "2 (overbygd parkering)",
+   "place": "Bayside",
+   "area": "Vice City"
+  },
+  {
+   "name": "Thompson Court Garage",
+   "character": "Begge",
+   "unlock": "Gratis. Snakk med concierge i oppdraget Company Cars i kapittel 4.",
+   "capacity": "2",
+   "place": "Ocean Beach",
+   "area": "Vice Beach"
+  },
+  {
+   "name": "Y Hotel, rom 701",
+   "character": "Begge",
+   "unlock": "Kapittel 4, oppdraget Ocean Beach etter The Cartel Heist",
+   "capacity": "Ikke bekreftet. Personalet henter bilen din.",
+   "place": "Y Hotel, Ocean Beach",
+   "area": "Vice Beach"
+  },
+  {
+   "name": "Pegassi Residences Garage",
+   "character": "Begge",
+   "unlock": "Gratis etter Operation Savage Glory i kapittel 5",
+   "capacity": "3",
+   "place": "Tequesta Retreat",
+   "area": "Vice City"
+  },
+  {
+   "name": "Domestic Timbers garage",
+   "character": "Begge",
+   "unlock": "Belønning for å fullføre Randy's Wish List. Bare én kilde (Push Square) nevner den.",
+   "capacity": "Ikke bekreftet",
+   "place": "Ukjent",
+   "area": "Ukjent"
+  }
+ ],
+ "cars": [
+  {
+   "name": "Truffade Thrax (Andrew Node's Thrax)",
+   "class": "Hyperbil",
+   "rarity": "unik",
+   "value": "Ikke bekreftet. Randy betaler rundt 18 000 dollar for sin Thrax.",
+   "location": {
+    "place": "Starfish Island",
+    "area": "Rialto Islands, Vice City",
+    "detail": "Garasjen til et stort herskapshus ved Sabal Circle, på sørsiden av Starfish Island."
+   },
+   "spawn": "Står fast i garasjen. Kapittel er ikke oppgitt. Bilen er ulåst og alarmen er av.",
+   "missable": false,
+   "deadline": null,
+   "when": "Hent den når du har en ledig garasjeplass, gjerne i kapittel 3 eller senere. Den har ikke tracker, så Moses kan registrere den fra kapittel 2.",
+   "steps": [
+    "Kjøp eller frigjør en garasjeplass først.",
+    "Kjør til Sabal Circle på sørsiden av Starfish Island.",
+    "Gå inn i garasjen og sett deg i Thraxen. Du trenger ikke Key Cloner.",
+    "Kjør rolig ut fra øya og registrer bilen."
+   ],
+   "tips": [
+    "Bare noen få guider nevner denne bilen. Plasseringen er ikke bekreftet i alle kilder.",
+    "Nærmeste garasjer er Atlantic Court Garage og Thompson Court Garage i Ocean Beach.",
+    "Den er nok det beste Thrax-alternativet å beholde, fordi Randys Thrax skal leveres."
+   ],
+   "sources": [
+    "https://thebestmods.com/gta-6/thrax-location/",
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+   ],
+   "id": "truffade-thrax"
+  },
+  {
+   "name": "Truffade Thrax (Boone Speedway-tilhenger)",
+   "class": "Hyperbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Boone Speedway",
+    "area": "Hamlet",
+    "detail": "Ved sørinngangen, på en biltilhenger ved siden av containerne."
+   },
+   "spawn": "Respawner. Noen ganger står det en annen bil der.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du kan registrere biler med tracker. Den har som regel tracker.",
+   "steps": [
+    "Sett deg i bilen på tilhengeren.",
+    "Koble den løs fra tilhengeren og kjør ned rampen.",
+    "Kom deg raskt bort fra området og hold farten oppe.",
+    "Registrer den på en Pay 'n' Spray. Det er en i Hamlet."
+   ],
+   "tips": [
+    "Kilden sier at kartposisjonen ikke er bekreftet i spillet.",
+    "Det er ikke bekreftet hvilken type tracker den har. Skann den med WAiNK først."
+   ],
+   "sources": [
+    "https://thebestmods.com/gta-6/thrax-location/"
+   ],
+   "id": "truffade-thrax-boone"
+  },
+  {
+   "name": "Progen Purple Drank Emerus",
+   "class": "Superbil",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Chatfield Storage & Logistics",
+    "area": "Waxman Island, øst for Vice City",
+    "detail": "I en container ved vannet på det voktede lageret. Noen ganger står den foran containerne. Det ligger en Pay 'n' Spray rett ved."
+   },
+   "spawn": "Knyttet til en ranmulighet (robbery opportunity) på stedet. Kapittel er ikke oppgitt.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du har ledig garasjeplass og Pay 'n' Spray er åpent (kapittel 3).",
+   "steps": [
+    "Gå inn på det voktede lageret og ta deg av vaktene.",
+    "Trykk på knappen ved vaktbua for å åpne porten.",
+    "Finn bilen i containeren og kjør ut.",
+    "Pay 'n' Spray ligger rett ved, så registrer den med en gang."
+   ],
+   "tips": [
+    "Det er ikke bekreftet om bilen har tracker.",
+    "Kort vei til Pay 'n' Spray gjør den lett å få hjem uten skade."
+   ],
+   "sources": [
+    "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/",
+    "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto"
+   ],
+   "id": "progen-purple-drank-emerus"
+  },
+  {
+   "name": "Pegassi Dante's Vitello",
+   "class": "Superbil",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Starfish Island",
+    "area": "Rialto Islands, Vice City",
+    "detail": "Ved herskapshuset til Dante Fresh."
+   },
+   "spawn": "Fast plassering. Ellers ukjent.",
+   "missable": false,
+   "deadline": null,
+   "when": "Ikke bekreftet. Hent den når du har ledig plass.",
+   "steps": [
+    "Kjør til Dante Fresh sitt herskapshus på Starfish Island.",
+    "Skann bilen med WAiNK for å se tracker og sikkerhet.",
+    "Ta bilen og registrer den."
+   ],
+   "tips": [
+    "Bare én kilde nevner denne bilen. Behandle den som ubekreftet.",
+    "Kan kombineres med turen til Andrew Node's Thrax på samme øy."
+   ],
+   "sources": [
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+   ],
+   "id": "pegassi-dante-s-vitello"
+  },
+  {
+   "name": "Progen Royal Ruby Emerus",
+   "class": "Superbil",
+   "rarity": "unik",
+   "value": "Kan selges for rundt 33 000 dollar",
+   "location": {
+    "place": "Vespucci Island",
+    "area": "Vice Beach",
+    "detail": "Garasjen til et herskapshus ved Neptune Circle. En annen kilde sier huset til en gangsterboss på Rialto Islands."
+   },
+   "spawn": "Fast plassering. Alarmen er av.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du har ledig garasjeplass.",
+   "steps": [
+    "Kjør til Neptune Circle på Vespucci Island.",
+    "Gå inn i garasjen og ta bilen.",
+    "Registrer den hos Moses eller Pay 'n' Spray."
+   ],
+   "tips": [
+    "Plasseringen er omstridt mellom kildene.",
+    "Det er ikke oppgitt om den har tracker."
+   ],
+   "sources": [
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+   ],
+   "id": "progen-royal-ruby-emerus"
+  },
+  {
+   "name": "Maibatsu '97 Penumbra FF",
+   "class": "Sportsbil",
+   "rarity": "unik",
+   "value": "Registrering rundt 6 750 dollar (gratis hvis det er din første hos Moses)",
+   "location": {
+    "place": "Vespucci Island",
+    "area": "Vice Beach",
+    "detail": "Hus ved Neptune Circle, bak en høy hekk. Gå inn via sidedøra og garasjen."
+   },
+   "spawn": "Fast plassering. Ingen tracker. Alarm går hvis du knuser ruta.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kapittel 2 eller senere. Den er et godt valg for Moses' gratis registrering.",
+   "steps": [
+    "Gå inn via sidedøra og garasjen.",
+    "Ikke knus ruta, så unngår du alarmen.",
+    "Kjør bilen til Moses ved Watkins Auto Parts i Port Gellhorn."
+   ],
+   "tips": [
+    "Ifølge KeenGamer hopper det en slange ut av bagasjerommet.",
+    "Turen fra Vice Beach til Port Gellhorn er lang. Kjør forsiktig."
+   ],
+   "sources": [
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+   ],
+   "id": "maibatsu-97-penumbra-ff"
+  },
+  {
+   "name": "Bravado Devil's Rope Gauntlet",
+   "class": "Muskelbil",
+   "rarity": "unik",
+   "value": "Registrering rundt 8 500 dollar",
+   "location": {
+    "place": "Hog Stars Garage",
+    "area": "Ambrosia",
+    "detail": "Inne i garasjen. Gå inn via trappa bak og takvinduet."
+   },
+   "spawn": "Fast plassering. Ingen tracker. Det er hunder inne.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kapittel 2 eller senere, når du har ledig plass.",
+   "steps": [
+    "Klatre opp trappa bak bygningen.",
+    "Gå inn gjennom takvinduet.",
+    "Pass deg for hundene og ta bilen.",
+    "Wyatt Motors i Ambrosia er nærmeste kjøpte garasje."
+   ],
+   "tips": [
+    "Bilen er knyttet til en gjengoperasjon ifølge kilden."
+   ],
+   "sources": [
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+   ],
+   "id": "bravado-devil-s-rope-gauntlet"
+  },
+  {
+   "name": "Canis Black Moth Kamacho",
+   "class": "Terrengbil",
+   "rarity": "unik",
+   "value": "Registrering rundt 6 700 dollar",
+   "location": {
+    "place": "La Polilla Negra",
+    "area": "Nord for Watson Bay, Grassrivers",
+    "detail": "Vestsiden av herskapshuset La Polilla Negra."
+   },
+   "spawn": "Fast plassering. Ingen tracker. Voktet av leiesoldater.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du er godt utstyrt med våpen og har ledig plass.",
+   "steps": [
+    "Ta deg forbi leiesoldatene.",
+    "Ta bilen på vestsiden av huset.",
+    "Kjør til nærmeste garasje eller Moses."
+   ],
+   "tips": [
+    "Bare én kilde (Metaforge) nevner bilen."
+   ],
+   "sources": [
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+   ],
+   "id": "canis-black-moth-kamacho"
+  },
+  {
+   "name": "Declasse Ghosts Exposed Parkland",
+   "class": "Klassisk bil",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Lake Tortoise",
+    "area": "Sør for Capri, Leonida Keys",
+    "detail": "Halloween-huset ved Lake Tortoise, med et stort skjelett på taket."
+   },
+   "spawn": "Fast plassering. Ingen tracker, ingen alarm, ulåst.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kapittel 2 eller senere. Lett å registrere hos Moses.",
+   "steps": [
+    "Finn huset med skjelettet på taket.",
+    "Sett deg i bilen og kjør.",
+    "Vela Rota Drive Garage i Capri ligger i nærheten."
+   ],
+   "tips": [
+    "En av de enkleste unike bilene å ta."
+   ],
+   "sources": [
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+   ],
+   "id": "declasse-ghosts-exposed-parkland"
+  },
+  {
+   "name": "Pegassi Infernus ('96)",
+   "class": "Klassisk superbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Crosstown Police Station",
+    "area": "Crosstown, Vice City",
+    "detail": "Nivå 7 i parkeringshuset til politistasjonen på NW 9th Street (noen sier NE 9th Street), øst for Rockridge Hospital. Én kilde sier sidedøra ved vaktbua har kode 5270. HotCars sier i stedet en åpen garasje i Ambrosia."
+   },
+   "spawn": "Alltid der. Første bil på Randy's Wish List (kapittel 3). Har tracker.",
+   "missable": false,
+   "deadline": null,
+   "when": "For å beholde den må du vente til du kan registrere biler med rød tracker (etter Mamba GT i kapittel 4). Før det er den bare en leveranse til Randy.",
+   "steps": [
+    "Skaff Key Cloner i First Impressions (kapittel 3).",
+    "Vent til en politimann åpner porten, eller bruk sidedøra.",
+    "Kjør opp til nivå 7 og bruk Key Cloner.",
+    "Kjør til toppen og bruk stunt-hoppet for å komme ut.",
+    "Hold farten oppe så trackeren ikke slår til, og rist av deg politiet.",
+    "Kjør til Pay 'n' Spray og registrer, hvis du har låst opp røde trackere."
+   ],
+   "tips": [
+    "Kildene er uenige om plassering. Crosstown Police Station er mest nevnt.",
+    "Hvis du leverer den til Randy, mister du den."
+   ],
+   "sources": [
+    "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations",
+    "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto",
+    "https://gta6.house/library/activities/randys-wish-list"
+   ],
+   "id": "pegassi-infernus"
+  },
+  {
+   "name": "Pegassi Vitello",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Waning Sands",
+    "area": "Øst for Belville, Leonida County",
+    "detail": "Villa på Flamingo Parkway. Garasjen nærmest huset, til høyre når du står foran inngangen."
+   },
+   "spawn": "Fast plassering i Randys oppdrag. Kan også stå tilfeldig ved rike hus i Capri.",
+   "missable": false,
+   "deadline": null,
+   "when": "Etter First Impressions i kapittel 3, når du har Key Cloner.",
+   "steps": [
+    "Klatre over gjerdet.",
+    "Plasser sprengstoff på porten.",
+    "Åpne garasjen og bruk Key Cloner.",
+    "Spreng porten og kjør ut.",
+    "Persistence Road Garage i Belville er nærmest."
+   ],
+   "tips": [
+    "Én kilde kaller bilen Pegassi Vacca. De fleste sier Vitello.",
+    "Det er ikke bekreftet om den har tracker."
+   ],
+   "sources": [
+    "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations",
+    "https://game-checklists.com/gta6/car-theft-missions-checklist/"
+   ],
+   "id": "pegassi-vitello"
+  },
+  {
+   "name": "Bravado Gauntlet Hellfire",
+   "class": "Muskelbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Nova Auto Junkyard",
+    "area": "Hamlet",
+    "detail": "M7-kontrollert skraphandel øst for Boone Speedway, ved Galerina Street. Bilen står bakerst. Nær Kurt's Barber Shop."
+   },
+   "spawn": "Alltid der. Fiendtlige gjengmedlemmer i området.",
+   "missable": false,
+   "deadline": null,
+   "when": "Etter at du har fått Key Cloner i kapittel 3.",
+   "steps": [
+    "Åpne inngangsportene først.",
+    "Snik deg langs høyre side av skraphandelen.",
+    "Bruk Key Cloner på bilen bakerst.",
+    "Kjør ut gjennom portene du åpnet.",
+    "Pay 'n' Spray i Hamlet ligger i nærheten."
+   ],
+   "tips": [
+    "Én kilde skriver Galena Street i stedet for Galerina Street."
+   ],
+   "sources": [
+    "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/",
+    "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations"
+   ],
+   "id": "bravado-gauntlet-hellfire"
+  },
+  {
+   "name": "Pegassi Tempesta",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "NE 3rd Street",
+    "area": "Downtown Vice City",
+    "detail": "Tilfeldig hendelse der en bergingsbil tar bilen og sjåføren krangler med eieren. Kan også stå ved en hytte ved Lake Tallaloko."
+   },
+   "spawn": "Rundt klokka 13 under bergingsbil-hendelsen. Tilfeldig.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kom tilbake rundt klokka 13 hvis hendelsen ikke er der. Push Square sier at du får en registrert Tempesta gratis når hele Randy's Wish List er levert.",
+   "steps": [
+    "Vær på NE 3rd Street rundt klokka 13.",
+    "True eieren, slipp bilen fra bergingsbilen og kjør.",
+    "Rist av deg politiet og registrer bilen."
+   ],
+   "tips": [
+    "Den letteste måten å beholde en Tempesta på kan være belønningen fra Randy. Den står i en garasje i Balsero og er allerede registrert, ifølge Push Square."
+   ],
+   "sources": [
+    "https://macetesgta6.com.br/en/tip/gta-6-rare-car-locations-randy/",
+    "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations"
+   ],
+   "id": "pegassi-tempesta"
+  },
+  {
+   "name": "Declasse Mamba GT (Randy)",
+   "class": "Klassisk sportsbil",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Leaf Links",
+    "area": "Vice Beach",
+    "detail": "Voktet herskapshus på Delamore Drive, mot andre hull på golfbanen. Bilen står bak bygningen til høyre. Nøkkelen ligger i en bolle på bordet bak sofaen."
+   },
+   "spawn": "Kommer med oppdraget ¡Dale Mamba! i kapittel 4, noen dager etter Photo/Shoot i Dre'Quans historie.",
+   "missable": false,
+   "deadline": null,
+   "when": "Den er en del av Randys liste og leveres. Det er ikke bekreftet at du kan beholde akkurat denne.",
+   "steps": [
+    "Vent på at Randy ringer i kapittel 4.",
+    "Bruk Snap Gun på dørene bak bassenget.",
+    "Ta nøkkelen fra bollen bak sofaen. Key Cloner virker ikke her.",
+    "Hold farten oppe, den har tracker."
+   ],
+   "tips": [
+    "Etter denne leveransen låses registrering av biler med rød tracker opp.",
+    "I Delivery Day velger du mellom Mamba GT og Thrax."
+   ],
+   "sources": [
+    "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations",
+    "https://gta6.house/library/activities/randys-wish-list"
+   ],
+   "id": "declasse-mamba-gt"
+  },
+  {
+   "name": "Moses' Emperor Sultan",
+   "class": "Sportssedan",
+   "rarity": "unik",
+   "value": "Registrering 1 600 dollar",
+   "location": {
+    "place": "Watkins Auto Parts",
+    "area": "Port Gellhorn",
+    "detail": "Belønning fra Moses etter alle sju Vehicle Drop-Offs."
+   },
+   "spawn": "Låses opp når du har levert alle sju bilene: '82 Canis Crawler, Declasse Yosemite 1500, BF Bandito, Annis Hellion, Karin Futo, Western Nightblade og Declasse Vamos.",
+   "missable": false,
+   "deadline": "Ikke bekreftet. Leveransene åpner i kapittel 2.",
+   "when": "Gjør leveransene i kapittel 2 mens du bor i Port Gellhorn.",
+   "steps": [
+    "Lever alle sju bilene til Moses.",
+    "Declasse Vamos står i en garasje på Rockledge Road ved Mount Kalaga. Koden er 2727.",
+    "Western Nightblade står ved Final Chapter MC-klubbhuset i Ambrosia.",
+    "Betal 1 600 dollar for å registrere Sultan."
+   ],
+   "tips": [
+    "Hel bil gir høyere utbetaling for hver leveranse."
+   ],
+   "sources": [
+    "https://game-checklists.com/gta6/car-theft-missions-checklist/",
+    "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto"
+   ],
+   "id": "moses-emperor-sultan"
+  },
+  {
+   "name": "Vapid '32 Hustler",
+   "class": "Hot rod",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Ukjent",
+    "area": "Ukjent",
+    "detail": "Belønning i avslutningen av Dubious Provenance (Benedict Halifax)."
+   },
+   "spawn": "Kapittel 3. Gi Halifax statuen, finn ham på motellet og gi ham en sjanse til. Spar ham i finalen.",
+   "missable": true,
+   "deadline": "Avhenger av valgene dine i Dubious Provenance. Nøyaktig frist er ikke bekreftet.",
+   "when": "Gjør Dubious Provenance i kapittel 3.",
+   "steps": [
+    "Gi Halifax statuen.",
+    "Finn ham på motellet og stol på ham.",
+    "Spar ham når han stikker av i finalen.",
+    "Ta Hustleren sammen med pengene og smykkene."
+   ],
+   "tips": [
+    "Hvis du skyter Halifax, får du kanskje ikke bilen. Lagre før finalen."
+   ],
+   "sources": [
+    "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
+   ],
+   "id": "vapid-32-hustler"
+  },
+  {
+   "name": "Felipes bil (Collect Felipe's Gift)",
+   "class": "Ukjent",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Ukjent",
+    "area": "Ukjent",
+    "detail": "Låses opp med Collect Felipe's Gift hvis du sparer Felipe i Bad Driver!."
+   },
+   "spawn": "Kapittel 4. Spar Felipe i Bad Driver!.",
+   "missable": true,
+   "deadline": "Bad Driver! stenger når du starter Power Play.",
+   "when": "Gjør Bad Driver! før Power Play i kapittel 4.",
+   "steps": [
+    "Spill Bad Driver! før Power Play.",
+    "Spar Felipe (ikke drep ham for 20 000 dollar fra Andrea).",
+    "Vent på at han kontakter deg og gjør Collect Felipe's Gift."
+   ],
+   "tips": [
+    "Ingen guide har oppgitt hvilken bil det er."
+   ],
+   "sources": [
+    "https://leonidahub.org/en/news/gta-6-chapter-4-missables-bad-driver-shayna-the-ultimate-boat-and-the-point-of-no-return"
+   ],
+   "id": "felipes-bil"
+  },
+  {
+   "name": "'95 Grotti Cheetah",
+   "class": "Klassisk superbil",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Pegassi Residences",
+    "area": "Tequesta Retreat, Vice City",
+    "detail": "Garasjen under Pegassi Residences."
+   },
+   "spawn": "Bare Ultimate Edition. Kapittel 5, etter Honest Abe.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kapittel 5. Det er ingen grunn til å stresse, den er en belønning.",
+   "steps": [
+    "Spill til kapittel 5 og fullfør Honest Abe.",
+    "Hent bilen i garasjen under Pegassi Residences."
+   ],
+   "tips": [
+    "Kildene er ikke helt enige om at bilen står i garasjen. Én kilde viser den utenfor South Tower."
+   ],
+   "sources": [
+    "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto",
+    "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
+   ],
+   "id": "95-grotti-cheetah"
+  },
+  {
+   "name": "'67 Vapid Dominator Buggy",
+   "class": "Terrengbil",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Paradise Garage",
+    "area": "Watson Bay, Grassrivers",
+    "detail": "Står i Paradise Garage."
+   },
+   "spawn": "Bare Ultimate Edition. Kapittel 2, etter Thrillbillies og et Dirt Track Race.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kapittel 2. Hent den, så starter Wyman's Classic Car Collection.",
+   "steps": [
+    "Fullfør Thrillbillies.",
+    "Hent bilen i Paradise Garage i Watson Bay."
+   ],
+   "tips": [
+    "Standard Edition kan oppgradere til Ultimate for 20 dollar."
+   ],
+   "sources": [
+    "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
+   ],
+   "id": "67-vapid-dominator-buggy"
+  },
+  {
+   "name": "Wyman's Classic Car Collection ('72 Deviant, '64 Mamba GT, '70 Riata, '67 Transgressor)",
+   "class": "Klassiske biler",
+   "rarity": "unik",
+   "value": "Wyman ber om rundt 1 500 dollar for å bygge en bil",
+   "location": {
+    "place": "Wyman's World Auto Salvage Co.",
+    "area": "Grassrivers",
+    "detail": "Vrak er spredt rundt i Leonida. Én Transgressor står i et skur nord i Port Gellhorn. Én Mamba GT står nord for Frogswater og én nord for Leonida State Penitentiary."
+   },
+   "spawn": "Bare Ultimate Edition. Starter når du har hentet Dominator Buggy.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når som helst, også etter hovedhistorien.",
+   "steps": [
+    "Skann vrakene med WAiNK.",
+    "Følg med under Map, Exploration, Find Cars for Wyman.",
+    "Betal Wyman via BuckMe når du har tre skann.",
+    "Hent den ferdige bilen."
+   ],
+   "tips": [
+    "Kildene er uenige om antall biler (fire eller fem) og hvor vrakene er."
+   ],
+   "sources": [
+    "https://www.gtabase.com/side-missions/gta-6/wyman-s-classic-car-collection"
+   ],
+   "id": "wyman-s-classic-car-collection"
+  },
+  {
+   "name": "'55 Vapid Stanier",
+   "class": "Klassisk sedan",
+   "rarity": "unik",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Shore Court Garage",
+    "area": "Shore Drive, Ocean Beach",
+    "detail": "I garasjen som følger med Vintage Vice City Pack."
+   },
+   "spawn": "Bare med Vintage Vice City Pack (digitale kjøp før 20. november, eller fysiske eksemplarer så lenge lageret varer). Kapittel 3.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kapittel 3.",
+   "steps": [
+    "Spill til kapittel 3.",
+    "Hent garasjen og bilen via utforskningsoppgaven i kapittel 3."
+   ],
+   "tips": [
+    "Hvis du ikke har pakken, kan du ikke få bilen."
+   ],
+   "sources": [
+    "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
+   ],
+   "id": "55-vapid-stanier"
+  }
+ ]
+}

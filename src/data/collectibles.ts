@@ -6,6 +6,8 @@
  */
 import type { IconName } from '../components/Icon'
 import { robberyCategories } from './robberies.ts'
+import details from './collectibleDetails.json' with { type: 'json' }
+import extra from './collectibleExtra.json' with { type: 'json' }
 
 export interface CollectibleItem {
   name: string
@@ -582,8 +584,26 @@ const baseCollectibles: CollectibleCategory[] = [
   },
 ]
 
+/**
+ * Rettelser og nye funn fra den detaljerte gjennomgangen (nov. 2026) ligger i JSON-filene.
+ * Nye ting legges alltid til bakerst, så indeksene (og lagret fremdrift) for de gamle ikke endres.
+ */
+type Override = { name?: string; where?: string; before?: string | null }
+const extraItems = extra.items as Record<string, CollectibleItem[]>
+const extraTotals = extra.totals as Record<string, string>
+const withResearch = baseCollectibles.map((cat) => {
+  const items = [...cat.items, ...(extraItems[cat.id] ?? [])].map((item, idx) => {
+    const o = (details as Record<string, Override>)[`samle:${cat.id}:${idx}`]
+    if (!o) return item
+    const next = { ...item, name: o.name ?? item.name, where: o.where ?? item.where }
+    if (o.before !== undefined) next.before = o.before ?? undefined
+    return next
+  })
+  return { ...cat, items, total: extraTotals[cat.id] ?? cat.total }
+})
+
 /** Alle kategorier med avhuking. Ranstedene ligger etter samleobjektene, så indeksene til de gamle ikke endres. */
-export const collectibles: CollectibleCategory[] = [...baseCollectibles, ...robberyCategories]
+export const collectibles: CollectibleCategory[] = [...withResearch, ...robberyCategories]
 
 export const collectibleSources = [
   { name: 'The Big Lead', url: 'https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/' },

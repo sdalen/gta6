@@ -9,6 +9,10 @@ export interface MapLocation {
   place: string
   /** Egen forklaring under kartet i stedet for standardteksten om presisjon. */
   note?: string
+  /** Spillbilde av landemerket fra GTADB (public/foto/<id>.jpg). */
+  photo?: string
+  /** Navnet på landemerket bildet viser. */
+  photoOf?: string
 }
 
 export function getLocation(key: string): MapLocation | undefined {

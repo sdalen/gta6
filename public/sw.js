@@ -1,6 +1,6 @@
 // Enkel service worker: nettverk først for sider, cache først for filer.
 // Gjør at appen fungerer uten nett etter første besøk.
-const CACHE = 'gta6-guide-v2'
+const CACHE = 'gta6-guide-v3'
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './manifest.webmanifest', './icon-192.png'])))

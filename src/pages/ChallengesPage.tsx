@@ -58,7 +58,7 @@ export function ChallengesPage({ done }: { done: Set<string> }) {
           return (
             <li key={cat.id}>
               <a href={href('utfordringer', cat.id)} className="group flex items-center gap-4 py-4">
-                <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-surface text-muted ring-1 ring-zinc-800 transition group-hover:text-accent">
+                <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-surface text-muted ring-1 ring-line transition group-hover:text-accent">
                   <Icon name={cat.icon} />
                 </span>
                 <span className="min-w-0 flex-1">
@@ -77,7 +77,7 @@ export function ChallengesPage({ done }: { done: Set<string> }) {
         })}
         <li>
           <a href={href('utfordringer', 'lop')} className="group flex items-center gap-4 py-4">
-            <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-surface text-muted ring-1 ring-zinc-800 transition group-hover:text-accent">
+            <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-surface text-muted ring-1 ring-line transition group-hover:text-accent">
               <Icon name="trophy" />
             </span>
             <span className="min-w-0 flex-1">
@@ -123,7 +123,7 @@ export function ChallengeCategoryPage({ id, done, onToggle }: { id: string; done
                 <span className={`min-w-0 flex-1 transition ${isDone ? 'opacity-40' : ''}`}>
                   <span className="flex flex-wrap items-baseline gap-x-2">
                     <span className="text-[15px] font-medium text-ink">{ch.name}</span>
-                    {ch.skip && <span className="text-xs font-medium text-amber-300">Kan hoppes over</span>}
+                    {ch.skip && <span className="text-xs font-medium text-gold">Kan hoppes over</span>}
                   </span>
                   <span className="mt-1 block text-sm leading-relaxed text-ink-soft">{ch.goal}</span>
                   {ch.tip && <span className="mt-1 block text-sm leading-relaxed text-muted">Tips: {ch.tip}</span>}
@@ -166,8 +166,8 @@ export function RaceChallengesPage({ done, onToggle }: { done: Set<string>; onTo
                     {r.where}
                   </span>
                   <span className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs tabular-nums">
-                    <span className="text-amber-300">Gull {r.gold}</span>
-                    <span className="text-zinc-300">Sølv {r.silver}</span>
+                    <span className="text-gold">Gull {r.gold}</span>
+                    <span className="text-ink-soft">Sølv {r.silver}</span>
                     <span className="text-orange-400/80">Bronse {r.bronze}</span>
                   </span>
                   {r.note && <span className="mt-1.5 block text-sm text-muted">{r.note}</span>}

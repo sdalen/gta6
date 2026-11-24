@@ -89,7 +89,7 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
                 <span className={`min-w-0 flex-1 transition ${isDone ? 'opacity-40' : ''}`}>
                   <span className="flex flex-wrap items-baseline gap-x-2">
                     <span className="text-[15px] font-medium text-ink">{item.name}</span>
-                    {item.before && !isDone && <span className="text-xs font-medium text-red-400">Har frist</span>}
+                    {item.before && !isDone && <span className="text-xs font-medium text-warn">Har frist</span>}
                   </span>
                   <span className="mt-1 flex gap-1.5 text-sm leading-relaxed text-muted">
                     <Icon name="pin" className="mt-0.5 size-4 shrink-0 text-faint" />

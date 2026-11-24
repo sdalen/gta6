@@ -1,0 +1,832 @@
+{
+ "items": {
+  "kort": [
+   {
+    "name": "Los Santos Corkers: Victor Maravilla (Standard)",
+    "where": "Festet på kjøleskapet på kjøkkenet/i salongen på Starlet Motel. Kan ikke hentes etter kapittel 2.",
+    "before": "checking-out"
+   },
+   {
+    "name": "Delights Dancers: Jason (Standard)",
+    "where": "Toalettet i strippeklubben Delights, på benken ved vaskene."
+   },
+   {
+    "name": "Liberty City Penetrators: Demario Richardson (Gold)",
+    "where": "Bakrommet i Buck's Jewelry & Pawn i Orchard Ave, på midterste hylle i lagerskapet."
+   },
+   {
+    "name": "Vice City Flamingos: Julian Cruz (Bronze)",
+    "where": "Rød og hvit tilhenger ved Gellhorn Ave, på øverste hylle i bokhyllen."
+   },
+   {
+    "name": "Vice City Narcos: Kyle Lewicki (Silver)",
+    "where": "Basketballbanene ved Washburn Ave, øverste rad på den sørligste tribunen."
+   },
+   {
+    "name": "Vice City Narcos: Beck R. Heffer (Orange)",
+    "where": "Kontoret i lageret til Powell's Construction & Lumber Supply, i hjørnet av oppslagstavlen bak en skjerm."
+   },
+   {
+    "name": "Liberty City Swingers: Christian Freeman (Silver)",
+    "where": "Skiltet til Gellhorn Drive-In ved I-404 og Gellhorn Ave, på den høyeste gangbrua."
+   },
+   {
+    "name": "Liberty City Wrath: Thien Trinh (Silver)",
+    "where": "Det blå gårdshuset ved US-183 øst i Gellhorn, oppå rekkverket på verandaen."
+   },
+   {
+    "name": "Jack of Hearts Dancers: Jada Watts (Bronze)",
+    "where": "Det brune huset i Pennwort St, på nattbordet på soverommet."
+   },
+   {
+    "name": "Jack of Hearts Dancers: Zaria \"Ri Ri\" Luckett (Silver)",
+    "where": "Den forlatte gule togvognen sør i Port Gellhorn, i hjørnet ved en ryggsekk."
+   },
+   {
+    "name": "The Legends of Ratface: Swallow (Purple)",
+    "where": "Rød tilhenger ved Gellhorn Ave ved elven, i kassetthyllen."
+   },
+   {
+    "name": "Right Wing: America's Hero: President Blunt (Blue)",
+    "where": "Slagmarken for historiske gjenskapinger like nord for Port Gellhorn, oppå en sofa."
+   },
+   {
+    "name": "Right Wing: America's Hero: President Blunt (Red)",
+    "where": "Gangbrua på en reklameplakat langs I-404 sørøst for Port Gellhorn, i hjørnet."
+   },
+   {
+    "name": "Los Santos Pounders: Randolph Topolski (Silver)",
+    "where": "Bakrommet på Farmer Scrumpy's Red Apple Orchard ved SR-73, på en kasse ved en gammel TV."
+   },
+   {
+    "name": "Nine1Nine Dancers: Chrissie (Purple)",
+    "where": "En liten leir i en hule ved jernbanesporet i Manifest Canyon, ved en kasse."
+   },
+   {
+    "name": "Vice City Narcos: Carl Kasey (Standard)",
+    "where": "Key Lento Public Park, på bakken mellom en benk og den inngjerdede basketballbanen."
+   },
+   {
+    "name": "Vice City Flamingos: Jude Flores (Standard)",
+    "where": "Uteplassen i 1. etasje utenfor leilighet 13 på Bugners Getaways i Sunset Dr."
+   },
+   {
+    "name": "Vice City Manatees: Georgie Macklerath (Silver)",
+    "where": "Det gule huset ved vannet i Surfside Dr, på siden av kjøleskapet på kjøkkenet."
+   },
+   {
+    "name": "Liberty City Penetrators: Remy Herbert (Bright Orange)",
+    "where": "Den inngjerdede basketballbanen bak Crastenburg Key Lento Resort, i hjørnet ved en hvit ryggsekk."
+   },
+   {
+    "name": "Nine1Nine Dancers: Aimie (Pink)",
+    "where": "Herretoalettet i baren The Rusty Anchor, oppå sisternen."
+   },
+   {
+    "name": "Nine1Nine Dancers: Georgia (Purple)",
+    "where": "Bakre lagerrom i Steven Strachan Construction ved Sunbelt Hwy (ved Pay 'n' Spray), ved esker nær en grønn container."
+   },
+   {
+    "name": "The Legends of Ratface: Wokester (Blue)",
+    "where": "Den hvite benken ved sideinngangen til butikken The Wonder Whale, sør på Key Lento."
+   },
+   {
+    "name": "The Legends of Ratface: Death of Swallow (Blue)",
+    "where": "Huset med åsted sørøst på Key Lento, under en bokhylle."
+   },
+   {
+    "name": "Right Wing: America's Hero: The Educated Woman (White)",
+    "where": "Trappen foran den rød- og hvite tilhengeren i Scuttlebutt Dr, nord på Key Lento."
+   },
+   {
+    "name": "Right Wing: America's Hero: Rightwing (Bronze)",
+    "where": "Taket på 247-bensinstasjonen ved Sunbelt Hwy, på en planke under koppskulpturen."
+   },
+   {
+    "name": "Liberty City Penetrators: Asher Rodriguez (Rookie)",
+    "where": "Toppen av Badger R&D-mobiltårnet (samme tårn som Thelma), ifølge libertycity.net. Ikke bekreftet av andre."
+   },
+   {
+    "name": "Delights Dancers: Daisy (Standard)",
+    "where": "Taket på den mindre bygningen ved siden av Badger R&D-tårnet."
+   },
+   {
+    "name": "Vice City Flamingos: Ulysses Whitlock (Bronze)",
+    "where": "Lagerrommet mellom Nola og Oscar's Seafood i Beacon Cir, på siden av oppslagstavlen."
+   },
+   {
+    "name": "Vice City Narcos: Dylan Ezequiel Mack Jr. (Silver)",
+    "where": "Huset i Azalea St som blir gasset (teltet), på TV-benken."
+   },
+   {
+    "name": "Vice City Narcos: Kyle Lewicki (Orange)",
+    "where": "Bakre hjørne mellom This Grace Boutique og Antheia-bygningen ved West Mariana Ave, på et bord."
+   },
+   {
+    "name": "Vice City Manatees: Gouwan Marcus (Standard)",
+    "where": "Vanntanken ved Capri City Jackals-stadion, under øverste rekkverk."
+   },
+   {
+    "name": "Vice City Club de Fútbol: Oskar Wolff (Dusty Pink)",
+    "where": "Kontoret i 2. etasje i lageret ved vannet nord i Capri, på oppslagstavlen."
+   },
+   {
+    "name": "Liberty City Swingers: Blake Balls (Silver)",
+    "where": "Garasjen til et rosa hus i Clovis Way, andre hylle i veggskapet."
+   },
+   {
+    "name": "Liberty City Wrath: Christian Yee (Silver)",
+    "where": "Øverste rad på den østlige tribunen på Jackals-fotballbanen."
+   },
+   {
+    "name": "Liberty City Penetrators: Lev Volkov (Silver)",
+    "where": "Garasjen i en villa på den nordvestlige halvøya, i hjørnet av disken."
+   },
+   {
+    "name": "Nine1Nine Dancers: Aimie (Purple)",
+    "where": "Uteseng på den bakre balkongen til et fargerikt hus i Vela Rota Dr."
+   },
+   {
+    "name": "Jack of Hearts Dancers: Pricilla Pace (Gold)",
+    "where": "Toppen av tårnet bak lageret til Leonida Brewing Company, mellom Sweetbay Rd og jernbanen."
+   },
+   {
+    "name": "America's Next Top Hooker: Kalisha (Gold)",
+    "where": "Toppen av vanntårnet sørøst i Capri."
+   },
+   {
+    "name": "The Legends of Ratface: Ratface (Maroon)",
+    "where": "Taket på hundehuset i hagen til den gule villaen i Coconut Cove Ct."
+   },
+   {
+    "name": "The Legends of Ratface: The Ratster (Blue)",
+    "where": "Pauserommet på LTD-bensinstasjonen i Vela Rota Dr, oppå mikrobølgeovnen."
+   },
+   {
+    "name": "Right Wing: America's Hero: Flamer & Right Wing (Red)",
+    "where": "Det forlatte kontorbygget nord i Capri, på kanten over inngangen ved en stol og magasiner."
+   },
+   {
+    "name": "Right Wing: America's Hero: President Blunt (White)",
+    "where": "Vinduskarmen på utsiden av sideveggen på Cor Blimey! nord i Capri."
+   },
+   {
+    "name": "ED Comics Universe: Vaccerine (Orange)",
+    "where": "Det lille taket på den gule bygningen bak frisørsalongen Elegance i South Cunningham Dr, i hjørnet."
+   },
+   {
+    "name": "Vice City Narcos: Beck R. Heffer (Silver)",
+    "where": "Te Invito-bygningen ved Palmetto Ave og Cicada Ave, på buekanten i tårnet over inngangen."
+   },
+   {
+    "name": "Vice City Narcos: Leroy Rook (Silver)",
+    "where": "Safe oppå et arkivskap i kontoret på Apollo Aggregates-lageret øst for Hamlet."
+   },
+   {
+    "name": "Liberty City Swingers: Duke King (Navy Blue)",
+    "where": "Taket på Pollo Diablo i Palmetto Ave, på et elektrisk skap."
+   },
+   {
+    "name": "Liberty City Penetrators: Alexander Avain (Navy Blue)",
+    "where": "Det bakre pauserommet på LTD-bensinstasjonen og Food Mart i Cicada Ave."
+   },
+   {
+    "name": "Liberty City Wrath: Christian Yee (Deep Red)",
+    "where": "Lagerrommet bak i 247-butikken ved Emory Ave og US-82, i hjørnet av oppslagstavlen."
+   },
+   {
+    "name": "Los Santos Corkers: Jesus De Fuente (Standard)",
+    "where": "Rekkverket på balkongen i 2. etasje på det gule leilighetsbygget i Galerina St."
+   },
+   {
+    "name": "Los Santos Pounders: Dravy Mease (Deep Red)",
+    "where": "Rekkverket på uteplassen til baren Skeeter's i Aminita Rd."
+   },
+   {
+    "name": "Right Wing: America's Hero: President Quinn (Red)",
+    "where": "Pipa på taket av et forlatt hus i Vine St, vest i Hamlet."
+   },
+   {
+    "name": "ED Comics Universe: Funny Bones (Pink)",
+    "where": "Gulvet på personaltoalettet bak på Globe Oil-stasjonen."
+   },
+   {
+    "name": "ED Comics Universe: General Surgeon (Orange)",
+    "where": "En trehylle på kontoret på Leonida Truck Stop i Palmetto Ave."
+   },
+   {
+    "name": "The Legends of Ratface: Ratface (Silver)",
+    "where": "Taket over hovedinngangen på Hamlet Town Hall i Cicada Ave, bak halvveggen."
+   },
+   {
+    "name": "ED Comics Universe: Vaccerine (Light Blue)",
+    "where": "Gangbrua på reklameplakaten ved I-97 øst i Hamlet, i hjørnet."
+   },
+   {
+    "name": "Delights Dancers: Kandi (Standard)",
+    "where": "Leiligheten i 2. etasje over Farmacia Tu Salud, på toalettet på badet i første leilighet."
+   },
+   {
+    "name": "Vice City Flamingos: Julian Cruz (Gold)",
+    "where": "Det låste bakkontoret i Spire Theater i NW 4th Ave, i hjørnet av oppslagstavlen."
+   },
+   {
+    "name": "Delights Dancers: Cyrus (Standard)",
+    "where": "Park Apartments, øverste etasje, nest siste leilighet til høyre, på siden av kjøleskapet."
+   },
+   {
+    "name": "Delights Dancers: Mario (Standard)",
+    "where": "Takkanten på vann- og kloakkbygningen på grensen mellom VCIA og Southside."
+   },
+   {
+    "name": "Liberty City Wrath: Bruce Goosen (Standard)",
+    "where": "Vice-Dale County Fire Rescue Station No. 35 i Gulf St, oppå uniformshyllen i et hjørne av personalgangen."
+   },
+   {
+    "name": "Liberty City Wrath: Tayson Briggs (Standard)",
+    "where": "Rekkverket på uteplassen i 2. etasje bak spritbutikken Partytown U.S.A. ved SW 17th St og SW 7th Ave."
+   },
+   {
+    "name": "Vice City Manatees: Dominic Brizzolato (Bronze)",
+    "where": "Safen i bakrommet i 247-butikken på hjørnet Indigo St/Atlantic Ave, Ocean Beach."
+   },
+   {
+    "name": "Los Santos Corkers: Aoi Watanabe (Standard)",
+    "where": "Toppen av tårnet i nordvest på taket av kjøpesenteret med Nola – Peacock Bay og Aurora Theaters."
+   },
+   {
+    "name": "Los Santos Corkers: Carlos Larios (Bronze)",
+    "where": "Den vestre spillerbenken på baseballbanen i nordvesthjørnet av parken i Ocean Beach."
+   },
+   {
+    "name": "Liberty City Penetrators: Rion Yapa (Silver)",
+    "where": "Bod nr. 10 (full av skobokser) i Lock 'N' Store Self Storage under I-97, vest for Down Town Pawn."
+   },
+   {
+    "name": "Liberty City Penetrators: Alexander Avain (Blue)",
+    "where": "Bakrommet i LTD Food Mart – Hamlet."
+   },
+   {
+    "name": "Liberty City Wrath: Alvin Orlowski (Standard)",
+    "where": "Leilighet 16 i 3. etasje i det gule leilighetskomplekset rett øst for Drip Drops, La Perle."
+   },
+   {
+    "name": "Liberty City Wrath: Anthony Poke II (Red)",
+    "where": "Oppslagstavla i personalgangen øverst i Ajax Gym, Washington Beach."
+   },
+   {
+    "name": "Los Santos Panic: Terrance Ericks (Silver)",
+    "where": "Personalkontoret i sørøsthjørnet av Brock's Antiques, rett vest for Roval Jewelry."
+   },
+   {
+    "name": "Los Santos Panic: Terrance Ericks (Bronze)",
+    "where": "Låst lagerbygg bak Tropical Thrift, nordvest for Aunt Zola's Soul Food."
+   },
+   {
+    "name": "Los Santos Panic: Nikkander Orlov (Silver)",
+    "where": "Overbygd område ved et grønt hus på østkanten av Watson Bay (Seabell Ave)."
+   },
+   {
+    "name": "Los Santos Pounders: Maximus Goldbart (Yellow)",
+    "where": "Garasjen i villaen øst for Pay 'n' Spray – Waning Sands (der Pegassi Vitello til Randy's Wish List står)."
+   },
+   {
+    "name": "Nine1Nine Dancers: Serena (Gold)",
+    "where": "Garasjen full av mannequiner i den sørligste villaen i Peacock Estates (Randy's Wish List-bil)."
+   },
+   {
+    "name": "Jack of Hearts Dancers: Kadisha (Pink)",
+    "where": "Madrassen i soverommet i en rød campingvogn rett sørvest for Pawn City, under US-35-rampen."
+   },
+   {
+    "name": "Ed Comics Universe: Dr. Placebo (Blue)",
+    "where": "Hylle i det store rommet i 1. etasje i bygget sørvest for Pay 'n' Spray – La Perle."
+   },
+   {
+    "name": "Ed Comics Universe: Ratface (Bronze)",
+    "where": "Blå sofa ved sørveggen i lageret Jeff's Discount Center, rett vest for Pay 'n' Spray – La Perle."
+   },
+   {
+    "name": "The Legends of Ratface: Captain Kreuks (Blue)",
+    "where": "Øverste etasje i byggeplassbygget med hjemløse, rett nord for TWA Ponya Tattoo."
+   },
+   {
+    "name": "The Legends of Ratface: The Ratster (Purple)",
+    "where": "Rekkverket mellom kikkertene på toppen av utkikkstårnet midt i Buckskin Swamp."
+   },
+   {
+    "name": "Vice City Flamingos: Mateo Caballero (Silver)",
+    "where": "Vinduskarmen på soverommet i det grønne og hvite huset rett nord for Zenon's Pawn Shop."
+   },
+   {
+    "name": "Vice City Flamingos: Ulysses Whitlock (Silver)",
+    "where": "Toppen av spiraltrappen på taket av Penny Haus (bygget med helikopterplass), øst for Grand Majestic Gym."
+   },
+   {
+    "name": "Vice City Manatees: Junior Taufua (Dusty Pink)",
+    "where": "Bokhyllen ved tekjøkkenet på samme etasje som treningsrommet i Grand Majestic-bygget (PowerPyx kaller kortet Tusi Taufua)."
+   },
+   {
+    "name": "Vice City Club De Fútbol: Ian Harris (Dusty Pink)",
+    "where": "Bod i leiligheten i sørøsthjørnet av 5. etasje i Adella Whittaker Condominium, sørvest for WHS – Ocean Beach."
+   },
+   {
+    "name": "Vice City Club De Fútbol: Ian Harris (Silver)",
+    "where": "Det oransje livredderhuset på stranda øst for Ocean View Rooftop Bar."
+   },
+   {
+    "name": "Vice City Club De Fútbol: Ayokunumi Kasimu (Standard)",
+    "where": "Gul SCOOP-container nord for bygget rett vest for Roval Jewelry. Åpnes med Cut-off Tool."
+   },
+   {
+    "name": "Vice City Club De Fútbol: Badge (Silver)",
+    "where": "Loftet i hytta nær toppen av Mount Kalaga. Gå opp stigen."
+   },
+   {
+    "name": "Right Wing: America's Hero: Flamer (Red)",
+    "where": "Bokhyllen på balkongen i 2. etasje på Williams Guest House midt i Grayson."
+   },
+   {
+    "name": "Right Wing: America's Hero: Flamer (White)",
+    "where": "Oppslagstavla på siden av toalettbygget midt på campingplassen Paradise RV Park, østkanten av Watson Bay."
+   },
+   {
+    "name": "Backyard Wrestling: J.D. Wild (Standard)",
+    "where": "Gul boks på bakterrassen til et av husene rett nord for Pay 'n' Spray – Grayson. Kortet finnes også i alligatorgapet i en hytte i Pelican Valley."
+   },
+   {
+    "name": "Delights Dancers: Amber (Standard)",
+    "where": "Gul telefonboks på nordsiden av bygget ved vaktpostene sør på Draper Island (der Karin Futo til Moses står)."
+   },
+   {
+    "name": "Delights Dancers: Nevaeh (Standard)",
+    "where": "Arbeidsbenken i den halvt nedraste låven som henger utfor klippen sør for Bonanza."
+   },
+   {
+    "name": "America's Next Top Hooker: Kalvyn (Standard)",
+    "where": "Liten telefonboks ved trappedøra på taket av Big House Storage Inc, Crosstown."
+   },
+   {
+    "name": "America's Next Top Hooker: Chastity (Standard)",
+    "where": "Bord bakerst i en neonopplyst garasje full av roboter, nordøst for Stockyard Speedshop."
+   },
+   {
+    "name": "America's Next Top Hooker: Kalisha (Silver)",
+    "where": "Enden av betongbrygga sørvest for Bonanza."
+   },
+   {
+    "name": "Jack of Hearts Dancers: Kelly (Purple)",
+    "where": "Under en stol på de stablede røde containerne vest for de to C-formede motellbyggene, vest for Vice Seven Condominiums."
+   },
+   {
+    "name": "Jack of Hearts Dancers: Christel (Red)",
+    "where": "Den sørvestlige delen av taket på leilighetsbygget der Tyrone holder til, La Perle."
+   },
+   {
+    "name": "Jack of Hearts Dancers: Brianna Blue (Red)",
+    "where": "Hylle i det nordlige firkantede bygget på en liten øy med flere bygninger, vestkanten av Gullet Marsh/Pelican Valley."
+   }
+  ],
+  "meteoritter": [
+   {
+    "name": "Abismo Key Carcass",
+    "where": "Rett ved siden av kadaveret på Abismo Key."
+   },
+   {
+    "name": "Flyvrak under vann",
+    "where": "I flykroppen til et flyvrak under vann øst for den lille øya øst for Corsair Key."
+   },
+   {
+    "name": "Yachtvrak under vann",
+    "where": "Under en stor sunket yacht nesten rett øst for dykkerbutikken til Kenton."
+   },
+   {
+    "name": "Helikoptervrak under vann",
+    "where": "Under et helikoptervrak øst for sørspissen av øya øst for Kenton, rett sør for yachtvraket."
+   },
+   {
+    "name": "Sunket lasteskip",
+    "where": "Inne i et stort sunket lasteskip sørøst for helikoptervraket."
+   },
+   {
+    "name": "Nedslagsstedet på Mount Kalaga",
+    "where": "En lilla, glødende meteoritt i et nedslagskrater ved en ødelagt leirplass i Mount Kalaga National Park."
+   },
+   {
+    "name": "Sørkysten av Leonida Keys (ubekreftet)",
+    "where": "Rapportert under et veltet drivtømmertre på den steinete sørkysten mot Leonida Straits."
+   }
+  ],
+  "vrak": [
+   {
+    "name": "Belpoint Strait (5 skatter, uten vrak)",
+    "where": "Dypt dykkested utenfor sørspissen av Belpoint, vest for Bobcat Bight. Ingen vrak."
+   },
+   {
+    "name": "Bobcat Dive Site (6 skatter, uten vrak)",
+    "where": "Dykkested vest for Bobcat Key, sørvest på kartet. Ingen vrak."
+   }
+  ],
+  "vapen": [
+   {
+    "name": "Turnt Nipper .38 (pistol)",
+    "where": "I en paramotor som har krasjet i et tre på nordspissen av Bobcat Bight."
+   },
+   {
+    "name": "Stoner K17 MCD (pistol)",
+    "where": "Rom 115 på Big Day Motel."
+   },
+   {
+    "name": "Deadringer 1992 (pistol)",
+    "where": "På gulvet i en campingvogn ved Moreau River."
+   },
+   {
+    "name": "Money Bag 1992 (pistol)",
+    "where": "På sofaen i samme campingvogn som Deadringer 1992."
+   },
+   {
+    "name": "Martha's 1992 (pistol)",
+    "where": "Ved peisen i Outlaw's Cabin ved Moreau."
+   },
+   {
+    "name": "Black Eagle Import Kalinga (pistol)",
+    "where": "Safen på kontoret i lageret til Black Eagle i Balsero."
+   },
+   {
+    "name": "Cargo H&L .38 (revolver)",
+    "where": "I en gul-oransje «Scoop»-container nord i Port Vice City."
+   },
+   {
+    "name": "Lyle's H&L .38 (revolver)",
+    "where": "I bagasjerommet på en forlatt bil i en låve midt i Bonanza."
+   },
+   {
+    "name": "Couch Potato Mustang .357 (revolver)",
+    "where": "Sofaen som henger i et tre ved Tanglewood Lane i Port Gellhorn."
+   },
+   {
+    "name": "Swamp Bait Akulus (revolver)",
+    "where": "Midt i Hunter's Cabin i sumpen i Pelican Valley, sørvest for Hamlet."
+   },
+   {
+    "name": "Cruel Huntsman's SM-69 (snikskytter)",
+    "where": "På plankestien utenfor Hunter's Cabin i Pelican Valley."
+   },
+   {
+    "name": "Crabshack VF5 (SMG)",
+    "where": "Båthuset ved den forlatte forskningsstasjonen i Gullet Marsh, sørvest i Pelican Valley."
+   },
+   {
+    "name": "Little Friend W-10 (SMG)",
+    "where": "Åstedsrommet i 2. etasje på Sunlite Motel i Ocean Beach."
+   },
+   {
+    "name": "Conspiracist Type 9 (SMG)",
+    "where": "Et skjult våpenlager under en luke i en campingvogn i Balsero."
+   },
+   {
+    "name": "Double Cross Vatra (SMG)",
+    "where": "På havbunnen vest for Bobcat Key."
+   },
+   {
+    "name": "Dirty Drifter (hagle)",
+    "where": "Bagasjerommet på en blå bil i jordraset langs kystveien i Bonanza."
+   },
+   {
+    "name": "Unpacked Comshot 12 (hagle)",
+    "where": "Badet til hovedsoverommet oppe i et hus nordvest på Key Lento."
+   },
+   {
+    "name": "Cockroach Xtreme 556 og Deever Tech GLR40",
+    "where": "Garasjen ved Sunrise Motel i Tequesta. Begge våpnene ligger her."
+   },
+   {
+    "name": "Cold War 556 (automatgevær)",
+    "where": "I en bunker i Big Pine."
+   },
+   {
+    "name": "Drug Mule KZ-59 (automatgevær)",
+    "where": "Under en sunket speedbåt utenfor nordre Riquezas Keys."
+   },
+   {
+    "name": "Redneck W-22 (rifle)",
+    "where": "I en forlatt gul togvogn på elvebredden ved Moreau."
+   },
+   {
+    "name": "Black Eagle Import M306 TMR (rifle)",
+    "where": "I lageret til Black Eagle i Balsero."
+   },
+   {
+    "name": "Twin's Laird 350 (rifle)",
+    "where": "Under en jaktplattform øst for Kalaga Reservoir."
+   },
+   {
+    "name": "Internal Affairs FF-SR (snikskytter)",
+    "where": "På taket med helikopterplass ved Northside Ave."
+   },
+   {
+    "name": "Mercenary LMG 6 (maskingevær)",
+    "where": "En «Scoop»-container i Port Vice City. Kom fra vannsiden."
+   },
+   {
+    "name": "Brontosaurus Bat (balltre)",
+    "where": "Inne i et slagbur på Dino Golf i Frogswater."
+   },
+   {
+    "name": "Shark Knife (kniv)",
+    "where": "I en undervannskløft nord for Saint Attaway Islands."
+   },
+   {
+    "name": "Explorer's Knife (kniv)",
+    "where": "I Emerald River, nådd gjennom Selkie Hole."
+   },
+   {
+    "name": "Tallaloko Knife (kniv)",
+    "where": "Et låst rom oppe i hytta Evergreen."
+   },
+   {
+    "name": "Soldier's Combat Knife (kniv)",
+    "where": "Bak luka på en halvt sunket stridsvogn mellom Bobcat Bight og Bobcat Key."
+   }
+  ],
+  "safer": [
+   {
+    "name": "Kode 0072 og 0212",
+    "where": "Safen i den forlatte forskningsstasjonen i Gullet Marsh, sørvest i Pelican Valley."
+   },
+   {
+    "name": "Kode 4444",
+    "where": "Safen i bakrommet på Janjak's Garage i La Perle."
+   },
+   {
+    "name": "Kode 955214",
+    "where": "Safen i Marbelle Hotel, NW 8th Street, sørlige Crosstown."
+   },
+   {
+    "name": "Kode 4228",
+    "where": "Safen i Icegem Diamonds & Watches, East Royale Street, Downtown."
+   },
+   {
+    "name": "Kode 7777",
+    "where": "Safen på Nova Auto Junkyard i Hamlet."
+   },
+   {
+    "name": "Kode 6769",
+    "where": "Safen i bygningen ved brygga på Sunrise RV Park."
+   },
+   {
+    "name": "Kode 6823",
+    "where": "Safen på Brooks Boatworks ved dokkene nord i Port Gellhorn."
+   },
+   {
+    "name": "Kode 0300",
+    "where": "Safen på bakkontoret i Kingpin Bowling, sørlige Port Gellhorn."
+   },
+   {
+    "name": "Kode 6969",
+    "where": "Safen på La Cascara Motel, vestlige Port Gellhorn."
+   },
+   {
+    "name": "Kode 2121",
+    "where": "Safen på kontoret i Farm Fix Meth Lab nord for Belville."
+   },
+   {
+    "name": "Kode 4124",
+    "where": "Den andre safen til Drip Drops, oppe tvers over gata ved Jules Shopping, tredje dør til høyre."
+   },
+   {
+    "name": "Kode 1965",
+    "where": "Safen i Casa Guardia, NW 3rd Avenue, nordøstre Little Cuba."
+   },
+   {
+    "name": "Kode 8046",
+    "where": "Safen på bakkontoret på Saber Shipping Yard, Northbrook Drive."
+   },
+   {
+    "name": "Kode 1122",
+    "where": "Safen på Saber Shipping Facility, Westbrook Drive, Balsero."
+   },
+   {
+    "name": "Kode 2008",
+    "where": "Safen på bakrommet i Delights-kabareten under Afternoon Delight.",
+    "before": "afternoon-delight"
+   },
+   {
+    "name": "Kode 1680, 6815 og 0104 (Yasmani's Jewelry Jobs)",
+    "where": "Safer i Yasmanis smykkejobber: Casa de Empeño (1680), Richardson Jewelry & Diamonds (6815) og Donovan Banks & Co. (0104)."
+   },
+   {
+    "name": "Kode 3718",
+    "where": "Bakrommet i hangaren til Pilot Pete på Sundown Private Airfield."
+   },
+   {
+    "name": "Kode 2404#",
+    "where": "Lageret til Savannah på Waxman Island under Car Service.",
+    "before": "car-service"
+   }
+  ],
+  "blader": [
+   {
+    "name": "RX Men",
+    "where": "I bladstativet inne i 247-butikken ved Sunbelt Highway nord på Key Lento."
+   },
+   {
+    "name": "Help Me, Help You, Help Me: The Pyramid of Success (bok)",
+    "where": "På bordet ved døren i resepsjonen på Starlet Motel.",
+    "before": "checking-out"
+   },
+   {
+    "name": "Children of Wizard Wang",
+    "where": "På bordet ved døren i kafeteriaen på Starlet Motel.",
+    "before": "checking-out"
+   },
+   {
+    "name": "Passion B.C. (bok)",
+    "where": "Ved badekaret på badet i Bayside-leiligheten til Jason, #201 Catalan Blvd.",
+    "before": "the-cartel-heist"
+   },
+   {
+    "name": "Two Pricks in the Bush (bok)",
+    "where": "På glassbordet foran TV-en i Bayside-leiligheten til Jason.",
+    "before": "the-cartel-heist"
+   },
+   {
+    "name": "Lights, Camera, Affirmative Action (bok)",
+    "where": "På stuebordet i leiligheten på Penthouse Level 3 i Pegassi Residences."
+   },
+   {
+    "name": "High Rollerz, nr. 37",
+    "where": "I andre etasje i Jack of Hearts-klubben, på en boks til venstre for keyboardet i innspillingsstudioet."
+   },
+   {
+    "name": "Ratface, nr. 1",
+    "where": "I bladstativet inne i Xero Food Mart i La Perle."
+   },
+   {
+    "name": "Special Friends Force, nr. 1",
+    "where": "I bladstativet inne i Xero Food Mart i La Perle, samme sted som Ratface."
+   },
+   {
+    "name": "The Johnsons, nr. 1",
+    "where": "I bladstativet inne i Alpha Gas, nordøst for Starlet Motel."
+   },
+   {
+    "name": "The Cowboy's Prayer Is to Die Young (bok)",
+    "where": "På bordet ved sofaen i resepsjonen på Grayson Motel, rett nord for Taco Bomb."
+   },
+   {
+    "name": "11:59 Survivalist Culture",
+    "where": "På arbeidsbenken i garasjen til herskapshuset i venstre ende av Palladia Lane."
+   },
+   {
+    "name": "Drive Shaft",
+    "where": "På pulten ved tavla på kontoret i Dolos Exotic Car Rental, North Vice Avenue."
+   },
+   {
+    "name": "Endowed",
+    "where": "På det hvite bordet i øverste etasje i glasshuset med en gull sportsbil utenfor, Neptune Circular."
+   },
+   {
+    "name": "Manly Gaze",
+    "where": "På en tønne i bakrommet i det røde våningshuset på Farmer Scrumpy's Red Apple Orchard."
+   }
+  ],
+  "kjoretoy": [
+   {
+    "name": "'67 Vapid Dominator (buggy, starter Wyman-jobbene)",
+    "where": "Henter du i Paradise-garasjen i Watson Bay i kapittel 2. Da sender Wyman deg en melding."
+   },
+   {
+    "name": "'67 Transgressor, del 1 (vrak til Wyman)",
+    "where": "På en asfaltflate i et jorde med griser i campingvognparken på Tanglewood Ln, rett nord for Sarena's Bargain Store."
+   },
+   {
+    "name": "'70 Riata, del 1 (vrak til Wyman)",
+    "where": "I carporten til huset i enden av Cangrejo St, øst for Mile Zero Air Station og vest for Xero Gas."
+   },
+   {
+    "name": "'64 Mamba GT, del 1 (vrak til Wyman)",
+    "where": "I garasjen til det grå våningshuset nord for Leonida State Prison."
+   },
+   {
+    "name": "'64 Mamba GT, del 2 (vrak til Wyman)",
+    "where": "I vannet i en liten dam øst for Dirt Track Races ved Thrillbilly Mud Club."
+   },
+   {
+    "name": "'64 Mamba GT, del 3 (vrak til Wyman)",
+    "where": "I garasjen til den grønne bygningen i bakgaten sør for Xero Gas, mellom US-35 og Lakewood Way."
+   },
+   {
+    "name": "'64 Mamba GT, del 4 (vrak til Wyman)",
+    "where": "Blant restene av den ødelagte broen nord for Buck Creek Country Store."
+   },
+   {
+    "name": "Reynolds Kit Car, del 1 (til Wyman)",
+    "where": "I garasjen til Willie's Service Center (blå og gul bygning) på SW 7th Ave, rett nord for 7th Avenue Garage."
+   },
+   {
+    "name": "Reynolds Kit Car, del 2 (til Wyman)",
+    "where": "Rett bak treporten til huset øst for den tomme tomten nord på Casanova Island."
+   },
+   {
+    "name": "Reynolds Kit Car, del 3 (til Wyman)",
+    "where": "Inne i Scoop-containeren på Wild Hog Point, kysten langt vest for Port Gellhorn."
+   },
+   {
+    "name": "Reynolds Kit Car, del 4 (til Wyman)",
+    "where": "Parkert foran noen rullegardiner i bakgaten bak Donnie's Auto Repair, ved Pay 'n' Spray i Watson Bay."
+   },
+   {
+    "name": "'72 Deviant (til Wyman)",
+    "where": "Ingen deler å finne. Betal Wyman og hent bilen på skraphandelen hans i kanten av Capri."
+   }
+  ],
+  "stiler": [
+   {
+    "name": "Square Goatee (skjegg, Jason)",
+    "where": "Bladet ligger på sengen på soverommet i en tilhenger øst for The Rusty Anchor."
+   },
+   {
+    "name": "Red Braided Cornrows Top Knot (frisyre)",
+    "where": "Bladet ligger på taket av bygningen nord for Manatee's Rest på Key Lento."
+   },
+   {
+    "name": "Novak Laurent Alcazar (klokke)",
+    "where": "Klokken ligger på et bord ved vinduet i festhuset i Dolphin Dr på Key Lento."
+   },
+   {
+    "name": "Crowex Octane 'Orca' (klokke)",
+    "where": "Klokken ligger på et lite hjørnebord i det rødmalte rommet sørøst ved banene i Kingpin Bowling."
+   },
+   {
+    "name": "Crowex Ambassador 'Breakfast' (klokke)",
+    "where": "Klokken ligger i safen på Marbelle Hotel i Crosstown, et kvartal øst for Pawn & Gun."
+   },
+   {
+    "name": "Crowex Octane 'Bobby Ambrose' (klokke)",
+    "where": "Belønning fra oppdraget Dubious Provenance i kapittel 3.",
+    "before": "dubious-provenance"
+   },
+   {
+    "name": "B&G Ark Royal Ashore (klokke)",
+    "where": "Klokken ligger på et bord i rommet ved trappen i Saber Shipping Facility i Balsero, nær grensen til Rockridge."
+   },
+   {
+    "name": "Novak Laurent Argonaut (klokke)",
+    "where": "Klokken ligger på et bord ved skjermen i det sørlige rommet i Kamar Devon Community Center i Southside."
+   },
+   {
+    "name": "Crowex Octane Elite (klokke)",
+    "where": "Klokken ligger på et bord midt i rommet i 2. etasje i den nordlige bygningen på Palmer Fishing Warehouse, på en liten øy vest for Watson Bay."
+   },
+   {
+    "name": "B&G Ark Royal Quantum (klokke)",
+    "where": "Klokken ligger foran skjermene i Watson Bay Safehouse, på nordøstsiden."
+   },
+   {
+    "name": "Crowex Ambassador (klokke)",
+    "where": "Klokken ligger på arbeidsbenken i stigerommet i Casa Guardia i Little Cuba."
+   }
+  ],
+  "meditasjon": [
+   {
+    "name": "Smooth Sand",
+    "where": "En liten sandbanke like utenfor vestkysten av Capri."
+   },
+   {
+    "name": "Swamp",
+    "where": "En treplattform ved utkikkstårnet midt i Buckskin Swamp."
+   },
+   {
+    "name": "Worn Stone",
+    "where": "Ved elvebredden til Emerald River i Camp Moonflower."
+   },
+   {
+    "name": "Red Rocks",
+    "where": "Nær stedet der jernbanen krysser motorveien i Manifest Canyon."
+   },
+   {
+    "name": "Water Wheel",
+    "where": "Ved vannhjulet på den ødelagte papirmøllen ved elven sør for Moreau."
+   },
+   {
+    "name": "Waterfall",
+    "where": "Utsiktspunktet over en foss i en elv som renner østover, nordvest for Tallaloko."
+   },
+   {
+    "name": "Ascent Mountain",
+    "where": "Steinsirkelen på toppen av Mount Kalaga. Siste meditasjon."
+   }
+  ]
+ },
+ "totals": {
+  "meteoritter": "Ikke bekreftet. Guidene har 26–31 bekreftede steder. Power Up Gaming sier over 70, og kartet til gtabase viser 71 punkter.",
+  "vrak": "7 skattesett (41 skatter) pluss Nuestra Señora del Ocio med 10 dubloner. 33 undervannsfunn trengs for 100 %, og 5 av 7 sett.",
+  "vapen": "127 unike våpenvarianter, pluss 2 fra Ultimate Edition (ifølge Detonated, ikke bekreftet). Mange kjøpes i Ammu-Nation-butikker eller fås i Illegal Ops.",
+  "safer": "Ukjent. GTABase viser 87 safer på kartet. Rundt 24 faste koder er kjent. Noen koder kan variere mellom spill.",
+  "blader": "27 blader, bøker og tegneserier ifølge PowerPyx, pluss 7 bokbytter. 30 trengs for 100 %. Screenhype har funnet 26 av 27 titler.",
+  "kjoretoy": "5 bilder til Wyman (Classic Car Collection, bare Ultimate Edition): 15 skrapdeler å skanne. Total for spesielle kjøretøy er ikke verifisert.",
+  "stiler": "79 stiler: 13 bladstiler for Jason, 15 for Lucia, 17 tatoveringsblader og 34 luksusklokker. 70 trengs for 100 %. Bladene skannes med WAiNK, klokkene plukkes opp.",
+  "meditasjon": "18 meditasjoner på 10 steder. 15 trengs for 100 %. Alle 18 gir troféet Positive Mental Attitude."
+ }
+}

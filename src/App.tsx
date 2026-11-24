@@ -14,22 +14,26 @@ import { TipsSection } from './components/TipsSection'
 import { OptionalSection } from './components/OptionalSection'
 import { DataSection } from './components/DataSection'
 import { MoneySection } from './components/MoneySection'
+import { GlitchesPage, GlitchPage } from './pages/GlitchesPage'
+import { CarPage, CarsPage } from './pages/CarsPage'
 
 const tabs: { section: string; label: string; icon: IconName; match: string[] }[] = [
   { section: '', label: 'Hjem', icon: 'home', match: [''] },
   { section: 'oppdrag', label: 'Oppdrag', icon: 'book', match: ['oppdrag', 'kapittel', 'valgfritt'] },
   { section: 'samle', label: 'Samle', icon: 'compass', match: ['samle', 'utfordringer', 'ran'] },
-  { section: 'penger', label: 'Penger', icon: 'coins', match: ['penger'] },
-  { section: 'tips', label: 'Tips', icon: 'bulb', match: ['tips'] },
+  { section: 'glitcher', label: 'Glitcher', icon: 'bug', match: ['glitcher'] },
+  { section: 'biler', label: 'Biler', icon: 'car', match: ['biler'] },
+  { section: 'penger', label: 'Penger', icon: 'coins', match: ['penger', 'tips'] },
 ]
 
 const iconBtn =
-  'grid size-9 place-items-center rounded-lg text-muted transition hover:bg-surface hover:text-ink disabled:pointer-events-none disabled:opacity-30'
+  'grid size-9 place-items-center rounded-md text-muted transition hover:bg-surface hover:text-ink disabled:pointer-events-none disabled:opacity-30'
 
 export default function App() {
   const { done, toggle, reset, replace, merge, undo, redo, canUndo, canRedo } = useProgress()
   const [panelOpen, setPanelOpen] = useState(false)
   const [spoilers, setSpoilers] = useState(true)
+  const [theme, setTheme] = useState(() => (document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'))
   const [section = '', a, b] = useRoute()
 
   useEffect(() => {
@@ -94,6 +98,12 @@ export default function App() {
     case 'penger':
       page = <MoneySection />
       break
+    case 'glitcher':
+      page = a ? <GlitchPage id={a} /> : <GlitchesPage />
+      break
+    case 'biler':
+      page = a ? <CarPage id={a} /> : <CarsPage />
+      break
     case 'tips':
       page = <TipsSection />
       break
@@ -101,33 +111,54 @@ export default function App() {
       page = <NotFound />
   }
 
+  const wide = (section === 'samle' && !!b) || section === 'glitcher' || section === 'biler'
   const showSpoilerToggle = section === 'oppdrag' || section === 'kapittel'
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark'
+    setTheme(next)
+    if (next === 'dark') document.documentElement.dataset.theme = 'dark'
+    else delete document.documentElement.dataset.theme
+    try {
+      localStorage.setItem('gta6-tema', next)
+    } catch {
+      /* privat modus */
+    }
+  }
 
   return (
-    <div className="min-h-screen pb-28 sm:pb-0">
-      <header className="sticky top-0 z-20 border-b border-line bg-header/80 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
-        <div className="mx-auto flex h-14 max-w-3xl items-center gap-4 px-5 sm:gap-8">
-          <a href={href()} className="shrink-0 text-[15px] font-semibold tracking-tight text-ink">
-            GTA VI <span className="font-normal text-muted">Guide</span>
+    <div className="flex min-h-screen flex-col pb-24 lg:pb-0">
+      <header className="sticky top-0 z-20 border-b border-line bg-header/90 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
+        <div className="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4 sm:h-20 sm:px-6 lg:gap-10">
+          <a href={href()} className="flex shrink-0 items-center gap-3 text-ink">
+            <span className="grid size-10 place-items-center rounded-full bg-accent font-serif text-[15px] font-bold text-on-accent ring-4 ring-accent-dim sm:size-12 sm:text-base">
+              VI
+            </span>
+            <span className="text-[13px] font-bold uppercase tracking-[0.16em] sm:text-sm">GTA VI Guide</span>
           </a>
-          <nav className="hidden gap-6 text-sm sm:flex">
-            {tabs.slice(1).map((t) => (
-              <a
-                key={t.section}
-                href={href(t.section)}
-                className={`transition ${t.match.includes(section) ? 'text-ink' : 'text-muted hover:text-ink'}`}
-              >
-                {t.label}
-              </a>
-            ))}
+          <nav className="ml-auto hidden gap-7 text-[15px] font-medium lg:flex">
+            {tabs.slice(1).map((t) => {
+              const active = t.match.includes(section)
+              return (
+                <a
+                  key={t.section}
+                  href={href(t.section)}
+                  aria-current={active ? 'page' : undefined}
+                  className={`relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:rounded-full after:transition ${
+                    active ? 'text-accent after:bg-accent' : 'text-ink after:bg-transparent hover:text-accent'
+                  }`}
+                >
+                  {t.label}
+                </a>
+              )
+            })}
           </nav>
-          <div className="ml-auto flex items-center gap-1">
+          <div className="ml-auto flex items-center gap-1 lg:ml-0">
             {showSpoilerToggle && (
               <button
                 type="button"
                 onClick={() => setSpoilers((s) => !s)}
-                className={`mr-1 rounded-full px-3 py-1 text-xs ring-1 transition ${
-                  spoilers ? 'text-muted ring-zinc-800 hover:ring-frame' : 'bg-accent-dim text-accent ring-accent/40'
+                className={`mr-1 hidden rounded-full px-3 py-1 text-xs ring-1 transition sm:inline-block ${
+                  spoilers ? 'text-muted ring-line hover:ring-frame' : 'bg-accent-dim text-accent ring-accent/40'
                 }`}
               >
                 {spoilers ? 'Skjul spoilere' : 'Spoilere skjult'}
@@ -141,11 +172,30 @@ export default function App() {
             </button>
             <button
               type="button"
+              onClick={toggleTheme}
+              title={theme === 'dark' ? 'Lyst tema' : 'Mørkt tema'}
+              aria-label={theme === 'dark' ? 'Bytt til lyst tema' : 'Bytt til mørkt tema'}
+              className={iconBtn}
+            >
+              <Icon name={theme === 'dark' ? 'sun' : 'moon'} className="size-[18px]" />
+            </button>
+            <button
+              type="button"
               onClick={() => setPanelOpen((o) => !o)}
               aria-expanded={panelOpen}
-              title="Lagring"
+              className={`ml-2 hidden h-11 items-center gap-2 rounded-sm px-5 text-[15px] font-semibold transition sm:inline-flex ${
+                panelOpen ? 'bg-accent-dark text-on-accent' : 'bg-accent text-on-accent hover:bg-accent-dark'
+              }`}
+            >
+              <Icon name="save" className="size-4" />
+              Lagring
+            </button>
+            <button
+              type="button"
+              onClick={() => setPanelOpen((o) => !o)}
+              aria-expanded={panelOpen}
               aria-label="Lagring"
-              className={`${iconBtn} ${panelOpen ? 'bg-accent-dim text-accent' : ''}`}
+              className={`${iconBtn} sm:hidden ${panelOpen ? 'bg-accent-dim text-accent' : ''}`}
             >
               <Icon name="save" className="size-[18px]" />
             </button>
@@ -153,9 +203,9 @@ export default function App() {
         </div>
         {panelOpen && (
           <div className="border-t border-line">
-            <div className="mx-auto max-h-[calc(100dvh-7rem)] max-w-3xl overflow-y-auto px-5 py-5">
+            <div className="mx-auto max-h-[calc(100dvh-7rem)] max-w-3xl overflow-y-auto px-4 py-6 sm:px-6">
               <div className="mb-3 flex items-center justify-between">
-                <h2 className="text-xs font-medium uppercase tracking-[0.18em] text-muted">Lagring</h2>
+                <h2 className="font-serif text-2xl font-medium text-ink">Lagring</h2>
                 <button type="button" onClick={() => setPanelOpen(false)} aria-label="Lukk" className={iconBtn}>
                   <Icon name="close" className="size-[18px]" />
                 </button>
@@ -166,16 +216,35 @@ export default function App() {
         )}
       </header>
 
-      <main className="mx-auto max-w-3xl px-5 py-8 sm:py-14">{page}</main>
+      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-10 sm:px-6 sm:py-16">
+        {/* Artikler med sidekolonne bruker hele bredden, resten holder seg til lesebredde. */}
+        <div className={wide ? '' : 'max-w-3xl'}>{page}</div>
+      </main>
 
-      {section === '' && (
-        <footer className="mx-auto max-w-3xl px-5 pb-12 pt-4 text-xs leading-relaxed text-faint">
-          <p>Uoffisiell fanguide basert på engelske gjennomganger (IGN m.fl.). Ikke tilknyttet Rockstar Games.</p>
-        </footer>
-      )}
+      <footer className="mt-8 bg-footer text-[#c9ccd1]">
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 text-sm sm:grid-cols-[1fr_auto] sm:px-6">
+          <div>
+            <p className="font-serif text-xl text-white">GTA VI Guide</p>
+            <p className="mt-2 max-w-md leading-relaxed text-[#9aa1a9]">
+              Uoffisiell norsk fanguide basert på engelske gjennomganger. Ikke tilknyttet Rockstar Games. Kart: GTA VI Map Tiles (CC BY 4.0),
+              map.gtadb.org.
+            </p>
+          </div>
+          <nav className="grid grid-cols-2 gap-x-10 gap-y-2">
+            {tabs.slice(1).map((t) => (
+              <a key={t.section} href={href(t.section)} className="hover:text-white">
+                {t.label}
+              </a>
+            ))}
+            <a href={href('tips')} className="hover:text-white">
+              Tips
+            </a>
+          </nav>
+        </div>
+      </footer>
 
-      <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-header/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl sm:hidden">
-        <div className="grid grid-cols-5">
+      <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-header/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl lg:hidden">
+        <div className="grid grid-cols-6">
           {tabs.map((t) => {
             const active = t.match.includes(section)
             return (
@@ -183,10 +252,10 @@ export default function App() {
                 key={t.section}
                 href={href(t.section)}
                 className={`flex flex-col items-center gap-1 pb-2 pt-2.5 text-[10px] font-medium tracking-wide transition ${
-                  active ? 'text-ink' : 'text-muted'
+                  active ? 'text-accent' : 'text-muted'
                 }`}
               >
-                <Icon name={t.icon} className={`size-[22px] ${active ? 'text-accent' : ''}`} />
+                <Icon name={t.icon} className="size-[22px]" />
                 {t.label}
               </a>
             )

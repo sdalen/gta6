@@ -33,11 +33,11 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
                 <div className="flex flex-wrap items-baseline gap-x-3">
                   <span className={`text-[15px] font-medium ${checked ? 'text-muted line-through decoration-faint' : 'text-ink'}`}>{o.name}</span>
                   {o.hourglass && (
-                    <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-300" title="Timeglass: forsvinner hvis du venter">
+                    <span className="inline-flex items-center gap-1 text-xs font-medium text-gold" title="Timeglass: forsvinner hvis du venter">
                       <Icon name="hourglass" className="size-3.5" /> Timeglass
                     </span>
                   )}
-                  {o.missable && <span className="text-xs font-medium text-red-400">kan gå tapt</span>}
+                  {o.missable && <span className="text-xs font-medium text-warn">kan gå tapt</span>}
                 </div>
                 <p className="mt-1 text-sm text-muted">
                   {o.character && <span className="text-ink-soft">{o.character}. </span>}
@@ -82,10 +82,10 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
                 <span
                   className={
                     q.countsForTrophy === true
-                      ? 'text-emerald-400'
+                      ? 'text-ok'
                       : q.countsForTrophy === false
                         ? 'text-faint'
-                        : 'text-amber-300'
+                        : 'text-gold'
                   }
                 >
                   {q.countsForTrophy === true ? 'Teller' : q.countsForTrophy === false ? 'Teller ikke' : 'Usikkert'}
@@ -102,7 +102,7 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
               <li key={t.trophy} className="flex items-center justify-between gap-4 py-2.5">
                 <span className="text-ink">{t.questline}</span>
                 <span className="inline-flex items-center gap-1.5 text-muted">
-                  <Icon name="trophy" className="size-4 text-amber-300" />
+                  <Icon name="trophy" className="size-4 text-gold" />
                   {t.trophy}
                 </span>
               </li>

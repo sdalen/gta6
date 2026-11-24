@@ -1,32 +1,82 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Fargene ligger i variabler så lyst (standard) og mørkt tema deler samme klasser. */
 @theme {
-  --color-paper: #09090b;
-  --color-surface: #18181b;
-  --color-header: #09090b;
-  --color-line: #27272acc;
-  --color-frame: #3f3f46;
-  --color-ink: #fafafa;
-  --color-ink-soft: #d4d4d8;
-  --color-muted: #a1a1aa;
-  --color-faint: #52525b;
-  --color-accent: #ff8a5c;
-  --color-accent-dark: #ff9f7a;
-  --color-accent-dim: #ff8a5c1a;
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-header: var(--header);
+  --color-line: var(--line);
+  --color-frame: var(--frame);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-accent-dim: var(--accent-dim);
+  --color-on-accent: var(--on-accent);
+  --color-warn: var(--warn);
+  --color-gold: var(--gold);
+  --color-ok: var(--ok);
+  --color-footer: var(--footer);
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+:root {
+  --paper: #faf8f4;
+  --surface: #f2eee7;
+  --header: #faf8f4;
+  --line: #e3ddd2;
+  --frame: #cdc5b7;
+  --ink: #1f2731;
+  --ink-soft: #3b4550;
+  --muted: #646d77;
+  --faint: #8d949b;
+  --accent: #b0512b;
+  --accent-dark: #943f1f;
+  --accent-dim: #b0512b14;
+  --on-accent: #ffffff;
+  --warn: #b42318;
+  --gold: #9a6700;
+  --ok: #1a7f45;
+  --footer: #232b35;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper: #0f1115;
+  --surface: #181b21;
+  --header: #0f1115;
+  --line: #2a2e36;
+  --frame: #3f4450;
+  --ink: #f4f1ea;
+  --ink-soft: #d3cfc6;
+  --muted: #9da3ab;
+  --faint: #5d636c;
+  --accent: #e07a4f;
+  --accent-dark: #f0936b;
+  --accent-dim: #e07a4f1f;
+  --on-accent: #14110f;
+  --warn: #f87171;
+  --gold: #fcd34d;
+  --ok: #4ade80;
+  --footer: #0a0c0f;
+  color-scheme: dark;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 6rem;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
   @apply bg-paper font-sans text-ink antialiased;
-  font-feature-settings: "cv11", "ss01";
 }
 
 input[type="search"]::-webkit-search-cancel-button {
-  filter: invert(0.6);
+  filter: invert(0.5);
 }

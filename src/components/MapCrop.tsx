@@ -4,16 +4,16 @@ import { Icon } from './Icon'
 
 /**
  * Interaktivt kart fra GTADB sitt fellesskapskart (CC BY 4.0), med fliser fra public/kart/.
- * Hele kartet finnes på nivå 0–4. Nivå 5 finnes bare rundt samleobjektene, ellers vises nivå 4 forstørret.
+ * Hele kartet finnes på nivå 0–4. Nivå 5–6 finnes bare rundt samleobjektene, ellers vises nivået under forstørret.
  * Posisjonen er omtrentlig: et landemerke, et område eller et fylke.
  */
 
 const MAP_W = 32768
 const ZERO = 16384
 const TILE = 256
-const HEIGHT = 300
+const HEIGHT = 340
 const MIN_Z = 0
-const MAX_Z = 5
+const MAX_Z = 6
 const FULL_Z = 4
 
 const precisionText: Record<MapLocation['precision'], string> = {
@@ -122,7 +122,7 @@ export function MapCrop({ loc }: { loc: MapLocation }) {
     <figure>
       <div
         ref={ref}
-        className="relative cursor-grab touch-none select-none overflow-hidden rounded-xl bg-[#3d8fb8] ring-1 ring-zinc-800 active:cursor-grabbing"
+        className="relative cursor-grab touch-none select-none overflow-hidden rounded-lg bg-[#3d8fb8] ring-1 ring-line active:cursor-grabbing"
         style={{ height: HEIGHT }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
@@ -133,7 +133,8 @@ export function MapCrop({ loc }: { loc: MapLocation }) {
         {w > 0 && (
           <>
             <TileLayer level={baseLevel} z={view.z} cx={view.cx} cy={view.cy} w={width} />
-            {view.z > FULL_Z && <TileLayer level={MAX_Z} z={view.z} cx={view.cx} cy={view.cy} w={width} />}
+            {view.z > FULL_Z && <TileLayer level={FULL_Z + 1} z={view.z} cx={view.cx} cy={view.cy} w={width} />}
+            {view.z > FULL_Z + 1 && <TileLayer level={MAX_Z} z={view.z} cx={view.cx} cy={view.cy} w={width} />}
             <span
               className="pointer-events-none absolute rounded-full border-2 border-accent bg-accent/15"
               style={{ width: ring * 2, height: ring * 2, left: mx - ring, top: my - ring }}
@@ -187,7 +188,7 @@ export function MapCrop({ loc }: { loc: MapLocation }) {
           </button>
         )}
       </div>
-      <figcaption className="mt-2 flex flex-wrap justify-between gap-x-4 gap-y-1 text-xs text-muted">
+      <figcaption className="mt-2 flex flex-wrap justify-between gap-x-4 gap-y-1 text-sm text-muted">
         <span>
           {precisionText[loc.precision]} <span className="text-ink-soft">{loc.place}</span>
           {loc.note ? ` · ${loc.note}` : loc.precision !== 'landemerke' && ' · nøyaktig sted er ikke kartlagt'}

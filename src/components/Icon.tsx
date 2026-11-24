@@ -36,6 +36,10 @@ const paths = {
   lock: 'M5 11h14v10H5V11ZM8 11V7a4 4 0 0 1 8 0v4',
   hourglass: 'M6 3h12M6 21h12M7 3v3a5 5 0 0 0 5 5 5 5 0 0 0 5-5V3M7 21v-3a5 5 0 0 1 5-5 5 5 0 0 1 5 5v3',
   watch: 'M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM12 10v2l1 1M9 7l.5-4h5l.5 4M9 17l.5 4h5l.5-4',
+  bug: 'M8 6a4 4 0 0 1 8 0M7 9h10v6a5 5 0 0 1-10 0V9ZM12 9v11M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2',
+  sun: 'M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4',
+  moon: 'M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z',
+  garage: 'M3 21V9l9-6 9 6v12M7 21v-8h10v8M7 16h10',
 } as const
 
 export type IconName = keyof typeof paths

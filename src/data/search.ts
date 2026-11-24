@@ -3,6 +3,9 @@ import { collectibles, itemId } from './collectibles'
 import { challengeCategories, challengeId, raceChallenges, raceId } from './challenges'
 import { optionalMissions, questlines, questlineTrophies, tips } from './extras'
 import { moneyPlan } from './money'
+import { glitches } from './glitches'
+import { cars } from './cars'
+import { getDetail } from './collectibleDetails'
 import { startIndexes } from './missionIndex'
 import { href } from '../hooks/useRoute'
 
@@ -87,10 +90,30 @@ for (const cat of collectibles) {
       sub: `${cat.name} · ${item.where}`,
       to: href('samle', cat.id, String(idx)),
       doneKey: itemId(cat.id, idx),
-      text: join(item.name, item.where, cat.name),
+      text: join(item.name, item.where, cat.name, getDetail(itemId(cat.id, idx))?.landmark, getDetail(itemId(cat.id, idx))?.area),
     }),
   )
 }
+
+for (const g of glitches)
+  entries.push({
+    key: `glitch:${g.id}`,
+    group: 'Pengeglitcher',
+    title: g.name,
+    sub: join(g.location.place, g.payout && `· ${g.payout.split('.')[0]}`),
+    to: href('glitcher', g.id),
+    text: join(g.name, g.location.place, g.location.area, g.location.detail, 'glitch penger money'),
+  })
+
+for (const c of cars)
+  entries.push({
+    key: `bil:${c.id}`,
+    group: 'Eksklusive biler',
+    title: c.name,
+    sub: join(c.class, `· ${c.location.place}`),
+    to: href('biler', c.id),
+    text: join(c.name, c.class, c.location.place, c.location.area, c.location.detail, 'bil garasje'),
+  })
 
 for (const cat of challengeCategories) {
   entries.push({

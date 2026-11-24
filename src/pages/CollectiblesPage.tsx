@@ -13,7 +13,7 @@ export function CollectiblesPage({ done }: { done: Set<string> }) {
 
       <a
         href={href('utfordringer')}
-        className="group mb-8 flex items-center justify-between gap-4 rounded-xl bg-surface p-5 ring-1 ring-zinc-800 transition hover:ring-frame"
+        className="group mb-8 flex items-center justify-between gap-4 rounded-xl bg-surface p-5 ring-1 ring-line transition hover:ring-frame"
       >
         <span>
           <span className="block text-xs uppercase tracking-[0.18em] text-muted">80 utfordringer + 13 løp</span>

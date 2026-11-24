@@ -47,7 +47,7 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
               </span>
             )}
             {mission.task && <span>«{mission.task}»</span>}
-            {mission.tag && <span className="font-medium text-amber-300">{mission.tag}</span>}
+            {mission.tag && <span className="font-medium text-gold">{mission.tag}</span>}
           </div>
 
           <div className="mt-4 space-y-4">
@@ -58,7 +58,7 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
                     const ok = !!r.doneKey && !!progress?.has(r.doneKey)
                     return (
                       <li key={r.key} className="flex items-baseline gap-2">
-                        <span className={ok ? 'text-emerald-400' : 'text-faint'}>{ok ? '✓' : '○'}</span>
+                        <span className={ok ? 'text-ok' : 'text-faint'}>{ok ? '✓' : '○'}</span>
                         {r.to ? (
                           <a href={r.to} className={`hover:text-ink hover:underline ${ok ? 'text-muted line-through' : ''}`}>
                             {r.label}
@@ -100,7 +100,7 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
             {unlocks.map((o) => (
               <Callout key={o.name} tone="neutral" title="Etter dette:">
                 <span className="inline-flex flex-wrap items-center gap-x-1.5">
-                  {o.hourglass && <Icon name="hourglass" className="size-3.5 text-amber-300" />}
+                  {o.hourglass && <Icon name="hourglass" className="size-3.5 text-gold" />}
                   <a href="#/valgfritt" className="font-medium text-ink hover:underline">
                     {o.name}
                   </a>
