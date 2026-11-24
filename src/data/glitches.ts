@@ -33,7 +33,7 @@ export const statusText: Record<Glitch['status'], string> = {
 
 /** Regler som gjelder alle pengetriks. */
 export const glitchRules = [
-  'Pengene fra kapittel 1 forsvinner når kapittel 2 starter. Bare Family Savings (inntil $5 000) blir med. Vent til kapittel 2 med å farme.',
+  'Når kapittel 2 starter: Lucia starter kapittel 2 på $0, mens Jason beholder BuckMe-saldoen sin opp til $10 000. Kontanter du bærer og gjemmestedet under gulvet forsvinner. Mer enn $10 000 er bortkastet, så vent til kapittel 2 med å farme.',
   'Før kapittel 4 har BuckMe en grense for saldo. Hold hvert salg under $100 000, ellers kan betalingen låse seg.',
   'Brian og Donnie betaler senere, i postkassen ved huset til Jason. Donnie slutter å kjøpe etter oppdraget Swamped.',
   'Lag en ekstra lagring før du prøver en glitch. Ingen kilder melder om ødelagte lagringer, men det er billig forsikring.',

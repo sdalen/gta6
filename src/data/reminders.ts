@@ -28,12 +28,13 @@ const byMission = new Map<string, Reminder[]>()
 const add = (missionId: string, r: Reminder) => byMission.set(missionId, [...(byMission.get(missionId) ?? []), r])
 
 // Forberedelser som ikke er samleobjekter: kort tittel og forklaring på hva og hvorfor.
-const prep: Record<string, { label: string; detail: string }[]> = {
+// Nøkkelen er posisjonen i listen. Fjernede punkter blir stående som null, så lagret fremdrift ikke forskyves.
+const prep: Record<string, ({ label: string; detail: string } | null)[]> = {
   'tourist-trap': [
     {
       label: 'Spar $5 000 i Family Savings',
       detail:
-        'Anbefalt. Sett inn penger på sparekontoen Family Savings i bankappen til du når målet på $5 000. Da kan du ha opptil $15 000 på brukskontoen.',
+        'Anbefalt. Sparemålet på $5 000 hever grensen på brukskontoen til $15 000. Etter Tourist Trap starter Lucia på $0, mens Jason beholder BuckMe-saldoen opp til $10 000, så sett pengene inn på Jason.',
     },
     {
       label: 'Kjør rundt på Key Lento',
@@ -47,10 +48,8 @@ const prep: Record<string, { label: string; detail: string }[]> = {
     },
   ],
   'checking-out': [
-    {
-      label: 'Selg stjålne ting til Dunk',
-      detail: 'Dunk kjøper tyvegods. Selg det du har før Checking Out, ellers kan du bli sittende med det.',
-    },
+    // Var «Selg stjålne ting til Dunk». Ikke nødvendig: Yasmani og Tyrone i kapittel 3 betaler mer.
+    null,
     {
       label: 'Ha minst $15 000 i banken og lagre',
       detail: 'Motellet slutter å være hjemmet ditt etter Checking Out. Sett inn pengene og lagre manuelt i en ny lagringsplass.',
@@ -72,9 +71,9 @@ const prep: Record<string, { label: string; detail: string }[]> = {
   ],
 }
 for (const [mission, lines] of Object.entries(prep))
-  lines.forEach(({ label, detail }, i) =>
-    add(mission, { key: `husk:${mission}:${i}`, label, detail, kind: 'Forberedelse', doneKey: `husk:${mission}:${i}` }),
-  )
+  lines.forEach((line, i) => {
+    if (line) add(mission, { key: `husk:${mission}:${i}`, label: line.label, detail: line.detail, kind: 'Forberedelse', doneKey: `husk:${mission}:${i}` })
+  })
 
 // Ting du får inne i selve oppdraget. Vises for seg, ikke som noe du må gjøre før du starter.
 const duringByMission = new Map<string, Reminder[]>()

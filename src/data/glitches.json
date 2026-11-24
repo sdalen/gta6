@@ -4,7 +4,7 @@
   "status": "virker",
   "patchNote": "Ikke patchet per 24. november 2026. Første oppdatering, 01.002.002 (PS5) / 1.0.2.2 (Xbox Series X|S), kom 23. november 2026. Patch-notatene nevner ikke glitchen, og flere nettsteder melder at den fortsatt virker etterpå. Rockstar har ikke kommentert den. meowdb skriver at ingen oppdatering er sluppet ennå, men det er utdatert.",
   "platforms": "PS5 og Xbox Series X|S (spillet finnes bare på disse).",
-  "unlock": "Virker fra kapittel 1, men pengene fra kapittel 1 forsvinner når kapittel 2 starter. Bare Family Savings (maks $5 000) blir med. De fleste guider anbefaler å vente til kapittel 2.",
+  "unlock": "Virker fra kapittel 1, men bare Jason beholder BuckMe-saldoen inn i kapittel 2, og bare opp til $10 000. Lucia starter på $0. Vent derfor til kapittel 2.",
   "payout": "Første runde: ca. $11 280 i byttets verdi. Hver ny runde: ca. $8 640 (to fulle stash bags). Kildene sier $7 000–$11 000 per runde. LibertyCity fikk $14 400 hos Donnie for en last Brian vurderte til $12 720.",
   "perHour": "Kildene er uenige. GameRant: ca. $8 000 hvert femte minutt. LADbible: ca. $60 000 i timen ved 10 min per runde. PC Gamer: ca. $50 000 på 15 minutter. Påstander om $500 000+ i timen er ikke bekreftet.",
   "requirements": [
@@ -40,7 +40,7 @@
   "risks": [
    "Bagger du bærer, eller som ligger på bakken, kan bli borte ved lasting. Legg dem alltid i bilen før du lagrer.",
    "Stjålne biler kan forsvinne ved lasting, med alt innhold.",
-   "Kontanter og BuckMe-saldo fra kapittel 1 slettes når kapittel 2 starter. Bare Family Savings (maks $5 000) blir med, og den kan ikke tas ut igjen.",
+   "Når kapittel 2 starter, beholder Jason BuckMe-saldoen opp til $10 000. Lucia starter på $0, og kontanter og gjemmestedet under gulvet forsvinner.",
    "Kontanter du bærer, går tapt hvis du dør eller blir arrestert. Sett inn penger i BuckMe eller husets gjemmested.",
    "Før kapittel 4 har BuckMe en saldogrense. Svært store salg kan bli liggende som ventende eller låses.",
    "Respawn er ustabil. Noen ganger må du laste flere ganger eller vente et par dager i spillet.",
@@ -310,7 +310,7 @@
   ],
   "risks": [
    "Bare én video. Ingen andre har bekreftet den.",
-   "Penger fra kapittel 1 slettes uansett når kapittel 2 starter, bortsett fra Family Savings (maks $5 000)."
+   "Av pengene fra kapittel 1 blir bare Jasons BuckMe-saldo med, og bare opp til $10 000."
   ],
   "tips": [
    "Bruk en egen lagringsplass hvis du vil teste."

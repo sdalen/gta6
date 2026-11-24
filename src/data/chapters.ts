@@ -184,7 +184,7 @@ export const chapters: Chapter[] = [
           'Flykt med båt.',
         ],
         warning:
-          'Lagre manuelt før du starter. Du mister huset til Jason, og kontanter du har på deg forsvinner. Nå gjerne sparemålet på $5 000 i Family Savings først.',
+          'Lagre manuelt før du starter. Du mister huset til Jason. Lucia starter kapittel 2 på $0, mens Jason beholder BuckMe-saldoen sin opp til $10 000. Kontanter du bærer og gjemmestedet under gulvet forsvinner. Sett inn pengene på Jasons BuckMe (inntil $10 000). Våpen, klær og tatoveringer beholder du, så bruk resten på det.',
       },
       {
         id: 'home-sweet-home',

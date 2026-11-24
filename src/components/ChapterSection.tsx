@@ -55,6 +55,7 @@ export function ChapterSection({ chapter, query, done, spoilers, onToggle, start
             spoilers={spoilers}
             onToggle={() => onToggle(m.id)}
             progress={done}
+            onToggleItem={onToggle}
           />
         ))}
       </ol>

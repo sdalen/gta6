@@ -9,18 +9,40 @@ const charDot: Record<Character, string> = {
   Begge: 'bg-accent',
 }
 
-function ReminderList({ items, progress }: { items: Reminder[]; progress?: Set<string> }) {
+function ReminderList({ items, progress, onToggle }: { items: Reminder[]; progress?: Set<string>; onToggle?: (id: string) => void }) {
   return (
     <ul className="mt-1.5 space-y-1">
       {items.map((r) => {
         const ok = !!r.doneKey && !!progress?.has(r.doneKey)
         return (
           <li key={r.key} className="flex items-baseline gap-2">
-            <span className={ok ? 'text-ok' : 'text-faint'}>{ok ? '✓' : '○'}</span>
+            {onToggle ? (
+              <button
+                type="button"
+                onClick={() => onToggle(r.doneKey)}
+                aria-pressed={ok}
+                aria-label={ok ? `Merk ${r.label} som ikke gjort` : `Merk ${r.label} som gjort`}
+                className="group relative top-[3px] shrink-0 self-start"
+              >
+                <span
+                  className={`grid size-[18px] place-items-center rounded-full border-2 transition ${
+                    ok ? 'border-ok bg-ok text-on-ok' : 'border-frame group-hover:border-ok'
+                  }`}
+                >
+                  {ok && <Icon name="check" className="size-2.5 [stroke-width:3.5]" />}
+                </span>
+              </button>
+            ) : (
+              <span className={ok ? 'text-ok' : 'text-faint'}>{ok ? '✓' : '○'}</span>
+            )}
             {r.to ? (
               <a href={r.to} className={`hover:text-ink hover:underline ${ok ? 'text-muted line-through' : ''}`}>
                 {r.label}
               </a>
+            ) : onToggle ? (
+              <button type="button" onClick={() => onToggle(r.doneKey)} className={`text-left hover:text-ink ${ok ? 'text-muted line-through' : ''}`}>
+                {r.label}
+              </button>
             ) : (
               <span className={ok ? 'text-muted line-through' : ''}>{r.label}</span>
             )}
@@ -39,9 +61,11 @@ interface Props {
   spoilers: boolean
   onToggle: () => void
   progress?: Set<string>
+  /** Huker av en påminnelse (samleobjekt, forberedelse) direkte i listen. */
+  onToggleItem?: (id: string) => void
 }
 
-export function MissionCard({ mission, index, done, spoilers, onToggle, progress }: Props) {
+export function MissionCard({ mission, index, done, spoilers, onToggle, progress, onToggleItem }: Props) {
   const reminders = remindersFor(mission.id)
   const during = duringFor(mission.id)
   const unlocks = unlockedBy(mission.id)
@@ -77,12 +101,12 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
           <div className="mt-4 space-y-4">
             {reminders.length > 0 && (
               <Callout tone="warn" title="Husk før du starter:">
-                <ReminderList items={reminders} progress={progress} />
+                <ReminderList items={reminders} progress={progress} onToggle={onToggleItem} />
               </Callout>
             )}
             {during.length > 0 && (
               <Callout tone="accent" title="Underveis i oppdraget:">
-                <ReminderList items={during} progress={progress} />
+                <ReminderList items={during} progress={progress} onToggle={onToggleItem} />
               </Callout>
             )}
             {mission.warning && (
