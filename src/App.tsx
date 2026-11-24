@@ -30,7 +30,7 @@ const iconBtn =
   'grid size-9 place-items-center rounded-md text-muted transition hover:bg-surface hover:text-ink disabled:pointer-events-none disabled:opacity-30'
 
 export default function App() {
-  const { done, toggle, reset, replace, merge, undo, redo, canUndo, canRedo } = useProgress()
+  const { done, toggle, setMany, reset, replace, merge, undo, redo, canUndo, canRedo } = useProgress()
   const [panelOpen, setPanelOpen] = useState(false)
   const [spoilers, setSpoilers] = useState(true)
   const [theme, setTheme] = useState(() => (document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'))
@@ -64,10 +64,10 @@ export default function App() {
       page = <HomePage done={done} spoilers={spoilers} onToggle={toggle} />
       break
     case 'oppdrag':
-      page = <MissionsPage done={done} spoilers={spoilers} onToggle={toggle} />
+      page = <MissionsPage done={done} spoilers={spoilers} onToggle={toggle} onSetMany={setMany} />
       break
     case 'kapittel':
-      page = <ChapterPage number={a} missionId={b} done={done} spoilers={spoilers} onToggle={toggle} />
+      page = <ChapterPage number={a} missionId={b} done={done} spoilers={spoilers} onToggle={toggle} onSetMany={setMany} />
       break
     case 'samle':
       page =

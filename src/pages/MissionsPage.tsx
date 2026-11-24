@@ -4,15 +4,16 @@ import { startIndexes } from '../data/missionIndex'
 import { href } from '../hooks/useRoute'
 import { ChapterSection } from '../components/ChapterSection'
 import { Icon } from '../components/Icon'
-import { PageHeader, ProgressBar, SearchInput } from '../components/ui'
+import { Checkbox, PageHeader, ProgressBar, SearchInput } from '../components/ui'
 
 interface Props {
   done: Set<string>
   spoilers: boolean
   onToggle: (id: string) => void
+  onSetMany: (ids: string[], value: boolean) => void
 }
 
-export function MissionsPage({ done, spoilers, onToggle }: Props) {
+export function MissionsPage({ done, spoilers, onToggle, onSetMany }: Props) {
   const [query, setQuery] = useState('')
 
   return (
@@ -44,9 +45,20 @@ export function MissionsPage({ done, spoilers, onToggle }: Props) {
           <ul className="divide-y divide-line border-y border-line">
             {chapters.map((c) => {
               const completed = c.missions.filter((m) => done.has(m.id)).length
+              const allDone = completed === c.missions.length
               return (
-                <li key={c.id}>
-                  <a href={href('kapittel', c.number)} className="group flex items-center gap-5 py-5">
+                <li key={c.id} className={`flex items-center gap-4 ${allDone ? 'bg-ok/[0.06]' : ''}`}>
+                  <button
+                    type="button"
+                    onClick={() => onSetMany(c.missions.map((m) => m.id), !allDone)}
+                    aria-pressed={allDone}
+                    aria-label={allDone ? `Fjern avhuking for kapittel ${c.number}` : `Merk hele kapittel ${c.number} som fullført`}
+                    title={allDone ? 'Fjern avhuking for hele kapittelet' : 'Merk hele kapittelet som fullført'}
+                    className="group ml-1 p-1"
+                  >
+                    <Checkbox checked={allDone} />
+                  </button>
+                  <a href={href('kapittel', c.number)} className="group flex min-w-0 flex-1 items-center gap-5 py-5">
                     <span className="w-6 text-2xl font-semibold tabular-nums text-faint transition group-hover:text-accent">
                       {c.number}
                     </span>

@@ -80,6 +80,17 @@ export function useProgress() {
     })
   }, [])
 
+  /** Huker av (eller fjerner) mange på én gang, som ett steg i angre-historikken. */
+  const setMany = useCallback(
+    (ids: string[], value: boolean) =>
+      setState((prev) => {
+        const next = new Set(prev.done)
+        for (const id of ids) if (value) next.add(id); else next.delete(id)
+        return commit(prev, next)
+      }),
+    [],
+  )
+
   const reset = useCallback(() => setState((prev) => commit(prev, new Set())), [])
   const replace = useCallback((ids: string[]) => setState((prev) => commit(prev, new Set(ids))), [])
   const merge = useCallback((ids: string[]) => setState((prev) => commit(prev, new Set([...prev.done, ...ids]))), [])
@@ -107,6 +118,7 @@ export function useProgress() {
   return {
     done: state.done,
     toggle,
+    setMany,
     reset,
     replace,
     merge,

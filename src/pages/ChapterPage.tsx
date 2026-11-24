@@ -4,6 +4,7 @@ import { startIndexes } from '../data/missionIndex'
 import { href } from '../hooks/useRoute'
 import { ChapterSection } from '../components/ChapterSection'
 import { Icon } from '../components/Icon'
+import { Checkbox } from '../components/ui'
 import { NotFound } from './NotFound'
 
 interface Props {
@@ -12,9 +13,10 @@ interface Props {
   done: Set<string>
   spoilers: boolean
   onToggle: (id: string) => void
+  onSetMany: (ids: string[], value: boolean) => void
 }
 
-export function ChapterPage({ number, missionId, done, spoilers, onToggle }: Props) {
+export function ChapterPage({ number, missionId, done, spoilers, onToggle, onSetMany }: Props) {
   const idx = chapters.findIndex((c) => c.number === number)
 
   useEffect(() => {
@@ -24,6 +26,10 @@ export function ChapterPage({ number, missionId, done, spoilers, onToggle }: Pro
   if (idx < 0) return <NotFound />
   const prev = chapters[idx - 1]
   const next = chapters[idx + 1]
+  const ids = chapters[idx].missions.map((m) => m.id)
+  const allDone = ids.every((id) => done.has(id))
+  const earlier = chapters.slice(0, idx).flatMap((c) => c.missions.map((m) => m.id))
+  const earlierOpen = earlier.filter((id) => !done.has(id)).length
 
   return (
     <div>
@@ -36,6 +42,29 @@ export function ChapterPage({ number, missionId, done, spoilers, onToggle }: Pro
         startIndex={startIndexes[idx]}
         back={{ href: href('oppdrag'), label: 'Alle kapitler' }}
       />
+      <div className="mt-10 flex flex-wrap items-center gap-3">
+        <button
+          type="button"
+          onClick={() => onSetMany(ids, !allDone)}
+          aria-pressed={allDone}
+          className={`group inline-flex items-center gap-3 rounded-sm px-5 py-3 text-[15px] font-semibold transition ${
+            allDone ? 'bg-ok/10 text-ok ring-1 ring-ok/40' : 'bg-accent text-on-accent hover:bg-accent-dark'
+          }`}
+        >
+          <Checkbox checked={allDone} />
+          {allDone ? `Kapittel ${number} er fullført. Trykk for å angre` : `Merk hele kapittel ${number} som fullført`}
+        </button>
+        {!allDone && earlierOpen > 0 && (
+          <button
+            type="button"
+            onClick={() => onSetMany([...earlier, ...ids], true)}
+            className="rounded-sm px-4 py-3 text-[15px] font-medium text-muted ring-1 ring-line transition hover:text-ink hover:ring-frame"
+          >
+            Merk dette og alle tidligere kapitler
+          </button>
+        )}
+      </div>
+
       <nav className="mt-12 grid grid-cols-2 gap-4 border-t border-line pt-6 text-sm">
         {prev ? (
           <a href={href('kapittel', prev.number)} className="group text-muted hover:text-ink">
