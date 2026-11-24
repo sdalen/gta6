@@ -90,7 +90,7 @@ for (const cat of collectibles) {
       sub: `${cat.name} · ${item.where}`,
       to: href('samle', cat.id, String(idx)),
       doneKey: itemId(cat.id, idx),
-      text: join(item.name, item.where, cat.name, getDetail(itemId(cat.id, idx))?.landmark, getDetail(itemId(cat.id, idx))?.area),
+      text: join(item.name, item.where, cat.name, getDetail(itemId(cat.id, idx))?.landmark, getDetail(itemId(cat.id, idx))?.area, getDetail(itemId(cat.id, idx))?.code),
     }),
   )
 }

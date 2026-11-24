@@ -4344,7 +4344,10 @@
 "https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/"
 ],
 "where": "Tastaturet på garasjen til festhuset i sørøsthjørnet av Key Lento.",
-"codeHint": "Inne i festhuset."
+"codeHint": "Inne i festhuset.",
+"name": "Party House Garage",
+"code": "092319",
+"loot": "Bilen Invetero Spiderweb Coquette."
 },
 "samle:safer:1": {
 "area": "Belville, Leonard County",
@@ -4364,7 +4367,10 @@
 "https://game8.co/games/GTA-6/archives/638661"
 ],
 "where": "Den forsterkede veggsafen i det forlatte vaskeriet (Wash House) nordvest i Belville.",
-"codeHint": "Skrevet under samlekortet. GameRant sier at vaskeriet ligger i Ambrosia."
+"codeHint": "Skrevet under samlekortet. GameRant sier at vaskeriet ligger i Ambrosia.",
+"name": "Abandoned Laundromat",
+"code": "62412",
+"loot": "Ikke oppgitt i guidene."
 },
 "samle:safer:2": {
 "area": "Cottonmouth Lake, Mariana County",
@@ -4375,7 +4381,7 @@
 "Les koden på veggen med postkortene og bildene ved senga.",
 "Tast 44017 på safen."
 ],
-"spot": "Safen står på et lite kjøleskap under mikrobølgeovnen. Inni: 166 dollar og Laki Maivia (Bronze).",
+"spot": "Safen står på et lite kjøleskap under mikrobølgeovnen.",
 "access": "Kode 44017.",
 "confidence": "høy",
 "sources": [
@@ -4383,7 +4389,10 @@
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
 "where": "Safen i tilhengeren på øya sør for Cottonmouth Lake, den med lengst sandstripe.",
-"codeHint": "Tall på postkort og bilder på veggen ved senga."
+"codeHint": "Tall på postkort og bilder på veggen ved senga.",
+"name": "Cottonmouth Lake trailer",
+"code": "44017",
+"loot": "Ca. $166 og samlekortet Los Santos Pounders (Laki Maivia, Bronze)."
 },
 "samle:safer:3": {
 "area": "Belville, Leonard County",
@@ -4399,9 +4408,14 @@
 "confidence": "middels",
 "sources": [
 "https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/",
-"https://retrobroker.com/en-US/us/blog/vice-city-narcos-collectible-card-locations"
+"https://retrobroker.com/en-US/us/blog/vice-city-narcos-collectible-card-locations",
+"https://gta6.wiki.fextralife.com/All_Collectible_Cards_Set_Locations"
 ],
-"where": "Safen på soverommet i huset litt sørøst for Celerica-campus i Belville."
+"where": "Safen på soverommet i huset litt sørøst for Celerica-campus i Belville.",
+"name": "Hus sørøst for Celerica-campus, Belville",
+"code": "Ukjent",
+"loot": "Samlekortet Vice City Narcos: Leroy Rook (Gold).",
+"codeHint": "Ingen kilde oppgir kode eller ledetråd. Fextralife plasserer kortet i en safe på en hylle i et klesskap i et stort kremfarget hus på Harmony Dr i sørlige Belville. Fextralife merker bedroom-varianten sørøst for Celerica som ubekreftet. Ikke forveksle med koden 62412. Den gjelder en annen veggsafe i Belville (kortet Delord Nathan Alford). Uten kode: Fextralife skriver «crack it open». Små safer kan dirkes uten kode, ellers sprenges de med Sticky Bomb."
 },
 "samle:safer:4": {
 "area": "Vice Beach, Vice City",
@@ -4416,9 +4430,14 @@
 "access": "Trenger sprengstoff.",
 "confidence": "middels",
 "sources": [
-"https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/"
+"https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/",
+"https://gta6.wiki.fextralife.com/All_Collectible_Cards_Set_Locations"
 ],
-"where": "Safen i en garasje på sørspissen av hovedøya i Vice Beach."
+"where": "Safen i en garasje på sørspissen av hovedøya i Vice Beach.",
+"name": "Garasje på sørspissen av Vice Beach",
+"code": "Sprenges",
+"loot": "Samlekortet Vice City Manatees: Maleek Rivers (Gold).",
+"codeHint": "Ingen kilde oppgir kode. Garasjen (Fextralife: den sørligste storage-enheten ved strandkanten, sørspissen av Ocean Beach) er sperret av trepaller. Dytt dem unna med et kjøretøy og åpne porten. Safen står oppå et arkivskap. Uten kode: Sprengs med eksplosiver, for eksempel Sticky Bomb (The Big Lead). Fextralife skriver «crack or blast open», så en liten safe kan kanskje også dirkes."
 },
 "samle:safer:5": {
 "area": "Port Gellhorn, Kelly County",
@@ -4433,9 +4452,15 @@
 "access": "Sperret område. Du kan få etterlysning.",
 "confidence": "middels",
 "sources": [
-"https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/"
+"https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/",
+"https://gta6.wiki.fextralife.com/All_Collectible_Cards_Set_Locations",
+"https://gamerant.com/gta-6-snap-gun-location-lockpick-doors-silent/"
 ],
-"where": "En låst boks i lagerrommet oppe i den sperrede bygningen ved helikopterplassen ved Gellhorn Speedway."
+"where": "En låst boks i lagerrommet oppe i den sperrede bygningen ved helikopterplassen ved Gellhorn Speedway.",
+"name": "Gellhorn Speedway, bygningen ved helikopterplassen",
+"code": "Låst",
+"loot": "Samlekortet Vice City Flamingos: Charlie Spears.",
+"codeHint": "Ingen kode. Det er en låst boks, ikke en kodesafe. Boksen står i lagerrommet i andre etasje i den avsperrede bygningen ved helipaden. Fextralife merker stedet som ubekreftet. Hovedstedet for Charlie Spears er kjøleskapet i et blått hus på Northbrook Dr i Little Cuba. Uten kode: Guider sier generelt at hengelåste bokser åpnes med Snap Gun. Den låses opp i Chapter 3 når du leverer stjålne smykker tilbake til Yasmani. Ingen kilde bekrefter dette for akkurat denne boksen."
 },
 "samle:safer:6": {
 "area": "Gullet Marsh, Mariana County",
@@ -4452,7 +4477,10 @@
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/",
 "https://screenrant.com/gta-6-unique-weapons-locations/"
 ],
-"codeHint": "0072: PC-hint: «double success». Prøve 0036 × 2. Den samme koden åpner også vann-garasjen. 0212: Lapp inni 0072-safen."
+"codeHint": "0072: PC-hint: «double success». Prøve 0036 × 2. Den samme koden åpner også vann-garasjen. 0212: Lapp inni 0072-safen.",
+"name": "Pelican Valley research outpost (Titanvault og båthus)",
+"code": "0072 · 0212",
+"loot": "Over $1 000 og en lapp med koden 0212. Maskinpistolen Crabshack VF5 og kontanter."
 },
 "samle:safer:7": {
 "area": "La Perle, Vice City",
@@ -4468,7 +4496,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Grønn lapp på kjøleskapet."
+"codeHint": "Grønn lapp på kjøleskapet.",
+"name": "Janjak's Garage",
+"code": "4444",
+"loot": "Kontanter."
 },
 "samle:safer:8": {
 "area": "Crosstown, Vice City",
@@ -4483,7 +4514,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Ring rundt koden på «Old Note» på taket."
+"codeHint": "Ring rundt koden på «Old Note» på taket.",
+"name": "Marbelle Hotel",
+"code": "955214",
+"loot": "Klokken Crowex Ambassador «Breakfast» og kontanter."
 },
 "samle:safer:9": {
 "area": "Downtown, Vice City",
@@ -4493,12 +4527,15 @@
 "Les lappen på pulten.",
 "Tast 4228 på safen."
 ],
-"spot": "Koden står på en lapp på pulten. Inni: smykker.",
+"spot": "Koden står på en lapp på pulten.",
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Lapp på pulten. Bare én guide oppgir 4228, og Leonipedia sier at ingen kode er kjent. Trolig tilfeldig."
+"codeHint": "Lapp på pulten. Bare én guide oppgir 4228, og Leonipedia sier at ingen kode er kjent. Trolig tilfeldig.",
+"name": "Icegem Diamonds & Watches",
+"code": "4228",
+"loot": "Verdifulle smykker."
 },
 "samle:safer:10": {
 "area": "Hamlet, Vice-Dale County",
@@ -4514,7 +4551,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Skrevet på veggen rett overfor safen."
+"codeHint": "Skrevet på veggen rett overfor safen.",
+"name": "Nova Auto Junkyard",
+"code": "7777",
+"loot": "Kontanter."
 },
 "samle:safer:11": {
 "area": "Cottonmouth Bay",
@@ -4530,7 +4570,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Ring rundt koden på en notisblokk i Kingfishers-skuret."
+"codeHint": "Ring rundt koden på en notisblokk i Kingfishers-skuret.",
+"name": "Sunrise RV Park",
+"code": "6769",
+"loot": "Kontanter (pengebunker på ca. $1 722 og $4 240)."
 },
 "samle:safer:12": {
 "area": "Port Gellhorn, Kelly County",
@@ -4546,7 +4589,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Veggkartet på kontoret. Også i en notatbok fra Stash House i Port Gellhorn."
+"codeHint": "Veggkartet på kontoret. Også i en notatbok fra Stash House i Port Gellhorn.",
+"name": "Brooks Boatworks",
+"code": "6823",
+"loot": "Kontanter. Ca. $30 100–42 600."
 },
 "samle:safer:13": {
 "area": "Port Gellhorn, Kelly County",
@@ -4562,7 +4608,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Veggkartet på Brooks Boatworks. Lappen på kontoret har bare overstrøkne koder."
+"codeHint": "Veggkartet på Brooks Boatworks. Lappen på kontoret har bare overstrøkne koder.",
+"name": "Kingpin Bowling",
+"code": "0300",
+"loot": "Kontanter, haglen Gutterball Moreland 850 og klokken Crowex Octane «Orca»."
 },
 "samle:safer:14": {
 "area": "Port Gellhorn, Kelly County",
@@ -4578,7 +4627,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Veggkartet på Brooks Boatworks."
+"codeHint": "Veggkartet på Brooks Boatworks.",
+"name": "La Cascara Motel",
+"code": "6969",
+"loot": "Kontanter. Maskinpistolen Scrapper VF5C ligger ved siden av."
 },
 "samle:safer:15": {
 "area": "Belville, Leonard County",
@@ -4594,7 +4646,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Ring rundt koden på en notisblokk i laben."
+"codeHint": "Ring rundt koden på en notisblokk i laben.",
+"name": "Farm Fix Meth Lab",
+"code": "2121",
+"loot": "Kontanter (ca. $1 801 + $806 eller $2 641 + $1 207)."
 },
 "samle:safer:16": {
 "area": "Vice City",
@@ -4605,12 +4660,15 @@
 "Gå over gata og opp. Tredje dør til høyre.",
 "Tast 4124."
 ],
-"spot": "Tredje dør til høyre oppe. Inni: 2 286 dollar og en vape.",
+"spot": "Tredje dør til høyre oppe.",
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Lapp i den lille safen på bakrommet til Drip Drops."
+"codeHint": "Lapp i den lille safen på bakrommet til Drip Drops.",
+"name": "Illegal Sneaker Trade (Drip Drops)",
+"code": "4124",
+"loot": "Første safe: ca. $1 668 og en lapp. Andre safe: ca. $2 286 og en Driip-vape."
 },
 "samle:safer:17": {
 "area": "Little Cuba, Vice City",
@@ -4626,7 +4684,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Inne i gjemmestedet."
+"codeHint": "Inne i gjemmestedet.",
+"name": "Casa Guardia",
+"code": "1965",
+"loot": "Kontanter."
 },
 "samle:safer:18": {
 "area": "Little Cuba, Vice City",
@@ -4643,7 +4704,10 @@
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/",
 "https://screenrant.com/gta-6-unique-weapons-locations/"
 ],
-"codeHint": "Et kart på kontoret på verftet. GameRant sier at koden finnes på Saber Shipping Facility."
+"codeHint": "Et kart på kontoret på verftet. GameRant sier at koden finnes på Saber Shipping Facility.",
+"name": "Saber Shipping Yard",
+"code": "8046",
+"loot": "Kontanter."
 },
 "samle:safer:19": {
 "area": "Balsero, Vice-Dale County",
@@ -4659,7 +4723,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Hint på stedet. Uenighet: de fleste guidene sier 1122, noen sier 1965."
+"codeHint": "Hint på stedet. Uenighet: de fleste guidene sier 1122, noen sier 1965.",
+"name": "Saber Shipping Facility",
+"code": "1122",
+"loot": "Kontanter."
 },
 "samle:safer:20": {
 "area": "Port Gellhorn, Kelly County",
@@ -4669,13 +4736,16 @@
 "Gå til bakrommet i Delights.",
 "Tast 2008."
 ],
-"spot": "Bakrommet. Inni: kontanter.",
+"spot": "Bakrommet.",
 "access": "Del av oppdraget.",
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Vicki sender koden på SMS."
+"codeHint": "Vicki sender koden på SMS.",
+"name": "Delights Cabaret (Frankie's office)",
+"code": "2008",
+"loot": "Merkede sedler."
 },
 "samle:safer:21": {
 "area": "Vice City",
@@ -4692,7 +4762,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "1680: Står på oppdragskortet fra Yasmani. 6815: Står på oppdragskortet fra Yasmani. Senere ran kan ha en annen kode, så sjekk lappen på bakrommet. 0104: Oppdragskortet og en gul lapp på kontoret. Utenom oppdraget fikk én guide 1822 ved å true ekspeditøren."
+"codeHint": "1680: Står på oppdragskortet fra Yasmani. 6815: Står på oppdragskortet fra Yasmani. Senere ran kan ha en annen kode, så sjekk lappen på bakrommet. 0104: Oppdragskortet og en gul lapp på kontoret. Utenom oppdraget fikk én guide 1822 ved å true ekspeditøren.",
+"name": "Yasmani's Jewelry Jobs (tre butikker)",
+"code": "1680 · 6815 · 0104",
+"loot": "Buffalo Skull Chain (oppdragsgjenstand). Diamond Ring (oppdragsgjenstand). Amethyst Necklace (oppdragsgjenstand)."
 },
 "samle:safer:22": {
 "area": "Leonard County",
@@ -4707,7 +4780,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Funnet i oppdraget. Op.gg merker den som ikke bekreftet."
+"codeHint": "Funnet i oppdraget. Op.gg merker den som ikke bekreftet.",
+"name": "Sundown Private Airfield (Pete's hangar)",
+"code": "3718",
+"loot": "Ekstra bytte. En unik KZ-59 ligger på bordet."
 },
 "samle:safer:23": {
 "area": "Waxman Island",
@@ -4723,7 +4799,10 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"codeHint": "Lagret i Notes på telefonen."
+"codeHint": "Lagret i Notes på telefonen.",
+"name": "Raul's Garage (First Impressions)",
+"code": "2404#",
+"loot": "Fluktbilen Schafter V12."
 },
 "samle:blader:0": {
 "area": "Key Lento, Mariana County",
@@ -6070,7 +6149,7 @@
 "Gå gjennom Staff Only-døra og så Office-døra til høyre.",
 "Tast koden du fikk."
 ],
-"spot": "Ved pulten og PC-en på kontoret bak disken. Inni: Kontanter og smykker.",
+"spot": "Ved pulten og PC-en på kontoret bak disken.",
 "confidence": "høy",
 "sources": [
 "https://www.videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe/",
@@ -6078,7 +6157,10 @@
 "https://www.powerpyx.com/gta-6-hit-avery-pawn-walkthrough/",
 "https://leonipedia.com/guides/jewelry-stores/"
 ],
-"codeHint": "Ekspeditøren sier den når du truer ham. Den står også på en grønn lapp over kalenderen ved Office-døra. Guidene har fått 6499, 4768, 5683, 3156 og 3434, så koden er tilfeldig. Koden varierer fra spill til spill."
+"codeHint": "Ekspeditøren sier den når du truer ham. Den står også på en grønn lapp over kalenderen ved Office-døra. Guidene har fått 6499, 4768, 5683, 3156 og 3434, så koden er tilfeldig. Koden varierer fra spill til spill.",
+"code": "Tilfeldig",
+"name": "Avery Pawn",
+"loot": "Kontanter og smykker."
 },
 "samle:safer:25": {
 "area": "Vice City (ukjent)",
@@ -6088,13 +6170,16 @@
 "Finn koden på bakrommet eller true en ansatt.",
 "Tast koden på safen."
 ],
-"spot": "Safen på bakrommet. Inni: Ikke oppgitt.",
+"spot": "Safen på bakrommet.",
 "confidence": "lav",
 "sources": [
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
 "https://leonipedia.com/guides/jewelry-stores/"
 ],
-"codeHint": "Én guide fikk 4207 ved å true de ansatte. Den er nok ikke fast, så sjekk lappen på bakrommet. Koden varierer fra spill til spill."
+"codeHint": "Én guide fikk 4207 ved å true de ansatte. Den er nok ikke fast, så sjekk lappen på bakrommet. Koden varierer fra spill til spill.",
+"name": "Mall Rats",
+"code": "4207",
+"loot": "Ikke oppgitt i guidene."
 },
 "samle:safer:26": {
 "area": "Hele Leonida",
@@ -6104,13 +6189,16 @@
 "Be om «Safe Code?» før du knuser glass.",
 "Knus montrene og tøm safen. Begge deler må til for at butikken skal telle."
 ],
-"spot": "På bakrommet eller kontoret. Inni: Kontanter og smykker.",
+"spot": "På bakrommet eller kontoret.",
 "confidence": "middels",
 "sources": [
 "https://leonipedia.com/guides/jewelry-stores/",
 "https://www.powerpyx.com/gta-6-all-smash-n-grabs-locations/"
 ],
-"codeHint": "Tilfeldig. Fås fra en ansatt eller en lapp på bakrommet. Sticky Bomb virker også. Guidene er uenige om alle pantelånere har kodesafe. Buck's Jewelry & Pawn nevnes bare med kassepenger. Koden varierer fra spill til spill."
+"codeHint": "Tilfeldig. Fås fra en ansatt eller en lapp på bakrommet. Sticky Bomb virker også. Guidene er uenige om alle pantelånere har kodesafe. Buck's Jewelry & Pawn nevnes bare med kassepenger. Koden varierer fra spill til spill.",
+"code": "Tilfeldig",
+"name": "Andre pantelånere og smykkebutikker (Smash 'n' Grab)",
+"loot": "Kontanter og smykker."
 },
 "samle:safer:27": {
 "area": "Hele Leonida",
@@ -6121,13 +6209,16 @@
 "Be om «Safe Code?», eller let etter lapp på bakrommet.",
 "Tøm safen, eller dropp den hvis politiet nærmer seg."
 ],
-"spot": "På bakrommet, der det finnes en safe. Inni: Kontanter.",
+"spot": "På bakrommet, der det finnes en safe.",
 "confidence": "middels",
 "sources": [
 "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-store-robbery-guide/",
 "https://www.gta6heists.com/robberies/local-store"
 ],
-"codeHint": "Tilfeldig. Fås fra en ansatt eller en lapp. Én guide nevner en lås-minilek på ca. 90 sekunder på en safe i en brennevinsbutikk. Koden varierer fra spill til spill."
+"codeHint": "Tilfeldig. Fås fra en ansatt eller en lapp. Én guide nevner en lås-minilek på ca. 90 sekunder på en safe i en brennevinsbutikk. Koden varierer fra spill til spill.",
+"code": "Tilfeldig",
+"name": "Stick Ups (butikker, bensinstasjoner, brennevinsbutikker)",
+"loot": "Kontanter."
 },
 "samle:safer:28": {
 "area": "Vice City, Hamlet og Port Gellhorn (Cash Flow)",
@@ -6138,13 +6229,16 @@
 "Be om «Safe Code?», eller let etter lapp på bakrommet.",
 "Åpne safen og kom deg unna. Merkede sedler krever Dye Pack Jammer for å kunne selges."
 ],
-"spot": "Safen på bakrommet. Inni: Kontanter, ofte merkede sedler. Ca. $2 000–25 000. Little Cuba gir mest.",
+"spot": "Safen på bakrommet.",
 "confidence": "middels",
 "sources": [
 "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-safe-codes-list/",
 "https://egamers.io/gta-6-payday-loan-stores-where-to-find-all-7-and-how-to-rob-them/"
 ],
-"codeHint": "Tilfeldig. Fås fra en ansatt, en lapp eller en tavle. Koden varierer fra spill til spill."
+"codeHint": "Tilfeldig. Fås fra en ansatt, en lapp eller en tavle. Koden varierer fra spill til spill.",
+"code": "Tilfeldig",
+"name": "Payday Loans (7 butikker)",
+"loot": "Kontanter, ofte merkede sedler. Ca. $2 000–25 000. Little Cuba gir mest."
 },
 "samle:safer:29": {
 "area": "Hele Leonida",
@@ -6155,13 +6249,16 @@
 "Få koden fra en kasserer eller en vakt, eller les en lapp eller en PC-skjerm.",
 "Tøm safen. Både skuffen og safen må til for at banken skal telle."
 ],
-"spot": "Safen på bakrommet. Inni: Kontanter. Ca. $5 000–45 000.",
+"spot": "Safen på bakrommet.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
 "https://outputlag.com/guides/gta-6-jewelry-bank-robberies/"
 ],
-"codeHint": "Tilfeldig, også ulik i samme bank. Kassereren har den noen ganger skrevet ned. Vakter kan ha den på seg. Koden varierer fra spill til spill."
+"codeHint": "Tilfeldig, også ulik i samme bank. Kassereren har den noen ganger skrevet ned. Vakter kan ha den på seg. Koden varierer fra spill til spill.",
+"code": "Tilfeldig",
+"name": "Småbanker (bankjobber)",
+"loot": "Kontanter. Ca. $5 000–45 000."
 },
 "samle:safer:30": {
 "area": "Hele Leonida",
@@ -6171,13 +6268,16 @@
 "Følg en verditransport til banken.",
 "Gå inn mens vakten har hvelvet åpent."
 ],
-"spot": "Hvelvet bak i banken. Inni: Kontanter. Opptil ca. $205 000.",
+"spot": "Hvelvet bak i banken.",
 "confidence": "middels",
 "sources": [
 "https://www.gta6heists.com/robberies/how-to-open-bank-vaults",
 "https://duuro.net/blog/gta-6-safe-codes"
 ],
-"codeHint": "Ingen kode. Hvelvet kan ikke sprenges, bores eller dirkes opp."
+"codeHint": "Ingen kode. Hvelvet kan ikke sprenges, bores eller dirkes opp.",
+"code": "Ingen kode",
+"name": "Bank vaults (8 store banker)",
+"loot": "Kontanter. Opptil ca. $205 000."
 },
 "samle:safer:31": {
 "area": "Key Lento, Mariana County",
@@ -6187,13 +6287,16 @@
 "Få koden fra ekspeditøren.",
 "Tast 0420 på døra bak disken."
 ],
-"spot": "Tastaturet på døra med sprinkler til bakrommet med syrelaben. Inni: Adgang til syrelaben.",
+"spot": "Tastaturet på døra med sprinkler til bakrommet med syrelaben.",
 "confidence": "høy",
 "sources": [
 "https://duuro.net/blog/gta-6-safe-codes",
 "https://meowdb.com/gta6/safe-codes"
 ],
-"codeHint": "Ekspeditøren sier den. Den står også på en notisblokk på pulten."
+"codeHint": "Ekspeditøren sier den. Den står også på en notisblokk på pulten.",
+"name": "Moonstone Boutique (lab door)",
+"code": "0420",
+"loot": "Adgang til syrelaben."
 },
 "samle:safer:32": {
 "area": "Key Lento, Mariana County",
@@ -6202,13 +6305,16 @@
 "Spill «Lab Fees» i kapittel 1.",
 "Tast 7700 på døra."
 ],
-"spot": "Tastaturet på døra til lageret. Inni: Brians pengeskrin og lager for tyvegods.",
+"spot": "Tastaturet på døra til lageret.",
 "confidence": "høy",
 "sources": [
 "https://duuro.net/blog/gta-6-safe-codes",
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
 ],
-"codeHint": "Brian sender den på telefonen."
+"codeHint": "Brian sender den på telefonen.",
+"name": "Brian's Lockup",
+"code": "7700",
+"loot": "Brians pengeskrin og lager for tyvegods."
 },
 "samle:safer:33": {
 "area": "Balsero, Vice City",
@@ -6217,12 +6323,18 @@
 "Spill «Take Out Kitty Litter» i kapittel 3.",
 "Tast 1999 på garasjen i den midterste bygningen."
 ],
-"spot": "Garasjetastaturet i den midterste bygningen. Inni: $2 500.",
+"spot": "Garasjetastaturet i den midterste bygningen.",
 "confidence": "middels",
 "sources": [
 "https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
-"https://gta6info.com/wiki/Safe_Codes"
-]
+"https://gta6info.com/wiki/Safe_Codes",
+"https://www.powerpyx.com/gta-6-all-kitty-litter-lab-locations/",
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+],
+"name": "Kitty Litter Lab",
+"code": "1999",
+"loot": "$2 500.",
+"codeHint": "Koden står på en billboard rett ved labben i Balsero. Labben ligger i en garasje i den sentrale bygningen, der objective-markøren er. Tast koden på keypaden på veggen ved garasjeporten. Åpnes via Tyrones jobb «Take Out Kitty Litter» etter Chapter 3-oppdraget «Here, Kitty Kitty»."
 },
 "samle:safer:34": {
 "area": "Port Gellhorn, Kelly County",
@@ -6232,12 +6344,15 @@
 "Les den grønne lappen på arbeidsbenken.",
 "Tast 5710."
 ],
-"spot": "En liten safe i en tilhenger. Inni: Kontanter (ca. $84).",
+"spot": "En liten safe i en tilhenger.",
 "confidence": "lav",
 "sources": [
 "https://meowdb.com/gta6/safe-codes"
 ],
-"codeHint": "Grønn lapp på en arbeidsbenk. Bare meowdb har den."
+"codeHint": "Grønn lapp på en arbeidsbenk. Bare meowdb har den.",
+"name": "Port Gellhorn trailer",
+"code": "5710",
+"loot": "Kontanter (ca. $84)."
 },
 "samle:safer:35": {
 "area": "Port Gellhorn, Kelly County",
@@ -6246,12 +6361,15 @@
 "Finn safen.",
 "Velg Break Open og drei høyre spak."
 ],
-"spot": "En safe uten tastatur. Inni: Kontanter (ca. $1 221).",
+"spot": "En safe uten tastatur.",
 "confidence": "lav",
 "sources": [
 "https://meowdb.com/gta6/safe-codes"
 ],
-"codeHint": "Ingen kode. Bryt den opp."
+"codeHint": "Ingen kode. Bryt den opp.",
+"code": "Ingen kode",
+"name": "June Import & Export",
+"loot": "Kontanter (ca. $1 221)."
 },
 "samle:safer:36": {
 "area": "Stockyard, Vice City",
@@ -6260,12 +6378,15 @@
 "Finn safen i kontrollrommet.",
 "Velg Break Open og drei høyre spak."
 ],
-"spot": "På bordet i lydkontrollrommet. Inni: Ikke oppgitt.",
+"spot": "På bordet i lydkontrollrommet.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes"
 ],
-"codeHint": "Ingen kode. Bryt den opp."
+"codeHint": "Ingen kode. Bryt den opp.",
+"code": "Ingen kode",
+"name": "Sound4Sound Studio",
+"loot": "Ikke oppgitt i guidene."
 },
 "samle:safer:37": {
 "area": "Southside, Vice City",
@@ -6274,12 +6395,15 @@
 "Gå stille inn gjennom luka i taket.",
 "Velg Break Open på safen."
 ],
-"spot": "På kontorbordet ved vinduet. Inni: Ikke oppgitt.",
+"spot": "På kontorbordet ved vinduet.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes"
 ],
-"codeHint": "Ingen kode. Bryt den opp."
+"codeHint": "Ingen kode. Bryt den opp.",
+"code": "Ingen kode",
+"name": "Illegal Goods Store",
+"loot": "Ikke oppgitt i guidene."
 },
 "samle:safer:38": {
 "area": "Balsero, Vice City",
@@ -6289,12 +6413,20 @@
 "Gå til bakkontoret.",
 "Tast 9256."
 ],
-"spot": "På bakkontoret. Inni: Kontanter.",
+"spot": "På bakkontoret.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
-"https://duuro.net/blog/gta-6-safe-codes"
-]
+"https://duuro.net/blog/gta-6-safe-codes",
+"https://itemlevel.net/gta-6-how-to-clear-leonida-carrier-warehouse-all-key-valuables-locations-safe-code/",
+"https://www.followchain.org/gta-6-leonida-carrier-warehouse-safe-code/",
+"https://www.gta6heists.com/robberies/leonida-carrier-warehouse",
+"https://culturedvultures.com/gta-6-all-door-codes-and-safe-combinations/"
+],
+"name": "Leonida Carrier Warehouse",
+"code": "9256",
+"loot": "Kontanter.",
+"codeHint": "Koden står på laptopen på skrivebordet i det lille kontoret med en rosa stol. Inspiser laptopen for å få kombinasjonen. Safen står i hjørnet av bakrommet bak kontoret, ved siden av våpenskapet. Lur deg inn via stigen på siden av lageret og takluka. Da lander du rett i kontoret. Uten kode: Sprengs med Sticky Bomb (prompt: «Plant Explosive»). Det lager støy og varsler vaktene."
 },
 "samle:safer:39": {
 "area": "Balsero, Vice City",
@@ -6303,13 +6435,16 @@
 "Gå inn i Black Eagle-lageret.",
 "Tast 789987 på døra til kontoret."
 ],
-"spot": "Tastaturet utenfor bakkontoret. Inni: Adgang til kontoret med safen.",
+"spot": "Tastaturet utenfor bakkontoret.",
 "confidence": "middels",
 "sources": [
 "https://meowdb.com/gta6/safe-codes",
 "https://duuro.net/blog/gta-6-safe-codes"
 ],
-"codeHint": "Et kartkort. Noen spillere sier at koden står på kontor-PC-en og kan variere."
+"codeHint": "Et kartkort. Noen spillere sier at koden står på kontor-PC-en og kan variere.",
+"name": "Black Eagle warehouse (office door)",
+"code": "789987",
+"loot": "Adgang til kontoret med safen."
 },
 "samle:safer:40": {
 "area": "Balsero, Vice City",
@@ -6318,13 +6453,16 @@
 "Åpne kontordøra med 789987.",
 "Tast 031462 på safen. Husk nullen først."
 ],
-"spot": "Inne på kontoret. Inni: Ca. $5 112 og pistolen Black Eagle Import Kalinga .50.",
+"spot": "Inne på kontoret.",
 "confidence": "middels",
 "sources": [
 "https://meowdb.com/gta6/safe-codes",
 "https://gta6info.com/wiki/Safe_Codes"
 ],
-"codeHint": "Et kartkort."
+"codeHint": "Et kartkort.",
+"name": "Black Eagle warehouse (office safe)",
+"code": "031462",
+"loot": "Ca. $5 112 og pistolen Black Eagle Import Kalinga .50."
 },
 "samle:safer:41": {
 "area": "Vice City (ukjent)",
@@ -6332,12 +6470,17 @@
 "route": [
 "Tast 1426 på døra."
 ],
-"spot": "Inngangsdøra til gjemmestedet. Inni: Adgang til gjemmestedet.",
+"spot": "Inngangsdøra til gjemmestedet.",
 "confidence": "lav",
 "sources": [
-"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
+"https://gamerant.com/gta-6-cigar-import-front-robbery-guide-key-valuables-locations/",
+"https://culturedvultures.com/gta-6-all-door-codes-and-safe-combinations/"
 ],
-"codeHint": "Ikke oppgitt. Bare én guide har den."
+"codeHint": "Du får koden av kassereren. Sikt på kassereren med et våpen, så sier han koden. Cigar Import Front ligger inne i Palmis Liquor, sør for La Perle i Vice City. Koden virker på døra bak disken og på bakdøra. Da kommer du inn uten å varsle folkene inne med en gang. Uten kode: Gå rundt til bakinngangen og spark opp døra. Det varsler folkene inne.",
+"name": "Cigar Import (front door)",
+"code": "1426",
+"loot": "Adgang til gjemmestedet."
 },
 "samle:safer:42": {
 "area": "Waxman Island, Vice City",
@@ -6347,13 +6490,16 @@
 "Les e-posten på laptopen der.",
 "Gå opp på kontoret og tast 5800."
 ],
-"spot": "Kontoret med utvendig trapp, ovenpå. Inni: Kontanter.",
+"spot": "Kontoret med utvendig trapp, ovenpå.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
 ],
-"codeHint": "E-post på en laptop i en åpen container. Sticky Bomb virker også."
+"codeHint": "E-post på en laptop i en åpen container. Sticky Bomb virker også.",
+"name": "Chatfield Storage & Logistics",
+"code": "5800",
+"loot": "Kontanter."
 },
 "samle:safer:43": {
 "area": "Watson Bay, Mariana County",
@@ -6362,14 +6508,17 @@
 "Les PC-en i første etasje.",
 "Gå opp og tast koden fra skjermen."
 ],
-"spot": "Safen ovenpå. Inni: Kontanter.",
+"spot": "Safen ovenpå.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
 "https://meowdb.com/gta6/safe-codes"
 ],
-"codeHint": "PC-en i første etasje. Uenighet: 1886 er vanligst, noen sier 1887. GTABoom sier at koden varierer. Koden varierer fra spill til spill."
+"codeHint": "PC-en i første etasje. Uenighet: 1886 er vanligst, noen sier 1887. GTABoom sier at koden varierer. Koden varierer fra spill til spill.",
+"name": "Palmer Fishing Warehouse",
+"code": "1886",
+"loot": "Kontanter."
 },
 "samle:safer:44": {
 "area": "Watson Bay, Mariana County",
@@ -6379,13 +6528,16 @@
 "Les siste linje i e-posten på PC-en.",
 "Tast koden på safen under mikrobølgeovnen."
 ],
-"spot": "Den svarte safen under mikrobølgeovnen på kjøkkenet ovenpå. Inni: Kontanter.",
+"spot": "Den svarte safen under mikrobølgeovnen på kjøkkenet ovenpå.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
 ],
-"codeHint": "Siste linje i en e-post på kjøkken-PC-en. GTABoom sier at koden kan variere. Koden varierer fra spill til spill."
+"codeHint": "Siste linje i en e-post på kjøkken-PC-en. GTABoom sier at koden kan variere. Koden varierer fra spill til spill.",
+"name": "Watson Bay Safehouse",
+"code": "1819",
+"loot": "Kontanter."
 },
 "samle:safer:45": {
 "area": "Øst for Ambrosia, Leonard County",
@@ -6395,13 +6547,16 @@
 "Se på det svarte flagget ved bakrommet.",
 "Tast 1982."
 ],
-"spot": "Safen i klubbhuset til Final Chapter. Inni: Kontanter (ca. $909 + $2 136).",
+"spot": "Safen i klubbhuset til Final Chapter.",
 "confidence": "høy",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
 "https://meowdb.com/gta6/safe-codes"
 ],
-"codeHint": "Gjengens stiftelsesår på det svarte flagget på veggen."
+"codeHint": "Gjengens stiftelsesår på det svarte flagget på veggen.",
+"name": "The Thirsty Wolf (biker clubhouse)",
+"code": "1982",
+"loot": "Kontanter (ca. $909 + $2 136)."
 },
 "samle:safer:46": {
 "area": "Gullet Marsh, Mariana County",
@@ -6411,13 +6566,16 @@
 "Les ordet som er risset inn i gulvet på soverommet.",
 "Skriv CLEAVES."
 ],
-"spot": "Påloggingsskjermen på PC-en. Inni: Hintet til safekoden 0072.",
+"spot": "Påloggingsskjermen på PC-en.",
 "confidence": "høy",
 "sources": [
 "https://duuro.net/blog/gta-6-safe-codes",
 "https://meowdb.com/gta6/safe-codes"
 ],
-"codeHint": "Risset inn i gulvplankene på soverommet."
+"codeHint": "Risset inn i gulvplankene på soverommet.",
+"name": "Pelican Valley research outpost (computer)",
+"code": "CLEAVES",
+"loot": "Hintet til safekoden 0072."
 },
 "samle:safer:47": {
 "area": "Leonida Keys",
@@ -6426,13 +6584,18 @@
 "Dykk ned til vraket ved Belpoint.",
 "Tast 4242."
 ],
-"spot": "En safe i vraket. Inni: Kontanter.",
+"spot": "En safe i vraket.",
 "confidence": "lav",
 "sources": [
 "https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
-"https://gta6info.com/wiki/Safe_Codes"
+"https://gta6info.com/wiki/Safe_Codes",
+"https://gamerhour.net/guides/gta-6-belpoint-yacht-safe-code/",
+"https://powerupgaming.co.uk/2026/11/21/all-gta-6-stash-locations-best-farming-routes/"
 ],
-"codeHint": "Ikke oppgitt. Uenighet: GTABase knytter 4242 til «Room 115» i Ambrosia."
+"codeHint": "Kombinasjonen skal være gjemt bak et maleri ved safen (Power Up Gaming). Vraket er en ødelagt yacht på en liten øy i Capri Sound. Dykk ned. Safen er i et lite rom midt i yachten, med et maleri på veggen. Kodene er i konflikt: GameRant sier 4242, men GamerHour sier 731997 for «Belpoint Yacht». Les koden bak maleriet i ditt eget spill.",
+"name": "Belpoint shipwreck",
+"code": "4242 / 731997",
+"loot": "Kontanter."
 },
 "samle:safer:48": {
 "area": "Vice City",
@@ -6440,12 +6603,16 @@
 "route": [
 "Finn huset og tast 9790."
 ],
-"spot": "Ikke oppgitt. Inni: Bytte (ikke nærmere oppgitt).",
+"spot": "Ikke oppgitt.",
 "confidence": "lav",
 "sources": [
 "https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
 "https://gta6info.com/wiki/Safe_Codes"
-]
+],
+"name": "Slum House",
+"code": "9790",
+"loot": "Ikke oppgitt i guidene.",
+"codeHint": "Koden 9790 står på flere lister, men alle har den fra GameRant. Ingen kilde sier hvor ledetråden ligger. Se etter lapp, notatblokk, skjerm eller kart i nærheten med Focus-modus. Uten kode: Sticky Bomb eller annen eksplosjon åpner de fleste safer. Det gir støy og kan trigge politiet."
 },
 "samle:safer:49": {
 "area": "Vice City",
@@ -6453,12 +6620,16 @@
 "route": [
 "Gå inn på bakrommet til Stormy og tast 7869."
 ],
-"spot": "Safen på bakrommet. Inni: Ikke oppgitt.",
+"spot": "Safen på bakrommet.",
 "confidence": "lav",
 "sources": [
 "https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
 "https://gta6info.com/wiki/Safe_Codes"
-]
+],
+"name": "Stormy (back room)",
+"code": "7869",
+"loot": "Ikke oppgitt i guidene.",
+"codeHint": "Safen står i bakrommet hos Stormy i Vice City. Koden 7869 står på flere lister, men alle har den fra GameRant. Ingen kilde sier hvor ledetråden ligger. Se etter lapp, notatblokk eller kart i bakrommet med Focus-modus. Uten kode: Sticky Bomb eller annen eksplosjon åpner de fleste safer. Det gir støy."
 },
 "samle:safer:50": {
 "area": "Grayson, Lummox County",
@@ -6468,13 +6639,16 @@
 "Se på tallskiltene inne i huset.",
 "Tast 2727."
 ],
-"spot": "Sidedøra til garasjen ved et hus. Inni: Bilen Declasse '74 Vamos.",
+"spot": "Sidedøra til garasjen ved et hus.",
 "confidence": "høy",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/",
 "https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/"
 ],
-"codeHint": "Tallskilt på veggene i huset («Look at all the signs»)."
+"codeHint": "Tallskilt på veggene i huset («Look at all the signs»).",
+"name": "'74 Declasse Vamos garage",
+"code": "2727",
+"loot": "Bilen Declasse '74 Vamos."
 },
 "samle:safer:51": {
 "area": "La Perle, Vice City",
@@ -6484,13 +6658,16 @@
 "Les meldingene.",
 "Tast 92665 på garasjen ved Auntie's Place."
 ],
-"spot": "Garasjetastaturet ved Auntie's Place. Det er en rosa sløyfe ved døra. Inni: Vanessas rosa Growler. Garasjen blir din.",
+"spot": "Garasjetastaturet ved Auntie's Place. Det er en rosa sløyfe ved døra.",
 "confidence": "høy",
 "sources": [
 "https://meowdb.com/gta6/safe-codes",
 "https://gta6info.com/wiki/Safe_Codes"
 ],
-"codeHint": "Meldinger på laptopen. Guidene kaller den både Boobies og Vanessas laptop."
+"codeHint": "Meldinger på laptopen. Guidene kaller den både Boobies og Vanessas laptop.",
+"name": "Del Rio Boulevard Garage (Vanessa's Growler)",
+"code": "92665",
+"loot": "Vanessas rosa Growler. Garasjen blir din."
 },
 "samle:safer:52": {
 "area": "Vice City",
@@ -6499,13 +6676,16 @@
 "Se på hundebildet og skissen av hunden med krone.",
 "Svar Muffins, Queen og 15 i den rekkefølgen."
 ],
-"spot": "Laptopen i leiligheten i kapittel 3. Inni: Meldinger med garasjekoden 92665.",
+"spot": "Laptopen i leiligheten i kapittel 3.",
 "confidence": "høy",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
 "https://meowdb.com/gta6/safe-codes"
 ],
-"codeHint": "Hundebildet og skissen av hunden med krone."
+"codeHint": "Hundebildet og skissen av hunden med krone.",
+"name": "Apartment laptop (Chapter 3)",
+"code": "Muffins / Queen / 15",
+"loot": "Meldinger med garasjekoden 92665."
 },
 "samle:safer:53": {
 "area": "Manifest Canyon, Kelly County",
@@ -6515,14 +6695,17 @@
 "Finn magasinet ManlyGaze: nummer 36, måned 07, år 82.",
 "Tast 360782 på garasjen."
 ],
-"spot": "Garasjen på frukthagen vest for Manifest Canyon. Inni: Bilen Declasse Applesauce Bobcat.",
+"spot": "Garasjen på frukthagen vest for Manifest Canyon.",
 "confidence": "middels",
 "sources": [
 "https://gta6info.com/wiki/Safe_Codes",
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
 "https://duuro.net/blog/gta-6-safe-codes"
 ],
-"codeHint": "Forsiden av ManlyGaze-magasinet i låven."
+"codeHint": "Forsiden av ManlyGaze-magasinet i låven.",
+"name": "Father Scrumpy's Red Apple Orchard garage",
+"code": "360782",
+"loot": "Bilen Declasse Applesauce Bobcat."
 },
 "samle:safer:54": {
 "area": "Mount Kalaga National Park",
@@ -6532,14 +6715,17 @@
 "Les den lilla lappen eller tallbrettet på toppen.",
 "Gå ned og tast 69185 på skuret."
 ],
-"spot": "Det låste skuret nederst ved utkikkstårnet. Inni: Area 69 Watch Guard Logbook.",
+"spot": "Det låste skuret nederst ved utkikkstårnet.",
 "confidence": "middels",
 "sources": [
 "https://meowdb.com/gta6/safe-codes",
 "https://gta6info.com/wiki/Safe_Codes",
 "https://duuro.net/blog/gta-6-safe-codes"
 ],
-"codeHint": "Lilla lapp i hytta på toppen. Uenighet: én tidlig guide sa 691865."
+"codeHint": "Lilla lapp i hytta på toppen. Uenighet: én tidlig guide sa 691865.",
+"name": "Mount Kalaga firewatch tower shed",
+"code": "69185",
+"loot": "Area 69 Watch Guard Logbook."
 },
 "samle:safer:55": {
 "area": "Kelly County",
@@ -6548,13 +6734,16 @@
 "Tell strekgruppene over tastaturet fra venstre mot høyre.",
 "Tast tallene i den rekkefølgen."
 ],
-"spot": "Tastaturet på bunkerdøra i drømmen om romvesener. Inni: Hemmelig hendelse.",
+"spot": "Tastaturet på bunkerdøra i drømmen om romvesener.",
 "confidence": "middels",
 "sources": [
 "https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
 ],
-"codeHint": "Strekgrupper over tastaturet. Koden er en blanding av 1, 2, 3 og 4 og varierer. Koden varierer fra spill til spill."
+"codeHint": "Strekgrupper over tastaturet. Koden er en blanding av 1, 2, 3 og 4 og varierer. Koden varierer fra spill til spill.",
+"code": "Tilfeldig",
+"name": "South Point Airfield bunker (alien dream)",
+"loot": "Hemmelig hendelse."
 },
 "samle:safer:56": {
 "area": "Sharktooth Island, nord for Waning Sands",
@@ -6564,13 +6753,16 @@
 "Kjør til Sharktooth Island.",
 "Tast 010317."
 ],
-"spot": "Tastaturet ved inngangen til bunkeren. Inni: Adgang til bunkeren.",
+"spot": "Tastaturet ved inngangen til bunkeren.",
 "confidence": "middels",
 "sources": [
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
 "https://gamerant.com/gta-6-president-bunker-location-all-codes/"
 ],
-"codeHint": "Presidentens fødselsdag. Én guide sier at den kommer fra et opptak i Joses leilighet i Little Cuba."
+"codeHint": "Presidentens fødselsdag. Én guide sier at den kommer fra et opptak i Joses leilighet i Little Cuba.",
+"name": "President's bunker entrance",
+"code": "010317",
+"loot": "Adgang til bunkeren."
 },
 "samle:safer:57": {
 "area": "Sharktooth Island, nord for Waning Sands",
@@ -6579,13 +6771,16 @@
 "Bruk telefonen på pulten for å starte radioen.",
 "Tast sifrene fra sendingen i rekkefølgen fra Protocol 2."
 ],
-"spot": "Safen inne i bunkeren. Inni: Pistolen Russo's 1922. Henger sammen med en gratis tanks senere.",
+"spot": "Safen inne i bunkeren.",
 "confidence": "middels",
 "sources": [
 "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
 "https://gamerant.com/gta-6-president-bunker-location-all-codes/"
 ],
-"codeHint": "Radiosendingen og dokumentet på pulten."
+"codeHint": "Radiosendingen og dokumentet på pulten.",
+"name": "President's bunker safe",
+"code": "2975",
+"loot": "Pistolen Russo's 1922. Henger sammen med en gratis tanks senere."
 },
 "samle:safer:58": {
 "area": "North Mariana County",
@@ -6594,11 +6789,2322 @@
 "Kjør sør for Ammu-Nation i North Mariana County.",
 "Tast 085355 på tastaturet."
 ],
-"spot": "Tastatur på et tre ved luka sør for Ammu-Nation, ved motorveien. Inni: Adgang til bunker nummer to.",
+"spot": "Tastatur på et tre ved luka sør for Ammu-Nation, ved motorveien.",
 "confidence": "lav",
 "sources": [
-"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
+"https://holdtoreset.com/gta-6-presidents-bunkers-guide/",
+"https://holdtoreset.com/gta-6-iaa-black-site-guide/"
 ],
-"codeHint": "Ikke oppgitt. Uenighet: noen guider plasserer bunkeren nordvest for Grassrivers."
+"codeHint": "Ledetråden ligger i den første bunkeren, President's Bunker på Sharktooth Island. I safen der (kode 2975) ligger et foto av neste bunker. Snu fotoet. På baksiden står ordet OBSESS. Skrevet på en kalkulator og lest opp ned blir det 085355. Luka ligger ved motorveien sør for Ammu-Nation i sørlige North Mariana County. Keypaden sitter på et tre ved luka.",
+"name": "IAA Black Site hatch",
+"code": "085355",
+"loot": "Adgang til bunker nummer to."
+},
+"samle:stunts:0": {
+"area": "Mile Zero Air Station, Mariana County",
+"landmark": "Mile Zero Air Station",
+"route": [
+"Kjør til den sørlige veien langs Mile Zero Air Station.",
+"Ta en rask bil eller motorsykkel og kjør mot rampen med gjerdet foran deg.",
+"Hold full fart over rampen så du klarer piggtrådgjerdet.",
+"Land på helikopterplassen inne på flystasjonen.",
+"Bonus (valgfri): land i en Mammoth Patriot med 4 stjerner etterlyst."
+],
+"spot": "Ved den sørlige veien utenfor gjerdet til flystasjonen, rettet mot helikopterplassen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Rampen står ved veien på sørsiden av Mile Zero Air Station og sender deg over piggtrådgjerdet inn mot helikopterplassen."
+},
+"samle:stunts:1": {
+"area": "Mile Zero Air Station, Mariana County",
+"landmark": "Mile Zero Air Station",
+"route": [
+"Kjør til veien sørøst for Mile Zero Air Station.",
+"Kjør mot rampen med gjerdet og flystasjonen foran deg.",
+"Hold god fart så du klarer gjerdet.",
+"Land inne på flyplassområdet.",
+"Bonus (valgfri): land mens radioen spiller The Chamber 106.6."
+],
+"spot": "Ved veien i sørøsthjørnet av flystasjonen, foran gjerdet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Rampen står ved veien sørøst for Mile Zero Air Station og sender deg over gjerdet inn på flyplassområdet."
+},
+"samle:stunts:2": {
+"area": "Mile Zero Air Station / Abismo Key, Mariana County",
+"landmark": "Saltrock Bridge",
+"route": [
+"Kjør ut på den gamle Saltrock Bridge fra vestsiden (Mile Zero-siden).",
+"Ta en rask bil eller motorsykkel og få opp farten på brodekket.",
+"Treff rampen rett og hopp over gapet i broen.",
+"Land på brodelen på andre siden.",
+"Bonus (valgfri): ta begge Saltrock Bridge-hoppene i én sammenhengende kjøring."
+],
+"spot": "På den vestre broenden ved gapet i Saltrock Bridge.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Vestre del av den ødelagte Saltrock Bridge, der rampen sender deg over gapet i broen."
+},
+"samle:stunts:3": {
+"area": "Abismo Key, Mariana County",
+"landmark": "Saltrock Bridge",
+"route": [
+"Kjør ut på Saltrock Bridge fra Abismo Key-siden (øst).",
+"Få opp farten mot vest.",
+"Treff rampen ved gapet og hopp over.",
+"Land på brodelen mot Mile Zero.",
+"Bonus (valgfri): ta begge Saltrock Bridge-hoppene i én kjøring."
+],
+"spot": "På den østre broenden ved gapet i Saltrock Bridge.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Østre del av den forlatte Saltrock Bridge ved Abismo Key, med hopp over gapet mot Mile Zero."
+},
+"samle:stunts:4": {
+"area": "Abismo Key, Mariana County",
+"landmark": "Key Lento Bridge",
+"route": [
+"Kjør ut på den gamle (nedre) broen fra Abismo Key-siden.",
+"Få opp farten mot Key Lento.",
+"Treff rampen og hopp over gapet i broen.",
+"Land på brodelen på andre siden.",
+"Bonus (valgfri): ta begge Key Lento Bridge-hoppene i én kjøring."
+],
+"spot": "Vestre ende av den nedlagte broen, ved gapet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Vestre ende av den gamle, nedlagte broen mellom Abismo Key og Key Lento, der du hopper over gapet."
+},
+"samle:stunts:5": {
+"area": "Key Lento, Mariana County",
+"landmark": "Key Lento Bridge",
+"route": [
+"Kjør ut på den gamle broen fra Key Lento-siden.",
+"Kjør rett frem mot Abismo Key og få opp farten.",
+"Treff rampen og hopp over gapet.",
+"Land på brodelen på andre siden.",
+"Bonus (valgfri): ta begge Key Lento Bridge-hoppene i én kjøring."
+],
+"spot": "Østre spenn av den nedlagte broen, rampen står rett frem i kjøreretningen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Østre spenn av den gamle broen fra Key Lento mot Abismo Key, med en rampe rett frem."
+},
+"samle:stunts:6": {
+"area": "Key Lento, Mariana County",
+"landmark": "Key Lento Community Center",
+"route": [
+"Finn byggeplassen til Schlott Construction ved boligblokken på Key Lento.",
+"Rygg ut på parkeringsplassen så du har tilløp mot den grønne containeren.",
+"Kjør i full fart opp containeren, mot Community Center.",
+"Land på taket til politistasjonen bak.",
+"Bonus (valgfri): gjør en baklengs salto."
+],
+"spot": "En skrå grønn container på parkeringsplassen ved boligblokken.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En skrå grønn container på en parkeringsplass ved en boligblokk på Key Lento sender deg over Community Center mot taket på politistasjonen."
+},
+"samle:stunts:7": {
+"area": "Corsair Key, Mariana County",
+"landmark": "Ocean Sound Road",
+"route": [
+"Kjør til byggeplassen langs kysten på Corsair Key.",
+"Ta tilløp mot den grønne containeren i enden av byggeplassen.",
+"Kjør opp containeren i god fart.",
+"Land på Ocean Sound Road.",
+"Bonus (valgfri): bruk motorsykkel og land i over 70 mph."
+],
+"spot": "Grønn container i enden av byggeplassen ved kysten.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En grønn søppelcontainer ytterst på en byggeplass ved kysten sender deg ut på Ocean Sound Road."
+},
+"samle:stunts:8": {
+"area": "Grassrivers, Mariana County",
+"landmark": "Southpoint Airfield",
+"route": [
+"Kjør til sørenden av Southpoint Airfield i Grassrivers.",
+"Bruk rullebanen eller grusen som tilløp mot jordhaugen.",
+"Treff haugen i høy fart.",
+"Land over vannet på motsatt side.",
+"Bonus (valgfri): egen bil og over 65 mph."
+],
+"spot": "En lav jordhaug helt sør på flyplassen, rett ved vannet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En liten jordhaug i sørenden av Southpoint Airfield sender deg ut over vannet."
+},
+"samle:stunts:9": {
+"area": "Grassrivers, Mariana County",
+"landmark": "Cottonmouth Lake",
+"route": [
+"Følg Longneck Trail gjennom Grassrivers til den ødelagte broen.",
+"En ATV eller motorsykkel er enklest på stien.",
+"Kjør i god fart mot gapet i broen.",
+"Land på brodelen på andre siden.",
+"Bonus (valgfri): land på en ATV (quad bike)."
+],
+"spot": "Kanten av den ødelagte broen over elven ved Cottonmouth Lake.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En ødelagt bro over elven som renner ut i Cottonmouth Lake, der du hopper over gapet."
+},
+"samle:stunts:10": {
+"area": "Grassrivers, Mariana County",
+"landmark": "US Route 82",
+"route": [
+"Kjør inn på byggeplassen ved US Route 82 i Grassrivers.",
+"Følg grusveien mot rampen.",
+"Hold høy fart over rampen.",
+"Land på andre siden av broen.",
+"Bonus (valgfri): land over broen."
+],
+"spot": "Enden av grusveien inne på byggeplassen ved US-82.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En grusvei inne på byggeplassen ved US-82 ender i en rampe som sender deg over broen."
+},
+"samle:stunts:11": {
+"area": "Breakwater Quarry, Mariana County",
+"landmark": "Goliath Global Quarry",
+"route": [
+"Kjør inn i Goliath Global Quarry fra sør.",
+"Finn grusveien langs jernbanesporet.",
+"Treff den lille haugen i god fart.",
+"Land på grusen bortenfor.",
+"Bonus (valgfri): land i en stjålet Bravado Bison."
+],
+"spot": "Liten haug mellom jernbanen og grusveien i sørlige del av steinbruddet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En liten haug ved jernbanesporet på en grusvei i den sørlige delen av steinbruddet."
+},
+"samle:stunts:12": {
+"area": "Breakwater Quarry, Mariana County",
+"landmark": "Goliath Global Quarry",
+"route": [
+"Kjør til midten av Goliath Global Quarry.",
+"Finn den store steinhaugen ved veien.",
+"Ta tilløp og kjør opp haugen i høy fart.",
+"Land på veien bortenfor.",
+"Bonus (valgfri): baklengs salto med partneren i bilen."
+],
+"spot": "Stor steinhaug ved veien midt i steinbruddet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En stor steinhaug ved veien midt i steinbruddet."
+},
+"samle:stunts:13": {
+"area": "Breakwater Quarry, Mariana County",
+"landmark": "Goliath Global Quarry",
+"route": [
+"Kjør opp stien langs klippen i Goliath Global Quarry.",
+"Finn de stablede metallplatene.",
+"Kjør opp platene i full fart.",
+"Land nedenfor.",
+"Bonus (valgfri): over 80 fot lengde."
+],
+"spot": "Stablede metallplater på klippestien midt i bruddet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Stablede metallplater på stien langs klippen midt i steinbruddet fungerer som rampe."
+},
+"samle:stunts:14": {
+"area": "North Mariana County",
+"landmark": "Goliath Global Quarry",
+"route": [
+"Kjør til vestsiden av Goliath Global Quarry.",
+"Finn sandhaugen ved murveggen.",
+"Ta tilløp og treff haugen rett.",
+"Land bortenfor.",
+"Bonus (valgfri): land i en stjålet Bravado Bison."
+],
+"spot": "Sandhaug ved en murvegg i vestre del av bruddet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En sandhaug ved en murvegg på vestsiden av steinbruddet."
+},
+"samle:stunts:15": {
+"area": "Breakwater Quarry, Mariana County",
+"landmark": "Goliath Global Quarry",
+"route": [
+"Kjør inn i Goliath Global Quarry til transportbåndet.",
+"Ta tilløp mot jordhaugen med hovedbygningen foran deg.",
+"Kjør i høy fart over haugen.",
+"Land bortenfor (bonus: på taket til Goliath Global-bygningen)."
+],
+"spot": "Jordhaug ved transportbåndet, rettet mot hovedbygningen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordhaug ved transportbåndet sender deg mot hovedbygningen i steinbruddet."
+},
+"samle:stunts:16": {
+"area": "North Mariana County",
+"landmark": "Nehrling River",
+"route": [
+"Kjør til vannkanten i den nordlige delen av steinbruddet.",
+"Ta langt tilløp mot rampen ved vannet.",
+"Hold full fart over kanten.",
+"Land på andre siden av elven.",
+"Bonus (valgfri): over 150 fot lengde."
+],
+"spot": "Ved vannkanten i steinbruddet, rettet over elven.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra vannkanten i steinbruddet hopper du over en del av Nehrling River."
+},
+"samle:stunts:17": {
+"area": "Peregrine Bay, Vice-Dale County",
+"landmark": "T.H. Power Station",
+"route": [
+"Kjør til byggeplassen på sørsiden av T.H. Power Station.",
+"Følg grusveien mot rampen.",
+"Hopp over anleggsbrakken i god fart.",
+"Land bortenfor (bonus: over en HVY Bulldozer)."
+],
+"spot": "Midt på grusveien inne på byggeplassen, foran brakken.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe midt på en grusvei på byggeplassen sør for T.H. Power Station sender deg over en anleggsbrakke."
+},
+"samle:stunts:18": {
+"area": "Hamlet, Vice-Dale County",
+"landmark": "LPL parking lot",
+"route": [
+"Kjør til Vine St i Hamlet.",
+"Kjør inn i bakgården til det forfalne huset.",
+"Ta tilløp mot rampen med LPL-parkeringen foran deg.",
+"Land på LPL-parkeringsplassen over gaten (det er også bonusen)."
+],
+"spot": "Bakgården til et forfallent hus på Vine St.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Bakgården til et forfallent hus på Vine St sender deg over gaten mot parkeringsplassen til LPL."
+},
+"samle:stunts:19": {
+"area": "Hamlet, Vice-Dale County",
+"landmark": "Anderson Murphy Construction",
+"route": [
+"Kjør til byggeplassen til Anderson Murphy Construction i Hamlet.",
+"Finn jordstien ved siden av byggeplassen.",
+"Kjør i god fart over kanten mot elven.",
+"Land på andre siden (bonus: over en båt)."
+],
+"spot": "Jordsti ved siden av byggeplassen, ved elvebredden.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En sti ved byggeplassen på grensen mellom Hamlet og fylket sender deg over elven."
+},
+"samle:stunts:20": {
+"area": "South Vice-Dale County",
+"landmark": "Calderone Avenue",
+"route": [
+"Kjør til Apollo Aggregates-bruddet sør i Vice-Dale.",
+"Finn jordrampen mellom bygningen og den vannfylte gropen.",
+"Kjør i full fart over rampen.",
+"Land på andre siden av Calderone Avenue (bonus: baklengs salto)."
+],
+"spot": "Jordrampe mellom en bygning og den vannfylte gropen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordrampe mellom en bygning og en vannfylt grop sender deg over Calderone Avenue."
+},
+"samle:stunts:21": {
+"area": "Southside, Vice-Dale County",
+"landmark": "SW 10th Avenue",
+"route": [
+"Kjør opp til taket på parkeringshuset ved Gator Plaza.",
+"Ta tilløp over taket mot rampen på kanten.",
+"Kjør i god fart over rampen.",
+"Land på SW 10th Avenue (bonus: i en stjålet Vapid Dominator GT)."
+],
+"spot": "Rampe på takkanten av parkeringshuset.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe på takkanten av parkeringshuset ved Gator Plaza sender deg ned på SW 10th Avenue."
+},
+"samle:stunts:22": {
+"area": "South Vice-Dale County",
+"landmark": "Peacock Estates",
+"route": [
+"Kjør inn i boligfeltet Peacock Estates.",
+"Følg veien helt til enden av blindveien.",
+"Kjør i god fart over jordhaugen mot vannet.",
+"Land på andre siden (bonus: fly helt over en båt)."
+],
+"spot": "Liten jordhaug ved vannkanten, i enden av blindveien.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En liten jordhaug ved vannet i enden av blindveien i Peacock Estates."
+},
+"samle:stunts:23": {
+"area": "Bluegrass, Vice-Dale County",
+"landmark": "Skorpen Brothers Recycling",
+"route": [
+"Kjør til området ved Skorpen Brothers Recycling mellom SW 3rd Ave og vannverket.",
+"Finn bakken ved veien.",
+"Sikt mot båten i elven og kjør i full fart.",
+"Land på andre siden (bonus: over båten)."
+],
+"spot": "Bakke ved veien, rettet mot elven.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En bakke ved veien mellom SW 3rd Ave og vannverket sender deg over elven."
+},
+"samle:stunts:24": {
+"area": "VCIA, Vice-Dale County",
+"landmark": "Cargo Road",
+"route": [
+"Kjør til byggeplassen langs Cargo Rd ved flyplassen.",
+"Finn rampen inne på plassen.",
+"Kjør over rampen i god fart.",
+"Land på andre siden av den lille elven (bonus: i en kabriolet med taket nede)."
+],
+"spot": "Rampe inne på byggeplassen ved Cargo Rd.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe på en byggeplass ved Cargo Rd sender deg over en liten elv."
+},
+"samle:stunts:25": {
+"area": "VCIA, Vice-Dale County",
+"landmark": "Go Postal warehouse",
+"route": [
+"Kjør inn på flyplassen (VCIA) ved Go Postal-lageret.",
+"Bruk rullebanen som tilløp.",
+"Treff den rutete rampen i svært høy fart.",
+"Land på rullebanen (bonus: over 100 mph)."
+],
+"spot": "Rød- og hvitrutet rampe ved rullebanen nær Go Postal-lageret.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rød- og hvitrutet rampe ved rullebanen nær Go Postal-lageret på flyplassen."
+},
+"samle:stunts:26": {
+"area": "Grensen mellom Vice-Dale County og Kelly County (Buckskin)",
+"landmark": "West Vice-Dale County Broken Bridge",
+"route": [
+"Kjør til den stengte broen på grensen mellom Vice-Dale og Kelly County.",
+"Kjør forbi sperringene og ut på broen.",
+"Hold full fart mot gapet.",
+"Land på andre siden (bonus: i en stjålet bil)."
+],
+"spot": "Kanten av gapet på den stengte broen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En stengt, ødelagt bro over elven på fylkesgrensen."
+},
+"samle:stunts:27": {
+"area": "West Vice-Dale County (Buckskin Swamp)",
+"landmark": "Buckskin Swamp",
+"route": [
+"Kjør til Schlott-byggeplassen i kanten av Buckskin Swamp.",
+"Ta langt tilløp mot den store jordrampen.",
+"Kjør i full fart over rampen.",
+"Land på andre siden av elven (bonus: over 250 fot)."
+],
+"spot": "Stor jordrampe ved sumpkanten på byggeplassen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En stor jordrampe på Schlott-byggeplassen i kanten av Buckskin Swamp sender deg over elven."
+},
+"samle:stunts:28": {
+"area": "West Vice-Dale County",
+"landmark": "Interstate 404",
+"route": [
+"Kjør til grushaugen langs I-404 nordøst for VCIA.",
+"Ta tilløp på siden av motorveien.",
+"Kjør i høy fart over haugen.",
+"Land på andre siden av motorveien (bonus: baklengs salto)."
+],
+"spot": "Grushaug ved siden av I-404.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En grushaug ved I-404 nordøst for flyplassen sender deg over motorveifeltene."
+},
+"samle:stunts:29": {
+"area": "West Vice-Dale County",
+"landmark": "Cargo Road",
+"route": [
+"Kjør inn på søppelfyllingen vest i Vice-Dale.",
+"Kjør til den store jordhaugen midt på fyllingen.",
+"Kjør i full fart over haugen mot gjerdet.",
+"Land på Cargo Rd ved flyplassen (bonus: over Cargo Road)."
+],
+"spot": "Stor jordhaug midt på fyllingen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En stor jordhaug midt på søppelfyllingen sender deg over gjerdet og ut på Cargo Rd."
+},
+"samle:stunts:30": {
+"area": "VCIA, Vice-Dale County",
+"landmark": "VCAR hangar",
+"route": [
+"Kjør inn på flyplassen ved den nordlige rullebanen.",
+"Finn den rutete rampen nær VCAR-hangaren.",
+"Bruk rullebanen som tilløp og treff rampen i høy fart.",
+"Land på asfalten (bonus: med 4 stjerner etterlyst)."
+],
+"spot": "Rutete rampe ved den nordlige rullebanen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rutete rampe ved den nordlige rullebanen nær VCAR-hangaren."
+},
+"samle:stunts:31": {
+"area": "VCIA Terminals, Vice-Dale County",
+"landmark": "Manatee Parking Garage",
+"route": [
+"Kjør opp til taket på Gator Parking ved terminalene.",
+"Finn planken med oransje sperringer.",
+"Kjør over planken i god fart mot Manatee Parking-skiltet.",
+"Land på Manatee-parkeringshuset (bonus: gul taxi i over 40 mph)."
+],
+"spot": "Planke ved oransje sperringer på taket av Gator Parking.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En planke og oransje sperringer på taket av Gator Parking sender deg over gapet mot Manatee Parking."
+},
+"samle:stunts:32": {
+"area": "VCIA Terminals, Vice-Dale County",
+"landmark": "VCIA Circular",
+"route": [
+"Kjør opp på øvre nivå av VCIA Circular ved terminalen.",
+"Finn jordhaugen bak trafikkjeglene.",
+"Kjør over haugen i god fart.",
+"Land bortenfor (bonus: i en gul taxi)."
+],
+"spot": "Jordhaug bak kjeglene på øvre veinivå ved terminalen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordhaug bak kjeglene på øvre nivå ved terminalen på VCIA Circular."
+},
+"samle:stunts:33": {
+"area": "VCIA, Vice-Dale County",
+"landmark": "Banner Hotel & Spa",
+"route": [
+"Kjør til parkeringshuset ved Banner Hotel & Spa øst på flyplassområdet.",
+"Kjør opp til øverste etasje.",
+"Ta tilløp mot treplanken på kanten.",
+"Land på Bayside Dr (bonus: i egen bil)."
+],
+"spot": "Treplank på kanten av øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Et treplank på kanten av øverste etasje i parkeringshuset ved Banner Hotel & Spa sender deg ned på Bayside Dr."
+},
+"samle:stunts:34": {
+"area": "VCIA, Vice-Dale County",
+"landmark": "Sahara warehouse",
+"route": [
+"Kjør opp til parkeringen på taket av DTH-lageret.",
+"Ta langt tilløp over taket.",
+"Hopp over gapet i full fart.",
+"Land på taket av Sahara-lageret (bonus: med 4 stjerner etterlyst)."
+],
+"spot": "Kanten av takparkeringen på DTH-lageret.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra parkeringen på taket av DTH-lageret hopper du over gapet til taket på Sahara-lageret."
+},
+"samle:stunts:35": {
+"area": "VCIA, Vice-Dale County",
+"landmark": "El Joven Boulevard",
+"route": [
+"Kjør til byggeplassen ved lagerbygget på flyplassområdet.",
+"Ta tilløp mot kanten av byggeplassen.",
+"Kjør i god fart over kanten.",
+"Land på andre siden av El Joven Blvd (bonus: i en varebil)."
+],
+"spot": "Kanten av byggeplassen ved lagerbygget.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Kanten av en byggeplass ved lagerbygget sender deg over El Joven Blvd."
+},
+"samle:stunts:36": {
+"area": "Salton, Vice-Dale County",
+"landmark": "Interstate",
+"route": [
+"Kjør til parkeringshuset i Salton.",
+"Kjør opp til øverste etasje.",
+"Ta tilløp mot treplanken i hjørnet.",
+"Land på motorveien nedenfor (det er også bonusen)."
+],
+"spot": "Treplank i hjørnet av øverste etasje.",
+"confidence": "middels",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Et treplank i hjørnet på øverste etasje av parkeringshuset sender deg ned på motorveien."
+},
+"samle:stunts:37": {
+"area": "Tequesta, Vice-Dale County",
+"landmark": "LomBank",
+"route": [
+"Kjør til parkeringshuset over for LomBank i Tequesta.",
+"Kjør opp til taket.",
+"Ta tilløp mot hjørnet ut mot SW 7th Street.",
+"Land på gaten (bonus: tim hoppet så du klarer et metrotog)."
+],
+"spot": "Takhjørnet på parkeringshuset mot SW 7th St.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Et hjørne på taket av parkeringshuset rett over for LomBank sender deg mot SW 7th Street."
+},
+"samle:stunts:38": {
+"area": "Tequesta, Vice-Dale County",
+"landmark": "Sahara",
+"route": [
+"Kjør til MVP Park-parkeringshuset over for Sahara i Tequesta.",
+"Kjør opp til øverste etasje.",
+"Kjør gjennom den knuste veggen med byggeskilt i høy fart.",
+"Land på SE 2nd Ave (bonus: over 50 mph)."
+],
+"spot": "Den knuste veggen på øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En knust vegg med byggeskilt på øverste etasje av parkeringshuset over for Sahara sender deg ned på SE 2nd Ave."
+},
+"samle:stunts:39": {
+"area": "Tequesta Retreat, Vice-Dale County",
+"landmark": "Saint Malo II Resort",
+"route": [
+"Kjør til parkeringshuset som henger sammen med Saint Malo II Resort.",
+"Kjør opp til taket.",
+"Ta tilløp mot rampen på kanten.",
+"Land på gaten nedenfor (bonus: med partner i en stjålet bil)."
+],
+"spot": "Rampe på takkanten av parkeringshuset.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe på takkanten av parkeringshuset ved Saint Malo II Resort."
+},
+"samle:stunts:40": {
+"area": "Tequesta, Vice-Dale County",
+"landmark": "LPL parking lot",
+"route": [
+"Kjør til enden av SW 4th Ave i Tequesta.",
+"Finn jordhaugen der veien slutter.",
+"Kjør i full fart over haugen og under togbroen.",
+"Land på andre siden av elven (bonus: inne på LPL-parkeringen)."
+],
+"spot": "Jordhaug helt i enden av SW 4th Ave.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordhaug i enden av SW 4th Ave sender deg over elven, under togbroen."
+},
+"samle:stunts:41": {
+"area": "Downtown, Vice-Dale County",
+"landmark": "Interstate 97",
+"route": [
+"Kjør til parkeringshuset under I-97-broen i Downtown.",
+"Kjør opp til femte etasje.",
+"Ta tilløp mot hjørnet.",
+"Land på gaten nedenfor (bonus: i egen bil)."
+],
+"spot": "Hjørnet i femte etasje, under motorveibroen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Et hjørne i femte etasje av parkeringshuset under I-97-broen."
+},
+"samle:stunts:42": {
+"area": "Little Cuba, Vice-Dale County",
+"landmark": "West Royale Street",
+"route": [
+"Kjør til Valdemar on the River-parkeringshuset i Little Cuba.",
+"Kjør opp til øverste etasje.",
+"Ta tilløp mot nordkanten.",
+"Land på West Royale St (det er også bonusen)."
+],
+"spot": "Nordkanten av øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra nordkanten av øverste etasje i parkeringshuset hopper du ned på West Royale St."
+},
+"samle:stunts:43": {
+"area": "Little Cuba, Vice-Dale County",
+"landmark": "West Royale Street",
+"route": [
+"Kjør til Valdemar on the River-parkeringshuset i Little Cuba.",
+"Kjør opp til øverste etasje.",
+"Ta tilløp mot østkanten.",
+"Land på West Royale St (bonus: i egen bil)."
+],
+"spot": "Østkanten av øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra østkanten av øverste etasje i samme parkeringshus hopper du rett ned på West Royale St."
+},
+"samle:stunts:44": {
+"area": "Downtown, Vice-Dale County",
+"landmark": "SE 2nd Street",
+"route": [
+"Kjør til parkeringshuset i enden av SE 2nd St i Downtown.",
+"Kjør opp til toppdekket.",
+"Kjør gjennom åpningen i rekkverket i god fart.",
+"Land nede i Downtown (bonus: med partner i egen bil)."
+],
+"spot": "Åpningen i rekkverket på toppdekket.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En åpning i rekkverket på toppdekket av parkeringshuset i enden av SE 2nd St."
+},
+"samle:stunts:45": {
+"area": "Downtown / Shoreline, Vice-Dale County",
+"landmark": "Shoreline Park Amphitheater",
+"route": [
+"Kjør til parkeringsplassen ved Shoreline Park Amphitheater.",
+"Finn bakken bak parkeringen.",
+"Kjør i høy fart opp bakken og gjennom reklameplakaten.",
+"Land på Catalan Way (bonus: i en Declasse Burrito)."
+],
+"spot": "Bakken bak parkeringsplassen ved amfiet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Bakken bak parkeringsplassen ved amfiet sender deg gjennom en reklameplakat og ned på Catalan Way."
+},
+"samle:stunts:46": {
+"area": "Port Vice City, Vice-Dale County",
+"landmark": "Mariner's Highway",
+"route": [
+"Kjør ut på den uferdige brodelen under Mariner's Highway.",
+"Ta tilløp mot rampen i enden.",
+"Kjør i full fart over rampen.",
+"Land på Mariner's Highway (det er også bonusen)."
+],
+"spot": "Rampen i enden av den nedre, uferdige brodelen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe på den nedre, uferdige brodelen under Mariner's Highway sender deg opp på motorveien."
+},
+"samle:stunts:47": {
+"area": "Port Vice City, Vice-Dale County",
+"landmark": "Basin Drive",
+"route": [
+"Kjør til Plus-parkeringshuset i Port Vice City.",
+"Kjør opp til tredje etasje.",
+"Ta tilløp mot kanten i god fart.",
+"Land på Basin Dr (bonus: stjålet bil med 3 stjerner)."
+],
+"spot": "Kanten i tredje etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Kanten i tredje etasje av parkeringshuset sender deg ned mot Basin Dr."
+},
+"samle:stunts:48": {
+"area": "Dalton Island, Vice-Dale County",
+"landmark": "Ivory Towers",
+"route": [
+"Kjør til skulpturparken på Dalton Island.",
+"Kjør opp skulpturen mot Ivory Towers-leilighetene.",
+"Hold full fart ut over spissen.",
+"Land bortenfor (bonus: over 350 fot med Dirty South Classics på radioen)."
+],
+"spot": "Spissen av den store skulpturen i parken.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Toppen av den store skulpturen (Big Entrance) i skulpturparken fungerer som rampe mot Ivory Towers."
+},
+"samle:stunts:49": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Ocean Beach Marina",
+"route": [
+"Kjør til parken ved Ocean Beach Marina.",
+"Finn skråningen mellom parken og marinaen.",
+"Kjør i god fart over skråningen.",
+"Land på andre siden av vannet (bonus: med partner)."
+],
+"spot": "Skråningen mellom parken og marinaen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En lav skråning mellom parken og marinaen sender deg over vannet."
+},
+"samle:stunts:50": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Harrison Harbor",
+"route": [
+"Kjør til Harrison Harbor-parkeringshuset i Ocean Beach.",
+"Kjør opp til øverste etasje.",
+"Ta tilløp mot jordhaugen i hjørnet.",
+"Land på gaten nedenfor (bonus: politibil med sirene på)."
+],
+"spot": "Jordhaug i hjørnet på øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En liten jordhaug i hjørnet på øverste etasje av parkeringshuset."
+},
+"samle:stunts:51": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Vice Beach Police Headquarters",
+"route": [
+"Kjør til parkeringshuset ved Vice Beach Police Headquarters.",
+"Kjør opp til taket.",
+"Ta tilløp mot hjørnet ut mot Harborside Avenue.",
+"Land på gaten (bonus: politibil med sirene på)."
+],
+"spot": "Takhjørnet på parkeringshuset ved politihovedkvarteret.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Et hjørne på taket av parkeringshuset ved politihovedkvarteret sender deg ned mot Harborside Avenue."
+},
+"samle:stunts:52": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Cruda Y Asi",
+"route": [
+"Kjør til Cruda Y Asi på Spirea Ln i Ocean Beach.",
+"Kjør opp på den hevede parkeringsplassen over restauranten.",
+"Ta tilløp mot kanten.",
+"Land på Huevo St (bonus: Grotti Cheetah med Vice City FM på)."
+],
+"spot": "Kanten av den hevede parkeringen over Cruda Y Asi.",
+"confidence": "middels",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://www.gtasixmap.com/guides/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Kanten av den hevede parkeringsplassen over Cruda Y Asi på Spirea Ln sender deg ned på Huevo St."
+},
+"samle:stunts:53": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Indigo Street",
+"route": [
+"Kjør til Sixth & Harper-parkeringshuset og opp til øverste etasje.",
+"Ta tilløp mot kanten ut mot Indigo St.",
+"Hopp over gaten i full fart.",
+"Land på taket av Ocean Beach Plus-parkeringshuset og kjør rett videre til neste hopp (bonus: kjede begge)."
+],
+"spot": "Kanten på øverste etasje mot Indigo St.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra øverste etasje hopper du over Indigo St og lander på taket av Ocean Beach Plus-parkeringshuset."
+},
+"samle:stunts:54": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Thompson Avenue",
+"route": [
+"Kjør opp til øverste etasje i Plus-parkeringshuset på Indigo St (eller kom dit via Sixth & Harper-hoppet).",
+"Ta tilløp mot glassruten.",
+"Kjør gjennom glasset i høy fart.",
+"Land på Thompson Ave (bonus: kjede med Sixth & Harper)."
+],
+"spot": "Glassruten på øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Du kjører gjennom en glassrute på øverste etasje i parkeringshuset på Indigo St og lander på Thompson Ave."
+},
+"samle:stunts:55": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Bohemia Hotel",
+"route": [
+"Kjør til MVP Park-parkeringshuset ved Bohemia Hotel.",
+"Kjør opp til taket.",
+"Ta tilløp mot hjørnet i høy fart.",
+"Land på Atlantic Ave (bonus: forlengs salto)."
+],
+"spot": "Takhjørnet ved Bohemia Hotel.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Takhjørnet på parkeringshuset ved siden av Bohemia Hotel sender deg ned på Atlantic Ave."
+},
+"samle:stunts:56": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Grape Street",
+"route": [
+"Kjør til parkeringshuset over butikkene ved Grape St.",
+"Kjør opp til taket.",
+"Ta tilløp mot hjørnet.",
+"Hopp over Grape St og land i bakgaten (bonus: i en stjålet bil)."
+],
+"spot": "Takhjørnet over butikkene.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Takhjørnet på parkeringshuset over butikkene sender deg over Grape St og ned i bakgaten."
+},
+"samle:stunts:57": {
+"area": "Ocean Beach / Vice Beach, Vice-Dale County",
+"landmark": "City Picnic Market",
+"route": [
+"Kjør til parkeringshuset ved City Picnic Market.",
+"Kjør opp til øverste etasje.",
+"Ta tilløp mot det ytre hjørnet.",
+"Land i gatene i Vice Beach (bonus: i en stjålet bil)."
+],
+"spot": "Ytre hjørne på øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Det ytre hjørnet på øverste etasje i parkeringshuset ved City Picnic Market."
+},
+"samle:stunts:58": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Nolan Center",
+"route": [
+"Kjør opp i parkeringshuset på 7777 Ocean Beach til nest øverste etasje.",
+"Finn treplanken.",
+"Kjør over planken i god fart.",
+"Land på taket av Nolan Center-parkeringen og kjør rett videre til Nolan Center Parking-hoppet (bonus: kjede begge med Honey FM)."
+],
+"spot": "Treplanke i nest øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra etasjen under taket på parkeringshuset ved Urban Edge Tower kjører du over en treplanke til taket på Nolan Center-parkeringen."
+},
+"samle:stunts:59": {
+"area": "Ocean Beach, Vice-Dale County",
+"landmark": "Cabega Street",
+"route": [
+"Kjør opp til øverste etasje i Nolan Center-parkeringen (eller kom dit via 7777-hoppet).",
+"Ta tilløp mot treplanken i hjørnet.",
+"Kjør over planken i god fart.",
+"Land på Cabega St (bonus: kjede med 7777 og Honey FM)."
+],
+"spot": "Treplank i hjørnet på øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Et treplank i hjørnet på øverste etasje sender deg ned på Cabega St."
+},
+"samle:stunts:60": {
+"area": "Washington Beach / Ocean Beach, Vice-Dale County",
+"landmark": "Glasshouse",
+"route": [
+"Kjør til Glasshouse-parkeringshuset.",
+"Kjør opp til taket.",
+"Ta tilløp mot kanten.",
+"Land på Oleander Blvd i Vice Beach (bonus: stjålet bil)."
+],
+"spot": "Takkanten på Glasshouse-parkeringshuset.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Takkanten på Glasshouse-parkeringshuset sender deg over gaten til Oleander Blvd."
+},
+"samle:stunts:61": {
+"area": "Washington Beach, Vice-Dale County",
+"landmark": "Albany Hotel",
+"route": [
+"Kjør til strandpromenaden mellom byggeplassen og Albany Hotel.",
+"Følg jordstien mot stranden.",
+"Treff jordhaugen i god fart.",
+"Land på sanden (bonus: med partner)."
+],
+"spot": "Jordhaug på stien over promenaden.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordsti på strandpromenaden mellom høyhusbyggeplassen og Albany Hotel ender i en haug ut på sanden."
+},
+"samle:stunts:62": {
+"area": "Penmarch Isle / Bay Harbor, Vice-Dale County",
+"landmark": "St. Vitus Medical Center",
+"route": [
+"Kjør til parkeringshuset over for St. Vitus Medical Center.",
+"Finn jordhaugen i hjørnet.",
+"Ta tilløp og treff haugen.",
+"Land på gaten nedenfor (bonus: i en gul taxi)."
+],
+"spot": "Jordhaug i hjørnet av parkeringshuset.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordhaug i hjørnet av parkeringshuset rett over for St. Vitus Medical Center."
+},
+"samle:stunts:63": {
+"area": "Decor District, Vice-Dale County",
+"landmark": "NE 19th Street Extension",
+"route": [
+"Kjør til den uferdige leilighetsblokken i Decor District.",
+"Finn sandhaugen bak bygget ved kanalen.",
+"Kjør i høy fart over haugen.",
+"Land på andre siden av kanalen (bonus: med partner i egen bil)."
+],
+"spot": "Sandhaug bak det uferdige bygget, ved kanalen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En sandhaug bak en uferdig leilighetsblokk sender deg over kanalen mot NE 19th St Extension."
+},
+"samle:stunts:64": {
+"area": "La Perle, Vice-Dale County",
+"landmark": "Interstate 97",
+"route": [
+"Kjør inn på forbindelsen fra I-97 til US-10 i La Perle.",
+"Hold deg på siden der rampen står.",
+"Treff rampen i høy fart.",
+"Land bortenfor (bonus: forlengs salto)."
+],
+"spot": "Rampe langs siden av avkjøringen fra I-97 til US-10.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe på siden av avkjøringen fra I-97 til US-10 nord i Vice City."
+},
+"samle:stunts:65": {
+"area": "La Perle, Vice-Dale County",
+"landmark": "Interstate 97",
+"route": [
+"Kjør inn på forbindelsen fra I-97 til US-10 i La Perle.",
+"Finn den andre rampen midt i svingen.",
+"Treff rampen i høy fart.",
+"Land på I-97 nedenfor (det er også bonusen)."
+],
+"spot": "Rampe midt i svingen på avkjøringen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe midt i svingen på forbindelsen fra I-97 til US-10 sender deg ned på I-97."
+},
+"samle:stunts:66": {
+"area": "Crosstown, Vice-Dale County",
+"landmark": "Interstate 97",
+"route": [
+"Kjør inn på sementfabrikken ved NE 14th St.",
+"Ta tilløp mot rampen med reklameplakaten og I-97 foran deg.",
+"Kjør i høy fart over rampen.",
+"Land bortenfor (bonus: baklengs salto gjennom plakaten)."
+],
+"spot": "Inne på sementfabrikken, rettet mot plakaten.",
+"confidence": "middels",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra sementfabrikken ved NE 14th St hopper du mot en reklameplakat og I-97."
+},
+"samle:stunts:67": {
+"area": "Bayside, Vice-Dale County",
+"landmark": "NE 3rd Avenue",
+"route": [
+"Kjør til byggeplassen i Bayside.",
+"Kjør inn i første etasje av det uferdige bygget.",
+"Ta tilløp og kjør ut over kanten.",
+"Land på andre siden av NE 3rd Ave (bonus: med partner)."
+],
+"spot": "Første etasje i det uferdige bygget.",
+"confidence": "middels",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra første etasje i et uferdig bygg på en byggeplass hopper du over NE 3rd Ave."
+},
+"samle:stunts:68": {
+"area": "La Perle, Vice-Dale County",
+"landmark": "Saltbank Road",
+"route": [
+"Kjør til det vestre parkeringshuset i La Perle.",
+"Kjør opp til øverste etasje.",
+"Finn rampen ved den blå containeren og ta tilløp.",
+"Land på Saltbank Rd (bonus: med partner i stjålet bil)."
+],
+"spot": "Rampe ved en blå container på øverste etasje.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe mot en blå container på øverste etasje i det vestre parkeringshuset sender deg ned på Saltbank Rd."
+},
+"samle:stunts:69": {
+"area": "Crosstown, Vice-Dale County",
+"landmark": "NW 8th Street",
+"route": [
+"Kjør til politiets parkeringshus i Crosstown.",
+"Kjør opp til taket.",
+"Ta tilløp mot hjørnet ut mot jernbanen.",
+"Land på NW 8th St (bonus: over et tog i politibil)."
+],
+"spot": "Takhjørnet på politiets parkeringshus.",
+"confidence": "middels",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra takhjørnet på politiets parkeringshus hopper du over togsporet og ned på NW 8th St."
+},
+"samle:stunts:70": {
+"area": "Balsero, Vice-Dale County",
+"landmark": "NW 15th Street",
+"route": [
+"Kjør til Apollo Aggregates-fabrikken ved lastekaia i Balsero.",
+"Følg grusveien under fabrikken.",
+"Treff rampen ved gjerdet i høy fart.",
+"Land på Westbrook Dr på andre siden (bonus: egen bil)."
+],
+"spot": "Rampe ved piggtrådgjerdet under fabrikken.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En rampe ved piggtrådgjerdet under fabrikken nær lasteskipskaia sender deg over NW 15th St."
+},
+"samle:stunts:71": {
+"area": "Balsero, Vice-Dale County",
+"landmark": "SR-120",
+"route": [
+"Kjør til Leone St i Balsero.",
+"Finn bredden ned mot elven.",
+"Kjør i full fart over kanten.",
+"Land på SR-120 på nordsiden (bonus: egen bil)."
+],
+"spot": "Elvebredden ved Leone St.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Fra elvebredden ved Leone St hopper du over elven og lander på SR-120."
+},
+"samle:stunts:72": {
+"area": "Waning Sands, Leonard County",
+"landmark": "Interstate 97",
+"route": [
+"Kjør til byggeplassen under I-97-broen ved Lake Bonner i Waning Sands.",
+"Finn den store jordhaugen.",
+"Kjør i høy fart over haugen.",
+"Land på I-97 (det er også bonusen)."
+],
+"spot": "Stor jordhaug under motorveibroen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En stor jordhaug under I-97-broen over vannet ved Lake Bonner."
+},
+"samle:stunts:73": {
+"area": "Ambrosia (sør for Lake Leonida), Leonard County",
+"landmark": "Lake Leonida",
+"route": [
+"Kjør til kanalen sør for Lake Leonida.",
+"Finn den skrå bygningen ved kanalkanten.",
+"Kjør opp bygningen i høy fart.",
+"Land bortenfor (bonus: kjede med Lake Leonida Lock Southwest)."
+],
+"spot": "Skrå bygning ved den sørlige kanalkanten.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En skrå bygning ved den sørlige kanalkanten ved Lake Leonida fungerer som rampe."
+},
+"samle:stunts:74": {
+"area": "Richard Barebone National Park, Leonard County",
+"landmark": "Interstate 97",
+"route": [
+"Kjør til anleggsområdet på I-97 i Richard Barebone National Park.",
+"Finn jordhaugen midt i veien mellom kjørefeltene.",
+"Ta tilløp i over 70 mph.",
+"Land på motorveien (bonus: muskelbil i over 70 mph)."
+],
+"spot": "Jordhaug midt i anleggsområdet på I-97.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordhaug midt i anleggsområdet på I-97 sender deg mellom kjørefeltene."
+},
+"samle:stunts:75": {
+"area": "Capri / Gellhorn, Kelly County",
+"landmark": "Gellhorn International Raceway",
+"route": [
+"Kjør til sørsiden av Gellhorn International Raceway ved I-404.",
+"Finn jordrampen ved banekanten.",
+"Kjør i høy fart over rampen.",
+"Land på andre siden av racerbanen (bonus: baklengs salto)."
+],
+"spot": "Jordrampe ved sørkanten av racerbanen.",
+"confidence": "middels",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En hevet jordrampe ved den sørlige kanten av racerbanen, nær I-404."
+},
+"samle:stunts:76": {
+"area": "Port Gellhorn, Kelly County",
+"landmark": "Prairie Court",
+"route": [
+"Kjør til enden av Prairie Ct i Port Gellhorn.",
+"Finn det sammenraste taket.",
+"Kjør opp taket i god fart.",
+"Land i bakgårdene (bonus: Maibatsu Sanchez med 2 stjerner)."
+],
+"spot": "Det sammenraste taket i enden av blindveien.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "Et sammenrast tak i enden av blindveien Prairie Ct sender deg inn i bakgårdene."
+},
+"samle:stunts:77": {
+"area": "Gellhorn, Kelly County",
+"landmark": "Starlet Motel",
+"route": [
+"Kjør til veiarbeidet foran Starlet Motel.",
+"Finn steinhaugen.",
+"Treff haugen i god fart.",
+"Land bortenfor (bonus: Maibatsu Sanchez med 2 stjerner)."
+],
+"spot": "Steinhaug i veiarbeidet foran motellet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En steinhaug i veiarbeidet foran Starlet Motel."
+},
+"samle:stunts:78": {
+"area": "Emerald Springs, Kelly County",
+"landmark": "Howe Dairy",
+"route": [
+"Kjør til Howe Dairy i nordøstre del av Emerald Springs.",
+"Finn den store jordhaugen ved fjøset.",
+"Kjør i høy fart over haugen.",
+"Land på andre siden av fjøset (bonus: med Gloriana Blues Radio)."
+],
+"spot": "Jordhaug foran fjøset på gården.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En stor jordhaug på gården sender deg over fjøset."
+},
+"samle:stunts:79": {
+"area": "Frogswater, Kelly County",
+"landmark": "SR-32",
+"route": [
+"Kjør til jordet ved SR-32 i Frogswater.",
+"Finn jordhaugen i kanten av jordet.",
+"Kjør i over 50 mph over haugen.",
+"Land på andre siden av veien (bonus: over 50 mph med 3 stjerner)."
+],
+"spot": "Jordhaug i kanten av jordet ved SR-32.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En jordhaug i kanten av et jorde ved SR-32 sender deg over veien."
+},
+"samle:stunts:80": {
+"area": "Ambrosia, Kelly County",
+"landmark": "US-35",
+"route": [
+"Kjør til den ødelagte broen på US-35 sør i Ambrosia.",
+"Kjør ut på broen.",
+"Hold full fart mot gapet.",
+"Land på andre siden (bonus: muskelbil med 3 stjerner)."
+],
+"spot": "Kanten av gapet i den ødelagte broen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En ødelagt bro over elven på US-35, på grensen mot Emerald Springs."
+},
+"samle:stunts:81": {
+"area": "Moreau, Lummox County",
+"landmark": "Moreau",
+"route": [
+"Kjør langs kystveien nord i Moreau til den ødelagte broen.",
+"Kjør forbi sperringene og ut på broen.",
+"Hold full fart mot gapet.",
+"Land på andre siden (bonus: med partner og Back Country Radio)."
+],
+"spot": "Kanten av gapet på den avbrutte kystbroen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+],
+"where": "En avbrutt bro på kystveien nord i Moreau, der du hopper over sjøen."
+},
+"samle:stunts:82": {
+"area": "Belville / South Leonard County",
+"landmark": "Waste Transfer Services",
+"route": [
+"Kjør til Waste Transfer Services sør i Leonard County.",
+"Følg serviceveien til hjørnet ved elven.",
+"Treff haugen i god fart.",
+"Land på andre siden (bonus: egen bil)."
+],
+"spot": "Jordhaug i hjørnet av serviceveien.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:83": {
+"area": "Belville / South Leonard County",
+"landmark": "Waste Transfer Services",
+"route": [
+"Kjør inn på Waste Transfer Services.",
+"Finn dammen og gravemaskinen.",
+"Treff bakken i god fart.",
+"Land bortenfor (bonus: kjede med Waste Transfer Services North)."
+],
+"spot": "Liten bakke bak gravemaskinen ved dammen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:84": {
+"area": "Belville / South Leonard County",
+"landmark": "Waste Transfer Services",
+"route": [
+"Kjør til nordsiden av fyllingen ved Waste Transfer Services.",
+"Finn den store haugen ved det brennende søppelet.",
+"Kjør i høy fart over haugen.",
+"Land bortenfor (bonus: kjede med Pond-hoppet)."
+],
+"spot": "Stor haug ved brennende søppel, nordsiden.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:85": {
+"area": "Belville / South Leonard County",
+"landmark": "Waste Transfer Services",
+"route": [
+"Kjør til sørsiden av fyllingen ved Waste Transfer Services.",
+"Finn den enorme haugen ved søppelbrannen.",
+"Ta langt tilløp og kjør i full fart.",
+"Land langt bortenfor (bonus: over 350 fot)."
+],
+"spot": "Enorm jordhaug på sørsiden av fyllingen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:86": {
+"area": "Waning Sands",
+"landmark": "Mamey Circle",
+"route": [
+"Kjør til Mamey Cir i Waning Sands.",
+"Finn T-krysset bak boligene og jordhaugen.",
+"Treff haugen i god fart.",
+"Land bortenfor (bonus: baklengs salto)."
+],
+"spot": "Jordhaug i T-krysset bak Mamey Cir.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:87": {
+"area": "Waning Sands",
+"landmark": "Thundergolf",
+"route": [
+"Kjør til Thundergolf midt i Waning Sands.",
+"Finn byggeplassen ved siden av.",
+"Treff jordhaugen i høy fart mot bygget.",
+"Land på andre siden (bonus: baklengs salto over Thundergolf)."
+],
+"spot": "Jordhaug på byggeplassen ved Thundergolf.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.gtasixmap.com/guides/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:88": {
+"area": "Mount Hailes Country Club / Lake Leonida",
+"landmark": "Lake Leonida",
+"route": [
+"Kjør til kanalen øst for Lake Leonida (ved Mount Hailes Country Club).",
+"Finn den skrå bygningen ved kanalkanten.",
+"Kjør opp bygningen i høy fart.",
+"Land på andre siden (bonus: i en Interstate Yankee)."
+],
+"spot": "Skrå bygning ved østre kanalkant.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:89": {
+"area": "Richard Barebone National Park",
+"landmark": "Interstate 97",
+"route": [
+"Kjør til anleggsområdet på I-97 i Richard Barebone National Park.",
+"Finn jordhaugen på siden av veien og kjør mot kjøreretningen.",
+"Hold over 70 mph inn mot haugen.",
+"Land på motorveien (bonus: baklengs salto i over 70 mph)."
+],
+"spot": "Jordhaug på siden av I-97 i brobyggingsområdet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:90": {
+"area": "North Leonard County",
+"landmark": "The Free State of Henry Perculay",
+"route": [
+"Kjør til gården The Free State of Henry Perculay nord i Leonard County.",
+"Finn jordkanten over gården.",
+"Kjør i god fart utfor kanten.",
+"Land nedenfor (bonus: kjede begge National Park Trail-hoppene)."
+],
+"spot": "Høy jordkant over gården.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:91": {
+"area": "North Leonard County",
+"landmark": "Tallaloko Lake Road",
+"route": [
+"Kjør til Tallaloko Lake Rd nær I-297.",
+"Finn jordhaugen ved veien.",
+"Treff haugen i god fart.",
+"Land bortenfor (bonus: forlengs salto)."
+],
+"spot": "Jordhaug ved Tallaloko Lake Rd.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:92": {
+"area": "South Kelly County",
+"landmark": "The Hog House",
+"route": [
+"Kjør til The Hog House langs US-183 sør i Kelly County.",
+"Finn metallplaten i jordet ved baren.",
+"Kjør i høy fart opp platen.",
+"Land på andre siden av den forlatte låven (bonus: over låven)."
+],
+"spot": "Metallplate i jordet ved baren.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:93": {
+"area": "South Kelly County / Capri",
+"landmark": "Gellhorn International Raceway",
+"route": [
+"Kjør til strømmastene sør i Kelly County, nær racerbanen.",
+"Følg jordstien mellom mastene.",
+"Treff hoppet i god fart.",
+"Land på andre siden av grusveien (bonus: pickup)."
+],
+"spot": "Jordsti mellom to strømmaster.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:94": {
+"area": "Gellhorn",
+"landmark": "Port Gellhorn",
+"route": [
+"Kjør til ATV-løypa øst for Port Gellhorn.",
+"Følg løypa til enden.",
+"Kjør i god fart over kanten.",
+"Land på andre siden av søppelgropen (bonus: Mer-Can Outlaw)."
+],
+"spot": "Enden av ATV-løypa, ved søppelgropen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:95": {
+"area": "Gellhorn",
+"landmark": "County Route 62",
+"route": [
+"Kjør til campingplassen ved CR 62.",
+"Finn trerampen ved klippekanten.",
+"Kjør over rampen i god fart.",
+"Land nedenfor (bonus: forlengs salto med Symphony FM)."
+],
+"spot": "Trerampe ved klippekanten over CR 62.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:96": {
+"area": "Wild Hog Point",
+"landmark": "Wild Hog Airfield",
+"route": [
+"Kjør til den forlatte radiostasjonen på Wild Hog Point.",
+"Finn bakken ved det døde treet.",
+"Kjør i god fart mot Wild Hog Airfield.",
+"Land bortenfor (bonus: forlengs salto)."
+],
+"spot": "Bakken ved det døde treet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:97": {
+"area": "Draper Island",
+"landmark": "Axiom House",
+"route": [
+"Kjør til Axiom House på Draper Island.",
+"Ta tilløp langs veien mot parkeringsplassen.",
+"Treff kanten i god fart.",
+"Land på parkeringsplassen (bonus: i en Mer-Can Blast)."
+],
+"spot": "Veikanten ved innkjøringen til parkeringen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:98": {
+"area": "Draper Island",
+"landmark": "SR-45",
+"route": [
+"Kjør til parkeringsplassen midt på Draper Island.",
+"Finn den grønne containeren i enden av plassen.",
+"Kjør i god fart opp containeren.",
+"Land på motorveien (bonus: på Interstate 45)."
+],
+"spot": "Grønn container i enden av parkeringsplassen.",
+"confidence": "middels",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:99": {
+"area": "Port Gellhorn",
+"landmark": "Gellhorn Drive-In Theatre",
+"route": [
+"Kjør til den forlatte drive-in-kinoen i Port Gellhorn.",
+"Finn kioskbygningen midt på plassen.",
+"Kjør opp siden av bygningen i god fart.",
+"Land bortenfor (bonus: ATV)."
+],
+"spot": "Siden av kioskbygningen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:100": {
+"area": "Port Gellhorn",
+"landmark": "Center of Praise & Purpose",
+"route": [
+"Kjør til byggeplassen langs US-183 ved Center of Praise & Purpose.",
+"Finn jordhaugen rettet mot bygget.",
+"Kjør i høy fart over haugen.",
+"Land på andre siden av bygget (bonus: baklengs salto over det)."
+],
+"spot": "Jordhaug på byggeplassen ved US-183.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:101": {
+"area": "Port Gellhorn",
+"landmark": "US-183",
+"route": [
+"Kjør til veiarbeidet nord for US-183 i Port Gellhorn.",
+"Finn haugen midt i anleggsområdet.",
+"Treff haugen i god fart mot motorveien.",
+"Land på US-183 (bonus: Maibatsu Sanchez med 2 stjerner)."
+],
+"spot": "Jordhaug midt i veiarbeidet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:102": {
+"area": "Gellhorn",
+"landmark": "US-183",
+"route": [
+"Kjør til veiarbeidet ved US-183 øst for Port Gellhorn.",
+"Finn jordhaugen som vender mot anleggsområdet.",
+"Ta tilløp, gjerne på motorsykkel.",
+"Land bortenfor (bonus: dobbel baklengs salto på Maibatsu Sanchez)."
+],
+"spot": "Jordhaug ved veiarbeidet langs US-183.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:103": {
+"area": "Emerald Springs",
+"landmark": "County Route 62",
+"route": [
+"Kjør til veiarbeidet langs CR 62 i Emerald Springs.",
+"Finn jordhaugen ved elven.",
+"Kjør i over 75 mph over haugen.",
+"Land på andre siden av elven (bonus: pickup i over 75 mph)."
+],
+"spot": "Stor jordhaug ved CR 62, ved elven.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:104": {
+"area": "Frogswater",
+"landmark": "Kelly River",
+"route": [
+"Kjør til enden av Magnolia Rd i Frogswater.",
+"Kjør over blomsterengen mot bakken.",
+"Hold over 80 mph inn mot bakken.",
+"Land på andre siden av elven (bonus: egen bil i over 80 mph)."
+],
+"spot": "Bakke i enden av Magnolia Rd, ved elven.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:105": {
+"area": "Ambrosia",
+"landmark": "Aggro Feed & Farm Supply",
+"route": [
+"Kjør til gårdsveien nær Birch St vest i Ambrosia.",
+"Finn den enorme jordhaugen.",
+"Kjør i høy fart over haugen.",
+"Land bortenfor (bonus: på taket til Aggro Feed & Farm Supply)."
+],
+"spot": "Enorm jordhaug ved gårdsveien.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:106": {
+"area": "Manifest Canyon",
+"landmark": "US-70",
+"route": [
+"Kjør til stien nær US-70 sør i Manifest Canyon.",
+"Finn haugen på stien.",
+"Treff haugen i god fart.",
+"Land på andre siden av grusveien (bonus: kjede med Trail West)."
+],
+"spot": "Haug på stien nær US-70.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:107": {
+"area": "Manifest Canyon",
+"landmark": "US-70",
+"route": [
+"Kjør til stien ved svingen på US-70 i Manifest Canyon.",
+"Finn haugen på stien.",
+"Kjør i høy fart over haugen.",
+"Land på andre siden av motorveien (bonus: kjede med Trail East)."
+],
+"spot": "Haug på stien ved svingen på US-70.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:108": {
+"area": "North Kelly County",
+"landmark": "North Kelly County Railroad",
+"route": [
+"Kjør til den nedre grusveien langs jernbanen nord i Kelly County.",
+"Finn jordhaugen ved veikanten.",
+"Treff haugen i god fart mot sporet.",
+"Land på andre siden (bonus: forlengs salto over et tog)."
+],
+"spot": "Jordhaug ved den nedre grusveien.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:109": {
+"area": "North Kelly County",
+"landmark": "North Kelly County",
+"route": [
+"Kjør til enden av grusveien nord i Kelly County.",
+"Finn jordhaugen ved kløften.",
+"Kjør i høy fart over haugen.",
+"Land på andre siden av kløften (bonus: pickup)."
+],
+"spot": "Jordhaug i enden av grusveien.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:110": {
+"area": "Thrillbilly Mud Club",
+"landmark": "Thrillbilly Mud Club",
+"route": [
+"Kjør til Thrillbilly Mud Club.",
+"Finn den lille dammen mellom to merkede løyper.",
+"Treff hoppet i god fart.",
+"Land på andre siden av dammen (bonus: Vapid Marshall)."
+],
+"spot": "Ved dammen mellom de to løypene.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:111": {
+"area": "Manifest Canyon",
+"landmark": "Moonstone Highway",
+"route": [
+"Kjør til utsiktspunktet ved stien i Manifest Canyon.",
+"Finn rampen på klippekanten.",
+"Kjør i god fart over rampen.",
+"Land på andre siden av Moonstone Hwy (bonus: forlengs salto)."
+],
+"spot": "Rampe ved utsiktspunktet på klippekanten.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:112": {
+"area": "North Kelly County / Ambrosia",
+"landmark": "Lake Leonida",
+"route": [
+"Kjør til båtutsettet nordvest ved Lake Leonida.",
+"Finn jordbakken ved kanalkanten.",
+"Treff bakken i høy fart.",
+"Land på Interstate 27 (det er også bonusen)."
+],
+"spot": "Jordbakke ved kanalkanten, ved båtutsettet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:113": {
+"area": "Ambrosia",
+"landmark": "Lake Leonida",
+"route": [
+"Kjør til vestsiden av kanalen ved Lake Leonida.",
+"Finn den skrå bygningen.",
+"Kjør opp bygningen i høy fart.",
+"Land på andre siden (bonus: JoBuilt Rubble)."
+],
+"spot": "Skrå bygning på vestsiden av kanalen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:114": {
+"area": "Ambrosia",
+"landmark": "Lake Leonida",
+"route": [
+"Kjør til den sørvestre kanalkanten ved Lake Leonida.",
+"Finn den skrå bygningen.",
+"Kjør opp bygningen i høy fart.",
+"Land bortenfor (bonus: kjede med Lake Leonida Lock South)."
+],
+"spot": "Skrå bygning ved den sørvestre kanalkanten.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:115": {
+"area": "Mount Kalaga National Park",
+"landmark": "Mount Kalaga",
+"route": [
+"Kjør skogsstien opp til utsiktspunktet i Mount Kalaga National Park.",
+"Finn den skrå steinen ved utsikten.",
+"Kjør i god fart over steinen.",
+"Land nedenfor (bonus: kjede begge National Park Trail-hoppene)."
+],
+"spot": "Skrå stein ved utsiktspunktet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:116": {
+"area": "Millport",
+"landmark": "Forest Mill Road",
+"route": [
+"Kjør til jordveien nord for Forest Mill Rd ved Millport.",
+"Følg den til enden.",
+"Kjør i god fart over kanten.",
+"Land på andre siden av hovedveien (bonus: over en bobil)."
+],
+"spot": "Enden av jordveien nord for Forest Mill Rd.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:117": {
+"area": "Millport",
+"landmark": "Millport Harbor",
+"route": [
+"Kjør til havna i Millport.",
+"Finn containeren med søppelrampen.",
+"Hold over 75 mph inn mot rampen.",
+"Land på andre siden av vannet (bonus: over 75 mph)."
+],
+"spot": "Containeren med søppelrampe i havna.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:118": {
+"area": "Dawson Dam",
+"landmark": "Mount Kalaga Visitor Center",
+"route": [
+"Kjør til Mount Kalaga Visitor Center ved Dawson Dam.",
+"Finn skråningen ved Forest Mill Rd.",
+"Kjør i høy fart nedover mot senteret.",
+"Land på andre siden av bygget (bonus: forlengs salto over det)."
+],
+"spot": "Skråningen ved Forest Mill Rd.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:119": {
+"area": "Kalaga National Park",
+"landmark": "Forest Mill Road",
+"route": [
+"Kjør til Forest Mill Rd vest i Kalaga National Park.",
+"Kom fra øst og kjør nedover.",
+"Hold god fart mot kløften.",
+"Land på andre siden (bonus: forlengs salto)."
+],
+"spot": "Ved kløften på Forest Mill Rd.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:120": {
+"area": "Kalaga National Park",
+"landmark": "Kalaga Pond",
+"route": [
+"Kjør stien ned mot Kalaga Pond.",
+"Finn jordbakken på stien.",
+"Treff bakken i god fart.",
+"Land bortenfor (bonus: pickup)."
+],
+"spot": "Jordbakke på stien mot dammen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:121": {
+"area": "Kalaga National Park",
+"landmark": "Kalaga National Park",
+"route": [
+"Kjør til den nordlige delen av Kalaga National Park.",
+"Følg jordstien til trerampen.",
+"Treff rampen i høy fart, gjerne på motorsykkel.",
+"Land bortenfor (bonus: dobbel baklengs salto på Maibatsu Sanchez)."
+],
+"spot": "Trerampe på jordstien nord i parken.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:122": {
+"area": "Kalaga National Park",
+"landmark": "Kalaga National Park",
+"route": [
+"Kjør til den vestlige delen av Kalaga National Park.",
+"Følg jordstien forbi ruinene til klippekanten.",
+"Kjør i god fart utfor kanten.",
+"Land på andre siden av fjellveien (bonus: med partner)."
+],
+"spot": "Klippekanten i enden av jordstien ved ruinene.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:123": {
+"area": "Grayson",
+"landmark": "Grayson Rail Tunnel",
+"route": [
+"Kjør til Rockledge Rd ved jernbanetunnelen i Grayson.",
+"Finn jordbakken ved veien.",
+"Treff bakken i god fart.",
+"Land på andre siden av jernbanen (bonus: over et tog)."
+],
+"spot": "Jordbakke ved Rockledge Rd.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:124": {
+"area": "Macalister Gold Mine / Moreau",
+"landmark": "US Route 628",
+"route": [
+"Kjør til Dock Coal Company ved US-628.",
+"Finn den nedraste gangbroen.",
+"Kjør opp til den høye enden i god fart.",
+"Land bortenfor (bonus: baklengs salto)."
+],
+"spot": "Høye enden av den nedraste gangbroen.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:125": {
+"area": "Macalister Gold Mine / Moreau",
+"landmark": "Moreau",
+"route": [
+"Kjør til jernbanesporet øst i Moreau.",
+"Finn kullhaugen ved sporet.",
+"Treff haugen i god fart.",
+"Land på andre siden av sporet (bonus: baklengs salto over sporet)."
+],
+"spot": "Kullhaug ved sporet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:126": {
+"area": "Macalister Gold Mine / Moreau",
+"landmark": "US Route 628",
+"route": [
+"Kjør til Rockledge Rd ved grensen til Moreau.",
+"Finn den store jordhaugen.",
+"Kjør i høy fart over haugen.",
+"Land på sporet på andre siden (bonus: på motsatt spor)."
+],
+"spot": "Stor jordhaug ved Rockledge Rd.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:127": {
+"area": "Macalister Gold Mine / Moreau",
+"landmark": "US Route 628",
+"route": [
+"Kjør langs jernbanen mot den ødelagte broen over US-628.",
+"Kjør ut på brodelen.",
+"Hold full fart mot gapet.",
+"Land på sporet på andre siden (det er også bonusen)."
+],
+"spot": "Enden av jernbanebroen over US-628.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:128": {
+"area": "Bonanza",
+"landmark": "Bonanza Harbor",
+"route": [
+"Kjør til hovedveien ved havna i Bonanza.",
+"Finn rampen ved vannet.",
+"Kjør i høy fart over rampen.",
+"Land på andre siden (bonus: over fiskebua)."
+],
+"spot": "Rampe ved hovedveien, ut mot vannet.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
+},
+"samle:stunts:129": {
+"area": "Moreau",
+"landmark": "Macalister Gold Mine",
+"route": [
+"Kjør til Macalister Gold Mine via Rockledge Rd.",
+"Følg sporet oppover øst for gruven.",
+"Hold til venstre og treff hoppet i god fart.",
+"Land bortenfor (bonus: dobbel baklengs salto)."
+],
+"spot": "Venstre side av sporet oppover øst for gruven.",
+"confidence": "høy",
+"sources": [
+"https://finalboss.io/gta-6-stunt-jump-locations",
+"https://gta6gps.com/map/game/stunt-jumps",
+"https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+]
 }
 }

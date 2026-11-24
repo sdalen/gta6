@@ -2,8 +2,9 @@ import { useState } from 'react'
 import { collectibles, itemId } from '../data/collectibles'
 import { href } from '../hooks/useRoute'
 import { Icon } from '../components/Icon'
-import { Callout, Checkbox, PageHeader, ProgressBar, SearchInput, SectionLabel } from '../components/ui'
+import { CodeBadge, Callout, Checkbox, PageHeader, ProgressBar, SearchInput, SectionLabel } from '../components/ui'
 import { SafeGuide } from '../components/SafeGuide'
+import { getDetail } from '../data/collectibleDetails'
 import { NotFound } from './NotFound'
 
 interface Props {
@@ -24,7 +25,7 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
     .filter(({ item, key }) => {
       if (filter === 'igjen' && done.has(key)) return false
       if (filter === 'funnet' && !done.has(key)) return false
-      return !q || item.name.toLowerCase().includes(q) || item.where.toLowerCase().includes(q)
+      return !q || `${item.name} ${item.where} ${getDetail(key)?.code ?? ''}`.toLowerCase().includes(q)
     })
   const found = cat.items.filter((_, i) => done.has(itemId(cat.id, i))).length
 
@@ -53,6 +54,22 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
       </div>
 
       {(cat.id === 'safer' || cat.kind === 'ran') && <SafeGuide />}
+
+      {cat.id === 'safer' && (
+        <div className="mb-10">
+          <Callout tone="accent" title="Ser du etter en pantelåner, smykkebutikk eller bank?">
+            De har tilfeldig kode, så de står ikke i denne listen. Alle de 16 pantelånerne og 19 smykkebutikkene står under{' '}
+            <a href={href('samle', 'ran-smykker')} className="font-medium text-accent underline underline-offset-4">
+              Smykkebutikker og pantelånere
+            </a>
+            , og butikker, Payday Loans og banker under{' '}
+            <a href={href('ran')} className="font-medium text-accent underline underline-offset-4">
+              Ran
+            </a>
+            .
+          </Callout>
+        </div>
+      )}
 
       <div className="mb-4 flex items-end justify-between gap-4">
         <SectionLabel>Lokasjoner</SectionLabel>
@@ -106,6 +123,7 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
                 <span className="min-w-0 flex-1">
                   <span className="flex flex-wrap items-baseline gap-x-2">
                     <span className={`text-[15px] font-medium ${isDone ? 'text-muted line-through decoration-ok/60' : 'text-ink'}`}>{item.name}</span>
+                    {getDetail(key)?.code && <CodeBadge code={getDetail(key)!.code!} />}
                     {isDone && <span className="text-xs font-semibold text-ok">Funnet</span>}
                     {item.before && !isDone && <span className="text-xs font-medium text-warn">Har frist</span>}
                   </span>
@@ -113,6 +131,12 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
                     <Icon name="pin" className="mt-0.5 size-4 shrink-0 text-faint" />
                     <span className="line-clamp-2">{item.where}</span>
                   </span>
+                  {getDetail(key)?.loot && (
+                    <span className={`mt-1 flex gap-1.5 text-sm leading-relaxed text-ink-soft ${isDone ? 'opacity-60' : ''}`}>
+                      <Icon name="coins" className="mt-0.5 size-4 shrink-0 text-ok" />
+                      <span className="line-clamp-1">{getDetail(key)!.loot}</span>
+                    </span>
+                  )}
                 </span>
                 <Icon name="right" className="size-4 shrink-0 text-faint transition group-hover:translate-x-0.5 group-hover:text-ink-soft" />
               </a>

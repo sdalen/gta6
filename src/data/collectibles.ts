@@ -55,7 +55,7 @@ const baseCollectibles: CollectibleCategory[] = [
       'Kart → Exploration (forstørrelsesglass) → Stunt Spots → Stunt Jumps. Funnet = lilla, fullført = hvit.',
       'Fremdrift per område: Progress → Activities → Stunts, trykk R3 på «Stunt Jumps».',
       'Hvert hopp har en liten utfordring, men den trengs ikke for 100 %. Det holder å gjøre hoppet.',
-      'Listen har 82 av 130 hopp (PowerPyx, 22. nov.): alle i Mariana (17) og Vice-Dale (55), men bare noen i Leonard (3 av 13), Kelly (6 av 29) og Lummox (1 av 16). Resten er ikke kartlagt av guidene ennå.',
+      'Listen har alle 130 hopp (oppdatert 24. nov.): Mariana 17, Vice-Dale 55, Leonard 13, Kelly 29 og Lummox 16. Guidene deler områdene litt ulikt, så fylkene følger PowerPyx.',
     ],
     items: [
       i('Mile Zero Air Station South', 'Mariana County'),

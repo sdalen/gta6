@@ -957,6 +957,200 @@
     "name": "Ascent Mountain",
     "where": "Steinsirkelen på toppen av Mount Kalaga. Siste meditasjon."
    }
+  ],
+  "stunts": [
+   {
+    "name": "Waste Transfer Services Lake",
+    "where": "En jordhaug i et hjørne av serviceveien ved søppelanlegget sender deg over en elv."
+   },
+   {
+    "name": "Waste Transfer Services Pond",
+    "where": "En liten bakke bak en gravemaskin ved dammen på søppelanlegget."
+   },
+   {
+    "name": "Waste Transfer Services North",
+    "where": "En stor haug ved brennende søppel på nordsiden av fyllingen."
+   },
+   {
+    "name": "Waste Transfer Services South",
+    "where": "En enorm haug ved brennende søppel på sørsiden av fyllingen."
+   },
+   {
+    "name": "Lake Bonner Construction West",
+    "where": "En jordhaug i et T-kryss bak Mamey Cir."
+   },
+   {
+    "name": "Thundergolf",
+    "where": "En jordhaug på en byggeplass ved siden av Thundergolf midt i Waning Sands."
+   },
+   {
+    "name": "Lake Leonida Lock East",
+    "where": "En skrå bygning ved den østre kanalkanten ved Lake Leonida fungerer som rampe."
+   },
+   {
+    "name": "Richard Barebone Overpass North",
+    "where": "En jordhaug langs I-97 i et brobyggingsområde, der du kjører mot trafikken."
+   },
+   {
+    "name": "The Free State of Henry Perculay",
+    "where": "En stor jordkant høyt over en gård nord i Leonard County."
+   },
+   {
+    "name": "Kalaga River",
+    "where": "En jordhaug ved Tallaloko Lake Rd nær I-297."
+   },
+   {
+    "name": "The Hog House",
+    "where": "En metallplate i et jorde ved baren The Hog House langs US-183 sender deg over en forlatt låve."
+   },
+   {
+    "name": "Gellhorn Pylons",
+    "where": "En jordsti mellom to strømmaster sender deg over en grusvei."
+   },
+   {
+    "name": "Gellhorn Hilltop",
+    "where": "Enden av ATV-løypa øst for Port Gellhorn sender deg over en søppelgrop."
+   },
+   {
+    "name": "Gellhorn Campsite",
+    "where": "En trerampe på kanten av en klippe ved CR 62."
+   },
+   {
+    "name": "Abandoned Radio Station",
+    "where": "En liten bakke ved et dødt tre ved den forlatte radiostasjonen, rettet mot Wild Hog Airfield."
+   },
+   {
+    "name": "Axiom House",
+    "where": "Veikanten ved innkjøringen til parkeringsplassen ved Axiom House fungerer som rampe."
+   },
+   {
+    "name": "Draper Island",
+    "where": "En søppelhaug i en grønn container i enden av parkeringsplassen midt på Draper Island, mellom kjørefeltene på SR-45."
+   },
+   {
+    "name": "Gellhorn Drive-In Theatre",
+    "where": "Siden av den forlatte kioskbygningen på drive-in-kinoen fungerer som rampe."
+   },
+   {
+    "name": "Port Gellhorn Center of Praise & Purpose",
+    "where": "En jordhaug på byggeplassen langs US-183 sender deg over kirkebygget mot I-404."
+   },
+   {
+    "name": "Gellhorn Roadworks West",
+    "where": "En jordhaug midt i veiarbeidet nord for US-183 sender deg ut på motorveien."
+   },
+   {
+    "name": "Gellhorn Roadworks East",
+    "where": "En jordhaug vendt mot et veiarbeid ved US-183."
+   },
+   {
+    "name": "County Route 62 Roadworks",
+    "where": "En stor jordhaug ved CR 62 sender deg over en elv."
+   },
+   {
+    "name": "Kelly River",
+    "where": "En liten bakke i enden av Magnolia Rd, over en blomstereng, sender deg over Kelly River."
+   },
+   {
+    "name": "South Ambrosia Water Treatment",
+    "where": "En enorm jordhaug ved en gårdsvei nær Birch St vest i Ambrosia."
+   },
+   {
+    "name": "Manifest Canyon Trail East",
+    "where": "En haug på stien nær US-70 sør i Manifest Canyon sender deg over en grusvei."
+   },
+   {
+    "name": "Manifest Canyon Trail West",
+    "where": "En haug på stien nær svingen på US-70 sender deg over motorveien."
+   },
+   {
+    "name": "North Kelly County Railroad",
+    "where": "En jordhaug på en lavere grusvei, rettet mot jernbanesporet."
+   },
+   {
+    "name": "North Kelly County Ledge",
+    "where": "En jordhaug i enden av en grusvei sender deg over en kløft full av søppel."
+   },
+   {
+    "name": "Mud Club Pond",
+    "where": "Du hopper over en liten dam mellom to merkede løyper på Thrillbilly Mud Club."
+   },
+   {
+    "name": "Manifest Canyon",
+    "where": "En rampe ved en sti over et utsiktspunkt på klippekanten sender deg over Moonstone Hwy."
+   },
+   {
+    "name": "Lake Leonida Lock Northwest",
+    "where": "En jordbakke ved kanalkanten nær båtutsettet nordvest ved Lake Leonida sender deg ut på Interstate 27."
+   },
+   {
+    "name": "Lake Leonida Lock West",
+    "where": "En skrå bygning på vestsiden av kanalen ved Lake Leonida fungerer som rampe."
+   },
+   {
+    "name": "Lake Leonida Lock Southwest",
+    "where": "En skrå bygning ved den sørvestre kanalkanten ved Lake Leonida fungerer som rampe."
+   },
+   {
+    "name": "Mount Kalaga Lookout Point",
+    "where": "En skrå stein ved et utsiktspunkt på en skogsti sender deg utfor klippeveggen."
+   },
+   {
+    "name": "Kalaga Roadside",
+    "where": "Enden av en jordvei nord for Forest Mill Rd sender deg over hovedveien."
+   },
+   {
+    "name": "Millport Harbor",
+    "where": "En søppelrampe gjennom en container sender deg over åpent vann i havna."
+   },
+   {
+    "name": "Mount Kalaga Visitor Center",
+    "where": "En skråning ved Forest Mill Rd sender deg over besøkssenteret."
+   },
+   {
+    "name": "West Kalaga Logging",
+    "where": "Du kjører nedover Forest Mill Rd fra øst og hopper over en kløft."
+   },
+   {
+    "name": "Kalaga Pond",
+    "where": "En jordbakke på stien ned mot Kalaga Pond."
+   },
+   {
+    "name": "Kalaga Ramp",
+    "where": "En trerampe på en jordsti nord i nasjonalparken."
+   },
+   {
+    "name": "Kalaga Ridge",
+    "where": "En klippe i enden av en jordsti vest i parken, nær noen ruiner, sender deg over en fjellvei."
+   },
+   {
+    "name": "Grayson Rail Tunnel",
+    "where": "En jordbakke ved Rockledge Rd sender deg over jernbanen ved tunnelen."
+   },
+   {
+    "name": "Dock Coal Company Freeway",
+    "where": "Den høye enden av en nedrast gangbro nær US-628."
+   },
+   {
+    "name": "Moreau Coal Mound",
+    "where": "En kullhaug ved jernbanesporet øst i Moreau."
+   },
+   {
+    "name": "US Route 628",
+    "where": "En stor jordhaug ved Rockledge Rd på grensen til Moreau."
+   },
+   {
+    "name": "Moreau Broken Bridge",
+    "where": "Enden av en jernbane over en ødelagt bro høyt over US-628."
+   },
+   {
+    "name": "Bonanza Harbor",
+    "where": "En rampe ved hovedveien sender deg over vannet mot en fiskebu."
+   },
+   {
+    "name": "Macalister Gold Mine",
+    "where": "Et spor oppover øst for gruven, ved Rockledge Rd, med hoppet på venstre side."
+   }
   ]
  },
  "totals": {

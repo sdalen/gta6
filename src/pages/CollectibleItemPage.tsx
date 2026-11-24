@@ -70,10 +70,22 @@ export function CollectibleItemPage({ catId, idx, done, onToggle }: Props) {
             </Callout>
           )}
 
-          {detail?.codeHint && (
+          {(detail?.codeHint || detail?.code) && (
             <section className="rounded-lg bg-surface p-5 ring-1 ring-line">
+              {detail.code && (
+                <p className="mb-4 flex flex-wrap items-baseline gap-3">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">Kode</span>
+                  <span className="font-mono text-3xl font-semibold tracking-widest text-ink">{detail.code}</span>
+                </p>
+              )}
+              {detail.loot && (
+                <div className="mb-4">
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-ok">Forventet utbytte</p>
+                  <p className="text-[17px] leading-relaxed text-ink">{detail.loot}</p>
+                </div>
+              )}
               <p className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-accent">Slik finner du koden</p>
-              <p className="text-[17px] leading-relaxed text-ink">{detail.codeHint}</p>
+              <p className="text-[17px] leading-relaxed text-ink">{detail.codeHint ?? 'Ingen guide har forklart det ennå.'}</p>
             </section>
           )}
 

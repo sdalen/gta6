@@ -121,3 +121,17 @@ export function SearchInput({ value, onChange, placeholder }: { value: string; o
     </label>
   )
 }
+
+/** Safekode som merke. Tall vises i monospace; «Tilfeldig» o.l. dempet. */
+export function CodeBadge({ code }: { code: string }) {
+  const isCode = /\d|[A-Z]{4,}/.test(code)
+  return (
+    <span
+      className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs font-semibold ${
+        isCode ? 'bg-accent-dim font-mono tracking-wider text-accent ring-1 ring-accent/30' : 'bg-surface text-muted ring-1 ring-line'
+      }`}
+    >
+      {code}
+    </span>
+  )
+}
