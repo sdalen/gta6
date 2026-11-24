@@ -623,6 +623,146 @@
     "name": "Kode 2404#",
     "where": "Lageret til Savannah på Waxman Island under Car Service.",
     "before": "car-service"
+   },
+   {
+    "name": "Avery Pawn (tilfeldig kode)",
+    "where": "Ved pulten og PC-en på kontoret bak disken."
+   },
+   {
+    "name": "Kode 4207 · Mall Rats",
+    "where": "Safen på bakrommet."
+   },
+   {
+    "name": "Andre pantelånere og smykkebutikker (Smash 'n' Grab) (tilfeldig kode)",
+    "where": "På bakrommet eller kontoret."
+   },
+   {
+    "name": "Stick Ups (butikker, bensinstasjoner, brennevinsbutikker) (tilfeldig kode)",
+    "where": "På bakrommet, der det finnes en safe."
+   },
+   {
+    "name": "Payday Loans (7 butikker) (tilfeldig kode)",
+    "where": "Safen på bakrommet."
+   },
+   {
+    "name": "Småbanker (bankjobber) (tilfeldig kode)",
+    "where": "Safen på bakrommet."
+   },
+   {
+    "name": "Bank vaults (8 store banker) (ingen kode)",
+    "where": "Hvelvet bak i banken."
+   },
+   {
+    "name": "Kode 0420 · Moonstone Boutique (lab door)",
+    "where": "Tastaturet på døra med sprinkler til bakrommet med syrelaben."
+   },
+   {
+    "name": "Kode 7700 · Brian's Lockup",
+    "where": "Tastaturet på døra til lageret."
+   },
+   {
+    "name": "Kode 1999 · Kitty Litter Lab",
+    "where": "Garasjetastaturet i den midterste bygningen."
+   },
+   {
+    "name": "Kode 5710 · Port Gellhorn trailer",
+    "where": "En liten safe i en tilhenger."
+   },
+   {
+    "name": "June Import & Export (ingen kode)",
+    "where": "En safe uten tastatur."
+   },
+   {
+    "name": "Sound4Sound Studio (ingen kode)",
+    "where": "På bordet i lydkontrollrommet."
+   },
+   {
+    "name": "Illegal Goods Store (ingen kode)",
+    "where": "På kontorbordet ved vinduet."
+   },
+   {
+    "name": "Kode 9256 · Leonida Carrier Warehouse",
+    "where": "På bakkontoret."
+   },
+   {
+    "name": "Kode 789987 · Black Eagle warehouse (office door)",
+    "where": "Tastaturet utenfor bakkontoret."
+   },
+   {
+    "name": "Kode 031462 · Black Eagle warehouse (office safe)",
+    "where": "Inne på kontoret."
+   },
+   {
+    "name": "Kode 1426 · Cigar Import (front door)",
+    "where": "Inngangsdøra til gjemmestedet."
+   },
+   {
+    "name": "Kode 5800 · Chatfield Storage & Logistics",
+    "where": "Kontoret med utvendig trapp, ovenpå."
+   },
+   {
+    "name": "Kode 1886 · Palmer Fishing Warehouse",
+    "where": "Safen ovenpå."
+   },
+   {
+    "name": "Kode 1819 · Watson Bay Safehouse",
+    "where": "Den svarte safen under mikrobølgeovnen på kjøkkenet ovenpå."
+   },
+   {
+    "name": "Kode 1982 · The Thirsty Wolf (biker clubhouse)",
+    "where": "Safen i klubbhuset til Final Chapter."
+   },
+   {
+    "name": "Kode CLEAVES · Pelican Valley research outpost (computer)",
+    "where": "Påloggingsskjermen på PC-en."
+   },
+   {
+    "name": "Kode 4242 · Belpoint shipwreck",
+    "where": "En safe i vraket."
+   },
+   {
+    "name": "Kode 9790 · Slum House",
+    "where": "Ikke oppgitt."
+   },
+   {
+    "name": "Kode 7869 · Stormy (back room)",
+    "where": "Safen på bakrommet."
+   },
+   {
+    "name": "Kode 2727 · '74 Declasse Vamos garage",
+    "where": "Sidedøra til garasjen ved et hus."
+   },
+   {
+    "name": "Kode 92665 · Del Rio Boulevard Garage (Vanessa's Growler)",
+    "where": "Garasjetastaturet ved Auntie's Place. Det er en rosa sløyfe ved døra."
+   },
+   {
+    "name": "Kode Muffins / Queen / 15 · Apartment laptop (Chapter 3)",
+    "where": "Laptopen i leiligheten i kapittel 3."
+   },
+   {
+    "name": "Kode 360782 · Father Scrumpy's Red Apple Orchard garage",
+    "where": "Garasjen på frukthagen vest for Manifest Canyon."
+   },
+   {
+    "name": "Kode 69185 · Mount Kalaga firewatch tower shed",
+    "where": "Det låste skuret nederst ved utkikkstårnet."
+   },
+   {
+    "name": "South Point Airfield bunker (alien dream) (tilfeldig kode)",
+    "where": "Tastaturet på bunkerdøra i drømmen om romvesener."
+   },
+   {
+    "name": "Kode 010317 · President's bunker entrance",
+    "where": "Tastaturet ved inngangen til bunkeren."
+   },
+   {
+    "name": "Kode 2975 · President's bunker safe",
+    "where": "Safen inne i bunkeren."
+   },
+   {
+    "name": "Kode 085355 · IAA Black Site hatch",
+    "where": "Tastatur på et tre ved luka sør for Ammu-Nation, ved motorveien."
    }
   ],
   "blader": [
@@ -823,7 +963,7 @@
   "meteoritter": "Ikke bekreftet. Guidene har 26–31 bekreftede steder. Power Up Gaming sier over 70, og kartet til gtabase viser 71 punkter.",
   "vrak": "7 skattesett (41 skatter) pluss Nuestra Señora del Ocio med 10 dubloner. 33 undervannsfunn trengs for 100 %, og 5 av 7 sett.",
   "vapen": "127 unike våpenvarianter, pluss 2 fra Ultimate Edition (ifølge Detonated, ikke bekreftet). Mange kjøpes i Ammu-Nation-butikker eller fås i Illegal Ops.",
-  "safer": "Ukjent. GTABase viser 87 safer på kartet. Rundt 24 faste koder er kjent. Noen koder kan variere mellom spill.",
+  "safer": "59 safer og dører med kode. Faste koder finnes i oppdrag, gjengsteder og hemmeligheter. Vanlige ran har tilfeldig kode.",
   "blader": "27 blader, bøker og tegneserier ifølge PowerPyx, pluss 7 bokbytter. 30 trengs for 100 %. Screenhype har funnet 26 av 27 titler.",
   "kjoretoy": "5 bilder til Wyman (Classic Car Collection, bare Ultimate Edition): 15 skrapdeler å skanne. Total for spesielle kjøretøy er ikke verifisert.",
   "stiler": "79 stiler: 13 bladstiler for Jason, 15 for Lucia, 17 tatoveringsblader og 34 luksusklokker. 70 trengs for 100 %. Bladene skannes med WAiNK, klokkene plukkes opp.",

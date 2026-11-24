@@ -14,6 +14,8 @@ export interface CollectibleDetail {
   access?: string
   confidence?: 'høy' | 'middels' | 'lav'
   sources?: string[]
+  /** Hvor i spillet du finner koden til safen eller døra. */
+  codeHint?: string
 }
 
 export function getDetail(key: string): CollectibleDetail | undefined {

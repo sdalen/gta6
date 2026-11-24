@@ -70,6 +70,13 @@ export function CollectibleItemPage({ catId, idx, done, onToggle }: Props) {
             </Callout>
           )}
 
+          {detail?.codeHint && (
+            <section className="rounded-lg bg-surface p-5 ring-1 ring-line">
+              <p className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-accent">Slik finner du koden</p>
+              <p className="text-[17px] leading-relaxed text-ink">{detail.codeHint}</p>
+            </section>
+          )}
+
           <section>
             <H2>Hvor ligger den?</H2>
             <dl className="mb-6 grid gap-x-8 gap-y-3 text-[15px] sm:grid-cols-2">

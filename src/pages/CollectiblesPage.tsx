@@ -2,6 +2,7 @@ import { collectibles, collectibleSources, itemId, robberySources, type Collecti
 import { href } from '../hooks/useRoute'
 import { Icon } from '../components/Icon'
 import { PageHeader, ProgressBar } from '../components/ui'
+import { SafeGuide } from '../components/SafeGuide'
 
 export function CollectiblesPage({ done }: { done: Set<string> }) {
   return (
@@ -44,6 +45,7 @@ export function RobberiesPage({ done }: { done: Set<string> }) {
         </a>
         .
       </PageHeader>
+      <SafeGuide />
       <CategoryList categories={cats} done={done} />
       <p className="mt-8 text-xs leading-relaxed text-faint">
         Kilder: {robberySources.map((s) => s.name).join(' · ')}. Kartpunktene er omtrentlige.

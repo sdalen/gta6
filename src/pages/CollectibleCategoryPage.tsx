@@ -3,6 +3,7 @@ import { collectibles, itemId } from '../data/collectibles'
 import { href } from '../hooks/useRoute'
 import { Icon } from '../components/Icon'
 import { Callout, Checkbox, PageHeader, ProgressBar, SearchInput, SectionLabel } from '../components/ui'
+import { SafeGuide } from '../components/SafeGuide'
 import { NotFound } from './NotFound'
 
 interface Props {
@@ -50,6 +51,8 @@ export function CollectibleCategoryPage({ id, done, onToggle }: Props) {
           </ul>
         )}
       </div>
+
+      {(cat.id === 'safer' || cat.kind === 'ran') && <SafeGuide />}
 
       <div className="mb-4 flex items-end justify-between gap-4">
         <SectionLabel>Lokasjoner</SectionLabel>

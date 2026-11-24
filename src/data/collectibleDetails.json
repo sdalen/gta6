@@ -4006,7 +4006,7 @@
 ]
 },
 "samle:vapen:11": {
-"area": "Port Gellhorn, Ambrosia",
+"area": "Port Gellhorn, Kelly County",
 "landmark": "Port Gellhorn",
 "route": [
 "Dra til campingvognområdet ved Tanglewood Lane.",
@@ -4343,7 +4343,8 @@
 "sources": [
 "https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/"
 ],
-"where": "Tastaturet på garasjen til festhuset i sørøsthjørnet av Key Lento."
+"where": "Tastaturet på garasjen til festhuset i sørøsthjørnet av Key Lento.",
+"codeHint": "Inne i festhuset."
 },
 "samle:safer:1": {
 "area": "Belville, Leonard County",
@@ -4362,7 +4363,8 @@
 "https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/",
 "https://game8.co/games/GTA-6/archives/638661"
 ],
-"where": "Den forsterkede veggsafen i det forlatte vaskeriet (Wash House) nordvest i Belville."
+"where": "Den forsterkede veggsafen i det forlatte vaskeriet (Wash House) nordvest i Belville.",
+"codeHint": "Skrevet under samlekortet. GameRant sier at vaskeriet ligger i Ambrosia."
 },
 "samle:safer:2": {
 "area": "Cottonmouth Lake, Mariana County",
@@ -4380,7 +4382,8 @@
 "https://www.thebiglead.com/gta-6-collectibles-guide-cards-styles-meteorite-chunks-landmark-scans/",
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
 ],
-"where": "Safen i tilhengeren på øya sør for Cottonmouth Lake, den med lengst sandstripe."
+"where": "Safen i tilhengeren på øya sør for Cottonmouth Lake, den med lengst sandstripe.",
+"codeHint": "Tall på postkort og bilder på veggen ved senga."
 },
 "samle:safer:3": {
 "area": "Belville, Leonard County",
@@ -4418,7 +4421,7 @@
 "where": "Safen i en garasje på sørspissen av hovedøya i Vice Beach."
 },
 "samle:safer:5": {
-"area": "Port Gellhorn, Ambrosia",
+"area": "Port Gellhorn, Kelly County",
 "landmark": "Gellhorn Speedway",
 "route": [
 "Kjør til Gellhorn Speedway i Port Gellhorn.",
@@ -4448,7 +4451,8 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/",
 "https://screenrant.com/gta-6-unique-weapons-locations/"
-]
+],
+"codeHint": "0072: PC-hint: «double success». Prøve 0036 × 2. Den samme koden åpner også vann-garasjen. 0212: Lapp inni 0072-safen."
 },
 "samle:safer:7": {
 "area": "La Perle, Vice City",
@@ -4463,7 +4467,8 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Grønn lapp på kjøleskapet."
 },
 "samle:safer:8": {
 "area": "Crosstown, Vice City",
@@ -4477,7 +4482,8 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Ring rundt koden på «Old Note» på taket."
 },
 "samle:safer:9": {
 "area": "Downtown, Vice City",
@@ -4491,10 +4497,11 @@
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Lapp på pulten. Bare én guide oppgir 4228, og Leonipedia sier at ingen kode er kjent. Trolig tilfeldig."
 },
 "samle:safer:10": {
-"area": "Hamlet, Mariana County",
+"area": "Hamlet, Vice-Dale County",
 "landmark": "Nova Auto Junkyard",
 "route": [
 "Dra til Nova Auto Junkyard i Hamlet.",
@@ -4506,7 +4513,8 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Skrevet på veggen rett overfor safen."
 },
 "samle:safer:11": {
 "area": "Cottonmouth Bay",
@@ -4521,10 +4529,11 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Ring rundt koden på en notisblokk i Kingfishers-skuret."
 },
 "samle:safer:12": {
-"area": "Port Gellhorn, Ambrosia",
+"area": "Port Gellhorn, Kelly County",
 "landmark": "Brooks Boatworks",
 "route": [
 "Dra til Brooks Boatworks.",
@@ -4536,10 +4545,11 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Veggkartet på kontoret. Også i en notatbok fra Stash House i Port Gellhorn."
 },
 "samle:safer:13": {
-"area": "Port Gellhorn, Ambrosia",
+"area": "Port Gellhorn, Kelly County",
 "landmark": "Kingpin Bowling",
 "route": [
 "Dra til Kingpin Bowling.",
@@ -4551,10 +4561,11 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Veggkartet på Brooks Boatworks. Lappen på kontoret har bare overstrøkne koder."
 },
 "samle:safer:14": {
-"area": "Port Gellhorn, Ambrosia",
+"area": "Port Gellhorn, Kelly County",
 "landmark": "La Cascara Motel",
 "route": [
 "Dra til La Cascara Motel.",
@@ -4566,7 +4577,8 @@
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Veggkartet på Brooks Boatworks."
 },
 "samle:safer:15": {
 "area": "Belville, Leonard County",
@@ -4581,7 +4593,8 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Ring rundt koden på en notisblokk i laben."
 },
 "samle:safer:16": {
 "area": "Vice City",
@@ -4596,7 +4609,8 @@
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Lapp i den lille safen på bakrommet til Drip Drops."
 },
 "samle:safer:17": {
 "area": "Little Cuba, Vice City",
@@ -4611,7 +4625,8 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Inne i gjemmestedet."
 },
 "samle:safer:18": {
 "area": "Little Cuba, Vice City",
@@ -4627,7 +4642,8 @@
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/",
 "https://screenrant.com/gta-6-unique-weapons-locations/"
-]
+],
+"codeHint": "Et kart på kontoret på verftet. GameRant sier at koden finnes på Saber Shipping Facility."
 },
 "samle:safer:19": {
 "area": "Balsero, Vice-Dale County",
@@ -4642,10 +4658,11 @@
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Hint på stedet. Uenighet: de fleste guidene sier 1122, noen sier 1965."
 },
 "samle:safer:20": {
-"area": "Port Gellhorn, Ambrosia",
+"area": "Port Gellhorn, Kelly County",
 "landmark": "Delights",
 "route": [
 "Start Afternoon Delight.",
@@ -4657,7 +4674,8 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Vicki sender koden på SMS."
 },
 "samle:safer:21": {
 "area": "Vice City",
@@ -4673,7 +4691,8 @@
 "confidence": "middels",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "1680: Står på oppdragskortet fra Yasmani. 6815: Står på oppdragskortet fra Yasmani. Senere ran kan ha en annen kode, så sjekk lappen på bakrommet. 0104: Oppdragskortet og en gul lapp på kontoret. Utenom oppdraget fikk én guide 1822 ved å true ekspeditøren."
 },
 "samle:safer:22": {
 "area": "Leonard County",
@@ -4687,7 +4706,8 @@
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Funnet i oppdraget. Op.gg merker den som ikke bekreftet."
 },
 "samle:safer:23": {
 "area": "Waxman Island",
@@ -4702,7 +4722,8 @@
 "confidence": "lav",
 "sources": [
 "https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/"
-]
+],
+"codeHint": "Lagret i Notes på telefonen."
 },
 "samle:blader:0": {
 "area": "Key Lento, Mariana County",
@@ -6039,5 +6060,545 @@
 "https://games.gg/grand-theft-auto-vi/guides/gta-6-all-meditation-spot-locations/",
 "https://ayther.fr/gta-6-ou-trouver-tous-les-spots-de-meditation/"
 ]
+},
+"samle:safer:24": {
+"area": "Port Gellhorn, Kelly County",
+"landmark": "Avery Pawn",
+"route": [
+"Ta oppdraget «Hit Avery Pawn» etter «Coffee Break» i kapittel 2.",
+"Sikt på ekspeditøren og trykk Threaten til «Safe Code?» dukker opp.",
+"Gå gjennom Staff Only-døra og så Office-døra til høyre.",
+"Tast koden du fikk."
+],
+"spot": "Ved pulten og PC-en på kontoret bak disken. Inni: Kontanter og smykker.",
+"confidence": "høy",
+"sources": [
+"https://www.videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe/",
+"https://www.gtaboom.com/gta-6-avery-pawn-robbery-guide-55b9",
+"https://www.powerpyx.com/gta-6-hit-avery-pawn-walkthrough/",
+"https://leonipedia.com/guides/jewelry-stores/"
+],
+"codeHint": "Ekspeditøren sier den når du truer ham. Den står også på en grønn lapp over kalenderen ved Office-døra. Guidene har fått 6499, 4768, 5683, 3156 og 3434, så koden er tilfeldig. Koden varierer fra spill til spill."
+},
+"samle:safer:25": {
+"area": "Vice City (ukjent)",
+"landmark": "Mall Rats",
+"route": [
+"Ran Mall Rats.",
+"Finn koden på bakrommet eller true en ansatt.",
+"Tast koden på safen."
+],
+"spot": "Safen på bakrommet. Inni: Ikke oppgitt.",
+"confidence": "lav",
+"sources": [
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
+"https://leonipedia.com/guides/jewelry-stores/"
+],
+"codeHint": "Én guide fikk 4207 ved å true de ansatte. Den er nok ikke fast, så sjekk lappen på bakrommet. Koden varierer fra spill til spill."
+},
+"samle:safer:26": {
+"area": "Hele Leonida",
+"landmark": "35 butikker",
+"route": [
+"Pantelånere åpner etter «Coffee Break» i kapittel 2. Smykkebutikker åpner etter «Yasmani's Jewelry Jobs» i kapittel 3.",
+"Be om «Safe Code?» før du knuser glass.",
+"Knus montrene og tøm safen. Begge deler må til for at butikken skal telle."
+],
+"spot": "På bakrommet eller kontoret. Inni: Kontanter og smykker.",
+"confidence": "middels",
+"sources": [
+"https://leonipedia.com/guides/jewelry-stores/",
+"https://www.powerpyx.com/gta-6-all-smash-n-grabs-locations/"
+],
+"codeHint": "Tilfeldig. Fås fra en ansatt eller en lapp på bakrommet. Sticky Bomb virker også. Guidene er uenige om alle pantelånere har kodesafe. Buck's Jewelry & Pawn nevnes bare med kassepenger. Koden varierer fra spill til spill."
+},
+"samle:safer:27": {
+"area": "Hele Leonida",
+"landmark": "91 butikker",
+"route": [
+"Ran kassa.",
+"Bruk Focus (L3 + R3) for å se hvem som vet koden.",
+"Be om «Safe Code?», eller let etter lapp på bakrommet.",
+"Tøm safen, eller dropp den hvis politiet nærmer seg."
+],
+"spot": "På bakrommet, der det finnes en safe. Inni: Kontanter.",
+"confidence": "middels",
+"sources": [
+"https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-store-robbery-guide/",
+"https://www.gta6heists.com/robberies/local-store"
+],
+"codeHint": "Tilfeldig. Fås fra en ansatt eller en lapp. Én guide nevner en lås-minilek på ca. 90 sekunder på en safe i en brennevinsbutikk. Koden varierer fra spill til spill."
+},
+"samle:safer:28": {
+"area": "Vice City, Hamlet og Port Gellhorn (Cash Flow)",
+"landmark": "Payday Loans / Quick Buck / Cash Flow",
+"route": [
+"Åpner etter «Credit Check» i kapittel 3.",
+"True kassereren og ta kontantene fra disken.",
+"Be om «Safe Code?», eller let etter lapp på bakrommet.",
+"Åpne safen og kom deg unna. Merkede sedler krever Dye Pack Jammer for å kunne selges."
+],
+"spot": "Safen på bakrommet. Inni: Kontanter, ofte merkede sedler. Ca. $2 000–25 000. Little Cuba gir mest.",
+"confidence": "middels",
+"sources": [
+"https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-safe-codes-list/",
+"https://egamers.io/gta-6-payday-loan-stores-where-to-find-all-7-and-how-to-rob-them/"
+],
+"codeHint": "Tilfeldig. Fås fra en ansatt, en lapp eller en tavle. Koden varierer fra spill til spill."
+},
+"samle:safer:29": {
+"area": "Hele Leonida",
+"landmark": "Banker uten hvelv",
+"route": [
+"Åpner i kapittel 3.",
+"Tøm kassaskuffen.",
+"Få koden fra en kasserer eller en vakt, eller les en lapp eller en PC-skjerm.",
+"Tøm safen. Både skuffen og safen må til for at banken skal telle."
+],
+"spot": "Safen på bakrommet. Inni: Kontanter. Ca. $5 000–45 000.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://outputlag.com/guides/gta-6-jewelry-bank-robberies/"
+],
+"codeHint": "Tilfeldig, også ulik i samme bank. Kassereren har den noen ganger skrevet ned. Vakter kan ha den på seg. Koden varierer fra spill til spill."
+},
+"samle:safer:30": {
+"area": "Hele Leonida",
+"landmark": "Store banker",
+"route": [
+"Åpner i kapittel 4 via Yasmanis valgfrie oppdrag.",
+"Følg en verditransport til banken.",
+"Gå inn mens vakten har hvelvet åpent."
+],
+"spot": "Hvelvet bak i banken. Inni: Kontanter. Opptil ca. $205 000.",
+"confidence": "middels",
+"sources": [
+"https://www.gta6heists.com/robberies/how-to-open-bank-vaults",
+"https://duuro.net/blog/gta-6-safe-codes"
+],
+"codeHint": "Ingen kode. Hvelvet kan ikke sprenges, bores eller dirkes opp."
+},
+"samle:safer:31": {
+"area": "Key Lento, Mariana County",
+"landmark": "Moonstone Boutique",
+"route": [
+"Spill «Lab Fees» i kapittel 1.",
+"Få koden fra ekspeditøren.",
+"Tast 0420 på døra bak disken."
+],
+"spot": "Tastaturet på døra med sprinkler til bakrommet med syrelaben. Inni: Adgang til syrelaben.",
+"confidence": "høy",
+"sources": [
+"https://duuro.net/blog/gta-6-safe-codes",
+"https://meowdb.com/gta6/safe-codes"
+],
+"codeHint": "Ekspeditøren sier den. Den står også på en notisblokk på pulten."
+},
+"samle:safer:32": {
+"area": "Key Lento, Mariana County",
+"landmark": "Isla Tropical",
+"route": [
+"Spill «Lab Fees» i kapittel 1.",
+"Tast 7700 på døra."
+],
+"spot": "Tastaturet på døra til lageret. Inni: Brians pengeskrin og lager for tyvegods.",
+"confidence": "høy",
+"sources": [
+"https://duuro.net/blog/gta-6-safe-codes",
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+],
+"codeHint": "Brian sender den på telefonen."
+},
+"samle:safer:33": {
+"area": "Balsero, Vice City",
+"landmark": "Kitty Litter Lab",
+"route": [
+"Spill «Take Out Kitty Litter» i kapittel 3.",
+"Tast 1999 på garasjen i den midterste bygningen."
+],
+"spot": "Garasjetastaturet i den midterste bygningen. Inni: $2 500.",
+"confidence": "middels",
+"sources": [
+"https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
+"https://gta6info.com/wiki/Safe_Codes"
+]
+},
+"samle:safer:34": {
+"area": "Port Gellhorn, Kelly County",
+"landmark": "Port Gellhorn",
+"route": [
+"Finn tilhengeren i Port Gellhorn.",
+"Les den grønne lappen på arbeidsbenken.",
+"Tast 5710."
+],
+"spot": "En liten safe i en tilhenger. Inni: Kontanter (ca. $84).",
+"confidence": "lav",
+"sources": [
+"https://meowdb.com/gta6/safe-codes"
+],
+"codeHint": "Grønn lapp på en arbeidsbenk. Bare meowdb har den."
+},
+"samle:safer:35": {
+"area": "Port Gellhorn, Kelly County",
+"landmark": "June Import & Export",
+"route": [
+"Finn safen.",
+"Velg Break Open og drei høyre spak."
+],
+"spot": "En safe uten tastatur. Inni: Kontanter (ca. $1 221).",
+"confidence": "lav",
+"sources": [
+"https://meowdb.com/gta6/safe-codes"
+],
+"codeHint": "Ingen kode. Bryt den opp."
+},
+"samle:safer:36": {
+"area": "Stockyard, Vice City",
+"landmark": "Sound4Sound Studio",
+"route": [
+"Finn safen i kontrollrommet.",
+"Velg Break Open og drei høyre spak."
+],
+"spot": "På bordet i lydkontrollrommet. Inni: Ikke oppgitt.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes"
+],
+"codeHint": "Ingen kode. Bryt den opp."
+},
+"samle:safer:37": {
+"area": "Southside, Vice City",
+"landmark": "Illegal Goods Store",
+"route": [
+"Gå stille inn gjennom luka i taket.",
+"Velg Break Open på safen."
+],
+"spot": "På kontorbordet ved vinduet. Inni: Ikke oppgitt.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes"
+],
+"codeHint": "Ingen kode. Bryt den opp."
+},
+"samle:safer:38": {
+"area": "Balsero, Vice City",
+"landmark": "Leonida Carrier Warehouse",
+"route": [
+"Klatre opp på taket og gå inn gjennom luka.",
+"Gå til bakkontoret.",
+"Tast 9256."
+],
+"spot": "På bakkontoret. Inni: Kontanter.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://duuro.net/blog/gta-6-safe-codes"
+]
+},
+"samle:safer:39": {
+"area": "Balsero, Vice City",
+"landmark": "Black Eagle",
+"route": [
+"Gå inn i Black Eagle-lageret.",
+"Tast 789987 på døra til kontoret."
+],
+"spot": "Tastaturet utenfor bakkontoret. Inni: Adgang til kontoret med safen.",
+"confidence": "middels",
+"sources": [
+"https://meowdb.com/gta6/safe-codes",
+"https://duuro.net/blog/gta-6-safe-codes"
+],
+"codeHint": "Et kartkort. Noen spillere sier at koden står på kontor-PC-en og kan variere."
+},
+"samle:safer:40": {
+"area": "Balsero, Vice City",
+"landmark": "Black Eagle",
+"route": [
+"Åpne kontordøra med 789987.",
+"Tast 031462 på safen. Husk nullen først."
+],
+"spot": "Inne på kontoret. Inni: Ca. $5 112 og pistolen Black Eagle Import Kalinga .50.",
+"confidence": "middels",
+"sources": [
+"https://meowdb.com/gta6/safe-codes",
+"https://gta6info.com/wiki/Safe_Codes"
+],
+"codeHint": "Et kartkort."
+},
+"samle:safer:41": {
+"area": "Vice City (ukjent)",
+"landmark": "Cigar Import",
+"route": [
+"Tast 1426 på døra."
+],
+"spot": "Inngangsdøra til gjemmestedet. Inni: Adgang til gjemmestedet.",
+"confidence": "lav",
+"sources": [
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+],
+"codeHint": "Ikke oppgitt. Bare én guide har den."
+},
+"samle:safer:42": {
+"area": "Waxman Island, Vice City",
+"landmark": "Chatfield Storage & Logistics",
+"route": [
+"Finn den åpne containeren på verftet.",
+"Les e-posten på laptopen der.",
+"Gå opp på kontoret og tast 5800."
+],
+"spot": "Kontoret med utvendig trapp, ovenpå. Inni: Kontanter.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+],
+"codeHint": "E-post på en laptop i en åpen container. Sticky Bomb virker også."
+},
+"samle:safer:43": {
+"area": "Watson Bay, Mariana County",
+"landmark": "Palmer Fishing Warehouse",
+"route": [
+"Les PC-en i første etasje.",
+"Gå opp og tast koden fra skjermen."
+],
+"spot": "Safen ovenpå. Inni: Kontanter.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
+"https://meowdb.com/gta6/safe-codes"
+],
+"codeHint": "PC-en i første etasje. Uenighet: 1886 er vanligst, noen sier 1887. GTABoom sier at koden varierer. Koden varierer fra spill til spill."
+},
+"samle:safer:44": {
+"area": "Watson Bay, Mariana County",
+"landmark": "Watson Bay Safehouse",
+"route": [
+"Gå opp på kjøkkenet.",
+"Les siste linje i e-posten på PC-en.",
+"Tast koden på safen under mikrobølgeovnen."
+],
+"spot": "Den svarte safen under mikrobølgeovnen på kjøkkenet ovenpå. Inni: Kontanter.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+],
+"codeHint": "Siste linje i en e-post på kjøkken-PC-en. GTABoom sier at koden kan variere. Koden varierer fra spill til spill."
+},
+"samle:safer:45": {
+"area": "Øst for Ambrosia, Leonard County",
+"landmark": "The Thirsty Wolf",
+"route": [
+"Kjør til The Thirsty Wolf.",
+"Se på det svarte flagget ved bakrommet.",
+"Tast 1982."
+],
+"spot": "Safen i klubbhuset til Final Chapter. Inni: Kontanter (ca. $909 + $2 136).",
+"confidence": "høy",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://meowdb.com/gta6/safe-codes"
+],
+"codeHint": "Gjengens stiftelsesår på det svarte flagget på veggen."
+},
+"samle:safer:46": {
+"area": "Gullet Marsh, Mariana County",
+"landmark": "Pelican Valley",
+"route": [
+"Slå på strømmen.",
+"Les ordet som er risset inn i gulvet på soverommet.",
+"Skriv CLEAVES."
+],
+"spot": "Påloggingsskjermen på PC-en. Inni: Hintet til safekoden 0072.",
+"confidence": "høy",
+"sources": [
+"https://duuro.net/blog/gta-6-safe-codes",
+"https://meowdb.com/gta6/safe-codes"
+],
+"codeHint": "Risset inn i gulvplankene på soverommet."
+},
+"samle:safer:47": {
+"area": "Leonida Keys",
+"landmark": "Belpoint",
+"route": [
+"Dykk ned til vraket ved Belpoint.",
+"Tast 4242."
+],
+"spot": "En safe i vraket. Inni: Kontanter.",
+"confidence": "lav",
+"sources": [
+"https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
+"https://gta6info.com/wiki/Safe_Codes"
+],
+"codeHint": "Ikke oppgitt. Uenighet: GTABase knytter 4242 til «Room 115» i Ambrosia."
+},
+"samle:safer:48": {
+"area": "Vice City",
+"landmark": "Slum House",
+"route": [
+"Finn huset og tast 9790."
+],
+"spot": "Ikke oppgitt. Inni: Bytte (ikke nærmere oppgitt).",
+"confidence": "lav",
+"sources": [
+"https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
+"https://gta6info.com/wiki/Safe_Codes"
+]
+},
+"samle:safer:49": {
+"area": "Vice City",
+"landmark": "Stormy",
+"route": [
+"Gå inn på bakrommet til Stormy og tast 7869."
+],
+"spot": "Safen på bakrommet. Inni: Ikke oppgitt.",
+"confidence": "lav",
+"sources": [
+"https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
+"https://gta6info.com/wiki/Safe_Codes"
+]
+},
+"samle:safer:50": {
+"area": "Grayson, Lummox County",
+"landmark": "Grayson",
+"route": [
+"Ta bestillingen på Vamos fra Moses i kapittel 2.",
+"Se på tallskiltene inne i huset.",
+"Tast 2727."
+],
+"spot": "Sidedøra til garasjen ved et hus. Inni: Bilen Declasse '74 Vamos.",
+"confidence": "høy",
+"sources": [
+"https://space4games.com/en/games-en/gta-6-safe-codes-combinations-locations/",
+"https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/"
+],
+"codeHint": "Tallskilt på veggene i huset («Look at all the signs»)."
+},
+"samle:safer:51": {
+"area": "La Perle, Vice City",
+"landmark": "Auntie's Place",
+"route": [
+"Lås opp laptopen i leiligheten i kapittel 3 med Muffins, Queen, 15.",
+"Les meldingene.",
+"Tast 92665 på garasjen ved Auntie's Place."
+],
+"spot": "Garasjetastaturet ved Auntie's Place. Det er en rosa sløyfe ved døra. Inni: Vanessas rosa Growler. Garasjen blir din.",
+"confidence": "høy",
+"sources": [
+"https://meowdb.com/gta6/safe-codes",
+"https://gta6info.com/wiki/Safe_Codes"
+],
+"codeHint": "Meldinger på laptopen. Guidene kaller den både Boobies og Vanessas laptop."
+},
+"samle:safer:52": {
+"area": "Vice City",
+"landmark": "Boobie's Apartment",
+"route": [
+"Se på hundebildet og skissen av hunden med krone.",
+"Svar Muffins, Queen og 15 i den rekkefølgen."
+],
+"spot": "Laptopen i leiligheten i kapittel 3. Inni: Meldinger med garasjekoden 92665.",
+"confidence": "høy",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://meowdb.com/gta6/safe-codes"
+],
+"codeHint": "Hundebildet og skissen av hunden med krone."
+},
+"samle:safer:53": {
+"area": "Manifest Canyon, Kelly County",
+"landmark": "Red Apple Orchard",
+"route": [
+"Gå opp på høyloftet i låven.",
+"Finn magasinet ManlyGaze: nummer 36, måned 07, år 82.",
+"Tast 360782 på garasjen."
+],
+"spot": "Garasjen på frukthagen vest for Manifest Canyon. Inni: Bilen Declasse Applesauce Bobcat.",
+"confidence": "middels",
+"sources": [
+"https://gta6info.com/wiki/Safe_Codes",
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
+"https://duuro.net/blog/gta-6-safe-codes"
+],
+"codeHint": "Forsiden av ManlyGaze-magasinet i låven."
+},
+"samle:safer:54": {
+"area": "Mount Kalaga National Park",
+"landmark": "Stone Hills",
+"route": [
+"Klatre opp i utkikkstårnet.",
+"Les den lilla lappen eller tallbrettet på toppen.",
+"Gå ned og tast 69185 på skuret."
+],
+"spot": "Det låste skuret nederst ved utkikkstårnet. Inni: Area 69 Watch Guard Logbook.",
+"confidence": "middels",
+"sources": [
+"https://meowdb.com/gta6/safe-codes",
+"https://gta6info.com/wiki/Safe_Codes",
+"https://duuro.net/blog/gta-6-safe-codes"
+],
+"codeHint": "Lilla lapp i hytta på toppen. Uenighet: én tidlig guide sa 691865."
+},
+"samle:safer:55": {
+"area": "Kelly County",
+"landmark": "South Point Airfield",
+"route": [
+"Tell strekgruppene over tastaturet fra venstre mot høyre.",
+"Tast tallene i den rekkefølgen."
+],
+"spot": "Tastaturet på bunkerdøra i drømmen om romvesener. Inni: Hemmelig hendelse.",
+"confidence": "middels",
+"sources": [
+"https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/",
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+],
+"codeHint": "Strekgrupper over tastaturet. Koden er en blanding av 1, 2, 3 og 4 og varierer. Koden varierer fra spill til spill."
+},
+"samle:safer:56": {
+"area": "Sharktooth Island, nord for Waning Sands",
+"landmark": "Sharktooth Island",
+"route": [
+"Følg sporet fra Friends of Freedom.",
+"Kjør til Sharktooth Island.",
+"Tast 010317."
+],
+"spot": "Tastaturet ved inngangen til bunkeren. Inni: Adgang til bunkeren.",
+"confidence": "middels",
+"sources": [
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
+"https://gamerant.com/gta-6-president-bunker-location-all-codes/"
+],
+"codeHint": "Presidentens fødselsdag. Én guide sier at den kommer fra et opptak i Joses leilighet i Little Cuba."
+},
+"samle:safer:57": {
+"area": "Sharktooth Island, nord for Waning Sands",
+"landmark": "Sharktooth Island",
+"route": [
+"Bruk telefonen på pulten for å starte radioen.",
+"Tast sifrene fra sendingen i rekkefølgen fra Protocol 2."
+],
+"spot": "Safen inne i bunkeren. Inni: Pistolen Russo's 1922. Henger sammen med en gratis tanks senere.",
+"confidence": "middels",
+"sources": [
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af",
+"https://gamerant.com/gta-6-president-bunker-location-all-codes/"
+],
+"codeHint": "Radiosendingen og dokumentet på pulten."
+},
+"samle:safer:58": {
+"area": "North Mariana County",
+"landmark": "Ammu-Nation",
+"route": [
+"Kjør sør for Ammu-Nation i North Mariana County.",
+"Tast 085355 på tastaturet."
+],
+"spot": "Tastatur på et tre ved luka sør for Ammu-Nation, ved motorveien. Inni: Adgang til bunker nummer to.",
+"confidence": "lav",
+"sources": [
+"https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+],
+"codeHint": "Ikke oppgitt. Uenighet: noen guider plasserer bunkeren nordvest for Grassrivers."
 }
 }
