@@ -340,6 +340,60 @@ export const optionalMissions: OptionalMission[] = [
     ],
   },
   {
+    name: 'Bilene Moses vil ha',
+    chapter: '2',
+    appearsAfter: 'daily-driver',
+    note: 'Moses ber om sju bestemte biler (Vehicle Drop-Offs). Den første, Crawler-en, er hovedoppdraget Daily Driver. De seks andre kommer etterpå, og du ser dem under Kart → Robberies → Moses Drop-Offs. Ingen guide sier at de forsvinner, men de ligger i og rundt Port Gellhorn, så det er lettest å ta dem i kapittel 2.',
+    steps: [
+      'Bilene kommer i fast rekkefølge. Lever den du har fått, så kommer neste. Guidene er litt uenige om flere kan være åpne samtidig.',
+      'Skann bilen med WAiNK-appen før du stjeler den, så du vet at det er riktig modell. Feil bil blir avvist.',
+      'Kjør pent tilbake. Skader trekker fra en bonus på ca. $500, men bilen blir ikke avvist.',
+      'Lever alle til garasjen til Moses ved Watkins Auto Parts i Port Gellhorn.',
+      'Belønning: ca. 10 minutter etter siste bil sender Moses melding om en gave, en ombygd Sultan (Collect Moses\' Gift).',
+    ],
+    stops: [
+      {
+        title: "1. '82 Canis Crawler (Daily Driver)",
+        text: 'Hovedoppdrag, spilles som Lucia. Står i det gamle Trader\'s Union-verkstedet i Gellhorn Ave i Port Gellhorn, bak en låst port og under reparasjon. Det henger folk rundt der. Hopp over gjerdet, ta dem du må, og kjør ut. Ca. $1 250.',
+      },
+      {
+        title: '2. Declasse Yosemite 1500',
+        text: 'Bastion St, sørvest i Port Gellhorn. En bergingsbil holder på å taue den bort fra en innkjørsel. Er innkjørselen tom, let langs gata etter bergingsbilen. Parker foran den, slå ned sjåføren og trykk på knappen bak på bergingsbilen for å slippe Yosemite-en ned. Kommer du for sent, kjører han, og du må jage ham. Ca. $1 850.',
+        loc: { x: -6600, y: 3000, z: 3, precision: 'område', place: 'Bastion St, sørvest i Port Gellhorn', note: 'gatenavnet finnes ikke i kartdataene, så punktet er anslått' },
+      },
+      {
+        title: '3. Karin Futo',
+        text: 'Postlageret sør på kaia på Draper Island, bak rulleporten. Det er vakter innenfor gjerdene. Parker før vaktbommene og hopp over gjerdet til venstre, ned på jernbanesporet. Gå til nordvestsiden av bygget og inn kontordøren (de andre dørene er låst). Slå ned eller snik deg forbi arbeideren inne, og åpne rulleporten med knappen ved siden av. Ca. $1 500.',
+        loc: { x: -7013, y: 4698, z: 3, precision: 'område', place: 'Draper Island', note: 'postlageret er ikke kartlagt. Det ligger i sørkanten av kaia' },
+      },
+      {
+        title: '4. Annis Hellion',
+        text: 'Bungalowen midt i søkeområdet i Orchard Ave, rett sør for Moses. Bilen står i innkjørselen. Det er en hund der, men ingen vakter. Lek med hunden eller hysj på den, så slutter den å bjeffe. Den enkleste bilen. Ca. $1 400.',
+        loc: { x: -6450, y: 3170, z: 3, precision: 'område', place: 'Orchard Ave, sør for Watkins Auto Parts', note: 'gatenavnet finnes ikke i kartdataene, så punktet er anslått' },
+      },
+      {
+        title: '5. BF Bandito',
+        text: 'Grusveien nordøst i Buckskin-sumpen, sørøst for Port Gellhorn. En gjeng kjører rundt i terrengbiler. Den sølvfargede er målet, skann den med WAiNK så den vises på minikartet. Snakk med eller true sjåføren ut, og hopp inn. Den har bare ett sete, så send partneren bort først. Kompisene hans jager deg og skyter. Ca. $3 350.',
+        loc: { x: -4100, y: 1000, z: 2, precision: 'område', place: 'Buckskin, Kelly County', note: 'guidene oppgir bare området, så kjør rundt og se etter gjengen' },
+      },
+      {
+        title: '6. Declasse Vamos',
+        text: 'Huset i Rockledge Rd øst for Grayson, Lummox County. Bilen står i garasjen øst for huset. Koden til sidedøren er 2727 (den står på skilt inne i tilhengeren). Døren kan ikke brytes opp. Garasjeporten åpnes med knappen til høyre. Lokale skyter mot tilhengeren og mot deg hvis de ser deg, og de kan prøve å sperre veien tilbake. Ca. $4 200. Safen i huset har samme kode.',
+        loc: { x: -3536, y: 7046, z: 2, precision: 'område', place: 'Grayson, Lummox County', note: 'Grayson er ikke kartlagt, så punktet viser bare området' },
+      },
+      {
+        title: '7. Western Nightblade',
+        text: 'Klubbhuset til Final Chapter MC i Birch St, Ambrosia. Den oransje motorsykkelen står i underetasjen i den midterste hallen. Den vanskeligste: de skyter med en gang de ser deg, og mange kommer fra plattformen oppe og rommene langs bakveggen. Ta på skuddsikker vest og ha et langt våpen. Kom fra nord og klatre over gjerdet via den grønne containeren, eller ta stigen ved hovedporten opp på taket og hopp ned gjennom den knuste glassruten. Åpne porten før du kjører ut. Ca. $6 300 til $6 500.',
+        loc: { x: -2750, y: 4300, z: 3, precision: 'område', place: 'Ambrosia', note: 'klubbhuset er ikke kartlagt, så punktet viser bare Ambrosia' },
+      },
+      {
+        title: 'Gaven: Sultan fra Moses',
+        text: 'Vent ca. 10 minutter etter siste levering til Moses sender melding. Sultan-en står i den lille garasjen ved siden av verkstedet hans. Den trengs for 100 %.',
+        loc: { x: -6445, y: 3278, z: 4, precision: 'landemerke', place: 'Watkins Auto Parts, Port Gellhorn', photo: 'L348', photoOf: 'Watkins Auto Parts, Port Gellhorn' },
+      },
+    ],
+  },
+  {
     name: 'Savnede personer (seriemorderen)',
     chapter: '2',
     note: 'Skjult oppdrag som aldri vises på kartet. Det starter med plakatene i resepsjonen på Starlet Motel, og ifølge én guide kommer du ikke inn der etter Checking Out. Start det i kapittel 2, når både Jason og Lucia er spillbare.',
