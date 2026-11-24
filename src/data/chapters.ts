@@ -75,6 +75,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'hey-arnold',
+        choices: [
+          {
+            "question": "Dreper eller sparer du Arnold?",
+            "options": [
+              {
+                "label": "Spar ham",
+                "result": "Kriminalprofilen holder seg ren (Restrained). Ifølge GTABase sender Brian senere en melding og betaler $10 000.",
+                "best": true
+              },
+              {
+                "label": "Drep ham",
+                "result": "Profilen dras mot Hardened/Violent. Brian betaler det samme for oppdraget."
+              }
+            ],
+            "tip": "Profilen påvirker slutten. Lagre manuelt før du velger."
+          }
+        ],
         name: 'Hey Arnold!',
         task: 'Meet Brian',
         character: 'Jason',
@@ -83,6 +100,22 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'island-dreams',
+        choices: [
+          {
+            "question": "Haien angriper Dobbs. Redder du ham?",
+            "options": [
+              {
+                "label": "Harpuner haien to ganger",
+                "result": "Dobbs overlever. Bare sluttscenen endres, men det teller i din favør.",
+                "best": true
+              },
+              {
+                "label": "La være",
+                "result": "Dobbs blir spist."
+              }
+            ]
+          }
+        ],
         name: 'Island Dreams',
         task: 'Work for Kenton',
         character: 'Jason',
@@ -100,6 +133,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'coming-home',
+        choices: [
+          {
+            "question": "Før du henter Lucia: gjør du ærendene (dagligvarer, blomster, halskjede, frisør, klær til Lucia)?",
+            "options": [
+              {
+                "label": "Gjør alle",
+                "result": "Hvert ærend hever forholdet. Alle gir start på nivå 3 av 4. Halskjedet brukes som pant i kapittel 2 og kommer tilbake i Behind on Payments.",
+                "best": true
+              },
+              {
+                "label": "Hopp over noen",
+                "result": "Lavere forhold. Glemmer du klærne, eller mister dem ved arrestasjon, trekker det ned."
+              }
+            ],
+            "tip": "Forholdet avgjør hvilke slutter du kan få, så det lønner seg å ta alt."
+          }
+        ],
         name: 'Coming Home',
         task: "Lucia's Release",
         character: 'Begge',
@@ -142,6 +192,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'day-release',
+        choices: [
+          {
+            "question": "Små valg på yachtfesten",
+            "options": [
+              {
+                "label": "La Lucia sitte på jetskien og hold henne i hånden",
+                "result": "Begge hever forholdet (Nine1Nine og hoppet fra balkongen ned i bassenget).",
+                "best": true
+              },
+              {
+                "label": "Resten",
+                "result": "Håndtrykk, champagne, dop, løpsresultat og kjolevalg betyr ingenting."
+              }
+            ],
+            "tip": "Ta også de gratis solbrillene til Lucia fra paret på midtdekket. De kan gå tapt."
+          }
+        ],
         name: 'Day Release',
         task: 'Meet Mattia & Kat',
         character: 'Begge',
@@ -150,6 +217,22 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'swamped',
+        choices: [
+          {
+            "question": "Forteller du Lucia at Brian skal pensjonere seg?",
+            "options": [
+              {
+                "label": "Fortell henne",
+                "result": "Forholdet går opp.",
+                "best": true
+              },
+              {
+                "label": "Ti stille",
+                "result": "Forholdet går ned når hun finner det ut."
+              }
+            ]
+          }
+        ],
         name: 'Swamped',
         task: 'Meet Brian',
         character: 'Jason',
@@ -292,6 +375,22 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'afternoon-delight',
+        choices: [
+          {
+            "question": "Danser du for å hjelpe til?",
+            "options": [
+              {
+                "label": "Dans",
+                "result": "Roligere rute. Du må kjøpe nye klær etterpå. $10 000 uansett.",
+                "best": true
+              },
+              {
+                "label": "Ikke dans",
+                "result": "Jason skyter i taket, og flukten blir vanskeligere. $10 000 uansett."
+              }
+            ]
+          }
+        ],
         name: 'Afternoon Delight',
         task: "Rob Vicki's Boss",
         character: 'Begge',
@@ -326,6 +425,22 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'dealers-choice',
+        choices: [
+          {
+            "question": "Pure eller Cut?",
+            "options": [
+              {
+                "label": "Pure",
+                "result": "Handelen går glatt.",
+                "best": true
+              },
+              {
+                "label": "Cut",
+                "result": "Kjøperne merker det. «My Bad, Half Price?» gir mindre penger. «Take It or Leave It» gir skuddveksling."
+              }
+            ]
+          }
+        ],
         name: "Dealer's Choice",
         task: "Go See Dre'Quan",
         character: 'Jason',
@@ -333,6 +448,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'meet-the-heders',
+        choices: [
+          {
+            "question": "Hva bestiller du til Lucia?",
+            "options": [
+              {
+                "label": "Surf and Turf",
+                "result": "Forholdet går opp.",
+                "best": true
+              },
+              {
+                "label": "Noe annet",
+                "result": "Ingen bonus."
+              }
+            ],
+            "confidence": "middels"
+          }
+        ],
         name: 'Meet the Heders',
         task: 'Meet Brian & Lori',
         character: 'Begge',
@@ -340,6 +472,52 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'dubious-provenance',
+        choices: [
+          {
+            "question": "Gir du statuen til Halifax?",
+            "options": [
+              {
+                "label": "Gi den",
+                "result": "Du får klokken Crowex Octane «Bobby Ambrose». Den tilbys bare denne ene gangen.",
+                "best": true
+              },
+              {
+                "label": "Nekt",
+                "result": "Du må ringe ham senere, og del 2 og 3 forsvinner når kapittel 3 er over."
+              }
+            ]
+          },
+          {
+            "question": "Stoler du på Halifax på Sweet Bay Inn?",
+            "options": [
+              {
+                "label": "Stol på ham",
+                "result": "VGC og PowerPyx sier det trengs for del 3.",
+                "best": true
+              },
+              {
+                "label": "Ikke stol på ham",
+                "result": "GTABase sier det gir samme jakt. Guidene er uenige."
+              }
+            ],
+            "confidence": "middels"
+          },
+          {
+            "question": "Skyter eller sparer du Halifax til slutt?",
+            "options": [
+              {
+                "label": "Spar ham",
+                "result": "Ren profil. VGC sier bare dette gir byttet i lageret: ca. $2 500 og en '32 Hustler.",
+                "best": true
+              },
+              {
+                "label": "Skyt ham",
+                "result": "Profilen trekkes ned, og politiet varsles."
+              }
+            ],
+            "tip": "Guidene er uenige om byttet avhenger av valget. Spar ham for sikkerhets skyld."
+          }
+        ],
         name: 'Dubious Provenance',
         task: 'Visit the Antique Store',
         summary: 'En tvilsom jobb i en antikvitetsbutikk.',
@@ -437,6 +615,26 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'ride-or-die',
+        choices: [
+          {
+            "question": "Joggesko til utestedet",
+            "options": [
+              {
+                "label": "Pruting og basketball",
+                "result": "Prut, følg selgeren ut og treff ham med basketballen. Da får du skoene gratis.",
+                "best": true
+              },
+              {
+                "label": "Betal $1 580",
+                "result": "Enkelt, men dyrt."
+              },
+              {
+                "label": "Ingen sko",
+                "result": "Bestikk dørvakten med $250."
+              }
+            ]
+          }
+        ],
         name: 'Ride Or Die',
         task: "Meet Dre'Quan",
         character: 'Jason',
@@ -450,6 +648,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'the-missing-link',
+        choices: [
+          {
+            "question": "Avhøret av Monty",
+            "options": [
+              {
+                "label": "Kom gjennom alle spørsmålene uten å drukne ham",
+                "result": "Gir poeng til Professional-profil.",
+                "best": true
+              },
+              {
+                "label": "Sett ham på land eller slipp ham til alligatoren",
+                "result": "Ingen kjent konsekvens."
+              }
+            ],
+            "tip": "Ta Montys 1992-pistol i fotorommet. Den finnes bare her."
+          }
+        ],
         name: 'The Missing Link',
         task: 'Meet Andrea',
         character: 'Lucia',
@@ -457,6 +672,22 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'safe-word',
+        choices: [
+          {
+            "question": "Blir du med på filminnspillingen?",
+            "options": [
+              {
+                "label": "Nei takk",
+                "result": "Ingen konsekvens.",
+                "best": true
+              },
+              {
+                "label": "Bli med",
+                "result": "Lucia blir sur, og forholdet går ned."
+              }
+            ]
+          }
+        ],
         name: 'Safe Word',
         task: 'Steal the Practice Safe',
         summary: 'Stjel en øvingssafe og lær hvordan man åpner den.',
@@ -470,6 +701,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'bricked-up',
+        choices: [
+          {
+            "question": "Tar du med deg mursteinene til Boobie?",
+            "options": [
+              {
+                "label": "Ta dem med",
+                "result": "Du får $3 500.",
+                "best": true
+              },
+              {
+                "label": "Dra uten",
+                "result": "Du mister $3 500."
+              }
+            ],
+            "confidence": "middels"
+          }
+        ],
         name: 'Bricked Up',
         task: 'Return to the Apartment',
         character: 'Begge',
@@ -477,6 +725,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'hidden-charges',
+        choices: [
+          {
+            "question": "Planter dere ladningene sammen?",
+            "options": [
+              {
+                "label": "Sammen",
+                "result": "Forholdet går opp, og du får mer tid i The Cartel Heist.",
+                "best": true
+              },
+              {
+                "label": "Hver for dere",
+                "result": "Ingen bonus."
+              }
+            ],
+            "confidence": "middels"
+          }
+        ],
         name: 'Hidden Charges',
         task: 'Prepping the Explosives',
         summary: 'Møt gjengen og gjør klar sprengstoffet.',
@@ -695,6 +960,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'vc-baby',
+        choices: [
+          {
+            "question": "Mattia ber om hjelp. Hjelper du ham?",
+            "options": [
+              {
+                "label": "Help Him",
+                "result": "Du kjører ham til sykehuset i tide, og Jason og Mattia blir venner igjen.",
+                "best": true
+              },
+              {
+                "label": "Refuse",
+                "result": "Mattia hopper fra balkongen, og Dardan kjører ham i stedet."
+              }
+            ],
+            "tip": "Bare sluttscenen endres. Ingen belønning."
+          }
+        ],
         name: 'VC Baby',
         task: 'Talk to Mattia',
         summary: 'Mattia trenger hjelp.',
@@ -712,6 +994,38 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'protective-custody',
+        choices: [
+          {
+            "question": "Før kontoret til Abe: fortsetter du til finalen?",
+            "options": [
+              {
+                "label": "Postpone",
+                "result": "Du blir i fri roaming og kan gjøre ferdig resten.",
+                "best": true
+              },
+              {
+                "label": "Fortsett",
+                "result": "Protective Custody og The End of the Road spilles i ett. Lagre manuelt før."
+              }
+            ]
+          },
+          {
+            "question": "Méndez gir seg. Skyter du, eller venter du på avtalen?",
+            "options": [
+              {
+                "label": "Shoot",
+                "result": "Kommer først og fører videre til The End of the Road og de beste sluttene.",
+                "best": true
+              },
+              {
+                "label": "Vent ca. ett minutt: Take Deal",
+                "result": "Er dere fortsatt sammen, lurer Méndez dere: skjult dårlig slutt med hodeskaller i sumpen. Har dere slått opp, kan Jason rømme med Rocco (krever Professional-profiler og minst $500 000 spart)."
+              }
+            ],
+            "tip": "Er forholdet dårlig, kan Jason og Lucia slå opp i starten av oppdraget. Da ender historien i Giorgios tårn og når aldri broen.",
+            "confidence": "middels"
+          }
+        ],
         name: 'Protective Custody',
         task: 'Meet with Abe',
         summary: 'Siste oppdrag før avslutningen.',
@@ -719,6 +1033,23 @@ export const chapters: Chapter[] = [
       },
       {
         id: 'the-end-of-the-road',
+        choices: [
+          {
+            "question": "På broen: SWIM FOR IT eller NO SURRENDER?",
+            "options": [
+              {
+                "label": "Swim for It",
+                "result": "Beste slutt («Two years later») krever forholdet på Hot Together (4/4), begge profiler Professional og $2 000 000 i Family Savings. Da kjøper pengene Jason fri. Med ren profil og under $2 000 000 blir Jason arrestert og Lucia slipper unna. Med Violent-, Psycho- eller Irredeemable-profil dreper politiet begge.",
+                "best": true
+              },
+              {
+                "label": "No Surrender",
+                "result": "Begge dør. Med $2 000 000 spart får du en epilog der pengene går til Tomás."
+              }
+            ],
+            "tip": "Etter rulleteksten kommer du tilbake til før finalen, så du kan prøve alle sluttene. Penger i Family Savings kan ikke tas ut, og Irredeemable er permanent, så lagre før du setter inn. Guidene er uenige om hvor mange slutter det finnes (2, 8 eller 14)."
+          }
+        ],
         name: 'The End of the Road',
         character: 'Begge',
         tag: 'Finale',

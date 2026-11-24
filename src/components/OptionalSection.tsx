@@ -65,7 +65,7 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
                       <ChoiceBox choices={o.choices} />
                     </div>
                   )}
-                  {o.stops && <StopsGuide stops={o.stops} />}
+                  {o.stops && <StopsGuide stops={o.stops} progressKey={`stopp:${o.name}`} done={done} onToggle={onToggle} />}
                   {o.location && !o.stops && (
                     <div className="mt-4">
                       <MapCrop loc={o.location} />

@@ -66,6 +66,22 @@ export const tips: Tip[] = [
 export const optionalMissions: OptionalMission[] = [
   {
     name: "Get Shirley's Rum",
+    choices: [
+      {
+        "question": "Spør du ekspeditøren om fuglelydene?",
+        "options": [
+          {
+            "label": "Spør",
+            "result": "Låser opp den illegale operasjonen Exotic Animals Front. Gir Focus og Professional-poeng.",
+            "best": true
+          },
+          {
+            "label": "La være",
+            "result": "Går glipp av operasjonen."
+          }
+        ]
+      }
+    ],
     chapter: '1',
     character: 'Jason',
     note: 'For naboen Shirley. Borte for godt når Tourist Trap starter.',
@@ -162,6 +178,23 @@ export const optionalMissions: OptionalMission[] = [
   },
   {
     name: 'Clock Out',
+    choices: [
+      {
+        "question": "Svarer du når Lucia ringer?",
+        "options": [
+          {
+            "label": "Svar",
+            "result": "Oppdraget dukker opp.",
+            "best": true
+          },
+          {
+            "label": "Avvis",
+            "result": "Oppdraget er borte."
+          }
+        ],
+        "confidence": "middels"
+      }
+    ],
     chapter: '1',
     character: 'Jason',
     note: 'Lucia ringer dagen etter Day Release. Du må være på stedet før kl. 16.00, ellers er det borte.',
@@ -330,7 +363,7 @@ export const optionalMissions: OptionalMission[] = [
             result: 'Partneren skyter ham med en gang i lageret. Ingen gruve, ingen våpen, og som regel heller ingen briller.',
           },
         ],
-        tip: 'Gå inn som Lucia, så er det Jason som utforsker gruven. To guider sier at bare Jason kan plukke opp brillene. Ikke ring noen før du går inn, og lagre manuelt først. Valget kan ikke gjøres om.',
+        tip: 'Gå inn som Lucia, så er det Jason som utforsker gruven. To guider sier at bare Jason kan plukke opp brillene. Ikke ring noen før du går inn, og lagre manuelt først. Valget kan ikke gjøres om. NB: PowerPyx beskriver oppdraget som lineært, uten dette valget, så det er ikke helt sikkert.',
       },
     ],
     stops: [
@@ -379,6 +412,23 @@ export const optionalMissions: OptionalMission[] = [
   },
   {
     name: "Yasmani's Jewelry Jobs",
+    choices: [
+      {
+        "question": "Rolig eller knuse montrene?",
+        "options": [
+          {
+            "label": "Gå rolig ut",
+            "result": "Grunnbetalingen er $20 000 og Snap Gun uansett.",
+            "best": true
+          },
+          {
+            "label": "Knus montrene",
+            "result": "Mer bytte, men alarmen går."
+          }
+        ],
+        "tip": "Ødelegg overvåkingsopptakene i hver butikk."
+      }
+    ],
     chapter: '3',
     note: "Tre smykkeran for Yasmani etter Boobie Time. Til sammen ca. $20 000 og Snap Gun.",
     stops: [
@@ -500,6 +550,23 @@ export const optionalMissions: OptionalMission[] = [
   },
   {
     name: 'Bad Driver!',
+    choices: [
+      {
+        "question": "Dreper eller sparer du Felipe?",
+        "options": [
+          {
+            "label": "Spar ham",
+            "result": "Han tar kontakt senere og starter Collect Felipe's Gift: bilen hans. Ingen guide navngir modellen.",
+            "best": true
+          },
+          {
+            "label": "Drep ham",
+            "result": "Andrea betaler $20 000."
+          }
+        ],
+        "tip": "Vil du ha bilen, spar ham. Vil du ha pengene, drep ham. Lagre før."
+      }
+    ],
     chapter: '4',
     note: 'Dukker opp etter Party Hard. Borte for godt når Power Play starter. Spar Felipe for å få bilen hans.',
     missable: true,
@@ -532,6 +599,39 @@ export const optionalMissions: OptionalMission[] = [
   },
   {
     name: 'This Is a Free Call From...',
+    choices: [
+      {
+        "question": "Shayna trekker pistol mot Raph",
+        "options": [
+          {
+            "label": "Snakk henne ned",
+            "result": "Anbefalt.",
+            "best": true
+          },
+          {
+            "label": "Be henne skyte",
+            "result": "Ingen fordel nevnt."
+          }
+        ],
+        "confidence": "middels"
+      },
+      {
+        "question": "Gjengen dukker opp",
+        "options": [
+          {
+            "label": "Snakk dem ned",
+            "result": "De forlater ca. $1 200 i dop. Shayna deler bagen med deg (ca. $5 000), og du kan plyndre huset for ca. $1 500.",
+            "best": true
+          },
+          {
+            "label": "Skyt alle tre",
+            "result": "Skuddveksling."
+          }
+        ],
+        "tip": "Opptil ca. $6 500 totalt.",
+        "confidence": "middels"
+      }
+    ],
     chapter: '4',
     character: 'Lucia',
     note: 'Hent Shayna. Bytt til Lucia og ta oppdraget med en gang timeglasset dukker opp.',

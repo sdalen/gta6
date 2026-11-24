@@ -130,7 +130,19 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
                 {mission.warning}
               </Callout>
             )}
-            {mission.choices && <ChoiceBox choices={mission.choices} />}
+            {mission.choices &&
+              (spoilers ? (
+                <ChoiceBox choices={mission.choices} />
+              ) : (
+                <details className="group/c">
+                  <summary className="cursor-pointer list-none text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    {mission.choices.length === 1 ? 'Vis valget i oppdraget' : `Vis de ${mission.choices.length} valgene i oppdraget`} (kan avsløre handlingen)
+                  </summary>
+                  <div className="mt-3">
+                    <ChoiceBox choices={mission.choices} />
+                  </div>
+                </details>
+              ))}
 
             {spoilers ? (
               <>
