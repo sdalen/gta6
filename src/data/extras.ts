@@ -123,6 +123,56 @@ export const optionalMissions: OptionalMission[] = [
     note: 'Valgfri jobb for Billy.',
   },
   {
+    name: 'Savnede personer (seriemorderen)',
+    chapter: '2',
+    note: 'Skjult oppdrag som aldri vises på kartet. Det starter med plakatene i resepsjonen på Starlet Motel, og ifølge én guide kommer du ikke inn der etter Checking Out. Start det i kapittel 2, når både Jason og Lucia er spillbare.',
+    missable: true,
+    before: 'checking-out',
+    steps: [
+      'Ta stoppene under i rekkefølge. Trykk på et stopp for å se det på kartet.',
+      'Fotografer alle tre skapene før du leter etter likene.',
+      'Meld fra om hvert lik (trekant/Y) og vent til samtalen med tipstelefonen er ferdig. Uten melding går ikke oppdraget videre.',
+      'Lagre manuelt før møtet med Alvan West. Valget mellom å gå alene eller sammen kan ikke gjøres om.',
+      'Belønning: ingen dusør. Går du alene, får du tre sjeldne våpen i gruven (Island Poacher FF-50, Mahi Nipper .38 og Mason & Keen Longshot) og brillene hans. Går dere sammen, blir han skutt med en gang, og du går glipp av gruven, våpnene og trolig brillene.',
+      'Kommer ikke invitasjonen tilbake til lageret? Sjekk at alle tre bildene ligger i Gallery → Creepy Photos, at alle tre likene er meldt, og la det gå litt tid i spillet.',
+    ],
+    stops: [
+      {
+        title: 'Plakatene på Starlet Motel',
+        text: 'Gå inn i resepsjonen og hold L2/LT på en av plakatene om savnede personer ved pulten til Linda. Kelly County Tip Line havner i kontaktene dine.',
+        loc: { x: -5355, y: 3462, z: 5, precision: 'landemerke', place: 'Starlet Motel', photo: 'L304', photoOf: 'Starlet Motel' },
+      },
+      {
+        title: 'Lageret overfor Moses',
+        text: 'Langt, nedslitt bygg med buet blikktak rett over veien for garasjen til Moses i Port Gellhorn. Rulleporten går ikke opp. Gå inn gjennom en liten åpning i veggen på høyre side, delvis skjult av planter (trekant/Y). Følg gangen gjennom det røde rommet og plastforhengene, og fotografer de tre bildene i skapene.',
+      },
+      {
+        title: 'Lik 1: den rosa bilen på skraphandelen',
+        text: 'Øst for Pay \'n\' Spray og vest for Delights. Se etter en knallrosa bil med skiltet PRTYGRL og et annet vrak oppå. Åpne bagasjerommet og meld fra.',
+        loc: { x: -6410, y: 3440, z: 5, precision: 'område', place: 'mellom Pay \'n\' Spray og Delights', note: 'skraphandelen er ikke kartlagt, så punktet er anslått mellom de to landemerkene' },
+      },
+      {
+        title: 'Lik 2: tilhengeren under vanntårnet',
+        text: 'Nord i Port Gellhorn. Finn det store, rustne vanntårnet og den forlatte campingplassen under det. Gå inn i den lyseblå tilhengeren med åpen dør og undersøk den løse gulvplanken til høyre.',
+        loc: { x: -6781, y: 3959, z: 5, precision: 'landemerke', place: 'Trailer Park, Port Gellhorn', photo: 'L1062', photoOf: 'Trailer Park, Port Gellhorn' },
+      },
+      {
+        title: 'Lik 3: bilen i sumpen',
+        text: 'Vest for Port Gellhorn mot Wild Hog Point, i sumpen vest for Moses. Finn en liten innsjø med et skadet, skrått tre ved bredden. Den rustne bilen ligger halvveis under vann ved roten av treet. Åpne døren. Det er alligatorer her, så dra på dagtid. Flyplassen over vannet er feil sted.',
+        loc: { x: -7250, y: 3350, z: 4, precision: 'område', place: 'sumpen mot Wild Hog Point', note: 'guidene oppgir bare retningen, så let rundt punktet' },
+      },
+      {
+        title: 'Møtet i lageret',
+        text: 'Etter tredje lik ringer Alvan West og ber deg komme tilbake til lageret. Han viser deg til det siste skapet, som har et bilde av Jason og Lucia, og angriper. Kommer du alene, blir du dopet ned og fraktet til gruven, og du spiller videre som den andre.',
+      },
+      {
+        title: 'Gruven',
+        text: 'Nord i Leonida ved Dawson Dam og Mount Kalaga. Du får markøren på telefonen. Bruk lommelykt og kubein, finn kammeret med Focus og frigjør partneren din. Slå ham tilbake når han angriper fra mørket, og ta brillene fra liket etterpå.',
+        loc: { x: -4115, y: 6943, z: 4, precision: 'område', place: 'MacAlister Gold Mine (trolig)', note: 'guidene navngir ikke gruven. Dette er nærmeste gruve i kartdataene' },
+      },
+    ],
+  },
+  {
     name: 'Race Against Yago',
     chapter: '3',
     character: 'Jason',

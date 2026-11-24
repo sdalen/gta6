@@ -3,6 +3,7 @@ import { collectibles, itemId } from './collectibles'
 import { optionalMissions } from './extras'
 import type { Mission, OptionalMission } from './types'
 import { href } from '../hooks/useRoute'
+import { missionChains } from './chains'
 
 /** Ting som blir utilgjengelige når et bestemt hovedoppdrag starter. */
 export interface Reminder {
@@ -14,6 +15,8 @@ export interface Reminder {
   to?: string
   /** Nøkkel i fremdriften, så tingen kan hukes av. */
   doneKey: string
+  /** Gjelder et senere oppdrag i samme kjede (navn), men må gjøres før kjeden starter. */
+  forMission?: string
 }
 
 const missionInfo = new Map<string, { mission: Mission; chapter: string; order: number }>()
@@ -94,6 +97,16 @@ for (const o of optionalMissions) {
   if (!o.before) continue
   const key = `valgfritt:${o.name}`
   add(o.before, { key, label: o.name, detail: o.note, kind: 'Valgfritt oppdrag', to: href('valgfritt'), doneKey: key })
+}
+
+// Oppdrag som går rett over i hverandre: frister for de senere oppdragene gjelder fra første oppdrag i kjeden.
+for (const chain of missionChains) {
+  const [head, ...rest] = chain.missions
+  if (!missionInfo.has(head)) continue
+  for (const id of rest) {
+    const info = missionInfo.get(id)
+    for (const r of byMission.get(id) ?? []) add(head, { ...r, key: `${r.key}@${head}`, forMission: info?.mission.name ?? id })
+  }
 }
 
 export function remindersFor(missionId: string): Reminder[] {

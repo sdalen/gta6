@@ -1,7 +1,42 @@
 import type { Chapter } from '../data/types'
 import { missionMatches } from '../data/missionIndex'
-import { MissionCard } from './MissionCard'
+import { MissionCard, ReminderList } from './MissionCard'
+import { remindersFor, type Reminder } from '../data/reminders'
 import { PageHeader, ProgressBar } from './ui'
+
+/** Alt med frist i kapittelet, samlet øverst og gruppert etter oppdraget det må gjøres før. */
+function ChapterTodo({ chapter, done, onToggle }: { chapter: Chapter; done: Set<string>; onToggle: (id: string) => void }) {
+  const seen = new Set<string>()
+  const groups: { mission: string; items: Reminder[] }[] = []
+  for (const m of chapter.missions) {
+    if (done.has(m.id)) continue
+    const items = remindersFor(m.id).filter((r) => !seen.has(r.doneKey))
+    items.forEach((r) => seen.add(r.doneKey))
+    if (items.length) groups.push({ mission: m.name, items })
+  }
+  const all = groups.flatMap((g) => g.items)
+  if (!all.length) return null
+  const open = all.filter((r) => !done.has(r.doneKey)).length
+
+  return (
+    <details open={open > 0} className="group mb-8 rounded-lg bg-surface p-5 ring-1 ring-line">
+      <summary className="flex cursor-pointer list-none items-baseline justify-between gap-4">
+        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-warn">Gjør før kapittel {chapter.number} er ferdig</span>
+        <span className={`text-sm tabular-nums ${open ? 'text-muted' : 'font-medium text-ok'}`}>
+          {open ? `${open} igjen av ${all.length}` : 'Alt er gjort'}
+        </span>
+      </summary>
+      <div className="mt-4 space-y-4 text-sm leading-relaxed text-ink-soft">
+        {groups.map((g) => (
+          <div key={g.mission}>
+            <p className="font-medium text-ink">Før {g.mission}</p>
+            <ReminderList items={g.items} progress={done} onToggle={onToggle} />
+          </div>
+        ))}
+      </div>
+    </details>
+  )
+}
 
 interface Props {
   chapter: Chapter
@@ -42,6 +77,7 @@ export function ChapterSection({ chapter, query, done, spoilers, onToggle, start
               {completed} av {total}
             </span>
           </div>
+          <ChapterTodo chapter={chapter} done={done} onToggle={onToggle} />
         </>
       )}
 

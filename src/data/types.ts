@@ -40,6 +40,17 @@ export interface OptionalMission {
   steps?: string[]
   /** Hvor oppdraget foregår, vist som kart. */
   location?: MapLocation
+  /** Flere steder i rekkefølge, vist som nummererte punkter på ett kart med bilde. */
+  stops?: Stop[]
+}
+
+export interface Stop {
+  /** Kort navn, f.eks. «Lik 1: skraphandelen». */
+  title: string
+  /** Hvordan du finner akkurat dette stedet. */
+  text: string
+  /** Mangler når ingen kilde har et sted som kan plasseres på kartet. */
+  loc?: MapLocation
 }
 
 export interface Questline {

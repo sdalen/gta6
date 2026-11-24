@@ -1,5 +1,6 @@
 import type { Character, Mission } from '../data/types'
 import { Callout, Checkbox } from './ui'
+import { chainFor, chainName } from '../data/chains'
 import { duringFor, remindersFor, unlockedBy, type Reminder } from '../data/reminders'
 import { Icon } from './Icon'
 
@@ -9,7 +10,7 @@ const charDot: Record<Character, string> = {
   Begge: 'bg-accent',
 }
 
-function ReminderList({ items, progress, onToggle }: { items: Reminder[]; progress?: Set<string>; onToggle?: (id: string) => void }) {
+export function ReminderList({ items, progress, onToggle }: { items: Reminder[]; progress?: Set<string>; onToggle?: (id: string) => void }) {
   return (
     <ul className="mt-1.5 space-y-1">
       {items.map((r) => {
@@ -46,7 +47,10 @@ function ReminderList({ items, progress, onToggle }: { items: Reminder[]; progre
             ) : (
               <span className={ok ? 'text-muted line-through' : ''}>{r.label}</span>
             )}
-            <span className="text-xs text-faint">{r.kind}</span>
+            <span className="text-xs text-faint">
+              {r.kind}
+              {r.forMission && ` · før ${r.forMission}`}
+            </span>
           </li>
         )
       })}
@@ -69,6 +73,7 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
   const reminders = remindersFor(mission.id)
   const during = duringFor(mission.id)
   const unlocks = unlockedBy(mission.id)
+  const chain = chainFor(mission.id)
   return (
     <li id={mission.id} className="scroll-mt-24 py-6">
       <div className="flex items-start gap-4">
@@ -96,9 +101,19 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
             )}
             {mission.task && <span>«{mission.task}»</span>}
             {mission.tag && <span className="font-medium text-gold">{mission.tag}</span>}
+            {chain && chain.pos > 0 && (
+              <span className="font-medium text-accent">Starter rett etter {chainName(chain.chain.missions[chain.pos - 1])}</span>
+            )}
           </div>
 
           <div className="mt-4 space-y-4">
+            {chain && chain.pos === 0 && (
+              <Callout tone={chain.chain.lockIn ? 'warn' : 'accent'} title={chain.chain.lockIn ? 'Ingen vei tilbake:' : 'Går rett over i neste:'}>
+                <span className="font-medium text-ink">{chain.chain.missions.map(chainName).join(' → ')}</span>. Du får ikke gjort noe mellom
+                oppdragene, så alt under «Husk før du starter» gjelder fra nå. {chain.chain.note}
+                {chain.chain.confidence === 'middels' && <span className="text-faint"> Beskrevet av én guide.</span>}
+              </Callout>
+            )}
             {reminders.length > 0 && (
               <Callout tone="warn" title="Husk før du starter:">
                 <ReminderList items={reminders} progress={progress} onToggle={onToggleItem} />

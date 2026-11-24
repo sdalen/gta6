@@ -53,7 +53,14 @@ function TileLayer({ level, z, cx, cy, w }: { level: number; z: number; cx: numb
   return <>{imgs}</>
 }
 
-export function MapCrop({ loc }: { loc: MapLocation }) {
+/** Andre punkter som vises nummerert på samme kart (f.eks. alle stoppene i et oppdrag). */
+export interface MapPoint {
+  x: number
+  y: number
+  n: number
+}
+
+export function MapCrop({ loc, points }: { loc: MapLocation; points?: MapPoint[] }) {
   const ref = useRef<HTMLDivElement>(null)
   const [w, setW] = useState(0)
   const [view, setView] = useState({ z: loc.z, cx: loc.x, cy: loc.y })
@@ -135,6 +142,20 @@ export function MapCrop({ loc }: { loc: MapLocation }) {
             <TileLayer level={baseLevel} z={view.z} cx={view.cx} cy={view.cy} w={width} />
             {view.z > FULL_Z && <TileLayer level={FULL_Z + 1} z={view.z} cx={view.cx} cy={view.cy} w={width} />}
             {view.z > FULL_Z + 1 && <TileLayer level={MAX_Z} z={view.z} cx={view.cx} cy={view.cy} w={width} />}
+            {points?.map((p) => {
+              const pp = toPx(p.x, p.y, view.z)
+              const px = pp.x - center.x + width / 2
+              const py = pp.y - center.y + HEIGHT / 2
+              return (
+                <span
+                  key={p.n}
+                  className="pointer-events-none absolute grid size-5 place-items-center rounded-full border-2 border-white bg-zinc-950/85 text-[10px] font-bold text-white shadow-md"
+                  style={{ left: px - 10, top: py - 10 }}
+                >
+                  {p.n}
+                </span>
+              )
+            })}
             <span
               className="pointer-events-none absolute rounded-full border-2 border-accent bg-accent/15"
               style={{ width: ring * 2, height: ring * 2, left: mx - ring, top: my - ring }}
