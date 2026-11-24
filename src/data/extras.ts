@@ -404,8 +404,8 @@ export const optionalMissions: OptionalMission[] = [
       'Fotografer alle tre skapene før du leter etter likene.',
       'Meld fra om hvert lik (trekant/Y) og vent til samtalen med tipstelefonen er ferdig. Uten melding går ikke oppdraget videre.',
       'Lagre manuelt før møtet med Alvan West. Valget mellom å gå alene eller sammen kan ikke gjøres om (se valget under).',
-      'Belønning: ingen dusør. Våpnene og brillene får du bare hvis du går alene.',
-      'Viktig i gruven: plukk opp de tre våpnene i gangene før du frigjør partneren. Etterpå starter jakten på Alvan West. Ingen guide bekrefter at du kan gå tilbake og hente dem når han er død og du er ute av gruven, så regn med at det er for sent. Den eneste sikre veien tilbake er en manuell lagring fra før møtet.',
+      'Belønning: ingen dusør. Brillene til Alvan West får du bare hvis du går alene.',
+      'Våpnene: flere guider sier at Island Poacher FF-50, Mahi Nipper .38 og Mason & Keen Longshot ligger i gruven. Kartet til GTABase har dem et annet sted: Mahi Nipper .38 selges i Ammu-Nation på Key Lento, og Island Poacher FF-50 tar du fra jegeren etter jaktleken på Hyde Island. Gikk du glipp av dem i gruven, kan du altså trolig skaffe dem der. Longshot-hagla er ikke kartlagt.',
       'Kommer ikke invitasjonen tilbake til lageret? Sjekk at alle tre bildene ligger i Gallery → Creepy Photos, at alle tre likene er meldt, og la det gå litt tid i spillet.',
     ],
     choices: [
@@ -414,12 +414,12 @@ export const optionalMissions: OptionalMission[] = [
         options: [
           {
             label: 'Gå alene',
-            result: 'Han doper deg ned og frakter deg til gruven, og du redder deg som den andre. I gangene i gruven ligger tre sjeldne våpen (Island Poacher FF-50, Mahi Nipper .38, Mason & Keen Longshot). Du må plukke dem opp selv, du får dem ikke automatisk. Brillene tar du fra liket hans.',
+            result: 'Han doper deg ned og frakter deg til gruven, og du redder deg som den andre. Brillene tar du fra liket hans. Flere guider sier også at det ligger tre sjeldne våpen i gangene, men to av dem finnes andre steder også (se punktet om våpnene over).',
             best: true,
           },
           {
             label: 'Ta med partneren',
-            result: 'Partneren skyter ham med en gang i lageret. Ingen gruve, ingen våpen, og som regel heller ingen briller.',
+            result: 'Partneren skyter ham med en gang i lageret. Ingen gruve og som regel heller ingen briller.',
           },
         ],
         tip: 'Gå inn som Lucia, så er det Jason som utforsker gruven. To guider sier at bare Jason kan plukke opp brillene. Ikke ring noen før du går inn, og lagre manuelt først. Valget kan ikke gjøres om. NB: PowerPyx beskriver oppdraget som lineært, uten dette valget, så det er ikke helt sikkert.',
@@ -458,8 +458,8 @@ export const optionalMissions: OptionalMission[] = [
       },
       {
         title: 'Gruven',
-        text: 'Nord i Leonida, øst for Dawson Dam og sør for hyttene ved Lake Tallaloko. Du får markøren på telefonen. Bruk lommelykt og kubein. Let gjennom alle gangene og plukk opp våpnene før du frigjør partneren din, for etterpå starter jakten på Alvan West. Ingen guide sier om du kan gå tilbake og hente dem senere. Slå ham tilbake når han angriper fra mørket, og ta brillene fra liket etterpå.',
-        loc: { x: -1997, y: 6691, z: 4, precision: 'landemerke', place: 'Gruven øst for Dawson Dam', note: 'ett innsendt punkt på GTABase-kartet, med bilde som passer. Ikke MacAlister Gold Mine' },
+        text: 'Ved Kalaga Reservoir i Lummox County, like nord-nordvest for Dawson Dam. Oppdraget heter «Return to the Trophy Room» i spillet. Følg markøren til bilen ved inngangen til gruven. Du får markøren på telefonen. Bruk lommelykt og kubein. Let gjennom gangene og plukk opp det du finner før du frigjør partneren din, for etterpå starter jakten på Alvan West. Slå ham tilbake når han angriper fra mørket, og ta brillene fra liket etterpå.',
+        loc: { x: -3080, y: 7060, z: 5, precision: 'område', place: 'Dagbruddet nord for Kalaga Reservoir og Dawson Dam', note: 'guidene sier bare «ved Kalaga Reservoir, nord-nordvest for Dawson Dam». Punktet er anslått ved dagbruddet der, så let rundt det' },
       },
     ],
   },
