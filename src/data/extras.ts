@@ -405,6 +405,7 @@ export const optionalMissions: OptionalMission[] = [
       'Meld fra om hvert lik (trekant/Y) og vent til samtalen med tipstelefonen er ferdig. Uten melding går ikke oppdraget videre.',
       'Lagre manuelt før møtet med Alvan West. Valget mellom å gå alene eller sammen kan ikke gjøres om (se valget under).',
       'Belønning: ingen dusør. Våpnene og brillene får du bare hvis du går alene.',
+      'Viktig i gruven: plukk opp de tre våpnene i gangene før du frigjør partneren. Etterpå starter jakten på Alvan West. Ingen guide bekrefter at du kan gå tilbake og hente dem når han er død og du er ute av gruven, så regn med at det er for sent. Den eneste sikre veien tilbake er en manuell lagring fra før møtet.',
       'Kommer ikke invitasjonen tilbake til lageret? Sjekk at alle tre bildene ligger i Gallery → Creepy Photos, at alle tre likene er meldt, og la det gå litt tid i spillet.',
     ],
     choices: [
@@ -413,7 +414,7 @@ export const optionalMissions: OptionalMission[] = [
         options: [
           {
             label: 'Gå alene',
-            result: 'Han doper deg ned og frakter deg til gruven, og du redder deg som den andre. Du får tre sjeldne våpen (Island Poacher FF-50, Mahi Nipper .38, Mason & Keen Longshot) og brillene hans.',
+            result: 'Han doper deg ned og frakter deg til gruven, og du redder deg som den andre. I gangene i gruven ligger tre sjeldne våpen (Island Poacher FF-50, Mahi Nipper .38, Mason & Keen Longshot). Du må plukke dem opp selv, du får dem ikke automatisk. Brillene tar du fra liket hans.',
             best: true,
           },
           {
@@ -457,7 +458,7 @@ export const optionalMissions: OptionalMission[] = [
       },
       {
         title: 'Gruven',
-        text: 'Nord i Leonida, øst for Dawson Dam og sør for hyttene ved Lake Tallaloko. Du får markøren på telefonen. Bruk lommelykt og kubein, finn kammeret med Focus og frigjør partneren din. Slå ham tilbake når han angriper fra mørket, og ta brillene fra liket etterpå.',
+        text: 'Nord i Leonida, øst for Dawson Dam og sør for hyttene ved Lake Tallaloko. Du får markøren på telefonen. Bruk lommelykt og kubein. Let gjennom alle gangene og plukk opp våpnene før du frigjør partneren din, for etterpå starter jakten på Alvan West. Ingen guide sier om du kan gå tilbake og hente dem senere. Slå ham tilbake når han angriper fra mørket, og ta brillene fra liket etterpå.',
         loc: { x: -1997, y: 6691, z: 4, precision: 'landemerke', place: 'Gruven øst for Dawson Dam', note: 'ett innsendt punkt på GTABase-kartet, med bilde som passer. Ikke MacAlister Gold Mine' },
       },
     ],
