@@ -71,6 +71,46 @@ export const optionalMissions: OptionalMission[] = [
     note: 'For naboen Shirley. Borte for godt når Tourist Trap starter.',
     missable: true,
     before: 'tourist-trap',
+    stops: [
+      {
+        "title": "Shirley",
+        "text": "Naboen til Jason roper på deg utenfor huset etter Unwanted Attention, eller ringer deg.",
+        "loc": {
+          "x": -2354,
+          "y": -5532,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Jason's House, Key Lento",
+          "photo": "L266",
+          "photoOf": "Jason's House, Key Lento"
+        }
+      },
+      {
+        "title": "Three Sheets Liquor",
+        "text": "Sør for huset, fortsatt på Key Lento (lilla flaskeikon). Spør ekspeditøren etter Shirleys rom og ta flasken fra disken. Spør du om fuglelydene, får du også Exotic Animals Front bak butikken.",
+        "loc": {
+          "x": -2300,
+          "y": -5700,
+          "z": 4,
+          "precision": "område",
+          "place": "sør for huset til Jason",
+          "note": "butikken er ikke kartlagt, men har eget ikon på kartet i spillet"
+        }
+      },
+      {
+        "title": "Tilbake til Shirley",
+        "text": "Gi henne flasken.",
+        "loc": {
+          "x": -2354,
+          "y": -5532,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Jason's House, Key Lento",
+          "photo": "L266",
+          "photoOf": "Jason's House, Key Lento"
+        }
+      }
+    ],
   },
   {
     name: 'Steal the Scooter',
@@ -79,6 +119,46 @@ export const optionalMissions: OptionalMission[] = [
     note: 'For naboen Shirley. Borte for godt når Tourist Trap starter.',
     missable: true,
     before: 'tourist-trap',
+    stops: [
+      {
+        "title": "Shirley",
+        "text": "Ringer eller snakker med deg en dags tid etter Get Shirley's Rum.",
+        "loc": {
+          "x": -2354,
+          "y": -5532,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Jason's House, Key Lento",
+          "photo": "L266",
+          "photoOf": "Jason's House, Key Lento"
+        }
+      },
+      {
+        "title": "Huset til Peggy",
+        "text": "Bak huset til Shirley, på den andre siden av vannet. Svøm over eller gå rundt langs veien. Scooteren står i oppkjørselen ved trappen. Du kan lure Peggy eller bare ta den.",
+        "loc": {
+          "x": -2390,
+          "y": -5480,
+          "z": 5,
+          "precision": "område",
+          "place": "over vannet bak huset til Shirley",
+          "note": "guidene gir bare retningen"
+        }
+      },
+      {
+        "title": "Tilbake til Shirley",
+        "text": "Kjør hjem. Shirley åpner verandadøren, og du kjører scooteren inn.",
+        "loc": {
+          "x": -2354,
+          "y": -5532,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Jason's House, Key Lento",
+          "photo": "L266",
+          "photoOf": "Jason's House, Key Lento"
+        }
+      }
+    ],
   },
   {
     name: 'Clock Out',
@@ -87,6 +167,34 @@ export const optionalMissions: OptionalMission[] = [
     note: 'Lucia ringer dagen etter Day Release. Du må være på stedet før kl. 16.00, ellers er det borte.',
     missable: true,
     appearsAfter: 'day-release',
+    stops: [
+      {
+        "title": "Key Lento Community Center",
+        "text": "Der Lucia jobber. Kom i bil før kl. 16.00. Kommer du til fots, vil hun ikke gå hjem.",
+        "loc": {
+          "x": -2102,
+          "y": -5360,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Donovan Roeder Jr. Community Center, Key Lento",
+          "photo": "L761",
+          "photoOf": "Donovan Roeder Jr. Community Center, Key Lento"
+        }
+      },
+      {
+        "title": "Hjem til Jason",
+        "text": "Kjør henne hjem. Hun går ut av bilen selv.",
+        "loc": {
+          "x": -2354,
+          "y": -5532,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Jason's House, Key Lento",
+          "photo": "L266",
+          "photoOf": "Jason's House, Key Lento"
+        }
+      }
+    ],
   },
   {
     name: "Donnie's Lost Drugs",
@@ -103,24 +211,96 @@ export const optionalMissions: OptionalMission[] = [
       'Åpne rommet bakerst på båten og ta bagen. Harpunen holder haiene unna.',
       'Lever bagen hos Brian (Brian\'s Lockup) for ca. $1 200.',
     ],
-    location: {
-      x: -1668,
-      y: -5320,
-      z: 4,
-      precision: 'landemerke',
-      place: 'sørøstre del av søkesirkelen, mellom Key Lento og Corsair Key',
-      note: 'guidene oppgir ikke koordinater, så punktet er anslått ut fra beskrivelsen',
-    },
+    stops: [
+      {
+        "title": "Brian",
+        "text": "Brian Heder gir deg oppdraget. Ta en båt ved kysten av Key Lento, for det er for langt å svømme.",
+        "loc": {
+          "x": -2555,
+          "y": -5859,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Brian's Boat Works & Marina, Key Lento",
+          "photo": "L326",
+          "photoOf": "Brian's Boat Works & Marina, Key Lento"
+        }
+      },
+      {
+        "title": "Vraket",
+        "text": "I den sørøstlige delen av den rosa søkesirkelen utenfor nordkysten av Key Lento, mot Corsair Key. Bagen ligger i rommet bakerst på båten.",
+        "loc": {
+          "x": -1668,
+          "y": -5320,
+          "z": 4,
+          "precision": "område",
+          "place": "sørøstre del av søkesirkelen",
+          "note": "guidene oppgir ikke koordinater, så punktet er anslått"
+        }
+      },
+      {
+        "title": "Brian's Lockup",
+        "text": "Lever bagen for ca. $1 200. Guidene oppgir ikke hvor lageret ligger."
+      }
+    ],
   },
   {
     name: 'Thrillbillies',
     chapter: '2',
-    note: 'Valgfri jobb for Billy.',
+    note: "Valgfri jobb for Billy. Wyman tipser deg i kafeteriaen på Starlet Motel under Coffee Break.",
+    stops: [
+      {
+        "title": "Suvenirbutikken",
+        "text": "Ved inngangen til Thrillbilly Mud Club ved Route 32. Kjøp antrekk til Jason og Lucia. Billy og gjengen venter utenfor.",
+        "loc": {
+          "x": -4007,
+          "y": 4756,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Thrillbilly Mud Club, Kelly County",
+          "photo": "L512",
+          "photoOf": "Thrillbilly Mud Club, Kelly County"
+        }
+      },
+      {
+        "title": "Roostere's Rentals",
+        "text": "Lei en Manchez eller Sanchez inne på området."
+      },
+      {
+        "title": "Løpet",
+        "text": "Start ved markøren. 13 førere, men du trenger bare slå én fra gjengen til Billy. Premien avhenger av plasseringen."
+      }
+    ],
   },
   {
     name: 'Twist Wrist, Smash, Grab',
     chapter: '2',
-    note: 'Valgfri jobb for Billy.',
+    note: "Valgfri jobb for Billy. Han sender SMS etter Thrillbillies.",
+    stops: [
+      {
+        "title": "Benken i Port Gellhorn",
+        "text": "Sett deg på benken ved markøren, så kommer Billy.",
+        "loc": {
+          "x": -6400,
+          "y": 3400,
+          "z": 3,
+          "precision": "område",
+          "place": "Port Gellhorn",
+          "note": "guidene sier ikke hvor benken står"
+        }
+      },
+      {
+        "title": "Følg Billy",
+        "text": "Kjør etter ham på crossmotorsykkel til du ser pengebilen."
+      },
+      {
+        "title": "Krasjstedet",
+        "text": "Pengebilen kjører inn i et tre. Fest ladningen på bakdørene, ta deg av vakten og ta bagen bak bilen."
+      },
+      {
+        "title": "Opp fjellet",
+        "text": "Følg Billy opp til gjengen. Oppdraget slutter der. Vil du beholde sykkelen, parker den i en garasje og registrer den hos Moses."
+      }
+    ],
   },
   {
     name: 'Savnede personer (seriemorderen)',
@@ -183,7 +363,65 @@ export const optionalMissions: OptionalMission[] = [
   {
     name: "Yasmani's Jewelry Jobs",
     chapter: '3',
-    note: 'Smykkejobber for Yasmani.',
+    note: "Tre smykkeran for Yasmani etter Boobie Time. Til sammen ca. $20 000 og Snap Gun.",
+    stops: [
+      {
+        "title": "Yasmani",
+        "text": "Han gir deg jobbene. Guidene er uenige om butikken hans ligger i Little Cuba eller Ocean Beach.",
+        "loc": {
+          "x": -1200,
+          "y": 75,
+          "z": 3,
+          "precision": "område",
+          "place": "Little Cuba",
+          "note": "usikkert: én guide sier Ocean Beach"
+        }
+      },
+      {
+        "title": "Casa de Empeño",
+        "text": "Ta denne først. Buffalo Skull Chain (ca. $6 300) ligger i safen på det lille bakkontoret. Kode 1680. Lever med en gang, så får du Snap Gun.",
+        "loc": {
+          "x": 1786,
+          "y": 1001,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Casa de Empeño"
+        }
+      },
+      {
+        "title": "Richardson Jewelry & Diamonds",
+        "text": "Diamantring (minst $9 000). Bakdør som åpnes med Snap Gun. Safen står i nordøstre hjørne av rommet i midten. Kode 6815.",
+        "loc": {
+          "x": -681,
+          "y": -118,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Richardson Jewelry & Diamonds"
+        }
+      },
+      {
+        "title": "Donovan Banks & Co.",
+        "text": "Ametysthalskjede (ca. $4 700). Bakdør med Snap Gun. Safen står midt i den lange gangen bak. Kode 0104.",
+        "loc": {
+          "x": -1220,
+          "y": -1742,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Donovan Banks & Co."
+        }
+      },
+      {
+        "title": "Tilbake til Yasmani",
+        "text": "Selg smykkene hos ham.",
+        "loc": {
+          "x": -1200,
+          "y": 75,
+          "z": 3,
+          "precision": "område",
+          "place": "Little Cuba"
+        }
+      }
+    ],
   },
   {
     name: 'Dubious Provenance',
@@ -191,6 +429,57 @@ export const optionalMissions: OptionalMission[] = [
     note: 'Gi statuen til Halifax før kapittel 3 er over, ellers mister du del 3 og byttet.',
     missable: true,
     before: 'the-cartel-heist',
+    stops: [
+      {
+        "title": "Leiligheten i Bayside",
+        "text": "Del 1. Bagen med statuen ligger i skapet.",
+        "loc": {
+          "x": -400,
+          "y": 1000,
+          "z": 4,
+          "precision": "område",
+          "place": "Bayside, Vice City"
+        }
+      },
+      {
+        "title": "Evelyn Andrews Antiques",
+        "text": "Antikvitetsbutikken i Capri, helt vest på kartet. Halifax vurderer statuen. Gir du den, får du Crowex Octane «Bobby Ambrose»-klokken.",
+        "loc": {
+          "x": -6500,
+          "y": -150,
+          "z": 4,
+          "precision": "område",
+          "place": "Capri",
+          "note": "butikken er ikke kartlagt"
+        }
+      },
+      {
+        "title": "Sweet Bay Inn",
+        "text": "Del 2. Bryt deg inn i antikvitetsbutikken bakfra (trapp, lavt tak, vinduet over aircondition-anlegget) og sjekk skuffen i nordre hjørne. Halifax er i rom 111 oppe på vestsiden av motellet rett ved siden av.",
+        "loc": {
+          "x": -6500,
+          "y": -150,
+          "z": 4,
+          "precision": "område",
+          "place": "Capri"
+        }
+      },
+      {
+        "title": "Huset til Maryam",
+        "text": "Del 3. Snakk med Evelyn i butikken, og dra så til huset nordvest i Capri. Halifax flykter med båt (Jason følger på Seashark), til fots og i golfbil.",
+        "loc": {
+          "x": -6700,
+          "y": 150,
+          "z": 4,
+          "precision": "område",
+          "place": "nordvestre Capri"
+        }
+      },
+      {
+        "title": "Containeren",
+        "text": "Ca. $2 500 og en '32 Hustler. Du velger om Halifax skal leve."
+      }
+    ],
   },
   {
     name: 'Bad Driver!',
@@ -199,6 +488,30 @@ export const optionalMissions: OptionalMission[] = [
     missable: true,
     before: 'power-play',
     appearsAfter: 'party-hard',
+    stops: [
+      {
+        "title": "Baren i Millport",
+        "text": "Andrea sier Felipe er sett i Millport, Lummox County. Gå bakerst i baren. Felipe kommer ut fra toalettet.",
+        "loc": {
+          "x": -1059,
+          "y": 6490,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Jacob's Tavern Bar, Millport (trolig)",
+          "note": "guidene navngir ikke baren, men dette er baren i Millport i kartdataene",
+          "photo": "L3398",
+          "photoOf": "Jacob's Tavern Bar, Millport (trolig)"
+        }
+      },
+      {
+        "title": "Jakten",
+        "text": "Han løper ut bakdøren mot skogen. Skyt ham i beina eller slå ham til han gir seg."
+      },
+      {
+        "title": "Valget",
+        "text": "Avhør ham. Sparer du ham, får du Collect Felipe's Gift: en bil han har lagt igjen til deg."
+      }
+    ],
   },
   {
     name: 'This Is a Free Call From...',
@@ -207,6 +520,34 @@ export const optionalMissions: OptionalMission[] = [
     note: 'Hent Shayna. Bytt til Lucia og ta oppdraget med en gang timeglasset dukker opp.',
     missable: true,
     hourglass: true,
+    stops: [
+      {
+        "title": "Fengselet i Hamlet",
+        "text": "Shayna sender melding mens Lucia kjører i nærheten av Hamlet. Hent henne ved fengselet.",
+        "loc": {
+          "x": -2683,
+          "y": -2930,
+          "z": 5,
+          "precision": "landemerke",
+          "place": "Main Gate, Prison, Hamlet",
+          "note": "guidene oppgir ikke nøyaktig hentested",
+          "photo": "L1129",
+          "photoOf": "Main Gate, Prison, Hamlet"
+        }
+      },
+      {
+        "title": "Huset til Raph",
+        "text": "Kjør henne til kjæresten i Southside.",
+        "loc": {
+          "x": -1750,
+          "y": -1950,
+          "z": 4,
+          "precision": "område",
+          "place": "Southside, Vice City",
+          "note": "huset er ikke kartlagt"
+        }
+      }
+    ],
   },
 ]
 
