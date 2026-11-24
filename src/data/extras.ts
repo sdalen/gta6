@@ -63,6 +63,10 @@ export const tips: Tip[] = [
   },
 ]
 
+/** Del av lenken til et valgfritt oppdrag, f.eks. #/valgfritt/bad-driver. */
+export const optionalSlug = (name: string) =>
+  name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9æøå]+/g, '-').replace(/^-|-$/g, '')
+
 export const optionalMissions: OptionalMission[] = [
   {
     name: "Get Shirley's Rum",
@@ -279,7 +283,7 @@ export const optionalMissions: OptionalMission[] = [
   {
     name: 'Thrillbillies',
     chapter: '2',
-    note: "Valgfri jobb for Billy. Wyman tipser deg i kafeteriaen på Starlet Motel under Coffee Break.",
+    note: "Valgfri jobb for Billy. Wyman tipser deg i kafeteriaen på Starlet Motel under Coffee Break. Ingen guide sier at den forsvinner, og Billys historie fortsetter i kapittel 3, men én guide anbefaler å ta den og Twist Wrist, Smash, Grab før Checking Out for sikkerhets skyld.",
     stops: [
       {
         "title": "Suvenirbutikken",
@@ -307,7 +311,7 @@ export const optionalMissions: OptionalMission[] = [
   {
     name: 'Twist Wrist, Smash, Grab',
     chapter: '2',
-    note: "Valgfri jobb for Billy. Han sender SMS etter Thrillbillies.",
+    note: "Valgfri jobb for Billy. Han sender SMS etter Thrillbillies. Samme som Thrillbillies: ingen guide sier at den forsvinner, men ta den før Checking Out for sikkerhets skyld.",
     stops: [
       {
         "title": "Benken i Port Gellhorn",

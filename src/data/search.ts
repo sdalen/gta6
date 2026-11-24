@@ -1,7 +1,7 @@
 import { chapters } from './chapters'
 import { collectibles, itemId } from './collectibles'
 import { challengeCategories, challengeId, raceChallenges, raceId } from './challenges'
-import { optionalMissions, questlines, questlineTrophies, tips } from './extras'
+import { optionalMissions, optionalSlug, questlines, questlineTrophies, tips } from './extras'
 import { moneyPlan } from './money'
 import { glitches } from './glitches'
 import { cars } from './cars'
@@ -49,7 +49,7 @@ for (const o of optionalMissions)
     group: 'Valgfrie oppdrag',
     title: o.name,
     sub: join(`Kap. ${o.chapter}`, o.character && `· ${o.character}`, `· ${o.note}`),
-    to: href('valgfritt'),
+    to: href('valgfritt', optionalSlug(o.name)),
     doneKey: `valgfritt:${o.name}`,
     text: join(o.name, o.character, o.note, ...(o.steps ?? [])),
   })

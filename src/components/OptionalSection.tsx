@@ -1,4 +1,5 @@
-import { optionalMissions, questlines, questlineTrophies } from '../data/extras'
+import { useEffect } from 'react'
+import { optionalMissions, optionalSlug, questlines, questlineTrophies } from '../data/extras'
 import { href } from '../hooks/useRoute'
 import { Icon } from './Icon'
 import { MapCrop } from './MapCrop'
@@ -6,7 +7,16 @@ import { StopsGuide } from './StopsGuide'
 import { ChoiceBox } from './ChoiceBox'
 import { Checkbox, PageHeader, SectionLabel } from './ui'
 
-export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggle: (id: string) => void }) {
+export function OptionalSection({ done, onToggle, focus }: { done: Set<string>; onToggle: (id: string) => void; focus?: string }) {
+  // Lenker som #/valgfritt/<slug> hopper rett til oppdraget.
+  useEffect(() => {
+    if (!focus) return
+    const el = document.getElementById(`valgfritt-${focus}`)
+    if (!el) return
+    el.scrollIntoView({ block: 'start' })
+    el.querySelector('details')?.setAttribute('open', '')
+  }, [focus])
+
   return (
     <div>
       <PageHeader back={{ href: href('oppdrag'), label: 'Hovedoppdrag' }} eyebrow="Utenfor historien" title="Valgfrie oppdrag">
@@ -20,20 +30,20 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
             const key = `valgfritt:${o.name}`
             const checked = done.has(key)
             return (
-            <li key={o.name}>
+            <li key={o.name} id={`valgfritt-${optionalSlug(o.name)}`} className={`scroll-mt-24 ${focus === optionalSlug(o.name) ? 'rounded-lg bg-accent-dim/60' : ''}`}>
               <button
                 type="button"
                 onClick={() => onToggle(key)}
                 aria-pressed={checked}
-                className="group flex w-full items-start gap-4 py-4 text-left"
+                className="group flex w-full items-start gap-4 py-6 text-left"
               >
               <span className="mt-0.5">
                 <Checkbox checked={checked} tone="green" />
               </span>
-              <span className="w-10 shrink-0 pt-0.5 text-xs uppercase tracking-wider text-faint">Kap. {o.chapter}</span>
+              <span className="w-10 shrink-0 pt-2 text-xs uppercase tracking-wider text-faint">Kap. {o.chapter}</span>
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-baseline gap-x-3">
-                  <span className={`text-[15px] font-medium ${checked ? 'text-muted line-through decoration-faint' : 'text-ink'}`}>{o.name}</span>
+                  <span className={`font-serif text-2xl ${checked ? 'text-muted line-through decoration-faint' : 'text-ink'}`}>{o.name}</span>
                   {o.hourglass && (
                     <span className="inline-flex items-center gap-1 text-xs font-medium text-gold" title="Timeglass: forsvinner hvis du venter">
                       <Icon name="hourglass" className="size-3.5" /> Timeglass
@@ -41,7 +51,7 @@ export function OptionalSection({ done, onToggle }: { done: Set<string>; onToggl
                   )}
                   {o.missable && <span className="text-xs font-medium text-warn">kan gå tapt</span>}
                 </div>
-                <p className="mt-1 text-sm text-muted">
+                <p className="mt-2 text-[15px] leading-relaxed text-muted">
                   {o.character && <span className="text-ink-soft">{o.character}. </span>}
                   {o.note}
                 </p>

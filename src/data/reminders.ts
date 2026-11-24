@@ -1,6 +1,6 @@
 import { chapters } from './chapters'
 import { collectibles, itemId } from './collectibles'
-import { optionalMissions } from './extras'
+import { optionalMissions, optionalSlug } from './extras'
 import type { Mission, OptionalMission } from './types'
 import { href } from '../hooks/useRoute'
 import { missionChains } from './chains'
@@ -96,7 +96,7 @@ export function duringFor(missionId: string): Reminder[] {
 for (const o of optionalMissions) {
   if (!o.before) continue
   const key = `valgfritt:${o.name}`
-  add(o.before, { key, label: o.name, detail: o.note, kind: 'Valgfritt oppdrag', to: href('valgfritt'), doneKey: key })
+  add(o.before, { key, label: o.name, detail: o.note, kind: 'Valgfritt oppdrag', to: href('valgfritt', optionalSlug(o.name)), doneKey: key })
 }
 
 // Oppdrag som går rett over i hverandre: frister for de senere oppdragene gjelder fra første oppdrag i kjeden.

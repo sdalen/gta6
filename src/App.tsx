@@ -37,7 +37,7 @@ export default function App() {
   const [section = '', a, b] = useRoute()
 
   useEffect(() => {
-    if (!(section === 'kapittel' && b)) window.scrollTo(0, 0)
+    if (!(section === 'kapittel' && b) && !(section === 'valgfritt' && a)) window.scrollTo(0, 0)
     setPanelOpen(false)
   }, [section, a, b])
 
@@ -93,7 +93,7 @@ export default function App() {
         )
       break
     case 'valgfritt':
-      page = <OptionalSection done={done} onToggle={toggle} />
+      page = <OptionalSection done={done} onToggle={toggle} focus={a} />
       break
     case 'penger':
       page = <MoneySection />
