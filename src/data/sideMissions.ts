@@ -438,7 +438,7 @@ export const sideMissions: OptionalMission[] = [
     name: 'The Last Mile: Passing the Torch',
     chapter: '4',
     character: 'Jason',
-    appearsAfter: 'another-life',
+    appearsAfter: 'pool-day',
     note: 'Pilot Pete ringer Jason tidlig i kapittel 4, kort etter Pool Day. Første av fem oppdrag fra Pete. Kjeden teller for Strangers & Freaks.',
     steps: [
       'Kjør til Sundown Private Airfield.',

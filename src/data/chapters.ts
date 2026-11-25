@@ -779,6 +779,12 @@ export const chapters: Chapter[] = [
         summary: 'Lucia sitt personlige kapittel begynner.',
       },
       {
+        id: 'pool-day',
+        name: 'Pool Day',
+        character: 'Begge',
+        summary: 'En dag ved bassenget med Jason og Lucia.',
+      },
+      {
         id: 'company-cars',
         name: 'Company Cars',
         task: 'Speak to the Concierge',
@@ -926,6 +932,12 @@ export const chapters: Chapter[] = [
         tip: 'Gjør ferdig alle VCIA-forberedelsene. Fyll helse og rustning, og sett inn kontanter i banken først.',
       },
       {
+        id: 'tie-up-loose-ends',
+        name: 'Tie Up Loose Ends',
+        character: 'Begge',
+        summary: 'Jason og Lucia venter på å høre fra Raul om harddisken.',
+      },
+      {
         id: 'sunset',
         name: 'Sunset',
         character: 'Begge',
@@ -945,7 +957,7 @@ export const chapters: Chapter[] = [
     title: 'Top of the World, Ma',
     titleNo: 'På toppen av verden, mamma',
     intro:
-      'Siste kapittel. Det er bare sju hovedoppdrag igjen, men de er store. Gjør det du vil av sideaktiviteter før The End of the Road. Strangers & Freaks er fortsatt tilgjengelig i fri modus etter historien.',
+      'Siste kapittel. Det er bare ni hovedoppdrag igjen, men de er store. Gjør det du vil av sideaktiviteter før The End of the Road. Strangers & Freaks er fortsatt tilgjengelig i fri modus etter historien.',
     missions: [
       {
         id: 'bird-in-the-hand',
@@ -991,6 +1003,20 @@ export const chapters: Chapter[] = [
         id: 'operation-savage-glory',
         name: 'Operation Savage Glory',
         summary: 'Få tilbake forsendelsen.',
+      },
+      {
+        id: 'honest-abe',
+        name: 'Honest Abe',
+        character: 'Begge',
+        summary: 'Forhandle frem en avtale med Abe.',
+        tip: 'Ha penger klare. Én guide nevner at Abes honorar skal betales igjen før Protective Custody.',
+      },
+      {
+        id: 'unfinished-business',
+        name: 'Unfinished Business',
+        character: 'Begge',
+        summary: 'Avtalen om harddisken er nesten i havn. Du må velge mellom Abes tilbud og å rydde opp selv.',
+        warning: 'Guidene kaller dette point of no return. Gjør ferdig det du vil i fri modus, og lagre manuelt før du starter.',
       },
       {
         id: 'protective-custody',
