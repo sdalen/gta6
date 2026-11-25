@@ -30,10 +30,9 @@ const iconBtn =
   'grid size-9 place-items-center rounded-md text-muted transition hover:bg-surface hover:text-ink disabled:pointer-events-none disabled:opacity-30'
 
 export default function App() {
-  const { done, toggle, setMany, reset, replace, merge, undo, redo, canUndo, canRedo } = useProgress()
+  const { done, toggle, setMany, reset, replace, merge, undo, redo } = useProgress()
   const [panelOpen, setPanelOpen] = useState(false)
   const [spoilers, setSpoilers] = useState(true)
-  const [theme, setTheme] = useState(() => (document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'))
   const [section = '', a, b] = useRoute()
 
   useEffect(() => {
@@ -118,17 +117,6 @@ export default function App() {
 
   const wide = (section === 'samle' && !!b) || section === 'glitcher' || section === 'biler'
   const showSpoilerToggle = section === 'oppdrag' || section === 'kapittel'
-  const toggleTheme = () => {
-    const next = theme === 'dark' ? 'light' : 'dark'
-    setTheme(next)
-    if (next === 'dark') document.documentElement.dataset.theme = 'dark'
-    else delete document.documentElement.dataset.theme
-    try {
-      localStorage.setItem('gta6-tema', next)
-    } catch {
-      /* privat modus */
-    }
-  }
 
   return (
     <div className="flex min-h-screen flex-col pb-24 lg:pb-0">
@@ -169,21 +157,6 @@ export default function App() {
                 {spoilers ? 'Skjul spoilere' : 'Spoilere skjult'}
               </button>
             )}
-            <button type="button" onClick={undo} disabled={!canUndo} title="Angre (⌘Z)" aria-label="Angre" className={iconBtn}>
-              <Icon name="undo" className="size-[18px]" />
-            </button>
-            <button type="button" onClick={redo} disabled={!canRedo} title="Gjør om (⇧⌘Z)" aria-label="Gjør om" className={iconBtn}>
-              <Icon name="redo" className="size-[18px]" />
-            </button>
-            <button
-              type="button"
-              onClick={toggleTheme}
-              title={theme === 'dark' ? 'Lyst tema' : 'Mørkt tema'}
-              aria-label={theme === 'dark' ? 'Bytt til lyst tema' : 'Bytt til mørkt tema'}
-              className={iconBtn}
-            >
-              <Icon name={theme === 'dark' ? 'sun' : 'moon'} className="size-[18px]" />
-            </button>
             <button
               type="button"
               onClick={() => setPanelOpen((o) => !o)}
