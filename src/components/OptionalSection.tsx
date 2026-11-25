@@ -25,7 +25,11 @@ export function OptionalSection({
 }) {
   // Bare oppdrag som teller eller kreves for 100 %.
   const [only100, setOnly100] = useState(false)
-  const pool = only100 ? optionalMissions.filter((o) => completionOf(o.name)) : optionalMissions
+  // Bare oppdrag som går tapt (eller har timeglass) hvis du venter.
+  const [onlyLost, setOnlyLost] = useState(false)
+  const isLost = (o: (typeof optionalMissions)[number]) => !!(o.missable || o.hourglass)
+  const lostOpen = optionalMissions.filter((o) => isLost(o) && !done.has(`valgfritt:${o.name}`)).length
+  const pool = optionalMissions.filter((o) => (!only100 || completionOf(o.name)) && (!onlyLost || isLost(o)))
   const list = chapter ? pool.filter((o) => o.chapter === chapter) : pool
   // Valgfrie oppgaver mot 100 % som finnes i appen, og hvor mange som er gjort.
   const counting = optionalMissions.filter((o) => completionOf(o.name) === 'teller')
@@ -74,11 +78,14 @@ export function OptionalSection({
             </a>
           )
         })}
+      </nav>
+
+      <div role="group" aria-label="Filter" className="-mt-4 mb-8 flex flex-wrap gap-2 text-sm">
         <button
           type="button"
           onClick={() => setOnly100((v) => !v)}
           aria-pressed={only100}
-          className={`inline-flex items-center gap-2 rounded-sm px-3 py-1.5 font-medium ring-1 transition sm:ml-auto ${
+          className={`inline-flex items-center gap-2 rounded-sm px-3 py-1.5 font-medium ring-1 transition ${
             only100 ? 'bg-ok/10 text-ok ring-ok/40' : 'text-muted ring-line hover:text-ink hover:ring-frame'
           }`}
         >
@@ -88,10 +95,25 @@ export function OptionalSection({
             {Math.min(countingDone, 100)} av 100 gjort · ca. 200–300 teller
           </span>
         </button>
-      </nav>
+        <button
+          type="button"
+          onClick={() => setOnlyLost((v) => !v)}
+          aria-pressed={onlyLost}
+          className={`inline-flex items-center gap-2 rounded-sm px-3 py-1.5 font-medium ring-1 transition ${
+            onlyLost ? 'bg-warn/10 text-warn ring-warn/40' : 'text-muted ring-line hover:text-ink hover:ring-frame'
+          }`}
+        >
+          <Checkbox checked={onlyLost} />
+          Går tapt
+          <span className="font-normal tabular-nums opacity-80" title="Oppdrag som forsvinner hvis du venter, inkludert de med timeglass.">
+            {lostOpen} igjen
+          </span>
+        </button>
+      </div>
 
       <section className="mb-14">
         <SectionLabel>Oppdrag</SectionLabel>
+        {list.length === 0 && <p className="border-y border-line py-6 text-[15px] text-muted">Ingen oppdrag passer filteret her.</p>}
         <ul className="divide-y divide-line border-y border-line">
           {list.map((o) => {
             const key = `valgfritt:${o.name}`
