@@ -4,6 +4,8 @@ import { chainFor, chainName } from '../data/chains'
 import { duringFor, remindersFor, unlockedBy, type Reminder } from '../data/reminders'
 import { Icon } from './Icon'
 import { ChoiceBox } from './ChoiceBox'
+import { optionalSlug } from '../data/extras'
+import { href } from '../hooks/useRoute'
 
 const charDot: Record<Character, string> = {
   Lucia: 'bg-pink-400',
@@ -166,7 +168,7 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
               <Callout key={o.name} tone="neutral" title="Etter dette:">
                 <span className="inline-flex flex-wrap items-center gap-x-1.5">
                   {o.hourglass && <Icon name="hourglass" className="size-3.5 text-gold" />}
-                  <a href="#/valgfritt" className="font-medium text-ink hover:underline">
+                  <a href={href('valgfritt', optionalSlug(o.name))} className="font-medium text-ink hover:underline">
                     {o.name}
                   </a>
                   dukker opp. {o.note}

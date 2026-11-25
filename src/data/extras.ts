@@ -1,4 +1,5 @@
 import type { OptionalMission, Questline, Tip } from './types'
+import { sideMissions } from './sideMissions'
 
 export const tips: Tip[] = [
   {
@@ -67,7 +68,7 @@ export const tips: Tip[] = [
 export const optionalSlug = (name: string) =>
   name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9æøå]+/g, '-').replace(/^-|-$/g, '')
 
-export const optionalMissions: OptionalMission[] = [
+const handwritten: OptionalMission[] = [
   {
     name: "Get Shirley's Rum",
     choices: [
@@ -464,14 +465,6 @@ export const optionalMissions: OptionalMission[] = [
     ],
   },
   {
-    name: 'Race Against Yago',
-    chapter: '3',
-    character: 'Jason',
-    note: 'Dukker opp etter Bumper to Bumper. Forsvinner hvis du venter for lenge. Kan stenge resten av oppdragene til Yago.',
-    missable: true,
-    hourglass: true,
-  },
-  {
     name: "Yasmani's Jewelry Jobs",
     choices: [
       {
@@ -728,6 +721,9 @@ export const optionalMissions: OptionalMission[] = [
     ],
   },
 ]
+
+/** Alle valgfrie oppdrag, sortert etter kapittel (stabil sortering beholder rekkefølgen innen kapittelet). */
+export const optionalMissions: OptionalMission[] = [...handwritten, ...sideMissions].sort((a, b) => Number(a.chapter) - Number(b.chapter))
 
 export const questlines: Questline[] = [
   { giver: 'Kirk', countsForTrophy: true },

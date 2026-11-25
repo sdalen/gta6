@@ -63,11 +63,21 @@ export function useProgress() {
   }, [])
 
   useEffect(() => {
+    // Fremdriften lagres for seg, så en full angrehistorikk aldri hindrer at avhukingene blir lagret.
     try {
       localStorage.setItem(KEY, JSON.stringify([...state.done]))
-      localStorage.setItem(HISTORY_KEY, JSON.stringify({ past: state.past, future: state.future }))
     } catch {
       /* lagring er valgfritt */
+    }
+    // Blir lagringen full, kuttes den eldste historikken til den får plass.
+    for (let keep = state.past.length; keep >= 0; keep = keep > 10 ? Math.floor(keep / 2) : keep - 1) {
+      try {
+        const past = keep ? state.past.slice(-keep) : []
+        localStorage.setItem(HISTORY_KEY, JSON.stringify({ past, future: keep ? state.future : [] }))
+        break
+      } catch {
+        if (keep === 0) localStorage.removeItem(HISTORY_KEY)
+      }
     }
   }, [state])
 
