@@ -765,7 +765,7 @@ const COUNTS_100 = new Set([
   "Yasmani's Jewelry Jobs", "Yasmani's ATM Jobs", "Yasmani's Payday Loans Jobs", 'Tail the Security Van',
   'The Unknown Stuntman', 'Trial by Tire', 'Quit Your Job, Sell Your House', 'AudaCity Stunts', 'Catching a Whale', 'The Audacity',
   'Join a Street Race', 'Bumper to Bumper', 'Race Against Yago', 'Brother to Brother',
-  "Randy's Wish List", 'Bilene Moses vil ha',
+  "Randy's Wish List", 'Bilene Moses vil ha', "Get Shirley's Rum", 'Steal the Scooter', "Dunk's Robbery Tips",
   'Take Out Kitty Litter', 'Spin On This',
   "Attend Eddie Acosta's Party",
   'The Last Mile: Passing the Torch', 'The Last Mile: Backseat Pilot', "Pete's Deliveries: Southpoint Airfield", "Pete's Deliveries: Avery Allen & Co.", 'Deliver Packages',
@@ -774,4 +774,46 @@ export function completionOf(name: string): 'kreves' | 'teller' | undefined {
   if (REQUIRED_100.has(name)) return 'kreves'
   if (COUNTS_100.has(name)) return 'teller'
   return undefined
+}
+
+/** Oppgaver der hvert stopp teller som én valgfri oppgave, ikke selve oppdraget. Tallet er hvilke stopp som teller. */
+const PER_STOP: Record<string, (i: number) => boolean> = {
+  // Crawler hører til hovedoppdraget Daily Driver. De seks bilene og Sultan-gaven teller.
+  'Bilene Moses vil ha': (i) => i > 0,
+  "Randy's Wish List": () => true,
+  'Take Out Kitty Litter': () => true,
+}
+/**
+ * Meditasjonsplassene i samleobjektene (samle:meditasjon:<indeks>) og hvor mange meditasjoner hver gir.
+ * Hjemme hos Jason og Mount Kalaga gir én, de andre to (Jason og Lucia). Killtelligence-tårnet er trolig samme sted som Jutting Cliff.
+ */
+const MEDITATION_WEIGHTS = [1, 2, 2, 0, 2, 2, 2, 2, 2, 2, 1]
+
+export interface TaskPart { label: string; done: number; total: number }
+
+/** Valgfrie oppgaver mot 100 % som appen kan telle, fordelt på type. */
+export function optionalTaskProgress(done: Set<string>): { done: number; total: number; parts: TaskPart[] } {
+  const missions: TaskPart = { label: 'Sideoppdrag', done: 0, total: 0 }
+  const perStop: TaskPart[] = []
+  for (const o of optionalMissions) {
+    if (completionOf(o.name) !== 'teller') continue
+    const rule = PER_STOP[o.name]
+    if (rule && o.stops) {
+      const idx = o.stops.map((_, i) => i).filter(rule)
+      const label = o.name === 'Bilene Moses vil ha' ? 'Moses-biler' : o.name === 'Take Out Kitty Litter' ? 'Tyrones laber' : 'Randy-biler'
+      // Er oppdraget huket av, er alle stoppene gjort.
+      const all = done.has(`valgfritt:${o.name}`)
+      perStop.push({ label, total: idx.length, done: idx.filter((i) => all || done.has(`stopp:${o.name}:${i}`)).length })
+    } else {
+      missions.total++
+      if (done.has(`valgfritt:${o.name}`)) missions.done++
+    }
+  }
+  const med: TaskPart = { label: 'Meditasjoner', done: 0, total: 0 }
+  MEDITATION_WEIGHTS.forEach((w, i) => {
+    med.total += w
+    if (done.has(`samle:meditasjon:${i}`)) med.done += w
+  })
+  const parts = [missions, ...perStop, med]
+  return { done: parts.reduce((a, p) => a + p.done, 0), total: parts.reduce((a, p) => a + p.total, 0), parts }
 }

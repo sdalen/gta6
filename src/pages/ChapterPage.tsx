@@ -45,6 +45,7 @@ export function ChapterPage({ number, missionId, done, spoilers, onToggle, onSet
         onToggle={onToggle}
         startIndex={startIndexes[idx]}
         back={{ href: href('oppdrag'), label: 'Alle kapitler' }}
+        openMissionId={missionId}
         actions={
           sideCount > 0 && (
             <a

@@ -377,7 +377,7 @@ const baseCollectibles: CollectibleCategory[] = [
     howTo: [
       'Dra til stedet.',
       'Gå bort til meditasjonsplassen og trykk når du får valget.',
-      'Bytt figur og gjør det samme stedet én gang til, så teller det for både Jason og Lucia.',
+      'Bytt figur og gjør det samme stedet én gang til, så teller det for både Jason og Lucia. Huk av stedet når begge har meditert der.',
     ],
     tips: [
       'Den første meditasjonen skjer hjemme hos Jason i kapittel 1, en morgen etter Down to Earth. Lucia sier at hun skal meditere: godta, så viser hun deg hvordan. Guidene er uenige om det er på balkongen eller brygga, men det er én og samme scene.',
@@ -391,7 +391,7 @@ const baseCollectibles: CollectibleCategory[] = [
         'tourist-trap',
       ),
       i('Jutting Cliff', 'Utstikkende klippe nord for Kalaga Reservoir, ved Animal Crackers.'),
-      i('Vinewood Beach', 'Ca. to tredjedeler opp mot nordenden av stranden.'),
+      i('Seaside (Vinewood Beach)', 'Steinodden på stranden i Waning Sands, ca. to tredjedeler opp mot nordenden.'),
       i('Killtelligence-tårnet', 'Ved foten av tårnet sørøst for Killtelligence Provisions, der fjellet stikker ut. Her er det også et basehopp.'),
     ],
   },

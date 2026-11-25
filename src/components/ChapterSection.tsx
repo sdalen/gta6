@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import type { Chapter } from '../data/types'
 import { missionMatches } from '../data/missionIndex'
 import { MissionCard, ReminderList } from './MissionCard'
@@ -49,9 +49,21 @@ interface Props {
   back?: { href: string; label: string }
   /** Knapper som vises rett under kapittelteksten. */
   actions?: ReactNode
+  /** Oppdrag som skal være åpent (fra en lenke). */
+  openMissionId?: string
 }
 
-export function ChapterSection({ chapter, query, done, spoilers, onToggle, startIndex, back, actions }: Props) {
+export function ChapterSection({ chapter, query, done, spoilers, onToggle, startIndex, back, actions, openMissionId }: Props) {
+  // Trekkspill: bare ett oppdrag er åpent om gangen, og alle kan være lukket.
+  const [openId, setOpenId] = useState<string | null>(openMissionId ?? null)
+  useEffect(() => {
+    if (openMissionId) setOpenId(openMissionId)
+  }, [openMissionId])
+  const openOne = (id: string) => {
+    const next = openId === id ? null : id
+    setOpenId(next)
+    if (next) requestAnimationFrame(() => document.getElementById(next)?.scrollIntoView({ block: 'nearest' }))
+  }
   const q = query.trim().toLowerCase()
   const indexed = chapter.missions.map((m, i) => ({ m, n: startIndex + i }))
   const visible = q
@@ -96,6 +108,8 @@ export function ChapterSection({ chapter, query, done, spoilers, onToggle, start
             onToggle={() => onToggle(m.id)}
             progress={done}
             onToggleItem={onToggle}
+            open={openId === m.id}
+            onOpen={() => openOne(m.id)}
           />
         ))}
       </ol>

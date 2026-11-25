@@ -70,16 +70,19 @@ interface Props {
   progress?: Set<string>
   /** Huker av en påminnelse (samleobjekt, forberedelse) direkte i listen. */
   onToggleItem?: (id: string) => void
+  /** Trekkspill: om detaljene vises, og hva som skjer når du trykker på oppdraget. */
+  open: boolean
+  onOpen: () => void
 }
 
-export function MissionCard({ mission, index, done, spoilers, onToggle, progress, onToggleItem }: Props) {
+export function MissionCard({ mission, index, done, spoilers, onToggle, progress, onToggleItem, open, onOpen }: Props) {
   const reminders = remindersFor(mission.id)
   const during = duringFor(mission.id)
   const unlocks = unlockedBy(mission.id)
   const chain = chainFor(mission.id)
   return (
-    <li id={mission.id} className="scroll-mt-24 py-6">
-      <div className="flex items-start gap-4">
+    <li id={mission.id} className={`scroll-mt-24 ${open ? 'bg-surface/60 pb-6' : ''}`}>
+      <div className="flex items-start gap-4 pt-4">
         <button
           type="button"
           onClick={onToggle}
@@ -90,12 +93,14 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
           <Checkbox checked={done} />
         </button>
 
-        <div className={`min-w-0 flex-1 transition ${done ? 'opacity-40' : ''}`}>
-          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <h3 className="text-[17px] font-medium text-ink">{mission.name}</h3>
+        <div className={`min-w-0 flex-1 transition ${done && !open ? 'opacity-40' : ''}`}>
+          <button type="button" onClick={onOpen} aria-expanded={open} className="flex w-full items-start gap-3 pb-4 text-left">
+          <span className="min-w-0 flex-1">
+          <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span className="text-[17px] font-medium text-ink">{mission.name}</span>
             <span className="text-xs tabular-nums text-faint">#{index}</span>
-          </div>
-          <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
+          </span>
+          <span className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
             {mission.character && (
               <span className="inline-flex items-center gap-1.5">
                 <span className={`size-1.5 rounded-full ${charDot[mission.character]}`} />
@@ -107,9 +112,19 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
             {chain && chain.pos > 0 && (
               <span className="font-medium text-accent">Starter rett etter {chainName(chain.chain.missions[chain.pos - 1])}</span>
             )}
-          </div>
+            {!open && !done && (reminders.length > 0 || mission.warning || chain?.chain.lockIn) && (
+              <span className="inline-flex items-center gap-1 font-medium text-warn">
+                <Icon name="alert" className="size-3.5" /> Husk før du starter
+              </span>
+            )}
+            {!open && unlocks.length > 0 && <span className="text-faint">Låser opp {unlocks.length === 1 ? 'et sideoppdrag' : `${unlocks.length} sideoppdrag`}</span>}
+          </span>
+          </span>
+          <Icon name="right" className={`mt-1 size-4 shrink-0 text-faint transition-transform ${open ? 'rotate-90' : ''}`} />
+          </button>
 
-          <div className="mt-4 space-y-4">
+          {open && (
+          <div className="space-y-4">
             {chain && chain.pos === 0 && (
               <Callout tone={chain.chain.lockIn ? 'warn' : 'accent'} title={chain.chain.lockIn ? 'Ingen vei tilbake:' : 'Går rett over i neste:'}>
                 <span className="font-medium text-ink">{chain.chain.missions.map(chainName).join(' → ')}</span>. Du får ikke gjort noe mellom
@@ -181,6 +196,7 @@ export function MissionCard({ mission, index, done, spoilers, onToggle, progress
               </Callout>
             )}
           </div>
+          )}
         </div>
       </div>
     </li>

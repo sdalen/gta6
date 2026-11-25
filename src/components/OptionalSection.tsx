@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { completionOf, optionalMissions, optionalSlug, questlines, questlineTrophies } from '../data/extras'
+import { completionOf, optionalMissions, optionalTaskProgress, optionalSlug, questlines, questlineTrophies } from '../data/extras'
 import { href } from '../hooks/useRoute'
 import { Icon } from './Icon'
 import { MapCrop } from './MapCrop'
@@ -32,11 +32,14 @@ export function OptionalSection({
   const pool = optionalMissions.filter((o) => (!only100 || completionOf(o.name)) && (!onlyLost || isLost(o)))
   const list = chapter ? pool.filter((o) => o.chapter === chapter) : pool
   // Valgfrie oppgaver mot 100 % som finnes i appen, og hvor mange som er gjort.
-  const counting = optionalMissions.filter((o) => completionOf(o.name) === 'teller')
-  const countingDone = counting.filter((o) => done.has(`valgfritt:${o.name}`)).length
-  // Hvilke oppdrag du har åpnet eller lukket selv. Ellers er gjorte oppdrag lukket og resten åpne.
-  const [openState, setOpenState] = useState<Record<string, boolean>>({})
-  const setOpen = (name: string, value: boolean) => setOpenState((m) => (m[name] === value ? m : { ...m, [name]: value }))
+  const tasks = optionalTaskProgress(done)
+  // Trekkspill: bare ett oppdrag er åpent om gangen.
+  const [openName, setOpenName] = useState<string | null>(null)
+  const openOne = (name: string) => {
+    const next = openName === name ? null : name
+    setOpenName(next)
+    if (next) requestAnimationFrame(() => document.getElementById(`valgfritt-${optionalSlug(next)}`)?.scrollIntoView({ block: 'nearest' }))
+  }
 
   // Lenker som #/valgfritt/<slug> hopper rett til oppdraget.
   useEffect(() => {
@@ -45,7 +48,7 @@ export function OptionalSection({
     if (!el) return
     el.scrollIntoView({ block: 'start' })
     const name = optionalMissions.find((o) => optionalSlug(o.name) === focus)?.name
-    if (name) setOpen(name, true)
+    if (name) setOpenName(name)
   }, [focus])
 
   return (
@@ -91,8 +94,8 @@ export function OptionalSection({
         >
           <Checkbox checked={only100} tone="green" />
           Teller for 100 %
-          <span className="font-normal tabular-nums opacity-80" title={`Spillet krever 100 av ca. 200–300 valgfrie oppgaver. Appen har ${counting.length} av dem (sideoppdragene) og teller bare disse. Meditasjoner, laber og lignende kommer i tillegg.`}>
-            {Math.min(countingDone, 100)} av 100 gjort · ca. 200–300 teller
+          <span className="font-normal tabular-nums opacity-80">
+            {Math.min(tasks.done, 100)} av 100 gjort · ca. 200–300 teller
           </span>
         </button>
         <button
@@ -110,6 +113,17 @@ export function OptionalSection({
           </span>
         </button>
       </div>
+      <p className="-mt-5 mb-8 text-xs leading-relaxed text-muted">
+        Appen teller {tasks.total} av oppgavene:{' '}
+        {tasks.parts.map((p, i) => (
+          <span key={p.label}>
+            {i > 0 && ' · '}
+            {p.label} <span className="tabular-nums text-ink-soft">{p.done}/{p.total}</span>
+          </span>
+        ))}
+        . Meditasjonene huker du av under{' '}
+        <a href={href('samle', 'meditasjon')} className="text-accent hover:underline">samleobjekter</a>.
+      </p>
 
       <section className="mb-14">
         <SectionLabel>Oppdrag</SectionLabel>
@@ -118,54 +132,51 @@ export function OptionalSection({
           {list.map((o) => {
             const key = `valgfritt:${o.name}`
             const checked = done.has(key)
-            const hasDetails = !!(o.steps || o.location || o.stops || o.choices)
-            const isOpen = openState[o.name] ?? !checked
+            const isOpen = openName === o.name
+            const badges = (
+              <>
+                {o.hourglass && (
+                  <span className="inline-flex items-center gap-1 text-xs font-medium text-gold" title="Timeglass: forsvinner hvis du venter">
+                    <Icon name="hourglass" className="size-3.5" /> Timeglass
+                  </span>
+                )}
+                {o.missable && <span className="text-xs font-medium text-warn">går tapt</span>}
+                {completionOf(o.name) === 'kreves' && <span className="text-xs font-semibold text-accent">Kreves for 100 %</span>}
+                {completionOf(o.name) === 'teller' && <span className="text-xs font-medium text-ok">Teller for 100 %</span>}
+              </>
+            )
             return (
-            <li key={o.name} id={`valgfritt-${optionalSlug(o.name)}`} className={`scroll-mt-24 ${focus === optionalSlug(o.name) ? 'rounded-lg bg-accent-dim/60' : ''}`}>
-              <div className="flex w-full items-start gap-4 py-6 text-left">
+            <li key={o.name} id={`valgfritt-${optionalSlug(o.name)}`} className={`scroll-mt-24 ${isOpen ? 'bg-surface/60' : ''}`}>
+              <div className="flex w-full items-center gap-3 py-3.5 text-left sm:gap-4">
               <button
                 type="button"
                 onClick={() => onToggle(key)}
                 aria-pressed={checked}
                 aria-label={checked ? `Merk ${o.name} som ikke gjort` : `Merk ${o.name} som gjort`}
-                className="mt-0.5"
+                className="shrink-0"
               >
                 <Checkbox checked={checked} tone="green" />
               </button>
-              <span className="w-10 shrink-0 pt-2 text-xs uppercase tracking-wider text-faint">Kap. {o.chapter}</span>
               <button
                 type="button"
-                onClick={() => hasDetails && setOpen(o.name, !isOpen)}
-                aria-expanded={hasDetails ? isOpen : undefined}
-                className={`min-w-0 flex-1 text-left ${hasDetails ? 'cursor-pointer' : 'cursor-default'}`}
+                onClick={() => openOne(o.name)}
+                aria-expanded={isOpen}
+                className="flex min-w-0 flex-1 items-center gap-3 text-left"
               >
-                <div className="flex flex-wrap items-baseline gap-x-3">
-                  <span className={`font-serif text-2xl ${checked ? 'text-muted line-through decoration-faint' : 'text-ink'}`}>{o.name}</span>
-                  {o.hourglass && (
-                    <span className="inline-flex items-center gap-1 text-xs font-medium text-gold" title="Timeglass: forsvinner hvis du venter">
-                      <Icon name="hourglass" className="size-3.5" /> Timeglass
-                    </span>
-                  )}
-                  {o.missable && <span className="text-xs font-medium text-warn">går tapt</span>}
-                  {completionOf(o.name) === 'kreves' && <span className="text-xs font-semibold text-accent">Kreves for 100 %</span>}
-                  {completionOf(o.name) === 'teller' && <span className="text-xs font-medium text-ok">Teller for 100 %</span>}
-                </div>
-                <p className="mt-2 text-[15px] leading-relaxed text-muted">
-                  {o.character && <span className="text-ink-soft">{o.character}. </span>}
-                  {o.note}
-                </p>
+                <span className="w-10 shrink-0 text-xs uppercase tracking-wider text-faint">Kap. {o.chapter}</span>
+                <span className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-3 gap-y-0.5">
+                  <span className={`font-serif text-xl ${checked ? 'text-muted line-through decoration-faint' : 'text-ink'}`}>{o.name}</span>
+                  {badges}
+                </span>
+                <Icon name="right" className={`size-4 shrink-0 text-faint transition-transform ${isOpen ? 'rotate-90' : ''}`} />
               </button>
               </div>
-              {hasDetails && (
-                <details
-                  className="group/d mb-4 sm:pl-[5.75rem]"
-                  open={isOpen}
-                  onToggle={(e) => setOpen(o.name, e.currentTarget.open)}
-                >
-                  <summary className="cursor-pointer list-none text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
-                    <span className="group-open/d:hidden">Vis hvordan og hvor</span>
-                    <span className="hidden group-open/d:inline">Skjul hvordan og hvor</span>
-                  </summary>
+              {isOpen && (
+                <div className="pb-6 sm:pl-[5.75rem]">
+                  <p className="text-[15px] leading-relaxed text-muted">
+                    {o.character && <span className="text-ink-soft">{o.character}. </span>}
+                    {o.note}
+                  </p>
                   {o.steps && (
                     <ol className="mt-3 list-decimal space-y-1.5 pl-5 text-sm leading-relaxed text-ink-soft marker:text-faint">
                       {o.steps.map((step) => (
@@ -197,7 +208,7 @@ export function OptionalSection({
                       <MapCrop loc={o.location} />
                     </div>
                   )}
-                </details>
+                </div>
               )}
             </li>
             )
