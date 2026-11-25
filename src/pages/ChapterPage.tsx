@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { chapters } from '../data/chapters'
+import { optionalMissions } from '../data/extras'
 import { startIndexes } from '../data/missionIndex'
 import { href } from '../hooks/useRoute'
 import { ChapterSection } from '../components/ChapterSection'
@@ -30,6 +31,9 @@ export function ChapterPage({ number, missionId, done, spoilers, onToggle, onSet
   const allDone = ids.every((id) => done.has(id))
   const earlier = chapters.slice(0, idx).flatMap((c) => c.missions.map((m) => m.id))
   const earlierOpen = earlier.filter((id) => !done.has(id)).length
+  const side = optionalMissions.filter((o) => o.chapter === number)
+  const sideCount = side.length
+  const sideDone = side.filter((o) => done.has(`valgfritt:${o.name}`)).length
 
   return (
     <div>
@@ -41,6 +45,20 @@ export function ChapterPage({ number, missionId, done, spoilers, onToggle, onSet
         onToggle={onToggle}
         startIndex={startIndexes[idx]}
         back={{ href: href('oppdrag'), label: 'Alle kapitler' }}
+        actions={
+          sideCount > 0 && (
+            <a
+              href={href('valgfritt', 'kapittel', number)}
+              className="inline-flex items-center gap-2 rounded-sm px-4 py-2.5 text-[15px] font-semibold text-ink ring-1 ring-line transition hover:ring-frame"
+            >
+              <Icon name="star" className="size-4 text-accent" />
+              Sideoppdrag
+              <span className="text-sm font-normal tabular-nums text-muted">
+                {sideDone} av {sideCount}
+              </span>
+            </a>
+          )
+        }
       />
       <div className="mt-10 flex flex-wrap items-center gap-3">
         <button

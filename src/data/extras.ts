@@ -238,7 +238,7 @@ const handwritten: OptionalMission[] = [
     name: "Donnie's Lost Drugs",
     chapter: '1',
     character: 'Jason',
-    note: 'Brian vil ha tilbake dopet fra båten Donnie senket utenfor Corsair Key. Gir ca. $1 200 og trengs for 100 %. Guidene sier ikke om det forsvinner etter kapittel 1, men ta det før Tourist Trap for sikkerhets skyld.',
+    note: 'Brian vil ha tilbake dopet fra båten Donnie senket utenfor Corsair Key. Gir ca. $1 200. Guidene sier ikke om det forsvinner etter kapittel 1, men ta det før Tourist Trap for sikkerhets skyld.',
     appearsAfter: 'swamped',
     before: 'tourist-trap',
     steps: [
@@ -750,3 +750,28 @@ export const questlineTrophies = [
   { questline: "Randy's Wish List", trophy: 'Supply & Demand' },
   { questline: 'Spin On This', trophy: 'Spin On This!' },
 ]
+
+/**
+ * Hva et sideoppdrag betyr for 100 %. «kreves» står fast i sjekklisten. «teller» er én av de
+ * valgfrie oppgavene (du trenger 100 av flere hundre). Mangler = ingen kilde sier noe.
+ */
+const REQUIRED_100 = new Set(['Veteran Hunted', "Bret's Hunting Decks", 'Search the Dive Sites', "That's Where the Money Is..."])
+const COUNTS_100 = new Set([
+  'Search for the Skunk Ape', 'Search for Tree Effigies', 'Help Kirk Find Mr. Mangrove',
+  'Catch a Bigger Fish',
+  'Check Out McKittrick Farm', 'Collect Chemicals for Kyle', 'Buddy? (Check on Kyle)',
+  'Thrillbillies', 'Twist Wrist, Smash, Grab', 'Mall Rats', 'The Impaler', 'Hometown Heroes',
+  'Climbing the Cellerichain', 'Pay the Cellerica Fee', 'Peach!', 'Read the Label', 'Puff Puff Pass',
+  "Yasmani's Jewelry Jobs", "Yasmani's ATM Jobs", "Yasmani's Payday Loans Jobs", 'Tail the Security Van',
+  'The Unknown Stuntman', 'Trial by Tire', 'Quit Your Job, Sell Your House', 'AudaCity Stunts', 'Catching a Whale', 'The Audacity',
+  'Join a Street Race', 'Bumper to Bumper', 'Race Against Yago', 'Brother to Brother',
+  "Randy's Wish List", 'Bilene Moses vil ha',
+  'Take Out Kitty Litter', 'Spin On This',
+  "Attend Eddie Acosta's Party",
+  'The Last Mile: Passing the Torch', 'The Last Mile: Backseat Pilot', "Pete's Deliveries: Southpoint Airfield", "Pete's Deliveries: Avery Allen & Co.", 'Deliver Packages',
+])
+export function completionOf(name: string): 'kreves' | 'teller' | undefined {
+  if (REQUIRED_100.has(name)) return 'kreves'
+  if (COUNTS_100.has(name)) return 'teller'
+  return undefined
+}

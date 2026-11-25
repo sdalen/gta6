@@ -16,7 +16,7 @@ function CarRow({ c }: { c: Car }) {
         <span className="min-w-0 flex-1">
           <span className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <span className="font-serif text-xl text-ink transition group-hover:text-accent">{c.name}</span>
-            {c.missable && <span className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-warn ring-1 ring-warn/40">Kan gå tapt</span>}
+            {c.missable && <span className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-warn ring-1 ring-warn/40">Går tapt</span>}
           </span>
           <span className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
             <span>
@@ -67,7 +67,7 @@ export function CarsPage() {
 
       {missable.length > 0 && (
         <section className="mb-12">
-          <H2>Kan gå tapt: hent disse i tide</H2>
+          <H2>Går tapt: hent disse i tide</H2>
           <ul className="divide-y divide-line border-y border-line">
             {missable.map((c) => (
               <CarRow key={c.id} c={c} />
@@ -149,7 +149,7 @@ export function CarPage({ id }: { id: string }) {
       >
         <div className="space-y-12">
           {c.missable && (
-            <Callout tone="warn" title="Kan gå tapt.">
+            <Callout tone="warn" title="Går tapt.">
               {c.deadline ?? 'Hent den før muligheten forsvinner.'}
             </Callout>
           )}

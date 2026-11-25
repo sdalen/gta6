@@ -47,7 +47,7 @@ export const sideMissions: OptionalMission[] = [
     chapter: '1',
     character: 'Jason',
     appearsAfter: 'feng-shui',
-    note: 'Fiskeutfordring fra Cal. Han sender SMS etter Feng Shui. Den forsvinner ikke etter kapittel 1, så du kan ta den senere. Teller ikke for Strangers & Freaks, men trengs for 100 %.',
+    note: 'Fiskeutfordring fra Cal. Han sender SMS etter Feng Shui. Den forsvinner ikke etter kapittel 1, så du kan ta den senere. Teller ikke for Strangers & Freaks-troféet.',
     steps: [
       'Godta utfordringen fra Cal.',
       'Skaff en båt. I kapittel 1 kan du bruke båten ved huset til Jason. Senere kan du ta en fiskebåt ved bryggen ved The Rusty Anchor.',
@@ -167,7 +167,7 @@ export const sideMissions: OptionalMission[] = [
     name: "Dunk's Robbery Tips",
     chapter: '2',
     appearsAfter: 'slam-dunk',
-    note: 'Dunk tipser om steder som er lette å rane. Én guide sier tipsene åpner seg etter Slam Dunk, mens en annen plasserer dem i kapittel 3. De trengs for 100 %. Du selger byttet hos Dunk.',
+    note: 'Dunk tipser om steder som er lette å rane. Én guide sier tipsene åpner seg etter Slam Dunk, mens en annen plasserer dem i kapittel 3. Du selger byttet hos Dunk.',
     steps: [
       'Sjekk meldingene fra Dunk eller Dunk\'s Robbery Tips på kartet. Lost Vista og Scattered Pines kommer først. 24/7 kommer når begge tilhenger-jobbene er gjort.',
       'Lost Vista (piller): Kom inn fra den gjørmete bakken bak tilhengerne. Bruk den grønne tilhengeren som merke. Gå inn i den grønn-hvite tilhengeren. Ta to poser på bordet i stua og to på soverommet. Går du uten å slåss med vaktene, blir jobben ikke-dødelig.',
@@ -211,7 +211,7 @@ export const sideMissions: OptionalMission[] = [
     chapter: '2',
     character: 'Lucia',
     appearsAfter: 'girls-trip',
-    note: 'Kort valgfritt oppdrag som kommer på kartet etter Girls\' Trip. Det trengs for 100 %.',
+    note: 'Kort valgfritt oppdrag som kommer på kartet etter Girls\' Trip.',
     steps: [
       'Gå til våpenbutikken i Port Gellhorn.',
       'Kjøp et våpen, eller ta ut et du allerede eier fra det grønne våpenskapet. Det er gratis. Billigste nye våpen er Scorpio Nipper .38 til $495.',
@@ -221,7 +221,7 @@ export const sideMissions: OptionalMission[] = [
     name: 'Impounded Vehicle',
     chapter: '2',
     appearsAfter: 'breakfast-run',
-    note: 'Bilen til Lucia havner automatisk på beslagstomta etter Breakfast Run. Den vises som et grønt bilikon på kartet, ved politistasjonen i Port Gellhorn. Det trengs for 100 %.',
+    note: 'Bilen til Lucia havner automatisk på beslagstomta etter Breakfast Run. Den vises som et grønt bilikon på kartet, ved politistasjonen i Port Gellhorn.',
     steps: [
       'Kjør gjennom gjerdet til beslagstomta. De to politifolkene ser deg, og du får to stjerner.',
       'Hopp inn i bilen til Lucia og rist av deg politiet.',
