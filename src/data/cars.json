@@ -22,7 +22,7 @@
   },
   {
    "title": "Skann bilen først med WAiNK",
-   "body": "Skann bilen med WAiNK-appen før du stjeler den. Da ser du trackertype, sikkerhetsnivå, salgsverdi og hva det koster å registrere den. Mange dyre biler krever Key Cloner. Den får du av Randy i kapittel 3, i hovedoppdraget First Impressions."
+   "body": "Skann bilen med WAiNK-appen før du stjeler den. Da ser du trackertype, sikkerhetsnivå, salgsverdi og hva det koster å registrere den. Mange dyre biler krever Key Cloner. Den får du av Randy i kapittel 3, i hovedoppdraget Clonin' Keys, Makin' GS."
   },
   {
    "title": "Scooter Bros henter bilene dine",
@@ -479,7 +479,7 @@
    "deadline": null,
    "when": "For å beholde den må du vente til du kan registrere biler med rød tracker (etter Mamba GT i kapittel 4). Før det er den bare en leveranse til Randy.",
    "steps": [
-    "Skaff Key Cloner i First Impressions (kapittel 3).",
+    "Skaff Key Cloner i Clonin' Keys, Makin' GS (kapittel 3).",
     "Vent til en politimann åpner porten, eller bruk sidedøra.",
     "Kjør opp til nivå 7 og bruk Key Cloner.",
     "Kjør til toppen og bruk stunt-hoppet for å komme ut.",
@@ -510,7 +510,7 @@
    "spawn": "Fast plassering i Randys oppdrag. Kan også stå tilfeldig ved rike hus i Capri.",
    "missable": false,
    "deadline": null,
-   "when": "Etter First Impressions i kapittel 3, når du har Key Cloner.",
+   "when": "Etter Clonin' Keys, Makin' GS i kapittel 3, når du har Key Cloner.",
    "steps": [
     "Klatre over gjerdet.",
     "Plasser sprengstoff på porten.",

@@ -16,13 +16,14 @@ import { DataSection } from './components/DataSection'
 import { MoneySection } from './components/MoneySection'
 import { GlitchesPage, GlitchPage } from './pages/GlitchesPage'
 import { CarPage, CarsPage } from './pages/CarsPage'
+import { CarToolsPage } from './pages/CarToolsPage'
 
 const tabs: { section: string; label: string; icon: IconName; match: string[] }[] = [
   { section: '', label: 'Hjem', icon: 'home', match: [''] },
   { section: 'oppdrag', label: 'Oppdrag', icon: 'book', match: ['oppdrag', 'kapittel', 'valgfritt'] },
   { section: 'samle', label: 'Samle', icon: 'compass', match: ['samle', 'utfordringer', 'ran'] },
   { section: 'glitcher', label: 'Glitcher', icon: 'bug', match: ['glitcher'] },
-  { section: 'biler', label: 'Biler', icon: 'car', match: ['biler'] },
+  { section: 'biler', label: 'Biler', icon: 'car', match: ['biler', 'bilverktoy'] },
   { section: 'penger', label: 'Penger', icon: 'coins', match: ['penger', 'tips'] },
 ]
 
@@ -108,6 +109,9 @@ export default function App() {
     case 'biler':
       page = a ? <CarPage id={a} /> : <CarsPage />
       break
+    case 'bilverktoy':
+      page = <CarToolsPage />
+      break
     case 'tips':
       page = <TipsSection />
       break
@@ -157,6 +161,14 @@ export default function App() {
                 {spoilers ? 'Skjul spoilere' : 'Spoilere skjult'}
               </button>
             )}
+            <a
+              href={href('bilverktoy')}
+              title="Key Cloner og trackere"
+              aria-label="Key Cloner og trackere"
+              className={`${iconBtn} ${section === 'bilverktoy' ? 'bg-accent-dim text-accent' : ''}`}
+            >
+              <Icon name="key" className="size-[18px]" />
+            </a>
             <button
               type="button"
               onClick={() => setPanelOpen((o) => !o)}
