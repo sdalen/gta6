@@ -397,9 +397,7 @@ const handwritten: OptionalMission[] = [
   {
     name: 'Savnede personer (seriemorderen)',
     chapter: '2',
-    note: 'Skjult oppdrag som aldri vises på kartet. Det starter med plakatene i resepsjonen på Starlet Motel, og ifølge én guide kommer du ikke inn der etter Checking Out. Start det i kapittel 2, når både Jason og Lucia er spillbare.',
-    missable: true,
-    before: 'checking-out',
+    note: 'Skjult oppdrag fra Alvan West (Gellhorn\'s Missing Tourists og Missing Person) som aldri vises på kartet. Det starter med plakatene i resepsjonen på Starlet Motel. Kommer du ikke inn der etter Checking Out, virker andre Missing Persons-plakater også, for eksempel på veggen utenfor 24/7 sør for Delights. Start det i kapittel 2, når både Jason og Lucia er spillbare. Teller for Strangers & Freaks-troféet.',
     steps: [
       'Ta stoppene under i rekkefølge. Trykk på et stopp for å se det på kartet.',
       'Fotografer alle tre skapene før du leter etter likene.',
@@ -766,6 +764,8 @@ const COUNTS_100 = new Set([
   'The Unknown Stuntman', 'Trial by Tire', 'Quit Your Job, Sell Your House', 'AudaCity Stunts', 'Catching a Whale', 'The Audacity',
   'Join a Street Race', 'Bumper to Bumper', 'Race Against Yago', 'Brother to Brother',
   "Randy's Wish List", 'Bilene Moses vil ha', "Get Shirley's Rum", 'Steal the Scooter', "Dunk's Robbery Tips",
+  'Savnede personer (seriemorderen)', 'This Is a Free Call From...',
+  'Bring Out the Chimp', 'Sisters of the Sea', 'Twin Flames', 'Dodo, Rise!', 'The Final Flush', "Retest Freddie's Defenses",
   'Take Out Kitty Litter', 'Spin On This',
   "Attend Eddie Acosta's Party",
   'The Last Mile: Passing the Torch', 'The Last Mile: Backseat Pilot', "Pete's Deliveries: Southpoint Airfield", "Pete's Deliveries: Avery Allen & Co.", 'Deliver Packages',
