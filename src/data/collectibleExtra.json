@@ -926,6 +926,22 @@
    {
     "name": "Crowex Ambassador (klokke)",
     "where": "Klokken ligger på arbeidsbenken i stigerommet i Casa Guardia i Little Cuba."
+   },
+   {
+    "name": "Crowex Octane 'Kaleidoscope' (klokke)",
+    "where": "Villaen med basseng ved vannet nord på Casanova Island (Rialto Islands), rett overfor huset med den gylne Urus-en. Hopp over porten og gå til venstre forbi to bilalarm-biler (bruk Key Cloner). Følg den smale passasjen bak huset og gå inn glassdøra bak (Snap Gun). Klokken ligger på et lite bord ved en rød stol på soverommet til venstre i 2. etasje. Det er spillets versjon av Rolex Daytona «Rainbow», ekte verdi ca. $800 000. Et gullkort skal ligge i rommet rett overfor. Legg klokken i garderoben i et safehouse og lagre, ellers kan du miste den."
+   },
+   {
+    "name": "Crowex Octane 'Midas' (klokke)",
+    "where": "Safen i Leonida Carrier Warehouse, kode 9256. Bare én kilde."
+   },
+   {
+    "name": "Crowex Submerge (klokke)",
+    "where": "Domestobot-lageret i Salton. Gjør en gest mot den ødelagte roboten. Bare én kilde."
+   },
+   {
+    "name": "Novak Laurent Haute Grandeur (klokke)",
+    "where": "Belønning fra Gene hvis du dekker for ham i møtet med ham. Bare én kilde."
    }
   ],
   "meditasjon": [

@@ -584,6 +584,20 @@ const baseCollectibles: CollectibleCategory[] = [
       i('Treningsmedlemskap (8)', 'Kjøpes på treningssentre. Ingen liste ennå.'),
     ],
   },
+  {
+    id: 'paaskeegg',
+    name: 'Påskeegg og hemmeligheter',
+    icon: 'watch',
+    total: '',
+    about: 'Skjulte ting spillere har funnet. Teller ikke mot 100 %. Det som er merket «ikke bekreftet», kommer fra én kilde, og ingen har oppgitt nøyaktig sted.',
+    howTo: ['Bare for moro skyld. Ingen belønning utover det du ser.'],
+    items: [
+      i('Konspirasjonsgarasjen', 'Bryt deg inn i garasjen til «konspirasjonsteoretikeren» i Belville. Notatene er skrevet av en mann som tror han lever i et dataspill. Han skriver om at han ikke kommer seg ut av Leonida, om like NPC-er og tomme interiører, og om at «J» og «L» ikke er bundet av verdens regler. Garasjen var med på et skjermbilde som lå skjult i San Andreas Definitive Edition i 2021. Kilde: Dexerto.'),
+      i('Det bokstavelige påskeegget (ikke bekreftet)', 'Klatre opp et kommunikasjonstårn, ca. 7 minutter. På toppen står en influencer, og der er et rede med fargede egg. Kast et egg ned, så kommer en mellomsekvens der egget treffer frontruta på en bil. Ingen vet hvilket tårn det er. Kilde: X-brukeren xGarbett (18. nov.), via IBTimes.'),
+      i('Bigfoot (ikke bekreftet)', 'Nevnt i en brasiliansk liste over «44 påskeegg». Ingen sted eller fremgangsmåte er oppgitt.'),
+      i('SpongeBob-huset (ikke bekreftet)', 'Nevnt i den samme brasilianske listen. Ingen sted er oppgitt.'),
+    ],
+  },
 ]
 
 /**
