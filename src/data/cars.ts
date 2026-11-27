@@ -13,6 +13,9 @@ export interface Car {
   location: { place: string; area: string; detail: string }
   spawn?: string
   missable: boolean
+  /** «en» = bare én i hele spillet, «respawner» = kommer tilbake / finnes flere, «ukjent» = guidene sier ikke. */
+  respawn: 'en' | 'respawner' | 'ukjent'
+  respawnNote?: string
   deadline?: string | null
   when: string
   steps: string[]
@@ -32,6 +35,12 @@ export interface Garage {
 export const cars = data.cars as Car[]
 export const garages = data.garages as Garage[]
 export const garageRules = data.garageRules as { title: string; body: string }[]
+
+export const respawnText: Record<Car['respawn'], string> = {
+  en: 'Bare én',
+  respawner: 'Respawner',
+  ukjent: 'Respawn ukjent',
+}
 
 export const rarityText: Record<Car['rarity'], string> = {
   unik: 'Unik',

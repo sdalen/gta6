@@ -231,13 +231,18 @@
    "tips": [
     "Bare noen få guider nevner denne bilen. Plasseringen er ikke bekreftet i alle kilder.",
     "Nærmeste garasjer er Atlantic Court Garage og Thompson Court Garage i Ocean Beach.",
-    "Den er nok det beste Thrax-alternativet å beholde, fordi Randys Thrax skal leveres."
+    "Den er nok det beste Thrax-alternativet å beholde, fordi Randys Thrax skal leveres.",
+    "Raskest i spillet ifølge GTABase: fart 9,2/10 (akselerasjon 8,9).",
+    "GTABase sier at den er belønningen i konspirasjonsoppdraget No Flusher i Vice Beach. Skann 10 blå toalettmerker med WAiNK. Gruppechatten viser til en låst garasje sør for det siste merket på Mariposa Avenue. Koden står på en lapp ved tastaturet. Inne henger et kart som viser villaen. GTABase kaller gaten Savile Circle, ikke Sabal Circle.",
+    "Den koster $70 000 å registrere hos Pay 'n' Spray og kommer ferdig oppgradert. Den selges ikke og dukker ikke opp i trafikken."
    ],
    "sources": [
     "https://thebestmods.com/gta-6/thrax-location/",
-    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
+    "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them",
+    "https://www.gtabase.com/gta-6/vehicles/andrew-nodes-thrax"
    ],
-   "id": "truffade-thrax"
+   "id": "truffade-thrax",
+   "respawn": "en"
   },
   {
    "name": "Truffade Thrax (Boone Speedway-tilhenger)",
@@ -261,12 +266,16 @@
    ],
    "tips": [
     "Kilden sier at kartposisjonen ikke er bekreftet i spillet.",
-    "Det er ikke bekreftet hvilken type tracker den har. Skann den med WAiNK først."
+    "Det er ikke bekreftet hvilken type tracker den har. Skann den med WAiNK først.",
+    "Fart 8,7/10 ifølge GTABase (nr. 5 på listen over raskeste biler). Story-pris $100 000. Avansert sikring, så du trenger Key Cloner."
    ],
    "sources": [
-    "https://thebestmods.com/gta-6/thrax-location/"
+    "https://thebestmods.com/gta-6/thrax-location/",
+    "https://www.gtabase.com/vehicles/gta-6/thrax"
    ],
-   "id": "truffade-thrax-boone"
+   "id": "truffade-thrax-boone",
+   "respawn": "respawner",
+   "respawnNote": "Står ikke alltid der. Lagre og last inn på nytt til den dukker opp."
   },
   {
    "name": "Progen Purple Drank Emerus",
@@ -296,7 +305,8 @@
     "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/",
     "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto"
    ],
-   "id": "progen-purple-drank-emerus"
+   "id": "progen-purple-drank-emerus",
+   "respawn": "en"
   },
   {
    "name": "Pegassi Dante's Vitello",
@@ -324,7 +334,8 @@
    "sources": [
     "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
    ],
-   "id": "pegassi-dante-s-vitello"
+   "id": "pegassi-dante-s-vitello",
+   "respawn": "en"
   },
   {
    "name": "Progen Royal Ruby Emerus",
@@ -352,7 +363,8 @@
    "sources": [
     "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
    ],
-   "id": "progen-royal-ruby-emerus"
+   "id": "progen-royal-ruby-emerus",
+   "respawn": "en"
   },
   {
    "name": "Maibatsu '97 Penumbra FF",
@@ -380,7 +392,8 @@
    "sources": [
     "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
    ],
-   "id": "maibatsu-97-penumbra-ff"
+   "id": "maibatsu-97-penumbra-ff",
+   "respawn": "en"
   },
   {
    "name": "Bravado Devil's Rope Gauntlet",
@@ -408,7 +421,8 @@
    "sources": [
     "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
    ],
-   "id": "bravado-devil-s-rope-gauntlet"
+   "id": "bravado-devil-s-rope-gauntlet",
+   "respawn": "en"
   },
   {
    "name": "Canis Black Moth Kamacho",
@@ -435,7 +449,8 @@
    "sources": [
     "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
    ],
-   "id": "canis-black-moth-kamacho"
+   "id": "canis-black-moth-kamacho",
+   "respawn": "en"
   },
   {
    "name": "Declasse Ghosts Exposed Parkland",
@@ -462,7 +477,8 @@
    "sources": [
     "https://leonidahub.org/en/news/gta-6-unique-cars-the-best-standout-vehicles-where-to-find-them-and-how-to-keep-them"
    ],
-   "id": "declasse-ghosts-exposed-parkland"
+   "id": "declasse-ghosts-exposed-parkland",
+   "respawn": "en"
   },
   {
    "name": "Pegassi Infernus ('96)",
@@ -495,7 +511,9 @@
     "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto",
     "https://gta6.house/library/activities/randys-wish-list"
    ],
-   "id": "pegassi-infernus"
+   "id": "pegassi-infernus",
+   "respawn": "ukjent",
+   "respawnNote": "Guidene sier at den «alltid» står der, men ikke om det kommer en ny når du har tatt den."
   },
   {
    "name": "Pegassi Vitello",
@@ -526,7 +544,9 @@
     "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations",
     "https://game-checklists.com/gta6/car-theft-missions-checklist/"
    ],
-   "id": "pegassi-vitello"
+   "id": "pegassi-vitello",
+   "respawn": "respawner",
+   "respawnNote": "Bilen i Randys oppdrag er fast. Vanlige Vitello-er dukker opp tilfeldig ved rike hus i Capri."
   },
   {
    "name": "Bravado Gauntlet Hellfire",
@@ -556,7 +576,9 @@
     "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/",
     "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations"
    ],
-   "id": "bravado-gauntlet-hellfire"
+   "id": "bravado-gauntlet-hellfire",
+   "respawn": "ukjent",
+   "respawnNote": "Guidene sier at den «alltid» står der, men ikke om det kommer en ny når du har tatt den."
   },
   {
    "name": "Pegassi Tempesta",
@@ -584,7 +606,9 @@
     "https://macetesgta6.com.br/en/tip/gta-6-rare-car-locations-randy/",
     "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations"
    ],
-   "id": "pegassi-tempesta"
+   "id": "pegassi-tempesta",
+   "respawn": "ukjent",
+   "respawnNote": "Tilfeldig hendelse med bergingsbil. Ikke bekreftet om hendelsen kommer igjen."
   },
   {
    "name": "Declasse Mamba GT (Randy)",
@@ -614,7 +638,8 @@
     "https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations",
     "https://gta6.house/library/activities/randys-wish-list"
    ],
-   "id": "declasse-mamba-gt"
+   "id": "declasse-mamba-gt",
+   "respawn": "en"
   },
   {
    "name": "Moses' Emperor Sultan",
@@ -643,7 +668,8 @@
     "https://game-checklists.com/gta6/car-theft-missions-checklist/",
     "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto"
    ],
-   "id": "moses-emperor-sultan"
+   "id": "moses-emperor-sultan",
+   "respawn": "en"
   },
   {
    "name": "Vapid '32 Hustler",
@@ -671,7 +697,8 @@
    "sources": [
     "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
    ],
-   "id": "vapid-32-hustler"
+   "id": "vapid-32-hustler",
+   "respawn": "en"
   },
   {
    "name": "Felipes bil (Collect Felipe's Gift)",
@@ -698,7 +725,8 @@
    "sources": [
     "https://leonidahub.org/en/news/gta-6-chapter-4-missables-bad-driver-shayna-the-ultimate-boat-and-the-point-of-no-return"
    ],
-   "id": "felipes-bil"
+   "id": "felipes-bil",
+   "respawn": "en"
   },
   {
    "name": "'95 Grotti Cheetah",
@@ -725,7 +753,8 @@
     "https://showgamer.com/en/guides/8036-samye-redkie-mashiny-v-gta-6-gde-nayti-i-kak-poluchit-unikalnye-avto",
     "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
    ],
-   "id": "95-grotti-cheetah"
+   "id": "95-grotti-cheetah",
+   "respawn": "en"
   },
   {
    "name": "'67 Vapid Dominator Buggy",
@@ -751,7 +780,8 @@
    "sources": [
     "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
    ],
-   "id": "67-vapid-dominator-buggy"
+   "id": "67-vapid-dominator-buggy",
+   "respawn": "en"
   },
   {
    "name": "Wyman's Classic Car Collection ('72 Deviant, '64 Mamba GT, '70 Riata, '67 Transgressor)",
@@ -779,7 +809,8 @@
    "sources": [
     "https://www.gtabase.com/side-missions/gta-6/wyman-s-classic-car-collection"
    ],
-   "id": "wyman-s-classic-car-collection"
+   "id": "wyman-s-classic-car-collection",
+   "respawn": "en"
   },
   {
    "name": "'55 Vapid Stanier",
@@ -805,7 +836,130 @@
    "sources": [
     "https://www.hotcars.com/gta-6s-5-rarest-cars-how-to-get-them/"
    ],
-   "id": "55-vapid-stanier"
+   "id": "55-vapid-stanier",
+   "respawn": "en"
+  },
+  {
+   "name": "Progen Honeycomb Emerus",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Dolos Exotic Car Rental",
+    "area": "Vice City",
+    "detail": "Står hos bilutleien Dolos Exotic Car Rental. En Emerus med bikubemønster."
+   },
+   "spawn": "Fast sted ifølge GTABase. Kapittel er ikke oppgitt.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du har Key Cloner og ledig garasjeplass.",
+   "steps": [
+    "Kjør til Dolos Exotic Car Rental.",
+    "Bruk Key Cloner. Bilen har avansert sikring.",
+    "Kjør den til en Pay 'n' Spray og registrer den."
+   ],
+   "tips": [
+    "Fart 8,9/10 ifølge GTABase (nr. 2 på listen over raskeste biler)."
+   ],
+   "sources": [
+    "https://www.gtabase.com/articles/gta-6/gta-6-fastest-cars-ranked-list-by-top-speed",
+    "https://www.gtabase.com/gta-6/vehicles/honeycomb-emerus"
+   ],
+   "id": "progen-honeycomb-emerus",
+   "respawn": "ukjent",
+   "respawnNote": "GTABase sier ikke om det er en enkeltbil eller om den kommer tilbake."
+  },
+  {
+   "name": "Progen Black Widow Emerus",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Port Vice City",
+    "area": "Vice City",
+    "detail": "I en SCOOP-container på havna i Port Vice City. Du trenger kutteverktøyet, som du får i kapittel 3. GTABase sier også at den ligger i en container «i Port Vice City»."
+   },
+   "spawn": "Fast sted ifølge GTABase. Kapittel er ikke oppgitt.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du har Key Cloner og ledig garasjeplass.",
+   "steps": [
+    "Skaff kutteverktøyet (kapittel 3).",
+    "Finn SCOOP-containeren på havna i Port Vice City og kutt opp låsen.",
+    "Bruk Key Cloner, kjør ut og registrer bilen."
+   ],
+   "tips": [
+    "Fart 8,9/10 ifølge GTABase (nr. 3).",
+    "De to tekstene hos GTABase beskriver stedet litt ulikt, så sjekk kartnålen deres."
+   ],
+   "sources": [
+    "https://www.gtabase.com/articles/gta-6/gta-6-fastest-cars-ranked-list-by-top-speed",
+    "https://www.gtabase.com/gta-6/vehicles/black-widow-emerus"
+   ],
+   "id": "progen-black-widow-emerus",
+   "respawn": "ukjent",
+   "respawnNote": "GTABase sier ikke om det er en enkeltbil eller om den kommer tilbake."
+  },
+  {
+   "name": "Progen Seaspray Emerus",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Story-pris $59 900",
+   "location": {
+    "place": "Capri",
+    "area": "Mariana County",
+    "detail": "I en garasje i Capri. Racingversjon av Emerus med eget lakkdesign. GTABase har bare en kartnål, ingen nærmere beskrivelse."
+   },
+   "spawn": "Fast sted ifølge GTABase. Kapittel er ikke oppgitt.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du har Key Cloner og ledig garasjeplass.",
+   "steps": [
+    "Kjør til garasjen i Capri (se GTABase-kartet).",
+    "Bruk Key Cloner og ta bilen.",
+    "Registrer den hos en Pay 'n' Spray."
+   ],
+   "tips": [
+    "Fart 8,9/10 ifølge GTABase (nr. 4)."
+   ],
+   "sources": [
+    "https://www.gtabase.com/articles/gta-6/gta-6-fastest-cars-ranked-list-by-top-speed",
+    "https://www.gtabase.com/gta-6/vehicles/seaspray-emerus"
+   ],
+   "id": "progen-seaspray-emerus",
+   "respawn": "ukjent",
+   "respawnNote": "GTABase sier ikke om det er en enkeltbil eller om den kommer tilbake."
+  },
+  {
+   "name": "Grotti Status RSX",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Gellhorn International Raceway",
+    "area": "Kelly County",
+    "detail": "På lasteplanet til en bergingsbil ved racerbanen. Banebygget Itali RSX med racinglakk."
+   },
+   "spawn": "Fast sted ifølge GTABase. Kapittel er ikke oppgitt.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du har Key Cloner og ledig garasjeplass.",
+   "steps": [
+    "Kjør til Gellhorn International Raceway.",
+    "Finn bergingsbilen med RSX-en på lasteplanet.",
+    "Bruk Key Cloner, kjør den ned og registrer den."
+   ],
+   "tips": [
+    "Fart 8,7/10 ifølge GTABase (nr. 6). Akselerasjon 8,7.",
+    "En spiller fant den på bergingsbilen. Det kan bety at stedet er fast."
+   ],
+   "sources": [
+    "https://www.gtabase.com/articles/gta-6/gta-6-fastest-cars-ranked-list-by-top-speed",
+    "https://www.gtabase.com/gta-6/vehicles/status-rsx"
+   ],
+   "id": "grotti-status-rsx",
+   "respawn": "ukjent",
+   "respawnNote": "GTABase sier ikke om det er en enkeltbil eller om den kommer tilbake."
   }
  ]
 }

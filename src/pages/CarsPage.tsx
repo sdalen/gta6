@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { cars, garageRules, garages, rarityText, type Car } from '../data/cars'
+import { cars, garageRules, garages, rarityText, respawnText, type Car } from '../data/cars'
 import { getLocation } from '../data/mapLocations'
 import { href } from '../hooks/useRoute'
 import { Icon } from '../components/Icon'
@@ -17,6 +17,7 @@ function CarRow({ c }: { c: Car }) {
           <span className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <span className="font-serif text-xl text-ink transition group-hover:text-accent">{c.name}</span>
             {c.missable && <span className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-warn ring-1 ring-warn/40">Går tapt</span>}
+            <span className="rounded-full px-2.5 py-0.5 text-xs font-medium text-muted ring-1 ring-line">{respawnText[c.respawn]}</span>
           </span>
           <span className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
             <span>
@@ -158,6 +159,7 @@ export function CarPage({ id }: { id: string }) {
             rows={[
               ['Verdi', c.value],
               ['Dukker opp', c.spawn],
+              ['Respawner?', [respawnText[c.respawn], c.respawnNote].filter(Boolean).join('. ')],
             ]}
           />
 
