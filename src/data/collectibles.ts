@@ -587,7 +587,7 @@ const baseCollectibles: CollectibleCategory[] = [
   {
     id: 'paaskeegg',
     name: 'Påskeegg og hemmeligheter',
-    icon: 'watch',
+    icon: 'egg',
     total: '',
     about: 'Skjulte ting spillere har funnet. Teller ikke mot 100 %. Det som er merket «ikke bekreftet», kommer fra én kilde, og ingen har oppgitt nøyaktig sted.',
     howTo: ['Bare for moro skyld. Ingen belønning utover det du ser.'],
