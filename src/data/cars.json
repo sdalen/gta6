@@ -960,6 +960,69 @@
    "id": "grotti-status-rsx",
    "respawn": "ukjent",
    "respawnNote": "GTABase sier ikke om det er en enkeltbil eller om den kommer tilbake."
+  },
+  {
+   "name": "Grotti Dolce Vita RSX",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Story-pris $40 650. Stjålet gir den ca. $7 800.",
+   "location": {
+    "place": "Rialto Islands",
+    "area": "Vice City",
+    "detail": "Ved en luksusvilla på Rialto Islands. En ombygd Itali RSX med italiensk design. GTABase har bare en kartnål, ingen nærmere beskrivelse."
+   },
+   "spawn": "Fast sted ifølge GTABase. Kapittel er ikke oppgitt.",
+   "missable": false,
+   "deadline": null,
+   "when": "Når du har Key Cloner og ledig garasjeplass. Bilen har vanlig tracker, så den må registreres.",
+   "steps": [
+    "Kjør til villaen på Rialto Islands (se GTABase-kartet).",
+    "Bruk Key Cloner. Bilen har avansert sikring.",
+    "Kjør til en Pay 'n' Spray og registrer den."
+   ],
+   "tips": [
+    "Fart 8,6/10 ifølge GTABase (nr. 8 på listen over raskeste biler). Akselerasjon 8,7.",
+    "To ubekreftede kommentarer hos GTABase sier at bilen ikke står der siden oppgir."
+   ],
+   "sources": [
+    "https://www.gtabase.com/articles/gta-6/gta-6-fastest-cars-ranked-list-by-top-speed",
+    "https://www.gtabase.com/gta-6/vehicles/dolce-vita-rsx"
+   ],
+   "id": "grotti-dolce-vita-rsx",
+   "respawn": "ukjent",
+   "respawnNote": "GTABase sier ikke om det er en enkeltbil eller om den kommer tilbake."
+  },
+  {
+   "name": "Piccia Dragon Gate Furia",
+   "class": "Superbil",
+   "rarity": "sjelden",
+   "value": "Ikke oppgitt",
+   "location": {
+    "place": "Y Hotel",
+    "area": "Ocean Beach, Vice City",
+    "detail": "Eies av en gjest på Y Hotel. En unik Furia med iøynefallende design."
+   },
+   "spawn": "Ifølge en ubekreftet kommentar hos GTABase kjører gjesten opp foran hotellet og går ut av bilen. Det skal ha skjedd i kapittel 4.",
+   "missable": false,
+   "deadline": null,
+   "when": "Kanskje fra kapittel 4. Det er ikke bekreftet.",
+   "steps": [
+    "Dra til Y Hotel i Ocean Beach.",
+    "Vent til gjesten kjører opp og parkerer foran hotellet.",
+    "Bruk Key Cloner, ta bilen og registrer den hos en Pay 'n' Spray."
+   ],
+   "tips": [
+    "Fart 8,5/10 ifølge GTABase (nr. 10 på listen over raskeste biler).",
+    "Kommentaren sier at bilen ikke hadde tracker.",
+    "Har du rom 701 på Y Hotel som safehouse, har du garasjen rett der."
+   ],
+   "sources": [
+    "https://www.gtabase.com/articles/gta-6/gta-6-fastest-cars-ranked-list-by-top-speed",
+    "https://www.gtabase.com/gta-6/vehicles/dragon-gate-furia"
+   ],
+   "id": "piccia-dragon-gate-furia",
+   "respawn": "ukjent",
+   "respawnNote": "GTABase kaller den unik, men sier ikke om den kommer tilbake."
   }
  ]
 }
