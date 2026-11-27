@@ -66,6 +66,20 @@ export function CarsPage() {
         )}
       </section>
 
+      <section className="mb-14">
+        <H2>Hvor mange biler kan du ha?</H2>
+        <Facts
+          rows={[
+            ['Grense', 'Det er ingen egen grense for registreringer. Du trenger én ledig garasjeplass per bil.'],
+            ['Grunnspillet', 'Ca. 18 biler: 16 garasjeplasser pluss én personlig bil hver for Jason og Lucia (Metaforge). Listen under kommer til omtrent det samme.'],
+            ['Ekstra', 'Ultimate Edition, Vintage Vice City Pack og GTA+ gir én ekstra garasje hver.'],
+            ['I starten', 'Bare ca. 3 biler. Garasjer kan kjøpes etter Daily Driver i kapittel 2.'],
+            ['Ukjent', 'Kapasiteten på Y Hotel rom 701 og Domestic Timbers-garasjen er ikke bekreftet.'],
+            ['Eksklusive biler', `Appen har ${cars.length} eksklusive biler, flere enn du har plass til. Velg dem du vil beholde, og selg eller lever resten til Randy.`],
+          ]}
+        />
+      </section>
+
       {missable.length > 0 && (
         <section className="mb-12">
           <H2>Går tapt: hent disse i tide</H2>
